@@ -6,4 +6,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 ![Image of Windhapper Logo][img_logo]
 
 
-[img_logo]: http://git.xsystems.org/?p=wh.git;a=blob;f=content/dewindhapperslogo.gif;h=c330df5efc2c542e8fb12938d648eb12e6651d1d;hb=HEAD  "Windhapper Logo"
+[img_logo]: http://git.xsystems.org/?p=wh.git;a=blob_plain;f=content/dewindhapperslogo.gif;h=c330df5efc2c542e8fb12938d648eb12e6651d1d;hb=HEAD  "Windhapper Logo"
