@@ -1,4 +1,4 @@
-# README - Website for canoe club "De Windhappers"
+# README - [Website for canoe club "De Windhappers"][lnk_whsite]
 
 ## Section
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -6,4 +6,15 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 ![Image of Windhapper Logo][img_logo]
 
 
+
+
+
+
+
+
+
+
 [img_logo]: http://git.xsystems.org/?p=wh.git;a=blob_plain;f=content/dewindhapperslogo.gif;h=c330df5efc2c542e8fb12938d648eb12e6651d1d;hb=HEAD  "Windhapper Logo"
+
+
+[lnk_whsite]: http://wh.xsystems.org  "Windhapper Website"
