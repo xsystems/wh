@@ -2,7 +2,7 @@
 
 interface ITemplateAttributes
 {
-    	const qualifiedName = "html";
+    const qualifiedName = "html";
 	const namespaceURI = "http://www.w3.org/1999/xhtml";
 	//const schemaURI = "http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd";
 	const schemaURI = "http://www.w3.org/2002/08/xhtml/xhtml1-transitional.xsd"; // Because of: iframe, video.

@@ -12,7 +12,7 @@ class ImageGalleryElement implements ITemplateElement, ITemplateAttributes
 	private $imageDirPath;
 	private $thumbnailDirPath;
 	
-	public function __construct($rootElementClass, $imagesPerPage, $imageDirPath, $thumbnailDirPath=null) 
+	public function __construct($rootElementClass, $imagesPerPage, $imageDirPath, $thumbnailDirPath=null)
 	{
 		$this->rootElementClass = $rootElementClass;
 		$this->imagesPerPage = $imagesPerPage;

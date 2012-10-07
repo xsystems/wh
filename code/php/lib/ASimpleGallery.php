@@ -1,5 +1,5 @@
 <?php
- 
+
 /*
 * File: ASimpleGallery.php
 * Author: Koen Boes
@@ -18,15 +18,15 @@
 * http://www.gnu.org/licenses/gpl.html
 *
 */
- 
+
 abstract class ASimpleGallery
 {
 	private $itemsPerPage;
 	private $mediaDirPath;
 	private $thumbnailDirPath;
 	
-	public function __construct($itemsPerPage, $mediaDirPath, $thumbnailDirPath=null) 
-	{ 
+	public function __construct($itemsPerPage, $mediaDirPath, $thumbnailDirPath=null)
+	{
 		$this->itemsPerPage = $itemsPerPage;				
 		
 		if( is_dir($mediaDirPath) )

@@ -10,13 +10,13 @@ require_once("MenuElement.php");
 class DeWindhappersTemplate extends XHTML5Template implements ITemplate, ITemplateAttributes
 {
 	private $title = "De Windhappers";
-	private $iconURL = "../../../content/dewindhapperslogo.ico";
-	private $stylesheetURL = "../../../style/style.css";
-	
+	private $iconURL = "/content/dewindhapperslogo.ico";
+	private $stylesheetURL = "/style/style.css";
+	private $scriptURL = "/code/js/load.js";
 
-	public function __construct() 
+	public function __construct()
 	{
-		parent::__construct($this->title, $this->iconURL, $this->stylesheetURL);
+		parent::__construct($this->title, $this->iconURL, $this->stylesheetURL, $this->scriptURL);
 	}
 	
 	public function init()
@@ -25,7 +25,6 @@ class DeWindhappersTemplate extends XHTML5Template implements ITemplate, ITempla
 		
 		$this->add( new BannerElement("contentarea") );
 		$this->add( new MenuElement("nav contentarea") );
-		
 	}
 	
 	public function add( $iTemplateElement )

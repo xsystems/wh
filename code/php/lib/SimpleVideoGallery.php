@@ -1,7 +1,7 @@
 <?php
 
 require_once("ASimpleGallery.php");
- 
+
 /*
 * File: SimpleGallery.php
 * Author: Koen Boes
@@ -20,13 +20,13 @@ require_once("ASimpleGallery.php");
 * http://www.gnu.org/licenses/gpl.html
 *
 */
- 
+
 class SimpleVideoGallery extends ASimpleGallery
 {	
 	private $screenshortSecond;
 
-	public function __construct($videosPerPage, $screenshortSecond, $videoDirPath, $thumbnailDirPath=null) 
-	{ 
+	public function __construct($videosPerPage, $screenshortSecond, $videoDirPath, $thumbnailDirPath=null)
+	{
 		$this->screenshortSecond = $screenshortSecond;
 		parent::__construct($videosPerPage, $videoDirPath, $thumbnailDirPath);
 	}
@@ -37,9 +37,9 @@ class SimpleVideoGallery extends ASimpleGallery
 		{
 			$path_parts = pathinfo($file);
 		
-			$ffmpeg_cmd = sprintf("ffmpeg -i %s -s 300x200 -y -ss %02d -f image2 %s > /dev/null 2>&1", escapeshellarg($file), $this->screenshortSecond, escapeshellarg($thumbnailDirPath.$path_parts["filename"].".jpg"));
+			$ffmpeg_cmd = sprintf("ffmpeg -i %s -s 480x270 -y -ss %02d -f image2 %s > /dev/null 2>&1", escapeshellarg($file), $this->screenshortSecond, escapeshellarg($thumbnailDirPath.$path_parts["filename"].".jpg"));
 			system($ffmpeg_cmd);			
 		}		
 	}
-}  
+}
 ?>

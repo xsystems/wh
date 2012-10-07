@@ -54,6 +54,7 @@ class VideoGalleryElement implements ITemplateElement, ITemplateAttributes
 	    		$videoContainer->setAttribute("class", "video_container galleryPageItem");
 	    		$video->setAttribute("id", "video".$videoID);
 	    		$video->setAttribute("class", "video-js vjs-default-skin");
+//	    		$video->setAttribute("class", "video-js tubecss");
 	    		$video->setAttribute("poster", str_replace(" ", "%20", $pageItem["thumbnail"]));
 	    		
 	    		$source->setAttribute("src", str_replace(" ", "%20", $pageItem["media"]));

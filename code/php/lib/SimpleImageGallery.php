@@ -2,7 +2,7 @@
 
 require_once("ASimpleGallery.php");
 require_once("SimpleImage.php");
- 
+
 /*
 * File: SimpleGallery.php
 * Author: Koen Boes
@@ -21,11 +21,11 @@ require_once("SimpleImage.php");
 * http://www.gnu.org/licenses/gpl.html
 *
 */
- 
+
 class SimpleImageGallery extends ASimpleGallery
 {	
-	public function __construct($imagesPerPage, $imageDirPath, $thumbnailDirPath=null) 
-	{ 
+	public function __construct($imagesPerPage, $imageDirPath, $thumbnailDirPath=null)
+	{
 		parent::__construct($imagesPerPage, $imageDirPath, $thumbnailDirPath);
 	}
 	
@@ -36,7 +36,7 @@ class SimpleImageGallery extends ASimpleGallery
 			$path_parts = pathinfo($file);
 		
 			$image = new SimpleImage($file);
-			$image->resize(300,200);
+			$image->resize(480,270);
 			$image->save($thumbnailDirPath.$path_parts["basename"]);
 		}		
 	}
