@@ -1,8 +1,14 @@
-var host = document.location.host;
-var flashPlayer = "/lib/video-js/bin/video-js.swf";
+//var videojsCSS = "../../../lib/video-js/css/tube.css";
+var videojsCSS = "/lib/video-js/css/video-js.css";
+var videojsJS = "/lib/video-js/js/video.js";
+var os = "/code/js/os.js";
 
-var timeout = 100; //ms
+var linkRel = 'stylesheet';
+var linkType = 'text/css';
+var linkMedia = 'screen';
+
 var aspectRatio = 9/16; //aspect ratio
+var flashPlayer = "/lib/video-js/bin/video-js.swf";
 var options = {"controls": true, "preload": "metadata", "width": "100%"};
 
 
@@ -22,7 +28,15 @@ function resizePlayer()
 
 function playEvent()
 {
-    console.log("Play Event !!!!!!!");
+    var os = new OS();
+    
+    if(os.isMobile())
+    {
+        console.log("mobile --> play");
+        console.log("mobile --> video to fullscreen");
+        //Is not allowed, only when the user performs a specific action.
+        //this.requestFullScreen();
+    }
 }
 
 function setupPlayer(player)
@@ -51,8 +65,14 @@ function setup()
 {
     var videoElements = document.getElementsByTagName("video");
     _V_.options.flash.swf = flashPlayer;
-
+    _V_.options.flash.iFrameMode = true;
+    
     initPlayer(0, videoElements);
 }
 
-setTimeout(setup, timeout);
+
+var loader = new Loader();
+window.onload = loader.loadScript(os,
+                    loader.loadScript(videojsJS,
+                        loader.loadLink(videojsCSS, linkRel, linkType, linkMedia, setup)));
+

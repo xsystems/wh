@@ -38,7 +38,7 @@ class VideoGalleryElement implements ITemplateElement, ITemplateAttributes
 		$content->setAttribute("class", "content");
 		$page->setAttribute("class", "galleryPage justify-all-lines");	
 		$script->setAttribute("type", "text/javascript");
-		$script->setAttribute("src", Configuration::$ROOT_FOLDER."code/js/videojssetup.js");	
+		$script->setAttribute("src", Configuration::$ROOT_FOLDER."code/js/setup_videojs.js");	
 		
 		$pageNumber = 0;
 		$videoID = 0;

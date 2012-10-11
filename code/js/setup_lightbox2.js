@@ -8,9 +8,10 @@ var linkRel = 'stylesheet';
 var linkType = 'text/css';
 var linkMedia = 'screen';
 
-window.onload = loadScript(lightboxJS,
-                    loadScript(jqueryScrollJS,
-                        loadScript(jqueryUIJS,
-                            loadScript(jqueryJS,
-                                loadLink(lightboxCSS, linkRel, linkType, linkMedia, "")))));
+var loader = new Loader();
+window.onload = loader.loadScript(lightboxJS,
+                    loader.loadScript(jqueryScrollJS,
+                        loader.loadScript(jqueryUIJS,
+                            loader.loadScript(jqueryJS,
+                                loader.loadLink(lightboxCSS, linkRel, linkType, linkMedia, "")))));
 

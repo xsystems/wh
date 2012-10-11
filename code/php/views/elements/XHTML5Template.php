@@ -7,17 +7,17 @@ class XHTML5Template implements ITemplate, ITemplateAttributes
 {
 	private $title;
 	private $iconURL;
-	private $stylesheetURL;
-	private $scriptURL;
+	private $stylesheetURLs;
+	private $scriptURLs;
 	
 	private $domDocument;
 	
-	public function __construct($title = null, $iconURL = null, $stylesheetURL = null, $scriptURL = null)
+	public function __construct($title = null, $iconURL = null, $stylesheetURLs = null, $scriptURLs = null)
 	{
 		$this->title = $title;
 		$this->iconURL = $iconURL;
-		$this->stylesheetURL = $stylesheetURL;
-		$this->scriptURL = $scriptURL;
+		$this->stylesheetURLs = $stylesheetURLs;
+		$this->scriptURLs = $scriptURLs;
 	}
 	
 	public function init()
@@ -36,33 +36,44 @@ class XHTML5Template implements ITemplate, ITemplateAttributes
 		$htmlElement = $this->domDocument->createElementNS(self::namespaceURI, "html");
 		$headElement = $this->domDocument->createElementNS(self::namespaceURI, "head");
 		$titleElement = $this->domDocument->createElementNS(self::namespaceURI,"title");
-		$cssLinkElement = $this->domDocument->createElementNS(self::namespaceURI,"link");
 		$iconLinkElement = $this->domDocument->createElementNS(self::namespaceURI,"link");
-		$scriptElement = $this->domDocument->createElementNS(self::namespaceURI, "script");
 		$bodyElement = $this->domDocument->createElementNS(self::namespaceURI,"body");
 		$mainElement = $this->domDocument->createElementNS(self::namespaceURI,"div");
 		$title = $this->domDocument->createTextNode($this->title);
 
 		$mainElement->setAttribute("id", "main");
 		$mainElement->setIdAttribute("id", true);
-		$cssLinkElement->setAttribute("rel", "stylesheet");
-		$cssLinkElement->setAttribute("type", "text/css");
-		$cssLinkElement->setAttribute("href", $this->stylesheetURL);
 		$iconLinkElement->setAttribute("rel", "shortcut icon");
 		$iconLinkElement->setAttribute("href", $this->iconURL);
-        $scriptElement->setAttribute("type", "text/javascript");
-		$scriptElement->setAttribute("src", $this->scriptURL);
 
 		$titleElement->appendChild($title);
-		$this->domDocument->appendChild($htmlElement);
-		$htmlElement->appendChild($headElement);
-		$headElement->appendChild($cssLinkElement);
+
+
 		$headElement->appendChild($iconLinkElement);
-		$headElement->appendChild($scriptElement);
 		$headElement->appendChild($titleElement);
-		$scriptElement->appendChild($dummy_text);
+	    $bodyElement->appendChild($mainElement);
+	    $htmlElement->appendChild($headElement);
 		$htmlElement->appendChild($bodyElement);
-		$bodyElement->appendChild($mainElement);
+		$this->domDocument->appendChild($htmlElement);
+		
+		foreach($this->stylesheetURLs as $stylesheetURL)
+		{
+	        $cssLinkElement = $this->domDocument->createElementNS(self::namespaceURI,"link");
+		    $cssLinkElement->setAttribute("rel", "stylesheet");
+		    $cssLinkElement->setAttribute("type", "text/css");
+		    $cssLinkElement->setAttribute("href", $stylesheetURL);
+		    $headElement->appendChild($cssLinkElement);
+		}
+		
+		foreach($this->scriptURLs as $scriptURL)
+		{
+			$scriptElement = $this->domDocument->createElementNS(self::namespaceURI, "script");
+		    $scriptElement->setAttribute("type", "text/javascript");
+		    $scriptElement->setAttribute("src", $scriptURL);
+        	$scriptElement->appendChild($dummy_text->cloneNode());
+        	$headElement->appendChild($scriptElement);
+		}
+
 	}
 	
 	public function add( $iTemplateElement )

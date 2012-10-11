@@ -11,12 +11,12 @@ class DeWindhappersTemplate extends XHTML5Template implements ITemplate, ITempla
 {
 	private $title = "De Windhappers";
 	private $iconURL = "/content/dewindhapperslogo.ico";
-	private $stylesheetURL = "/style/style.css";
-	private $scriptURL = "/code/js/load.js";
+	private $stylesheetURLs = array("/style/style.css");
+	private $scriptURLs = array("/code/js/inheritance.js", "/code/js/load.js", "/code/js/setup.js");
 
 	public function __construct()
 	{
-		parent::__construct($this->title, $this->iconURL, $this->stylesheetURL, $this->scriptURL);
+		parent::__construct($this->title, $this->iconURL, $this->stylesheetURLs, $this->scriptURLs);
 	}
 	
 	public function init()

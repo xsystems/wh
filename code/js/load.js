@@ -1,35 +1,52 @@
-function loadLink(url, rel, type, media, callback)
+function Loader()
 {
-    // adding the script tag to the head as suggested before
-    var head = document.getElementsByTagName('head')[0];
-    var link = document.createElement('link');
-    link.rel= rel;
-    link.type = type;
-    link.href = url;
-    link.media = media;
+    var scriptType = "text/javascript";
+    
+    var load = function( element )
+    {
+        // adding the script tag to the head
+        var head = document.getElementsByTagName('head')[0];
+        // fire the loading
+        head.appendChild(element);
+    };
 
-    // then bind the event to the callback function
-    // there are several events for cross browser compatibility
-    link.onreadystatechange = callback;
-    link.onload = callback;
+    this.loadLink = function(url, rel, type, media, callback)
+    {
+        var link = document.createElement('link');
+        link.rel= rel;
+        link.type = type;
+        link.href = url;
+        link.media = media;
 
-    // fire the loading
-    head.appendChild(link);
+        // then bind the event to the callback function
+        // there are several events for cross browser compatibility
+        link.onreadystatechange = callback;
+        link.onload = callback;
+
+        load(link);
+    };
+    
+    this.loadScript = function(url, callback)
+    {
+        var script = document.createElement('script');
+        script.type = scriptType;
+        script.src = url;
+
+        // then bind the event to the callback function
+        // there are several events for cross browser compatibility
+        script.onreadystatechange = callback;
+        script.onload = callback;
+
+        load(script);
+    };
+
+    this.loadGoogleAPI = function(url, callback)
+    {
+        var script = document.createElement('script');
+        script.type = scriptType;
+        script.src = url+"&callback="+callback.name;
+
+        load(script);
+    };
 }
 
-function loadScript(url, callback)
-{
-    // adding the script tag to the head as suggested before
-    var head = document.getElementsByTagName('head')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = url;
-
-    // then bind the event to the callback function
-    // there are several events for cross browser compatibility
-    script.onreadystatechange = callback;
-    script.onload = callback;
-
-    // fire the loading
-    head.appendChild(script);
-}

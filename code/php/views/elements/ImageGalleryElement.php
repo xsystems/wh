@@ -36,7 +36,7 @@ class ImageGalleryElement implements ITemplateElement, ITemplateAttributes
 		$content->setAttribute("class", "content");
 		$page->setAttribute("class", "galleryPage justify-all-lines");	
 		$script->setAttribute("type", "text/javascript");
-		$script->setAttribute("src", Configuration::$ROOT_FOLDER."code/js/lightbox2setup.js");	
+		$script->setAttribute("src", Configuration::$ROOT_FOLDER."code/js/setup_lightbox2.js");	
 		
 		$pageNumber = 0;
 		$sg = new SimpleImageGallery($this->imagesPerPage, $this->imageDirPath);    	
