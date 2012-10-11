@@ -25,13 +25,19 @@ function OS()
         return navigator.userAgent.match(/MeeGo/i) ? true : false;
     };
     
+    var isMaemo = function()
+    {
+        return navigator.userAgent.match(/Maemo/i) ? true : false;
+    };
+    
     this.isMobile = function()
     {
         return (isAndroid() ||
                     isBlackBerry() ||
                         isIOS() ||
                             isWindows() ||
-                                isMeeGo());
+                                isMeeGo() ||
+                                    isMaemo());
     };
 }
 
