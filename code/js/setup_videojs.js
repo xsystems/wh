@@ -11,7 +11,7 @@ var aspectRatio = 9/16; //aspect ratio
 var flashPlayer = "/lib/video-js/bin/video-js.swf";
 var options = {"controls": true, "preload": "metadata", "width": "100%"};
 
-var timeout = 1000; //ms
+var timeout = 2000; //ms
 
 /* Does not work yet ... */
 function resizePlayer()
@@ -75,5 +75,6 @@ function setup()
 var loader = new Loader();
 window.onload = loader.loadScript(os,
                     loader.loadScript(videojsJS,
-                        loader.loadLink(videojsCSS, linkRel, linkType, linkMedia, setTimeout(setup, timeout))));
+                        loader.loadLink(videojsCSS, linkRel, linkType, linkMedia, 
+                            setTimeout(setup, timeout)))); // Allow _V_ object to load ...
 
