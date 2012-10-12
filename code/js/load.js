@@ -20,7 +20,7 @@ function Loader()
 
         // then bind the event to the callback function
         // there are several events for cross browser compatibility
-        link.onreadystatechange = callback;
+        //link.onreadystatechange = callback;
         link.onload = callback;
 
         load(link);
@@ -34,7 +34,7 @@ function Loader()
 
         // then bind the event to the callback function
         // there are several events for cross browser compatibility
-        script.onreadystatechange = callback;
+        //script.onreadystatechange = callback;
         script.onload = callback;
 
         load(script);
