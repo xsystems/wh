@@ -24,9 +24,9 @@ require_once("SimpleImage.php");
 
 class SimpleImageGallery extends ASimpleGallery
 {	
-	public function __construct($imagesPerPage, $imageDirPath, $thumbnailDirPath=null)
+	public function __construct($imagesPerPage, $imageDirURL, $imageDirPath, $thumbnailDirURL=null, $thumbnailDirPath=null)
 	{
-		parent::__construct($imagesPerPage, $imageDirPath, $thumbnailDirPath);
+		parent::__construct($imagesPerPage, $imageDirURL, $imageDirPath, $thumbnailDirURL, $thumbnailDirPath);
 	}
 	
 	public function createThumbnail($file, $thumbnailDirPath)

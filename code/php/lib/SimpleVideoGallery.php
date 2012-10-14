@@ -25,10 +25,10 @@ class SimpleVideoGallery extends ASimpleGallery
 {	
 	private $screenshortSecond;
 
-	public function __construct($videosPerPage, $screenshortSecond, $videoDirPath, $thumbnailDirPath=null)
+	public function __construct($videosPerPage, $screenshortSecond, $videoDirURL, $videoDirPath, $thumbnailDirURL=null, $thumbnailDirPath=null)
 	{
 		$this->screenshortSecond = $screenshortSecond;
-		parent::__construct($videosPerPage, $videoDirPath, $thumbnailDirPath);
+		parent::__construct($videosPerPage, $videoDirURL, $videoDirPath, $thumbnailDirURL, $thumbnailDirPath);
 	}
 	
 	public function createThumbnail($file, $thumbnailDirPath)

@@ -2,7 +2,6 @@
 
 require_once("ITemplateElement.php");
 require_once("ITemplateAttributes.php");
-require_once("../configuration/configuration.php");
 
 class LocationElement implements ITemplateElement, ITemplateAttributes
 {	
@@ -37,7 +36,7 @@ class LocationElement implements ITemplateElement, ITemplateAttributes
 		$map->setAttribute("id", "map_canvas");
 		$map->setIdAttribute("id", true);
 		$script->setAttribute("type", "text/javascript");
-		$script->setAttribute("src", Configuration::$ROOT_FOLDER."code/js/setup_map.js");
+		$script->setAttribute("src", "/code/js/setup_map.js");
 		
 		$addressFragment->appendXML("<p class='namespace_container' xmlns='http://www.w3.org/1999/xhtml'>$address</p>");
 		$h1->appendChild($title1);

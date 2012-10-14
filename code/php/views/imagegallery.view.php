@@ -15,7 +15,8 @@ class ImageGalleryView
 
 		if ( isset($gallery) && !empty($gallery) )
 		{
-			$wh->add( new ImageGalleryElement("contentarea", -1, "../../../media/images/".$gallery."/") );
+    		$imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/images/".$gallery."/";
+			$wh->add( new ImageGalleryElement("contentarea", -1, $imageDirURL, "../../../media/images/".$gallery."/") );
 		}
 		
 		$domDocument = $wh->create();

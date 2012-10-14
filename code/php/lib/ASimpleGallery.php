@@ -24,20 +24,25 @@ abstract class ASimpleGallery
 	private $itemsPerPage;
 	private $mediaDirPath;
 	private $thumbnailDirPath;
+	private $mediaDirURL;
+	private $thumbnailDirURL;
 	
-	public function __construct($itemsPerPage, $mediaDirPath, $thumbnailDirPath=null)
+	public function __construct($itemsPerPage, $mediaDirURL, $mediaDirPath, $thumbnailDirURL=null, $thumbnailDirPath=null)
 	{
-		$this->itemsPerPage = $itemsPerPage;				
+		$this->itemsPerPage = $itemsPerPage;	
 		
 		if( is_dir($mediaDirPath) )
 		{
 			if($thumbnailDirPath == null)
 			{
 				$thumbnailDirPath = $mediaDirPath.".thumbnails/";
+				$thumbnailDirURL = $mediaDirURL.".thumbnails/";
 			}
 		
 			$this->mediaDirPath = $mediaDirPath;
+			$this->mediaDirURL = $mediaDirURL;	
 			$this->thumbnailDirPath = $thumbnailDirPath;
+			$this->thumbnailDirURL = $thumbnailDirURL;
 			
 			if( !file_exists($this->thumbnailDirPath) )
 			{
@@ -188,7 +193,7 @@ abstract class ASimpleGallery
 				
 			for($i=$startIndex; $i<=$endIndex; $i++)
 			{				
-				$page[] = array("media" => $this->mediaDirPath.$media[$i], "thumbnail" => $this->thumbnailDirPath.$thumbnails[$i]);
+				$page[] = array("media" => $this->mediaDirURL.$media[$i], "thumbnail" => $this->thumbnailDirURL.$thumbnails[$i]);
 			}
 		}
 		

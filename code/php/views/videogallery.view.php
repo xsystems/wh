@@ -15,7 +15,8 @@ class VideoGalleryView
 		
 		if ( isset($gallery) && !empty($gallery) )
 		{
-			$wh->add( new VideoGalleryElement("contentarea", -1, 5, "../../../media/videos/".$gallery."/") );
+		    $videoDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/videos/".$gallery."/";
+			$wh->add( new VideoGalleryElement("contentarea", -1, 5, $videoDirURL, "../../../media/videos/".$gallery."/") );
 		}		
 
 		$domDocument = $wh->create();

@@ -3,20 +3,23 @@
 require_once("ITemplateElement.php");
 require_once("ITemplateAttributes.php");
 require_once("../lib/SimpleImageGallery.php");
-require_once("../configuration/configuration.php");
 
 class ImageGalleryElement implements ITemplateElement, ITemplateAttributes
 {
 	private $rootElementClass;
 	private $imagesPerPage;
+	private $imageDirURL;
 	private $imageDirPath;
+	private $thumbnailDirURL;
 	private $thumbnailDirPath;
 	
-	public function __construct($rootElementClass, $imagesPerPage, $imageDirPath, $thumbnailDirPath=null)
+	public function __construct($rootElementClass, $imagesPerPage, $imageDirURL, $imageDirPath, $thumbnailDirURL=null, $thumbnailDirPath=null)
 	{
 		$this->rootElementClass = $rootElementClass;
 		$this->imagesPerPage = $imagesPerPage;
+		$this->imageDirURL = $imageDirURL;
 		$this->imageDirPath = $imageDirPath;
+		$this->thumbnailDirURL = $thumbnailDirURL;
 		$this->thumbnailDirPath = $thumbnailDirPath;
 	}
 
@@ -36,10 +39,10 @@ class ImageGalleryElement implements ITemplateElement, ITemplateAttributes
 		$content->setAttribute("class", "content");
 		$page->setAttribute("class", "galleryPage justify-all-lines");	
 		$script->setAttribute("type", "text/javascript");
-		$script->setAttribute("src", Configuration::$ROOT_FOLDER."code/js/setup_lightbox2.js");	
+		$script->setAttribute("src", "/code/js/setup_lightbox2.js");	
 		
 		$pageNumber = 0;
-		$sg = new SimpleImageGallery($this->imagesPerPage, $this->imageDirPath);    	
+		$sg = new SimpleImageGallery($this->imagesPerPage, $this->imageDirURL, $this->imageDirPath, $this->thumbnailDirURL, $this->thumbnailDirPath);    	
 	    	foreach ($sg->generatePage($pageNumber) as $pageItem)
 	    	{
 	    		$imageInfo = pathinfo($pageItem["media"]);

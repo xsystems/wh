@@ -3,22 +3,23 @@
 require_once("ITemplateElement.php");
 require_once("ITemplateAttributes.php");
 require_once("../lib/SimpleVideoGallery.php");
-require_once("../configuration/configuration.php");
 
 class VideoGalleryElement implements ITemplateElement, ITemplateAttributes
 {
 	private $rootElementClass;
 	private $itemsPerPage;
 	private $screenshortSecond;
-	private $mediaDirPath;
+	private $videoDirURL;
+	private $videoDirPath;
 	private $thumbnailDirPath;
 	
-	public function __construct($rootElementClass, $itemsPerPage, $screenshortSecond, $mediaDirPath, $thumbnailDirPath=null) 
+	public function __construct($rootElementClass, $itemsPerPage, $screenshortSecond, $videoDirURL, $videoDirPath, $thumbnailDirPath=null) 
 	{
 		$this->rootElementClass = $rootElementClass;
 		$this->itemsPerPage = $itemsPerPage;
 		$this->screenshortSecond = $screenshortSecond;
-		$this->mediaDirPath = $mediaDirPath;
+		$this->videoDirURL = $videoDirURL;
+		$this->videoDirPath = $videoDirPath;
 		$this->thumbnailDirPath = $thumbnailDirPath;
 	}
 
@@ -38,11 +39,11 @@ class VideoGalleryElement implements ITemplateElement, ITemplateAttributes
 		$content->setAttribute("class", "content");
 		$page->setAttribute("class", "galleryPage justify-all-lines");	
 		$script->setAttribute("type", "text/javascript");
-		$script->setAttribute("src", Configuration::$ROOT_FOLDER."code/js/setup_videojs.js");	
+		$script->setAttribute("src", "/code/js/setup_videojs.js");	
 		
 		$pageNumber = 0;
 		$videoID = 0;
-		$sg = new SimpleVideoGallery($this->itemsPerPage, $this->screenshortSecond, $this->mediaDirPath);    	
+		$sg = new SimpleVideoGallery($this->itemsPerPage, $this->screenshortSecond, $this->videoDirURL, $this->videoDirPath);    	
 	    	foreach ($sg->generatePage($pageNumber) as $pageItem)
 	    	{
 	    		$path_info = pathinfo($pageItem["media"]);

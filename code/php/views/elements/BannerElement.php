@@ -14,7 +14,7 @@ class BannerElement implements ITemplateElement, ITemplateAttributes
 	public function __construct($rootElementClass) 
 	{
 		$this->rootElementClass = $rootElementClass;
-		$this->bannerImageURL = Configuration::$ROOT_FOLDER."content/dewindhapperslogo.gif";
+		$this->bannerImageURL = "/content/dewindhapperslogo.gif";
 	}
 
 	public function createTemplateElement()

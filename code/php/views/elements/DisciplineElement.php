@@ -46,7 +46,7 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 		
 		if($image_folder_location)
 		{
-			$images = scandir(Configuration::$ROOT.$image_folder_location);
+			$images = scandir(Configuration::$DOCUMENT_ROOT.$image_folder_location);
 		
 			foreach ($images as $image)
 			{
@@ -58,8 +58,8 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 					$img = $domDocument->createElementNS(self::namespaceURI, "img");
 					
 					$imageDiv->setAttribute("class", "img");
-					$a->setAttribute("href", Configuration::$ROOT_FOLDER.$image_folder_location.$image);
-					$img->setAttribute("src", Configuration::$ROOT_FOLDER.$image_folder_location.$image);
+					$a->setAttribute("href", $image_folder_location."/".$image);
+					$img->setAttribute("src", $image_folder_location."/".$image);
 					$img->setAttribute("alt", $image);
 					
 					$imageDiv->appendChild($a);

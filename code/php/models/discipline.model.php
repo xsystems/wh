@@ -4,12 +4,12 @@ require_once('../configuration/framework.php');
 class Discipline 
 {
 	private static  $db,
-			$dbh;
+                    $dbh;
 
 	public 	$id,
-		$name,
-		$description,
-		$image_folder_location;		
+            $name,
+            $description,
+            $image_folder_location;		
 			
 	public function __construct($id = null) 
 	{

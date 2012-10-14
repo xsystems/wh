@@ -6,15 +6,15 @@
 require_once("../configuration/configuration.php");
 Configuration::getInstance();
 
-require_once(Configuration::$ROOT."code/php/models/database.model.php");
-require_once(Configuration::$ROOT."code/php/models/discipline.model.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/models/database.model.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/models/discipline.model.php");
 
-require_once(Configuration::$ROOT."code/php/views/home.view.php");
-require_once(Configuration::$ROOT."code/php/views/discipline.view.php");
-require_once(Configuration::$ROOT."code/php/views/location.view.php");
-require_once(Configuration::$ROOT."code/php/views/calendar.view.php");
-require_once(Configuration::$ROOT."code/php/views/imagegallery.view.php");
-require_once(Configuration::$ROOT."code/php/views/videogallery.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/home.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/discipline.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/location.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/calendar.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/imagegallery.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/videogallery.view.php");
 
 /** Setup database connection **/
 try
