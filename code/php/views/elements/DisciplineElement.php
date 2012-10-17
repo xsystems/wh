@@ -31,18 +31,16 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 		$disciplineElement = $domDocument->createElementNS(self::namespaceURI, "div");		
 		$content = $domDocument->createElementNS(self::namespaceURI, "div");		
 		$h1 = $domDocument->createElementNS(self::namespaceURI, "h1");
-		$p = $domDocument->createElementNS(self::namespaceURI, "p");
 		
 		$disciplineElement->setAttribute("class", $this->rootElementClass);
 		$content->setAttribute("class", "content");		
 
 		$descriptionFragment = $domDocument->createDocumentFragment();
-		$descriptionFragment->appendXML("<span class='namespace_container' xmlns='http://www.w3.org/1999/xhtml'>$description</span>");
+		$descriptionFragment->appendXML("<p class='namespace_container' xmlns='http://www.w3.org/1999/xhtml'>$description</p>");
 			
 		$h1->appendChild($domDocument->createTextNode($discipline->name));
-		$p->appendChild($descriptionFragment);
 		$content->appendChild($h1);
-		$content->appendChild($p);
+		$content->appendChild($descriptionFragment);
 		
 		if($image_folder_location)
 		{
