@@ -35,6 +35,18 @@
 				VideoGalleryView::write("");
 			}
 			break;
+		case 'vertel':
+			VertelView::write();
+			break;
+		case 'boodschap':
+			BoodschapView::write();
+			break;
+		case 'costs':
+			CostsView::write();
+			break;	
+		case 'organisation':
+			OrganisationView::write();
+			break;						
 		default:
 			HomeView::write();
 			break;

@@ -100,6 +100,37 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		
 		$menu->appendChild($mediaMenuItem);
 		
+	    // Vertel menuitem
+		$vertelMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
+		$vertelLink = $domDocument->createElementNS(self::namespaceURI, "a");
+		$vertelLink->setAttribute("href", "#");
+		$vertelLink->appendChild($domDocument->createTextNode("Vertel"));
+		
+		// Vertel submenu
+		$vertelSubMenu = $domDocument->createElementNS(self::namespaceURI, "ul");
+		
+		// Read submenuitem
+		$readSubMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
+		$readLink = $domDocument->createElementNS(self::namespaceURI, "a");
+		$readLink->setAttribute("href", "../controllers/view.controller.php?action=vertel");
+		$readLink->appendChild($domDocument->createTextNode("Lees Berichten"));
+		$readSubMenuItem->appendChild($readLink);
+		
+		// Write submenuitem
+		$writeSubMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
+		$writeLink = $domDocument->createElementNS(self::namespaceURI, "a");
+		$writeLink->setAttribute("href", "../controllers/view.controller.php?action=boodschap");
+		$writeLink->appendChild($domDocument->createTextNode("Schrijf Berichten"));
+		$writeSubMenuItem->appendChild($writeLink);	
+			
+		$vertelSubMenu->appendChild($readSubMenuItem);
+		$vertelSubMenu->appendChild($writeSubMenuItem);	
+			
+		$vertelMenuItem->appendChild($vertelLink);
+		$vertelMenuItem->appendChild($vertelSubMenu);
+		
+		$menu->appendChild($vertelMenuItem);
+		
 		// Right menu items below here, in reversed order.
 		
 		// Login menuitem
@@ -125,7 +156,7 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		// Organisation submenuitem
 		$organisationSubMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
 		$organisationLink = $domDocument->createElementNS(self::namespaceURI, "a");
-		$organisationLink->setAttribute("href", "#");
+		$organisationLink->setAttribute("href", "../controllers/view.controller.php?action=organisation");
 		$organisationLink->appendChild($domDocument->createTextNode("Organisatie"));
 		$organisationSubMenuItem->appendChild($organisationLink);
 		
@@ -139,7 +170,7 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		// Costs submenuitem
 		$costsSubMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
 		$costsLink = $domDocument->createElementNS(self::namespaceURI, "a");
-		$costsLink->setAttribute("href", "#");
+		$costsLink->setAttribute("href", "../controllers/view.controller.php?action=costs");
 		$costsLink->appendChild($domDocument->createTextNode("Kosten"));
 		$costsSubMenuItem->appendChild($costsLink);
 		

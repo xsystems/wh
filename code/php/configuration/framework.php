@@ -15,6 +15,10 @@ require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/location.view.php");
 require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/calendar.view.php");
 require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/imagegallery.view.php");
 require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/videogallery.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/vertel.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/boodschap.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/costs.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/organisation.view.php");
 
 /** Setup database connection **/
 try
