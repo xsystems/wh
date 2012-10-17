@@ -4,7 +4,6 @@ var linkRel = 'stylesheet';
 var linkType = 'text/css';
 var linkMedia = 'screen';
 
-//var proxyURL = "http://wh.xsystems.org/lib/proxy.php";
 var proxyURL = "/lib/proxy.php";
 var vertelURL = "http://www.windhappers.nl/vertel.php";
 
