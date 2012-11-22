@@ -2,7 +2,6 @@
 	require('../configuration/framework.php');	
 
 	switch($_GET['action']){
-
 		case 'home':
 			HomeView::write();
 			break;
@@ -15,25 +14,42 @@
 		case 'location':
 			LocationView::write();
 			break;
-		case 'image':
-			if (isset($_GET['gallery']))
-			{
-				ImageGalleryView::write($_GET['gallery']);
-			}
-			else
-			{
-				ImageGalleryView::write("");
-			}
-			break;
-		case 'video':
-			if (isset($_GET['gallery']))
-			{
-				VideoGalleryView::write($_GET['gallery']);
-			}
-			else
-			{
-				VideoGalleryView::write("");
-			}
+		case 'gallery':
+		    switch($_GET['type']){
+		        case 'image':
+        			if (isset($_GET['gallery']))
+			        {
+				        ImageGalleryView::write($_GET['gallery']);
+			        }
+			        else
+			        {
+				        ImageGalleryView::write("");
+			        }
+		            break;
+		        case 'video':
+        			if (isset($_GET['gallery']))
+			        {
+				        VideoGalleryView::write($_GET['gallery']);
+			        }
+			        else
+			        {
+				        VideoGalleryView::write("");
+			        }
+		            break;
+		        case 'clubmagazine':
+        			if (isset($_GET['gallery']))
+			        {
+				        ClubMagazineGalleryView::write($_GET['gallery']);
+			        }
+			        else
+			        {
+				        ClubMagazineGalleryView::write("");
+			        }
+		            break;
+		        default:
+		            HomeView::write();
+		            break;		      
+		    }
 			break;
 		case 'vertel':
 			VertelView::write();
@@ -46,7 +62,10 @@
 			break;	
 		case 'organisation':
 			OrganisationView::write();
-			break;						
+			break;		
+	    case 'iframe':
+			IFrameView::write($_GET['url']);
+			break;				
 		default:
 			HomeView::write();
 			break;

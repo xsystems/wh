@@ -5,24 +5,27 @@ require_once("ITemplateAttributes.php");
 
 class VertelElement implements ITemplateElement, ITemplateAttributes
 {	
+    private $domElement;
+
 	private $rootElementClass;
 
 	public function __construct($rootElementClass) 
 	{
 		$this->rootElementClass = $rootElementClass;
+		$this->init();
 	}
-
-	public function createTemplateElement()
-	{	
-		$domDocument = new DOMDocument("1.0", "utf-8");
+	
+	public function init()
+	{
+        $domDocument = new DOMDocument("1.0", "utf-8");
 		$domDocument->validateOnParse = self::validateOnParse;
 		
-		$vertelElement = $domDocument->createElementNS(self::namespaceURI, "div");		
+		$this->domElement = $domDocument->createElementNS(self::namespaceURI, "div");		
 		$content = $domDocument->createElementNS(self::namespaceURI, "div");			
 		$script = $domDocument->createElementNS(self::namespaceURI, "script");
 		$dummy_text = $domDocument->createTextNode(" ");		
 		
-		$vertelElement->setAttribute("class", $this->rootElementClass);
+		$this->domElement->setAttribute("class", $this->rootElementClass);
 		$content->setAttribute("class", "content");
 		$content->setAttribute("id", "vertel");		
 		$content->setIdAttribute("id", true);
@@ -30,10 +33,18 @@ class VertelElement implements ITemplateElement, ITemplateAttributes
 		$script->setAttribute("src", "/code/js/setup_vertel.js");		
 
 		$script->appendChild($dummy_text);
-		$vertelElement->appendChild($content);
-		$vertelElement->appendChild($script);
-		
-		return $vertelElement;
+		$this->domElement->appendChild($content);
+		$this->domElement->appendChild($script);
+	}
+	
+    public function add( $iTemplateElement )
+    {
+        // Stub
+    }	
+
+	public function create()
+	{	
+		return $this->domElement;
 	}
 }
 ?>

@@ -5,12 +5,12 @@ require_once("ITemplateAttributes.php");
 
 class XHTML5Template implements ITemplate, ITemplateAttributes
 {
+  	private $domDocument;
+  	
 	private $title;
 	private $iconURL;
 	private $stylesheetURLs;
 	private $scriptURLs;
-	
-	private $domDocument;
 	
 	public function __construct($title = null, $iconURL = null, $stylesheetURLs = null, $scriptURLs = null)
 	{
@@ -18,6 +18,7 @@ class XHTML5Template implements ITemplate, ITemplateAttributes
 		$this->iconURL = $iconURL;
 		$this->stylesheetURLs = $stylesheetURLs;
 		$this->scriptURLs = $scriptURLs;
+		$this->init();
 	}
 	
 	public function init()
@@ -73,13 +74,12 @@ class XHTML5Template implements ITemplate, ITemplateAttributes
         	$scriptElement->appendChild($dummy_text->cloneNode());
         	$headElement->appendChild($scriptElement);
 		}
-
 	}
 	
 	public function add( $iTemplateElement )
 	{
-		$templateElement = $this->domDocument->importNode($iTemplateElement->createTemplateElement(), true);
-		$this->domDocument->getElementById("main")->appendChild($templateElement);
+		$template = $this->domDocument->importNode($iTemplateElement->create(), true);
+		$this->domDocument->getElementById("main")->appendChild($template);
 	}
 
 	public function create()

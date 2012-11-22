@@ -20,9 +20,8 @@ class DeWindhappersTemplate extends XHTML5Template implements ITemplate, ITempla
 	}
 	
 	public function init()
-	{
-		parent::init();
-		
+	{		
+	    parent::init();
 		$this->add( new BannerElement("contentarea") );
 		$this->add( new MenuElement("nav contentarea") );
 	}

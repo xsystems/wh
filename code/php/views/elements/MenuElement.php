@@ -5,23 +5,26 @@ require_once("ITemplateAttributes.php");
 
 class MenuElement implements ITemplateElement, ITemplateAttributes
 {
+    private $domElement;
+
 	private $rootElementClass;
 
 	public function __construct($rootElementClass) 
 	{
 		$this->rootElementClass = $rootElementClass;
+		$this->init();
 	}
 
-	public function createTemplateElement()
+	public function init()
 	{
-		$domDocument = new DOMDocument("1.0", "utf-8");
+        $domDocument = new DOMDocument("1.0", "utf-8");
 		$domDocument->validateOnParse = self::validateOnParse;
 		
 		// Menu
-		$menu = $domDocument->createElementNS(self::namespaceURI, "ul");		
-		$menu->setAttribute("id", "menu");
-		$menu->setAttribute("class", $this->rootElementClass);
-		$menu->setIdAttribute("id", true);
+		$this->domElement = $domDocument->createElementNS(self::namespaceURI, "ul");		
+		$this->domElement->setAttribute("id", "menu");
+		$this->domElement->setAttribute("class", $this->rootElementClass);
+		$this->domElement->setIdAttribute("id", true);
 		
 		// Home menuitem
 		$homeMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
@@ -30,7 +33,7 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		$homeLink->appendChild($domDocument->createTextNode("Home"));
 		$homeMenuItem->appendChild($homeLink);
 		
-		$menu->appendChild($homeMenuItem);
+		$this->domElement->appendChild($homeMenuItem);
 		
 		// Calendar menuitem
 		$calendarMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
@@ -39,7 +42,7 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		$calendarLink->appendChild($domDocument->createTextNode("Kalender"));
 		$calendarMenuItem->appendChild($calendarLink);
 		
-		$menu->appendChild($calendarMenuItem);
+		$this->domElement->appendChild($calendarMenuItem);
 		
 		// Discipline menuitem
 		$disciplineMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
@@ -67,7 +70,7 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		$disciplineMenuItem->appendChild($disciplineLink);
 		$disciplineMenuItem->appendChild($disciplineSubMenu);
 		
-		$menu->appendChild($disciplineMenuItem);
+		$this->domElement->appendChild($disciplineMenuItem);
 		
 		// Media menuitem
 		$mediaMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
@@ -81,24 +84,32 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		// Images submenuitem
 		$imagesSubMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
 		$imagesLink = $domDocument->createElementNS(self::namespaceURI, "a");
-		$imagesLink->setAttribute("href", "../controllers/view.controller.php?action=image");
+		$imagesLink->setAttribute("href", "../controllers/view.controller.php?action=gallery&type=image");
 		$imagesLink->appendChild($domDocument->createTextNode("Foto's"));
 		$imagesSubMenuItem->appendChild($imagesLink);
 		
 		// Videos submenuitem
 		$videosSubMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
 		$videosLink = $domDocument->createElementNS(self::namespaceURI, "a");
-		$videosLink->setAttribute("href", "../controllers/view.controller.php?action=video");
+		$videosLink->setAttribute("href", "../controllers/view.controller.php?action=gallery&type=video");
 		$videosLink->appendChild($domDocument->createTextNode("Video's"));
-		$videosSubMenuItem->appendChild($videosLink);	
+		$videosSubMenuItem->appendChild($videosLink);
+		
+		// Videos submenuitem
+		$clubmagazineSubMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
+		$clubmagazineLink = $domDocument->createElementNS(self::namespaceURI, "a");
+		$clubmagazineLink->setAttribute("href", "../controllers/view.controller.php?action=gallery&type=clubmagazine");
+		$clubmagazineLink->appendChild($domDocument->createTextNode("Clubblad"));
+		$clubmagazineSubMenuItem->appendChild($clubmagazineLink);	
 			
 		$mediaSubMenu->appendChild($imagesSubMenuItem);
 		$mediaSubMenu->appendChild($videosSubMenuItem);	
+		$mediaSubMenu->appendChild($clubmagazineSubMenuItem);			
 			
 		$mediaMenuItem->appendChild($mediaLink);
 		$mediaMenuItem->appendChild($mediaSubMenu);
 		
-		$menu->appendChild($mediaMenuItem);
+		$this->domElement->appendChild($mediaMenuItem);
 		
 	    // Vertel menuitem
 		$vertelMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
@@ -129,7 +140,7 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		$vertelMenuItem->appendChild($vertelLink);
 		$vertelMenuItem->appendChild($vertelSubMenu);
 		
-		$menu->appendChild($vertelMenuItem);
+		$this->domElement->appendChild($vertelMenuItem);
 		
 		// Right menu items below here, in reversed order.
 		
@@ -141,7 +152,7 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		$loginLink->appendChild($domDocument->createTextNode("Login"));
 		$loginMenuItem->appendChild($loginLink);
 		
-		//$menu->appendChild($loginMenuItem);
+		//$this->domElement->appendChild($loginMenuItem);
 		
 		// Contact menuitem
 		$contactMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
@@ -189,9 +200,17 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		$contactMenuItem->appendChild($contactLink);
 		$contactMenuItem->appendChild($contactSubMenu);
 		
-		$menu->appendChild($contactMenuItem);
-				
-		return $menu;
+		$this->domElement->appendChild($contactMenuItem);
+	}
+	
+    public function add( $iTemplateElement )
+    {
+        // Stub
+    }
+
+	public function create()
+	{
+		return $this->domElement;
 	}
 }
 ?>

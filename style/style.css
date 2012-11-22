@@ -74,9 +74,12 @@ body
 
 #main
 {
-    width:60%;
+/*    width:60%;*/
+    width:1024px;
+    min-height:800px;
     margin-left:auto;
     margin-right:auto;
+/*    position:relative;*/
 }
 
 /*
@@ -216,6 +219,8 @@ form span
     color:black;
     background:#FFFF33;
     overflow:hidden;
+/*    position:absolute; */
+/*    bottom:-10;*/
 }
 
 #footer a
@@ -259,6 +264,27 @@ div.img img
 div.img a:hover img
 {
     border: 1px solid #000000;
+}
+
+#gallery_form
+{
+    width:100%;
+    display:inline-block;
+}
+
+#gallery_form select
+{
+    float:left;
+    border-width:1px;
+    border-style:ridge;
+    border-radius:4px;
+    font-size:100%;
+}
+
+#gallery_form input
+{
+    float:left;
+    margin-left:1em;
 }
 
 .galleryPage

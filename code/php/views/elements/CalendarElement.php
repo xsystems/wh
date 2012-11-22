@@ -5,16 +5,19 @@ require_once("ITemplateAttributes.php");
 
 class CalendarElement implements ITemplateElement, ITemplateAttributes
 {	
+    private $domElement;
+
 	private $rootElementClass;
 
 	public function __construct($rootElementClass) 
 	{
 		$this->rootElementClass = $rootElementClass;
+		$this->init();
 	}
 	
-	public function createTemplateElement()
+	public function init()
 	{
-		$domDocument = new DOMDocument("1.0", "utf-8");
+        $domDocument = new DOMDocument("1.0", "utf-8");
 		$domDocument->validateOnParse = self::validateOnParse;
 		
 		$calendarElement = $domDocument->createElementNS(self::namespaceURI, "div");
@@ -33,7 +36,17 @@ class CalendarElement implements ITemplateElement, ITemplateAttributes
 		$calendarElement->appendChild($content);				
 		$calendarElement->appendChild($domDocumentFragment);
 		
-		return $calendarElement;
+		$this->domElement = $calendarElement;
+	}
+	
+    public function add( $iTemplateElement )
+    {
+        // Stub
+    }	
+	
+	public function create()
+	{
+		return $this->domElement;
 	}
 }
 ?>

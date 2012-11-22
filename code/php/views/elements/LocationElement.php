@@ -5,19 +5,22 @@ require_once("ITemplateAttributes.php");
 
 class LocationElement implements ITemplateElement, ITemplateAttributes
 {	
+    private $domElement;
+
 	private $rootElementClass;
 
 	public function __construct($rootElementClass) 
 	{
 		$this->rootElementClass = $rootElementClass;
+		$this->init();
 	}
-
-	public function createTemplateElement()
-	{	
-		$domDocument = new DOMDocument("1.0", "utf-8");
+	
+    public function init()
+	{
+        $domDocument = new DOMDocument("1.0", "utf-8");
 		$domDocument->validateOnParse = self::validateOnParse;
 		
-		$locationElement = $domDocument->createElementNS(self::namespaceURI, "div");		
+		$this->domElement = $domDocument->createElementNS(self::namespaceURI, "div");		
 		$content = $domDocument->createElementNS(self::namespaceURI, "div");		
 		$h1 = $domDocument->createElementNS(self::namespaceURI, "h1");
 		$p = $domDocument->createElementNS(self::namespaceURI, "p");
@@ -31,7 +34,7 @@ class LocationElement implements ITemplateElement, ITemplateAttributes
 		$script_text = $domDocument->createTextNode(" ");
 		$address = nl2br("Nieuweweg 75 \n 2544NG Den Haag");
 		
-		$locationElement->setAttribute("class", $this->rootElementClass);
+		$this->domElement->setAttribute("class", $this->rootElementClass);
 		$content->setAttribute("class", "content");
 		$map->setAttribute("id", "map_canvas");
 		$map->setIdAttribute("id", true);
@@ -47,11 +50,19 @@ class LocationElement implements ITemplateElement, ITemplateAttributes
 		$content->appendChild($p);
 		$content->appendChild($h2);
 		$content->appendChild($addressFragment);
-		$locationElement->appendChild($content);
-		$locationElement->appendChild($map);
-		$locationElement->appendChild($script);
-		
-		return $locationElement;
+		$this->domElement->appendChild($content);
+		$this->domElement->appendChild($map);
+		$this->domElement->appendChild($script);
+	}
+	
+    public function add( $iTemplateElement )
+    {
+        // Stub
+    }
+
+	public function create()
+	{
+		return $this->domElement;
 	}
 }
 ?>

@@ -5,11 +5,9 @@ require_once("elements/DeWindhappersTemplate.php");
 require_once("elements/HomeElement.php");
 
 //$xhtml = new XHTML5Template("Title", "/wh/images/dewindhapperslogo.ico", "/wh/style/style.css");
-//$xhtml->init();
 //$domDocument = $xhtml->create();
 
 $wh = new DeWindhappersTemplate();
-$wh->init();
 $wh->add(new HomeElement("contentarea"));
 $domDocument = $wh->create();
 

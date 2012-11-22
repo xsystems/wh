@@ -8,7 +8,6 @@ class CostsView
 	public static function write()
 	{	
 		$wh = new DeWindhappersTemplate();
-		$wh->init();
 		$wh->add( new CostsElement("contentarea") );
 		$domDocument = $wh->create();
 		

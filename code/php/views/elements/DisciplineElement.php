@@ -7,6 +7,8 @@ require_once("../configuration/configuration.php");
 
 class DisciplineElement implements ITemplateElement, ITemplateAttributes
 {
+    private $domElement;
+
 	private $rootElementClass;
 	private $name;
 	
@@ -14,9 +16,10 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 	{
 		$this->rootElementClass = $rootElementClass;
 		$this->name = $name;
+		$this->init();
 	}
 
-	public function createTemplateElement()
+	public function init()
 	{
 		$discipline = Discipline::getByName($this->name);
 		
@@ -28,11 +31,11 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 		$domDocument = new DOMDocument("1.0", "utf-8");
 		$domDocument->validateOnParse = self::validateOnParse;
 		
-		$disciplineElement = $domDocument->createElementNS(self::namespaceURI, "div");		
+		$this->domElement = $domDocument->createElementNS(self::namespaceURI, "div");		
 		$content = $domDocument->createElementNS(self::namespaceURI, "div");		
 		$h1 = $domDocument->createElementNS(self::namespaceURI, "h1");
 		
-		$disciplineElement->setAttribute("class", $this->rootElementClass);
+		$this->domElement->setAttribute("class", $this->rootElementClass);
 		$content->setAttribute("class", "content");		
 
 		$descriptionFragment = $domDocument->createDocumentFragment();
@@ -67,9 +70,17 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 			}
 		}
 			
-		$disciplineElement->appendChild($content);	
-		
-		return $disciplineElement;
+		$this->domElement->appendChild($content);	
+	}
+	
+    public function add( $iTemplateElement )
+    {
+        // Stub
+    }
+
+	public function create()
+	{		
+		return $this->domElement;
 	}
 }
 ?>

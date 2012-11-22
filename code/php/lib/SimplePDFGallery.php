@@ -1,13 +1,12 @@
 <?php
 
 require_once("ASimpleGallery.php");
-require_once("SimpleImage.php");
 
 /*
-* File: SimpleImageGallery.php
+* File: SimplePDFGallery.php
 * Author: Koen Boes
 * Copyright: 2012 Koen Boes
-* Date: 2012-04-24
+* Date: 2012-11-21
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public License
@@ -22,11 +21,11 @@ require_once("SimpleImage.php");
 *
 */
 
-class SimpleImageGallery extends ASimpleGallery
+class SimplePDFGallery extends ASimpleGallery
 {	
-	public function __construct($imagesPerPage, $imageDirURL, $imageDirPath, $thumbnailDirURL=null, $thumbnailDirPath=null)
+	public function __construct($pdfsPerPage, $pdfDirURL, $pdfDirPath, $thumbnailDirURL=null, $thumbnailDirPath=null)
 	{
-		parent::__construct($imagesPerPage, $imageDirURL, $imageDirPath, $thumbnailDirURL, $thumbnailDirPath);
+		parent::__construct($pdfsPerPage, $pdfDirURL, $pdfDirPath, $thumbnailDirURL, $thumbnailDirPath);
 	}
 	
 	public function createThumbnail($file, $thumbnailDirPath)
@@ -35,9 +34,11 @@ class SimpleImageGallery extends ASimpleGallery
 		{
 			$path_parts = pathinfo($file);
 		
-			$image = new SimpleImage($file);
-			$image->resize(480,270);
-			$image->save($thumbnailDirPath.$path_parts["basename"]);
+		    $im = new imagick($file."[0]");
+            $im->setImageFormat("jpg");
+            $im->writeImage($thumbnailDirPath.$path_parts["filename"].".jpg");
+            $im->clear();
+            $im->destroy();
 		}		
 	}
 }

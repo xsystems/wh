@@ -8,7 +8,6 @@ class DisciplineView
 	public static function write($name)
 	{
 		$wh = new DeWindhappersTemplate();
-		$wh->init();
 		$wh->add(new DisciplineElement("contentarea", $name));
 		$domDocument = $wh->create();
 

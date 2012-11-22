@@ -8,7 +8,6 @@ class LocationView
 	public static function write()
 	{	
 		$wh = new DeWindhappersTemplate();
-		$wh->init();
 		$wh->add( new LocationElement("contentarea") );
 		$domDocument = $wh->create();
 		

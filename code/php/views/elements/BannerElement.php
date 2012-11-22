@@ -6,6 +6,8 @@ require_once('../configuration/framework.php');
 
 class BannerElement implements ITemplateElement, ITemplateAttributes
 {	
+    private $domElement;
+
 	private $rootElementClass;
 	private $bannerImageURL;
 	private $bannerText = "Kanovereniging De Windhappers";
@@ -15,28 +17,37 @@ class BannerElement implements ITemplateElement, ITemplateAttributes
 	{
 		$this->rootElementClass = $rootElementClass;
 		$this->bannerImageURL = "/content/dewindhapperslogo.gif";
+		$this->init();
 	}
-
-	public function createTemplateElement()
+	
+	public function init()
 	{
 		$domDocument = new DOMDocument("1.0", "utf-8");
 		$domDocument->validateOnParse = self::validateOnParse;
 		
-		$bannerElement = $domDocument->createElementNS(self::namespaceURI, "div");
+		$this->domElement = $domDocument->createElementNS(self::namespaceURI, "div");
 		$img = $domDocument->createElementNS(self::namespaceURI, "img");
 		$p = $domDocument->createElementNS(self::namespaceURI, "p");
 		
-		$bannerElement->setAttribute("id", "banner");
-		$bannerElement->setIdAttribute("id", true);
-		$bannerElement->setAttribute("class", $this->rootElementClass);		
+		$this->domElement->setAttribute("id", "banner");
+		$this->domElement->setIdAttribute("id", true);
+		$this->domElement->setAttribute("class", $this->rootElementClass);		
 		$img->setAttribute("src", $this->bannerImageURL);
 		$img->setAttribute("alt", $this->bannerTextAlt);
 		
 		$p->appendChild($domDocument->createTextNode($this->bannerText));		
-		$bannerElement->appendChild($img);
-		$bannerElement->appendChild($p);
-		
-		return $bannerElement;
+		$this->domElement->appendChild($img);
+		$this->domElement->appendChild($p);
+	}
+	
+    public function add( $iTemplateElement )
+    {
+        // Stub
+    }
+
+	public function create()
+	{
+		return $this->domElement;
 	}
 }
 ?>
