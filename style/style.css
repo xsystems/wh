@@ -257,8 +257,10 @@ div.img img
 {
     display: inline;
     border: 1px solid transparent;
-    width:270px;
-    height:180px;
+    width:440px;
+    height:248px;
+    border-radius:20px;
+    overflow:hidden;
 }
 
 div.img a:hover img
