@@ -120,8 +120,8 @@ class OrganisationElement implements ITemplateElement, ITemplateAttributes
                                             <TR>
                                                <td>Telefoon in het botenhuis: 070-3660789 <br/>
                                                    Adres secretariaat: <br/>
-                                                   De Ruijterstraat 69 <br/>
-                                                   2518 AR Den Haag
+                                                   Hoornbruglaan 9<br/>
+                                                   2281 at Rijswijk<br/>                                                   
                                                  </td>
                                             </TR>
                                             </TABLE>  
