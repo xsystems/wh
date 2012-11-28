@@ -145,9 +145,9 @@ class OrganisationElement implements ITemplateElement, ITemplateAttributes
                                                 <td><a href='mailto:windhapperredactie@hotmail.com'>E-mail</a></td>
                                               </tr>
                                               <tr>
-                                                <td valign='top'>Website</td>
+                                                <td>Website</td>
                                                 <td>Koen Boes</td>
-                                                <td></td>
+                                                <td> </td>
                                                 <td> </td>
                                               </tr>
                                             </table>
