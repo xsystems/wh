@@ -36,11 +36,15 @@ class XHTML5Template implements ITemplate, ITemplateAttributes
         $dummy_text = $this->domDocument->createTextNode(" ");
 		$htmlElement = $this->domDocument->createElementNS(self::namespaceURI, "html");
 		$headElement = $this->domDocument->createElementNS(self::namespaceURI, "head");
+		$metaElement = $this->domDocument->createElement("meta");
 		$titleElement = $this->domDocument->createElementNS(self::namespaceURI,"title");
 		$iconLinkElement = $this->domDocument->createElementNS(self::namespaceURI,"link");
 		$bodyElement = $this->domDocument->createElementNS(self::namespaceURI,"body");
 		$mainElement = $this->domDocument->createElementNS(self::namespaceURI,"div");
 		$title = $this->domDocument->createTextNode($this->title);
+		
+        $metaElement->setAttribute('content', 'text/xhtml+xml; charset=utf-8');
+        $metaElement->setAttribute('http-equiv', 'Content-Type');
 
 		$mainElement->setAttribute("id", "main");
 		$mainElement->setIdAttribute("id", true);
@@ -49,7 +53,7 @@ class XHTML5Template implements ITemplate, ITemplateAttributes
 
 		$titleElement->appendChild($title);
 
-
+        $headElement->appendChild($metaElement);
 		$headElement->appendChild($iconLinkElement);
 		$headElement->appendChild($titleElement);
 	    $bodyElement->appendChild($mainElement);
