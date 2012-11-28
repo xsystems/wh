@@ -43,7 +43,7 @@ class XHTML5Template implements ITemplate, ITemplateAttributes
 		$mainElement = $this->domDocument->createElementNS(self::namespaceURI,"div");
 		$title = $this->domDocument->createTextNode($this->title);
 		
-        $metaElement->setAttribute('content', 'text/xhtml+xml; charset=utf-8');
+        $metaElement->setAttribute('content', 'application/xhtml+xml; charset=utf-8');
         $metaElement->setAttribute('http-equiv', 'Content-Type');
 
 		$mainElement->setAttribute("id", "main");
