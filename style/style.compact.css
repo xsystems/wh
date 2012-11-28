@@ -527,7 +527,8 @@ table th
 table th.alt
 {
     border-bottom-style:double;
-    border-bottom:3px solid black;
+    border-bottom-width:3px;
+    border-bottom-color:black;
 }
 
 table td
