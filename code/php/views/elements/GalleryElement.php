@@ -43,7 +43,7 @@ class GalleryElement implements ITemplateElement, ITemplateAttributes
     	$input_type = $this->domDocument->createElementNS(self::namespaceURI, "input");    	
 
 		$this->domElement->setAttribute("class", $this->rootElementClass);
-		$page->setAttribute("class", "galleryPage justify-all-lines");	
+		$page->setAttribute("class", "justify-all-lines");	
 		$page->setAttribute("id", $this->galleryPageId);		
 		$page->setIdAttribute("id", true);		
 		$form->setAttribute("action", "../controllers/view.controller.php");

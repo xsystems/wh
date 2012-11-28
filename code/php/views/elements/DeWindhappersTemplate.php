@@ -22,8 +22,8 @@ class DeWindhappersTemplate extends XHTML5Template implements ITemplate, ITempla
 	public function init()
 	{		
 	    parent::init();
-		$this->add( new BannerElement("contentarea") );
-		$this->add( new MenuElement("nav contentarea") );
+		$this->add( new BannerElement("") );
+		$this->add( new MenuElement("nav") );
 	}
 	
 	public function add( $iTemplateElement )
@@ -33,7 +33,7 @@ class DeWindhappersTemplate extends XHTML5Template implements ITemplate, ITempla
 
 	public function create()
 	{
-		$this->add( new FooterElement("contentarea") );
+		$this->add( new FooterElement("") );
 
 		return parent::create();
 	}

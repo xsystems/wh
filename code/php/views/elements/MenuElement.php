@@ -39,7 +39,7 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		$calendarMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
 		$calendarLink = $domDocument->createElementNS(self::namespaceURI, "a");
 		$calendarLink->setAttribute("href", "../controllers/view.controller.php?action=calendar");
-		$calendarLink->appendChild($domDocument->createTextNode("Kalender"));
+		$calendarLink->appendChild($domDocument->createTextNode("Activiteiten"));
 		$calendarMenuItem->appendChild($calendarLink);
 		
 		$this->domElement->appendChild($calendarMenuItem);
@@ -81,6 +81,13 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		// Media submenu
 		$mediaSubMenu = $domDocument->createElementNS(self::namespaceURI, "ul");
 		
+	    // Clubmagazine submenuitem
+		$clubmagazineSubMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
+		$clubmagazineLink = $domDocument->createElementNS(self::namespaceURI, "a");
+		$clubmagazineLink->setAttribute("href", "../controllers/view.controller.php?action=gallery&type=clubmagazine");
+		$clubmagazineLink->appendChild($domDocument->createTextNode("Clubblad"));
+		$clubmagazineSubMenuItem->appendChild($clubmagazineLink);	
+		
 		// Images submenuitem
 		$imagesSubMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
 		$imagesLink = $domDocument->createElementNS(self::namespaceURI, "a");
@@ -95,16 +102,9 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		$videosLink->appendChild($domDocument->createTextNode("Video's"));
 		$videosSubMenuItem->appendChild($videosLink);
 		
-		// Videos submenuitem
-		$clubmagazineSubMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
-		$clubmagazineLink = $domDocument->createElementNS(self::namespaceURI, "a");
-		$clubmagazineLink->setAttribute("href", "../controllers/view.controller.php?action=gallery&type=clubmagazine");
-		$clubmagazineLink->appendChild($domDocument->createTextNode("Clubblad"));
-		$clubmagazineSubMenuItem->appendChild($clubmagazineLink);	
-			
+		$mediaSubMenu->appendChild($clubmagazineSubMenuItem);			
 		$mediaSubMenu->appendChild($imagesSubMenuItem);
 		$mediaSubMenu->appendChild($videosSubMenuItem);	
-		$mediaSubMenu->appendChild($clubmagazineSubMenuItem);			
 			
 		$mediaMenuItem->appendChild($mediaLink);
 		$mediaMenuItem->appendChild($mediaSubMenu);

@@ -29,7 +29,7 @@ class CalendarElement implements ITemplateElement, ITemplateAttributes
 		$content->setAttribute("class", "content");		
 
 		$domDocumentFragment = $domDocument->createDocumentFragment();
-		$domDocumentFragment->appendXML( "<iframe id='calendar' class='box' xmlns='http://www.w3.org/1999/xhtml' src='https://www.google.com/calendar/embed?title=%20&amp;wkst=2&amp;hl=nl&amp;bgcolor=%23FFFFFF&amp;src=dewindhappers%40gmail.com&amp;color=%232952A3&amp;src=nl.dutch%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;ctz=Europe%2FAmsterdam'> Windhapper Calendar </iframe>" );	
+		$domDocumentFragment->appendXML( "<iframe id='calendar' class='' xmlns='http://www.w3.org/1999/xhtml' src='https://www.google.com/calendar/embed?title=%20&amp;wkst=2&amp;hl=nl&amp;bgcolor=%23FFFFFF&amp;src=dewindhappers%40gmail.com&amp;color=%232952A3&amp;src=nl.dutch%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;ctz=Europe%2FAmsterdam'> Windhapper Calendar </iframe>" );	
 		
 		$h1->appendChild($title);
 		$content->appendChild($h1);
