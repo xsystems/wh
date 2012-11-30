@@ -151,16 +151,11 @@ class OrganisationElement implements ITemplateElement, ITemplateAttributes
                                                 <td> </td>
                                               </tr>
                                             </table>
-                                            <br/>                                    
-                                            <table>
-                                                <tr>
-                                                   <td>Telefoon in het botenhuis: 070-3660789 <br/>
-                                                       Adres secretariaat: <br/>
-                                                       Hoornbruglaan 9 <br/>
-                                                       2281 at Rijswijk <br/>                                                   
-                                                     </td>
-                                                </tr>
-                                            </table>  
+
+                                            Telefoon in het botenhuis: 070-3660789 <br/>
+                                            Adres secretariaat: <br/>
+                                            Hoornbruglaan 9 <br/>
+                                            2281 at Rijswijk <br/> <br/>
                                           </div>" );	
 								
 		$this->domElement->appendChild($domDocumentFragment);

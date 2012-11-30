@@ -65,7 +65,10 @@
 			break;		
 	    case 'iframe':
 			IFrameView::write($_GET['url']);
-			break;				
+			break;
+		case 'meteorology':
+			MeteorologyView::write();
+			break;							
 		default:
 			HomeView::write();
 			break;

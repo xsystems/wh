@@ -201,6 +201,16 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		$contactMenuItem->appendChild($contactSubMenu);
 		
 		$this->domElement->appendChild($contactMenuItem);
+		
+	    // Meteorology menuitem
+		$meteorologyMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
+		$meteorologyMenuItem->setAttribute("class", "rightitem");
+		$meteorologyLink = $domDocument->createElementNS(self::namespaceURI, "a");
+		$meteorologyLink->setAttribute("href", "../controllers/view.controller.php?action=meteorology");
+		$meteorologyLink->appendChild($domDocument->createTextNode("Meteorologie"));
+		$meteorologyMenuItem->appendChild($meteorologyLink);
+		
+		$this->domElement->appendChild($meteorologyMenuItem);
 	}
 	
     public function add( $iTemplateElement )
