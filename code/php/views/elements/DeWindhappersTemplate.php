@@ -13,16 +13,22 @@ class DeWindhappersTemplate extends XHTML5Template implements ITemplate, ITempla
 	private $iconURL = "/content/dewindhapperslogo.ico";
 	private $stylesheetURLs = array("/style/style.css");
 	private $scriptURLs = array("/code/js/inheritance.js", "/code/js/load.js", "/code/js/setup.js");
+	private $bannerLogoURL = "/content/dewindhapperslogo.gif";
+	private $bannerImageURL = "/content/banner.jpg";
 
-	public function __construct()
+	public function __construct($bannerImageURL=null)
 	{
+	    if ($bannerImageURL != null)
+	    {
+	        $this->bannerImageURL = $bannerImageURL;
+	    }
 		parent::__construct($this->title, $this->iconURL, $this->stylesheetURLs, $this->scriptURLs);
 	}
 	
 	public function init()
 	{		
 	    parent::init();
-		$this->add( new BannerElement("") );
+		$this->add( new BannerElement("", $this->bannerLogoURL, $this->bannerImageURL) );
 		$this->add( new MenuElement("nav") );
 	}
 	

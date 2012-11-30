@@ -7,7 +7,19 @@ class DisciplineView
 {
 	public static function write($name)
 	{
-		$wh = new DeWindhappersTemplate();
+	    $bannerImageURL;
+	    switch ($name)
+	    {
+	        case 'zee varen': 
+	            $bannerImageURL = "/content/discipline/seafarers/banner.jpg";
+	            break;
+            default:
+                $bannerImageURL = null;
+                break;
+	    }
+	
+	
+		$wh = new DeWindhappersTemplate($bannerImageURL);
 		$wh->add(new DisciplineElement("contentarea", $name));
 		$domDocument = $wh->create();
 

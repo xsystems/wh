@@ -186,12 +186,13 @@ form#bdsch span
 #banner
 {
     color:black;
-    background:#66FF66;
+/*    background:#66FF66;*/
+    background:transparent;
     font:40px Tahoma;
     height:auto;
     display:table;
     width:100%;
-    margin-top:0.5em;
+    margin-top:0.2em;
     border-top-left-radius:40px;
     border-top-right-radius:40px;
 }
@@ -207,8 +208,8 @@ form#bdsch span
 {
     display:table-cell;
     margin:10px;
-    width:110px;
-    height:90px;
+    width:120px;
+    height:100px;
 }
 
 #footer
@@ -220,7 +221,7 @@ form#bdsch span
     width:100%;
     border-bottom-left-radius:40px;
     border-bottom-right-radius:40px;
-    margin-bottom:1em;
+    margin-bottom:0.5em;
 /*    position:absolute; */
 /*    bottom:-10;*/
 }
