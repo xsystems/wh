@@ -3,7 +3,7 @@
 interface ITemplate
 {
 	public function init();
-	public function add( $iTemplateElement );
+	public function add( $newElement, $targetElement = "main" );
     public function create();
 }
 

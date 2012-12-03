@@ -95,6 +95,7 @@ body
 .contentarea
 {
     width:100%;
+    overflow:hidden;
 }
 
 .content
@@ -141,13 +142,13 @@ body
     color:red;
 }
 
-form#bdsch
+#bdsch
 {
     margin-bottom:2em;
     padding-bottom:2em;
 }
 
-form#bdsch label
+#bdsch label
 {
     font-size:1.5em;
     margin-top:0.5em;
@@ -155,30 +156,30 @@ form#bdsch label
     text-transform:capitalize;
 }
 
-form#bdsch input[type=text]
+#bdsch input[type=text]
 {
     display:block;
     width:100%;
 }
 
-form#bdsch input[type=reset]
+#bdsch input[type=reset]
 {
     float:left;
 }
 
-form#bdsch input[type=submit]
+#bdsch input[type=submit]
 {
     float:right;
 }
 
-form#bdsch textarea
+#bdsch textarea
 {
     display:block;
     width:100%;
     height:18em;
 }
 
-form#bdsch span
+#bdsch span
 {
     color:red;
 }
@@ -186,30 +187,48 @@ form#bdsch span
 #banner
 {
     color:black;
-/*    background:#66FF66;*/
     background:transparent;
-    font:40px Tahoma;
-    height:auto;
-    display:table;
     width:100%;
+    height:10em;
     margin-top:0.2em;
     border-top-left-radius:40px;
     border-top-right-radius:40px;
+    overflow:hidden;
 }
 
-#banner p
+#banner>img
 {
-    display:table-cell;
-    vertical-align:middle;
+    float:left;
+    width:17%;
+    height:88%;
+}
+
+#banner>p
+{
     text-align:center;
+    float:right;
+    width:83%;
+    font:40px Tahoma;    
 }
 
-#banner img
+.media_logos
 {
-    display:table-cell;
-    margin:10px;
-    width:120px;
-    height:100px;
+    background-color:rgba(0,0,0,0.5);
+    float:left;
+    width:100%;
+    height:12%;
+}
+
+.media_logos a
+{
+    float:right;
+    height:100%;
+}
+
+.media_logos a img
+{
+    height:100%;
+    width:1.2em;
 }
 
 #footer
@@ -266,7 +285,7 @@ div.img a:hover img
     border: 1px solid #000000;
 }
 
-form#gallery_form
+#gallery_form
 {
     width:100%;
     display:inline-block;
@@ -274,7 +293,7 @@ form#gallery_form
     margin-bottom:1em;
 }
 
-form#gallery_form select
+#gallery_form select
 {
     float:left;
     border-width:1px;
@@ -284,7 +303,7 @@ form#gallery_form select
     width:88%;
 }
 
-form#gallery_form input
+#gallery_form input
 {
     float:right;
     width:10%;
@@ -323,7 +342,7 @@ form#gallery_form input
     width:100%;
 }
 
-iframe#calendar
+#calendar
 {
     width:100%;
     height:40em;
@@ -372,6 +391,21 @@ iframe#calendar
 {
     width:100%;
     height:100%;
+}
+
+.like_button_iframe
+{
+    float:right;
+    border:none;
+    overflow:hidden;
+    width:8%; 
+    height:21px;
+}
+
+.home_content
+{
+    float:left;
+    width:82%;
 }
 
 .namespace_container

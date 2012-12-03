@@ -80,10 +80,24 @@ class XHTML5Template implements ITemplate, ITemplateAttributes
 		}
 	}
 	
-	public function add( $iTemplateElement )
+	public function add( $newElement, $targetElement = "main" )
 	{
-		$template = $this->domDocument->importNode($iTemplateElement->create(), true);
-		$this->domDocument->getElementById("main")->appendChild($template);
+	    $element = null;
+	    if ($newElement instanceof ITemplateElement)
+	    {
+	    	$element = $this->domDocument->importNode($newElement->create(), true);
+	    }
+	    else
+	    {
+	        $element = $this->domDocument->importNode($newElement, true);
+	    }
+
+        $target = $this->domDocument->getElementById($targetElement);
+        if ($target == null)
+        {
+            $target = $this->domDocument->getElementsByTagName($targetElement)->item(0);
+        }                
+		$target->appendChild($element);
 	}
 
 	public function create()

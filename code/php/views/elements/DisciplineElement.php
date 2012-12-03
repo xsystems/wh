@@ -34,11 +34,9 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 		$this->domElement = $domDocument->createElementNS(self::namespaceURI, "div");		
 		$content = $domDocument->createElementNS(self::namespaceURI, "div");		
 		$h1 = $domDocument->createElementNS(self::namespaceURI, "h1");
-		$imgboxDiv = $domDocument->createElementNS(self::namespaceURI, "div");
 		
 		$this->domElement->setAttribute("class", $this->rootElementClass);
 		$content->setAttribute("class", "content");		
-		$imgboxDiv->setAttribute("class", "justify-all-lines");
 
 		$descriptionFragment = $domDocument->createDocumentFragment();
 		$descriptionFragment->appendXML("<p class='namespace_container' xmlns='http://www.w3.org/1999/xhtml'>$description</p>");
@@ -46,10 +44,11 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 		$h1->appendChild($domDocument->createTextNode($discipline->name));
 		$content->appendChild($h1);
 		$content->appendChild($descriptionFragment);
-		$content->appendChild($imgboxDiv);
 		
 		if($image_folder_location)
 		{
+            $imgboxDiv = $domDocument->createElementNS(self::namespaceURI, "div");
+            $imgboxDiv->setAttribute("class", "justify-all-lines");
 			$images = scandir(Configuration::$DOCUMENT_ROOT.$image_folder_location);
 		
 			foreach ($images as $image)
@@ -71,6 +70,8 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 					$imgboxDiv->appendChild($imageDiv);
 				}
 			}
+			
+		    $content->appendChild($imgboxDiv);
 		}
 			
 		$this->domElement->appendChild($content);	
