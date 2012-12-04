@@ -20,7 +20,8 @@ class DeWindhappersTemplate extends XHTML5Template
                                     array("name"=>"og:url", "value"=>"http://wh.xsystems.org"),
                                     array("name"=>"og:image", "value"=>"http://wh.xsystems.org/content/dewindhapperslogo.gif"),
                                     array("name"=>"og:site_name", "value"=>"De Windhappers"),
-                                    array("name"=>"fb:admins", "value"=>"100004774592111"));
+                                    array("name"=>"fb:admins", "value"=>"100004774592111")
+                                    array("name"=>"og:description", "value"=>"A canoe club."));
                                     
 
 	public function __construct($bannerImageURL=null)
