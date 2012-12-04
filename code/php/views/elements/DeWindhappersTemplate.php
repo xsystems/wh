@@ -17,7 +17,7 @@ class DeWindhappersTemplate extends XHTML5Template
                                     array("logo"=>"/content/twitter-bird-dark-bgs.png", "url"=>"https://twitter.com/DeWindhappers") );
     private $openGraphTags = array( array("name"=>"og:title", "value"=>"Kanovereniging De Windhappers"),
                                     array("name"=>"og:type", "value"=>"sport"),
-                                    array("name"=>"og:url", "value"=>"http://wh.xsystems.org"),
+                                    array("name"=>"og:url", "value"=>"http://wh.xsystems.org/code/php/controllers/view.controller.php?action=home"),
                                     array("name"=>"og:image", "value"=>"http://wh.xsystems.org/content/dewindhapperslogo.gif"),
                                     array("name"=>"og:site_name", "value"=>"De Windhappers"),
                                     array("name"=>"fb:admins", "value"=>"100004774592111"),
