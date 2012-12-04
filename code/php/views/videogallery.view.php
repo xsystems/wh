@@ -11,20 +11,22 @@ class VideoGalleryView
     private static $type = "video";
     private static $videosPerPage = -1;  
     private static $screenshortSecond = 5;
-    private static $videoDirURL = null;
-    private static $videoDirPath = null;
     
 	public static function write($gallery)
 	{
+	    // Default gallery.
+	    $videoDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/videos/2012-09-15_kanopolo_NK/";
+        $videoDirPath = self::$galleryDir."/2012-09-15_kanopolo_NK/";
+    
 		$wh = new DeWindhappersTemplate();		
 		
 		if ( isset($gallery) && !empty($gallery) && $gallery != "")
 		{
-		    self::$videoDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/videos/".$gallery."/";
-			self::$videoDirPath = self::$galleryDir.$gallery."/";
-		}		
+		    $videoDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/videos/".$gallery."/";
+			$videoDirPath = self::$galleryDir.$gallery."/";
+		}	
 
-        $wh->add( new VideoGalleryElement(self::$rootElementClass, self::$galleryDir, self::$action, self::$type, self::$videosPerPage, self::$screenshortSecond, self::$videoDirURL, self::$videoDirPath) );
+        $wh->add( new VideoGalleryElement(self::$rootElementClass, self::$galleryDir, self::$action, self::$type, self::$videosPerPage, self::$screenshortSecond, $videoDirURL, $videoDirPath) );
 
 		$domDocument = $wh->create();
 

@@ -398,14 +398,17 @@ div.img a:hover img
     float:right;
     border:none;
     overflow:hidden;
-    width:8%; 
-    height:21px;
+/*    width:225px; */
+/*    height:80px;*/
+    width:25%;
+    height:100%;
+    background-color:white;
 }
 
 .home_content
 {
     float:left;
-    width:82%;
+    width:65%;
 }
 
 .namespace_container

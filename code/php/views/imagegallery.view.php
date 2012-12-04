@@ -9,21 +9,23 @@ class ImageGalleryView
     private static $galleryDir = "../../../media/images/";
     private static $action = "gallery";
     private static $type = "image";
-    private static $imagesPerPage = -1;  
-    private static $imageDirURL = null;
-    private static $imageDirPath = null;
-
+    private static $imagesPerPage = -1; 
+   
 	public static function write($gallery)
 	{
+	    //Default gallery. 
+        $imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/images/2012-06-21 kanopolo juni 2012/";
+        $imageDirPath = self::$galleryDir."/2012-06-21 kanopolo juni 2012/";
+        
 		$wh = new DeWindhappersTemplate();
 
 		if ( isset($gallery) && !empty($gallery) && $gallery != "")
 		{
-    	    self::$imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/images/".$gallery."/"; 
-	        self::$imageDirPath = self::$galleryDir.$gallery."/";		    
-		}	
+    	    $imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/images/".$gallery."/"; 
+	        $imageDirPath = self::$galleryDir.$gallery."/";		    
+		}
 
-		$wh->add( new ImageGalleryElement(self::$rootElementClass, self::$galleryDir, self::$action, self::$type, self::$imagesPerPage, self::$imageDirURL, self::$imageDirPath) );
+		$wh->add( new ImageGalleryElement(self::$rootElementClass, self::$galleryDir, self::$action, self::$type, self::$imagesPerPage, $imageDirURL, $imageDirPath) );
 		
 		$domDocument = $wh->create();
 

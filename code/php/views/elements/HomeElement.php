@@ -38,7 +38,7 @@ class HomeElement implements ITemplateElement, ITemplateAttributes
 		
 		$likeButtonIframe = $domDocument->createElementNS(self::namespaceURI, "iframe");
 		$likeButtonIframe->setAttribute("class", "like_button_iframe");
-		$likeButtonIframe->setAttribute("src", "//www.facebook.com/plugins/like.php?href=http://wh.xsystems.org&send=false&layout=button_count&width=450&show_faces=true&font=tahoma&colorscheme=light&action=like&height=21");
+		$likeButtonIframe->setAttribute("src", "//www.facebook.com/plugins/like.php?href=http://wh.xsystems.org&send=false&layout=standard&show_faces=true&font=tahoma&colorscheme=dark&action=like");
 		$likeButtonIframe->setAttribute("scrolling", "no;");
         $likeButtonIframe->setAttribute("frameborder", "0");
         $likeButtonIframe->setAttribute("allowTransparency", "true");

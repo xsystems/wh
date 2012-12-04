@@ -10,20 +10,21 @@ class ClubMagazineGalleryView
     private static $action = "gallery";
     private static $type = "clubmagazine";
     private static $imagesPerPage = -1;  
-    private static $imageDirURL = null;
-    private static $imageDirPath = null;
 
 	public static function write($gallery)
 	{
+	    $imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/clubmagazine/De Windhapper 2012/";
+        $imageDirPath = self::$galleryDir."/De Windhapper 2012/";
+	
 		$wh = new DeWindhappersTemplate();
 
 		if ( isset($gallery) && !empty($gallery) && $gallery != "")
 		{
-    	    self::$imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/clubmagazine/".$gallery."/"; 
-	        self::$imageDirPath = self::$galleryDir.$gallery."/";		    
+    	    $imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/clubmagazine/".$gallery."/"; 
+	        $imageDirPath = self::$galleryDir.$gallery."/";		    
 		}	
 
-		$wh->add( new ClubMagazineGalleryElement(self::$rootElementClass, self::$galleryDir, self::$action, self::$type, self::$imagesPerPage, self::$imageDirURL, self::$imageDirPath) );
+		$wh->add( new ClubMagazineGalleryElement(self::$rootElementClass, self::$galleryDir, self::$action, self::$type, self::$imagesPerPage, $imageDirURL, $imageDirPath) );
 		
 		$domDocument = $wh->create();
 
