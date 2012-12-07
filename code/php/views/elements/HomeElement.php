@@ -49,7 +49,7 @@ class HomeElement implements ITemplateElement, ITemplateAttributes
 		$homeContent->appendChild($h1);
 		$homeContent->appendChild($p);
 		$this->domElement->appendChild($homeContent);
-		$this->domElement->appendChild($likeButtonIframe);
+		//$this->domElement->appendChild($likeButtonIframe);
 	}
 	
     public function add( $iTemplateElement )

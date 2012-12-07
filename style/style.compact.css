@@ -408,7 +408,8 @@ div.img a:hover img
 .home_content
 {
     float:left;
-    width:65%;
+/*    width:65%;*/
+    width:90%;
 }
 
 .namespace_container
