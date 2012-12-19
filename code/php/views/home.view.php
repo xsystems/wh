@@ -12,7 +12,7 @@ class HomeView
 	public static function write()
 	{	
 		$wh = new DeWindhappersTemplate();
-		$wh->add( new HomeElement("contentarea") );
+		$wh->add( new HomeElement("") );
 		
 #		// <TEMP>
 #		$wh->add( new CalendarElement("contentarea") );		

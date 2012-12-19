@@ -46,6 +46,7 @@ class XHTML5Template implements ITemplate, ITemplateAttributes
         $metaElement->setAttribute('content', 'application/xhtml+xml; charset=utf-8');
         $metaElement->setAttribute('http-equiv', 'Content-Type');
 
+        $mainElement->setAttribute("class", "main");
 		$mainElement->setAttribute("id", "main");
 		$mainElement->setIdAttribute("id", true);
 		$iconLinkElement->setAttribute("rel", "shortcut icon");

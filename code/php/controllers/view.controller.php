@@ -68,7 +68,10 @@
 			break;
 		case 'meteorology':
 			MeteorologyView::write();
-			break;							
+			break;		
+		case 'canoetours':
+			CanoetoursView::write();
+			break;									
 		default:
 			HomeView::write();
 			break;

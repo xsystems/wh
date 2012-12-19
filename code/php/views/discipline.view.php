@@ -11,8 +11,20 @@ class DisciplineView
 	    switch ($name)
 	    {
 	        case 'zee varen': 
-	            $bannerImageURL = "/content/discipline/seafarers/banner.jpg";
+	            $bannerImageURL = "/content/banners/banner_seafarers_1.jpg";
 	            break;
+	        case 'kanopolo': 
+	            $bannerImageURL = "/content/banners/banner_canoepolo.jpg";
+	            break;
+	        case 'toervaren': 
+	            $bannerImageURL = "/content/banners/banner_cruising.jpg";
+	            break;	       
+	        case 'wildwatervaren': 
+	            $bannerImageURL = "/content/banners/banner_whitewaterrafting.jpg";
+	            break;	 	             
+	        case 'freestyle': 
+	            $bannerImageURL = "/content/banners/banner_freestyle.jpg";
+	            break;		                
             default:
                 $bannerImageURL = null;
                 break;

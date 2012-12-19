@@ -22,6 +22,7 @@ require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/costs.view.php");
 require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/organisation.view.php");
 require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/iframe.view.php");
 require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/meteorology.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/canoetours.view.php");
 
 /** Setup database connection **/
 try

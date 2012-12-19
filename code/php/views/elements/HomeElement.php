@@ -26,12 +26,57 @@ class HomeElement implements ITemplateElement, ITemplateAttributes
 	    $homeContent = $domDocument->createElementNS(self::namespaceURI, "div");			
 		$homeContent->setAttribute("class", "content home_content");
 		
-        $h1 = $domDocument->createElementNS(self::namespaceURI, "h1");			
-		$h1->appendChild($domDocument->createTextNode("De Windhappers"));
-		
-	    $p = $domDocument->createElementNS(self::namespaceURI, "p");			
-		$p->appendChild($domDocument->createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ipsum erat, congue porttitor iaculis in, volutpat nec neque. Integer sapien libero, ultrices quis pharetra ultricies, facilisis eu nibh. Donec interdum fermentum pulvinar. Phasellus semper, eros tristique tristique egestas, nunc dolor ullamcorper lectus, eget tincidunt lorem urna a quam. Vestibulum gravida urna a sem semper et scelerisque mauris commodo. Praesent hendrerit, ligula a laoreet blandit, eros libero sollicitudin lacus, ac faucibus nisl justo vitae leo. Fusce nisl lacus, tincidunt at rutrum at, aliquet sed risus. Praesent elit diam, sagittis varius porta eget, viverra commodo orci. Quisque blandit, tortor non venenatis eleifend, dui nibh ultrices erat, et dapibus mi sem ultrices sapien. Nullam eget ante dolor. Proin id odio nunc, vitae lacinia libero. Donec tincidunt, ante eu imperdiet fringilla, purus sapien consequat orci, non fermentum mi magna eget mauris. Suspendisse nisi libero, pharetra et venenatis ut, tincidunt vitae justo."));
-		
+	    $domDocumentFragment = $domDocument->createDocumentFragment();
+		$domDocumentFragment->appendXML( "  <article class='article_home'>
+
+                                            <header> </header>
+
+                                            <section>
+                                            <h1>De Windhappers</h1>
+
+                                            <em>Welkom op de website van Kanovereniging De Windhappers. Op deze site vind je alles wat je wilt weten over kajak- of kanovaren in de regio Den Haag/Westland.</em>
+
+                                            <section>
+                                            <h2>Wie zijn wij</h2>
+                                            <p>
+                                            Kanovereniging De Windhappers is een Haagse kanovereniging die is opgericht in februari 1958. De vereniging is in 1967 bij Koninklijk Besluit koninklijk goedgekeurd. 
+                                            Wij zijn een enthousiaste, actieve kanoclub met ongeveer 200 leden. Onze leden doen mee aan alle vormen van kanosport, zoals: kanopolo in competitievorm (naam?); varen in open kano’s (de z.g. Canadese kano);  varen met een groep in onze eigen C-10-kano; toertochten in vlakwaterkano's; zeevaren en brandingvaren met zeekano's; varen in wildwaterkayaks, snowkayak en freestyle kanoën. 
+                                            Kortom op kanogebied is er voor elk wat wils en voor elke leeftijd wat te doen. 
+                                            De club staat open voor beginnende en geoefende kanoërs van alle leeftijden. Elke woensdagavond is onze clubavond, kom gerust eens langs voor informatie of maak een afspraak voor een eerste gratis vaartocht met een clubboot. Onze leden helpen u graag op weg. [Naam en telefoonnummer contactpersoon?]
+                                            </p>
+                                            </section>
+
+                                            <section>
+                                            <h2>Wilt u iets aan uw conditie doen</h2>
+                                            <p>
+                                            Denk dan eens aan de kanosport in plaats van aan de sportschool.  Kanovaren is niet aan leeftijd gebonden en u bent lekker in de buitenlucht. Bij de Windhappers hebben we leden van 8 tot 80 jaar. Dus kom woensdagavond eens langs op onze clubavond.
+                                            Heeft u geen ervaring met kanovaren? Of heeft u geen eigen kano? Geen probleem. Wij beschikken over een aantal clubboten: vlakwaterkano's, zeekano's, wildwaterkano's en open kano’s (Canadese), in diverse types. Deze boten zijn beschikbaar voor leden die (nog) geen eigen boot bezitten. Uw eigen boot mag u stallen in de botenloods.
+                                            Heeft u wel een boot maar geen eigen vervoer voor uw kano? De club is in het bezit van een botentrailer voor het vervoer van de kano’s bij de regelmatig georganiseerde toertochten naar bijvoorbeeld: de Nieuwkoopse plassen. Zie hiervoor de agenda.
+                                            </p>
+                                            </section>
+
+                                            <section>
+                                            <h2>Waar kunt u ons vinden</h2>
+                                            <p>
+                                            Ons <a href='../controllers/view.controller.php?action=location' title='Adresgegevens'>verenigingsgebouw met botenloods</a> ligt aan de Wennetjessloot aan de rand van het Recreatiepark “De Uithof”. 
+                                            Ons goed onderhouden gebouw heeft een gezellige kantine met bar en is voorzien van kleedruimtes, warme douches en toiletten. In de botenloods is plaats voor ongeveer 200? kajaks en open kano’s.
+                                            Door de ligging aan een uitgebreid netwerk van kanovaarwegen, op de grens van Den Haag en het Westland, kun je vanuit het clubhuis langere of kortere vaartochten maken door, onder meer, de grachten van Den Haag of in de mooie natuur van het Westland en Midden-Delfland. 
+                                            </p>
+                                            </section>
+
+                                            <section>
+                                            <h2>Welke activiteiten zijn er</h2>
+                                            <p>
+                                            Elk jaar aan het begin van het vaarseizoen wordt een basiscursus georganiseerd voor beginners. Hierbij worden de grondbeginselen van het kanovaren aangeleerd. Elk nieuw lid volgt deze basiscursus waar, naast zaken als <strong>techniek en veiligheid, ook materiaalkennis, keuze van kano of kajak</strong> aan bod komen. 
+                                            Tevens kan er, op aanvraag, les worden gegeven in het varen in open kano’s.
+                                            Daarnaast wordt regelmatig een cursus gegeven in eskimoteren in een verwarmd zwembad. Eskimoteren is de kunst van het in de kano zittend overeind komen als men is omgeslagen.
+                                            </p>
+                                            </section>
+                                            </section>
+
+                                            <footer>Joke de Jongh</footer>
+
+                                            </article> " );		
 
 		//$domDocumentFragment = $domDocument->createDocumentFragment();
 		//$domDocumentFragment->appendXML( "<div class='content namespace_container' xmlns='http://www.w3.org/1999/xhtml'>text</div><div class='content namespace_container' xmlns='http://www.w3.org/1999/xhtml'>text</div>" );	
@@ -46,8 +91,7 @@ class HomeElement implements ITemplateElement, ITemplateAttributes
 #<iframe src='' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:450px; height:21px;' allowTransparency='true'></iframe>								
 							
 	    $likeButtonIframe->appendChild($domDocument->createTextNode(" "));
-		$homeContent->appendChild($h1);
-		$homeContent->appendChild($p);
+		$homeContent->appendChild($domDocumentFragment);
 		$this->domElement->appendChild($homeContent);
 		//$this->domElement->appendChild($likeButtonIframe);
 	}

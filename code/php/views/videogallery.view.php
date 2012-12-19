@@ -5,7 +5,7 @@ require_once("elements/VideoGalleryElement.php");
 
 class VideoGalleryView
 {
-    private static $rootElementClass = "contentarea";
+    private static $rootElementClass = "";
     private static $galleryDir = "../../../media/videos/";
     private static $action = "gallery";
     private static $type = "video";

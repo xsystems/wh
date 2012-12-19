@@ -78,24 +78,37 @@ body
     width:1024px;
     min-height:800px;
     margin-left:auto;
-    margin-right:auto;
-/*    position:relative;*/
+    margin-right:auto; 
 }
 
-/*
-.box
+.main
 {
-    width:100%;
-    margin-top:10px;
-    margin-bottom:10px;
-    border-radius:20px;
-}
-*/
+    text-align:justify;
+    font-size:10pt;   
+}    
 
-.contentarea
+.main h1
 {
-    width:100%;
-    overflow:hidden;
+    font-size:2em;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+.main h2
+{
+    font-size:1.5em;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+
+.main p
+{
+    margin-bottom:2em;
+}
+
+.main span
+{
+    color:red;
 }
 
 .content
@@ -104,42 +117,23 @@ body
     background:#98FB98;
     width:90%;
     overflow:hidden;
-    text-align:justify;
-    font-size:10pt;
     padding-left:5%;
     padding-right:5%;
 }
 
-.content h1
+.discipline h1
 {
-    font-size:2em;
-    margin-top:1em;
-    margin-bottom:1em;
-/*    margin-left:5%;*/
-/*    margin-right:5%;*/
     text-transform:capitalize;
 }
 
-.content h2
+.discipline h2
 {
-    font-size:1.5em;
-    margin-top:0.5em;
-    margin-bottom:0.5em;
-/*    margin-left:5%;*/
-/*    margin-right:5%;*/
     text-transform:capitalize;
 }
 
-.content p
+.article_home
 {
-    margin-bottom:2em;
-/*    margin-left:5%;*/
-/*    margin-right:5%;*/
-}
-
-.content p span
-{
-    color:red;
+    padding:1em;
 }
 
 #bdsch
@@ -194,20 +188,26 @@ body
     border-top-left-radius:40px;
     border-top-right-radius:40px;
     overflow:hidden;
+    font-size:12pt; 
 }
 
-#banner>img
+.banner_logo
 {
     float:left;
-    width:17%;
-    height:88%;
+    width:25%;
+    height:85%;
+}
+
+.banner_logo img
+{
+    width:100%;
 }
 
 #banner>p
 {
     text-align:center;
     float:right;
-    width:83%;
+    width:75%;
     font:40px Tahoma;    
 }
 
@@ -216,7 +216,7 @@ body
     background-color:rgba(0,0,0,0.5);
     float:left;
     width:100%;
-    height:12%;
+    height:15%;
 }
 
 .media_logos a
@@ -228,7 +228,7 @@ body
 .media_logos a img
 {
     height:100%;
-    width:1.2em;
+    width:1.5em;
 }
 
 #footer
@@ -412,15 +412,63 @@ div.img a:hover img
     width:90%;
 }
 
-.namespace_container
+.location_content article
 {
-
+    float:left;
+    width:45%;
 }
 
-.center
+#route
 {
-    margin-left:auto;
-    margin-right:auto;
+    margin-top:4em;
+    float:right;
+    width:50%;
+    border-radius:20px;
+}
+
+.article_canoetours section
+{
+    background:#98FB98;
+    border-radius:20px;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    text-align:center;
+}
+
+.article_canoetours h1
+{
+    margin:0;
+}
+
+.section_canoetour
+{
+    display:inline-block;
+    width:48%;
+}
+
+.section_canoetour h2
+{
+    background:#FFFF33;
+    margin:0;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.section_canoetour img
+{
+    width:100%;
+    padding:0; 
+    margin:0;
+}
+
+.section_canoetour a
+{
+    display:block;
+    width:100%;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px; 
+    padding:0; 
+    margin:0;
 }
 
 .justify-all-lines
@@ -570,6 +618,7 @@ div.img a:hover img
 {
     background:#FFFF33;
     width:100%;
+    font-size:12pt; 
 }
 
 #menu li:hover a

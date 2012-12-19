@@ -46,13 +46,13 @@ class OrganisationElement implements ITemplateElement, ITemplateAttributes
                                                 <td>Secretaris</td>
                                                 <td>Marianne Scheepstra</td>
                                                 <td>070-3903165</td>
-                                                <td> </td>
+                                                <td><a href='mailto:windhappersecretaris@hotmail.com'>E-mail</a></td>
                                               </tr>
                                               <tr>
                                                 <td>Penningmeester</td>
                                                 <td>Guus Kanters</td>
                                                 <td> </td>
-                                                <td> </td>
+                                                <td><a href='mailto:windhapperpenningmeester@hotmail.com'>E-mail</a></td>
                                               </tr>
                                               <tr class='alt'>
                                                 <td>PR en vicevoorzitter</td>

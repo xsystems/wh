@@ -8,13 +8,13 @@ require_once("MenuElement.php");
 class DeWindhappersTemplate extends XHTML5Template
 {
 	private $title = "De Windhappers";
-	private $iconURL = "/content/dewindhapperslogo.ico";
+	private $iconURL = "/content/logos/dewindhapperslogo.ico";
 	private $stylesheetURLs = array("/style/style.css");
 	private $scriptURLs = array("/code/js/inheritance.js", "/code/js/load.js", "/code/js/setup.js");
-	private $bannerLogoURL = "/content/dewindhapperslogo.gif";
-	private $bannerImageURL = "/content/banner.jpg";
-	private $mediaLogos = array(    array("logo"=>"/content/f_logo.png", "url"=>"http://www.facebook.com/pages/Kanovereniging-De-Windhappers/546877148674699"),
-                                    array("logo"=>"/content/twitter-bird-dark-bgs.png", "url"=>"https://twitter.com/DeWindhappers") );
+	private $bannerLogoURL = "/content/logos/dewindhapperslogo.png";
+	private $bannerImageURL = "/content/banners/banner_default.jpg";
+	private $mediaLogos = array(    array("logo"=>"/content/logos/f_logo.png", "url"=>"http://www.facebook.com/pages/Kanovereniging-De-Windhappers/546877148674699", "title"=>"Facebook"),
+                                    array("logo"=>"/content/logos/twitter-bird-dark-bgs.png", "url"=>"https://twitter.com/DeWindhappers", "title"=>"Twitter") );
     private $openGraphTags = array( array("name"=>"og:title", "value"=>"Kanovereniging De Windhappers"),
                                     array("name"=>"og:type", "value"=>"sport"),
                                     array("name"=>"og:url", "value"=>"http://wh.xsystems.org/code/php/controllers/view.controller.php?action=home"),

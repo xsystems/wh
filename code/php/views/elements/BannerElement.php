@@ -38,10 +38,16 @@ class BannerElement implements ITemplateElement, ITemplateAttributes
 		
 		if ( $this->bannerLogoURL != null )
 		{
+    		$a = $domDocument->createElementNS(self::namespaceURI, "a");
+    		$a->setAttribute("class", "banner_logo");
+    		$a->setAttribute("href", "/");
+    		
 	  		$img = $domDocument->createElementNS(self::namespaceURI, "img");
 			$img->setAttribute("src", $this->bannerLogoURL);
 		    $img->setAttribute("alt", $this->bannerTextAlt);
-    		$this->domElement->appendChild($img);
+   		    $img->setAttribute("title", "Home");
+   		    $a->appendChild($img);
+    		$this->domElement->appendChild($a);
 		}
 		
 		if ( $this->bannerImageURL !=  null )
@@ -63,6 +69,8 @@ class BannerElement implements ITemplateElement, ITemplateAttributes
 
                 $a->setAttribute("href", $mediaLogo["url"]);
                 $img->setAttribute("src", $mediaLogo["logo"]);
+                $img->setAttribute("alt", $mediaLogo["title"]);               
+                $img->setAttribute("title", $mediaLogo["title"]);
 
                 $a->appendChild($img);
                 $mediaLogos->appendChild($a);

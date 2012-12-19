@@ -5,7 +5,7 @@ require_once("elements/ClubMagazineGalleryElement.php");
 
 class ClubMagazineGalleryView
 {
-    private static $rootElementClass = "contentarea";
+    private static $rootElementClass = "";
     private static $galleryDir = "../../../media/clubmagazine/";
     private static $action = "gallery";
     private static $type = "clubmagazine";

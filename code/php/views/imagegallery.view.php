@@ -5,7 +5,7 @@ require_once("elements/ImageGalleryElement.php");
 
 class ImageGalleryView
 {
-    private static $rootElementClass = "contentarea";
+    private static $rootElementClass = "";
     private static $galleryDir = "../../../media/images/";
     private static $action = "gallery";
     private static $type = "image";

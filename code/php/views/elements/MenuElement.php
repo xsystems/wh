@@ -211,6 +211,16 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		$meteorologyMenuItem->appendChild($meteorologyLink);
 		
 		$this->domElement->appendChild($meteorologyMenuItem);
+		
+	    // Canoetours menuitem
+		$canoetoursMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
+		$canoetoursMenuItem->setAttribute("class", "rightitem");
+		$canoetoursLink = $domDocument->createElementNS(self::namespaceURI, "a");
+		$canoetoursLink->setAttribute("href", "../controllers/view.controller.php?action=canoetours");
+		$canoetoursLink->appendChild($domDocument->createTextNode("Kanoroutes"));
+		$canoetoursMenuItem->appendChild($canoetoursLink);
+		
+		$this->domElement->appendChild($canoetoursMenuItem);		
 	}
 	
     public function add( $iTemplateElement )
