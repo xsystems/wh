@@ -44,12 +44,12 @@ class HomeElement implements ITemplateElement, ITemplateAttributes
                                             Kortom op kanogebied is er voor elk wat wils en voor elke leeftijd wat te doen. 
                                             De club staat open voor beginnende en geoefende kanoërs van alle leeftijden. Elke woensdagavond is onze clubavond, kom gerust eens langs voor informatie of maak een afspraak voor een eerste gratis vaartocht met een clubboot. Onze leden helpen u graag op weg. [Naam en telefoonnummer contactpersoon?]
                                             </p>
-                                            <img src='/content/images/home/banner_building.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
+                                            <img src='/content/images/home/banner_freestyle.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
                                             </section>
 
                                             <section class='section_home_h2 justify-all-lines'>
                                             <h2>Wilt u iets aan uw conditie doen</h2>
-                                            <img src='/content/images/home/banner_freestyle.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
+                                            <img src='/content/images/home/banner_building.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
                                             <p>
                                             Denk dan eens aan de kanosport in plaats van aan de sportschool.  Kanovaren is niet aan leeftijd gebonden en u bent lekker in de buitenlucht. Bij de Windhappers hebben we leden van 8 tot 80 jaar. Dus kom woensdagavond eens langs op onze clubavond.
                                             Heeft u geen ervaring met kanovaren? Of heeft u geen eigen kano? Geen probleem. Wij beschikken over een aantal clubboten: vlakwaterkano's, zeekano's, wildwaterkano's en open kano’s (Canadese), in diverse types. Deze boten zijn beschikbaar voor leden die (nog) geen eigen boot bezitten. Uw eigen boot mag u stallen in de botenloods.
