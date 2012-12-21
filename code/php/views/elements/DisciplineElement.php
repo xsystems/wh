@@ -45,6 +45,11 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 		$content->appendChild($h1);
 		$content->appendChild($descriptionFragment);
 		
+        $script = $domDocument->createElementNS(self::namespaceURI, "script");	
+	    $script->setAttribute("type", "text/javascript");
+	    $script->setAttribute("src", "/code/js/setup_lightbox2.js");	
+	    $dummy_text = $domDocument->createTextNode(" ");		
+		
 		if($image_folder_location)
 		{
             $imgboxDiv = $domDocument->createElementNS(self::namespaceURI, "div");
@@ -62,6 +67,8 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 					
 					$imageDiv->setAttribute("class", "img");
 					$a->setAttribute("href", $image_folder_location."/".$image);
+            		$a->setAttribute("rel", "lightbox[discipline]");
+            		$a->setAttribute("title", $image);					
 					$img->setAttribute("src", $image_folder_location."/".$image);
 					$img->setAttribute("alt", $image);
 					
@@ -75,6 +82,8 @@ class DisciplineElement implements ITemplateElement, ITemplateAttributes
 		}
 			
 		$this->domElement->appendChild($content);	
+       	$script->appendChild($dummy_text);
+	    $this->domElement->appendChild($script);		
 	}
 	
     public function add( $iTemplateElement )

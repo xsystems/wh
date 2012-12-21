@@ -41,6 +41,7 @@ class GalleryElement implements ITemplateElement, ITemplateAttributes
 		$input_submit = $this->domDocument->createElementNS(self::namespaceURI, "input");
     	$input_action = $this->domDocument->createElementNS(self::namespaceURI, "input");
     	$input_type = $this->domDocument->createElementNS(self::namespaceURI, "input");    	
+        $noscript = $this->domDocument->createElementNS(self::namespaceURI, "noscript");
 
 		$this->domElement->setAttribute("class", $this->rootElementClass);
 		$page->setAttribute("class", "justify-all-lines");	
@@ -78,14 +79,17 @@ class GalleryElement implements ITemplateElement, ITemplateAttributes
 			$option = $this->domDocument->createElementNS(self::namespaceURI, "option");
 			$option->setAttribute("value", $gallery);
 			$option->appendChild($this->domDocument->createTextNode($gallery));
+		    $option->setAttribute("onclick", "this.form.submit()" );			
 			
 			$select->appendChild($option);
 	    }	
 	    
+	    $noscript->appendChild($input_submit);
+	    
 	    $form->appendChild($input_action);
-   	    $form->appendChild($input_type);	
+   	    $form->appendChild($input_type);
+	    $form->appendChild($noscript);   	    	
    	    $form->appendChild($select);	    	    	    
-	    $form->appendChild($input_submit);
 		
 		$this->domElement->appendChild($form);	
 		$this->domElement->appendChild($page);

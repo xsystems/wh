@@ -165,13 +165,20 @@ body
     margin-bottom:0;
 }
 
-.section_home_h2 img
+.section_home_h2>a
 {
     display:inline-block;
     vertical-align:top;
     width:48%;
     height:248px;
-    border-radius:20px;
+    border-radius:20px;  
+    overflow:hidden;  
+}
+
+.section_home_h2 img
+{
+    width:100%;
+    height:100%;
 }
 
 #bdsch
@@ -310,20 +317,20 @@ body
     margin-bottom:1em;
 }
 
+#gallery_form input
+{
+    float:right;
+    width:80px;
+    margin-bottom:5px;
+}
+
 #gallery_form select
 {
-    float:left;
     border-width:1px;
     border-style:ridge;
     border-radius:4px;
     font-size:100%;
-    width:88%;
-}
-
-#gallery_form input
-{
-    float:right;
-    width:10%;
+    width:100%;
 }
 
 #gallery_page
@@ -331,6 +338,7 @@ body
     width:100%;
     text-align:justify;
 }
+
 .galleryPageItem
 {
     display:inline-block;
