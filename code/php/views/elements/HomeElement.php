@@ -49,7 +49,7 @@ class HomeElement implements ITemplateElement, ITemplateAttributes
 
                                             <section class='section_home_h2 justify-all-lines'>
                                             <h2>Wilt u iets aan uw conditie doen</h2>
-                                            <img src='/content/images/home/banner_building.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
+                                            <img src='/content/images/home/kanopolo juni 2012 010.JPG' alt='Kanopolo' title='Kanopolo'> </img>
                                             <p>
                                             Denk dan eens aan de kanosport in plaats van aan de sportschool.  Kanovaren is niet aan leeftijd gebonden en u bent lekker in de buitenlucht. Bij de Windhappers hebben we leden van 8 tot 80 jaar. Dus kom woensdagavond eens langs op onze clubavond.
                                             Heeft u geen ervaring met kanovaren? Of heeft u geen eigen kano? Geen probleem. Wij beschikken over een aantal clubboten: vlakwaterkano's, zeekano's, wildwaterkano's en open kano’s (Canadese), in diverse types. Deze boten zijn beschikbaar voor leden die (nog) geen eigen boot bezitten. Uw eigen boot mag u stallen in de botenloods.
@@ -64,12 +64,12 @@ class HomeElement implements ITemplateElement, ITemplateAttributes
                                             Ons goed onderhouden gebouw heeft een gezellige kantine met bar en is voorzien van kleedruimtes, warme douches en toiletten. In de botenloods is plaats voor ongeveer 200? kajaks en open kano’s.
                                             Door de ligging aan een uitgebreid netwerk van kanovaarwegen, op de grens van Den Haag en het Westland, kun je vanuit het clubhuis langere of kortere vaartochten maken door, onder meer, de grachten van Den Haag of in de mooie natuur van het Westland en Midden-Delfland. 
                                             </p>
-                                            <img src='/content/images/home/kanopolo juni 2012 010.JPG' alt='Kanopolo' title='Kanopolo'> </img>
+                                            <img src='/content/images/home/ww-2.jpg' alt='Wildwatervaren' title='Wildwatervaren'> </img>
                                             </section>
 
                                             <section class='section_home_h2 justify-all-lines'>
                                             <h2>Welke activiteiten zijn er</h2>
-                                            <img src='/content/images/home/ww-2.jpg' alt='Tourvaren' title='Tourvaren'> </img>
+                                            <img src='/content/images/home/banner_building.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
                                             <p>
                                             Elk jaar aan het begin van het vaarseizoen wordt een basiscursus georganiseerd voor beginners. Hierbij worden de grondbeginselen van het kanovaren aangeleerd. Elk nieuw lid volgt deze basiscursus waar, naast zaken als <strong>techniek en veiligheid, ook materiaalkennis, keuze van kano of kajak</strong> aan bod komen. 
                                             Tevens kan er, op aanvraag, les worden gegeven in het varen in open kano’s.
