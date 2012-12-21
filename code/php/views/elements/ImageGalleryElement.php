@@ -32,7 +32,6 @@ class ImageGalleryElement extends GalleryElement
         {
 		    $script = $this->domDocument->createElementNS(self::namespaceURI, "script");	
 		    $dummy_text = $this->domDocument->createTextNode(" ");
-		    $dummy_element = $this->domDocument->createElementNS(self::namespaceURI, "span");
 				
 		    $script->setAttribute("type", "text/javascript");
 		    $script->setAttribute("src", "/code/js/setup_lightbox2.js");	
