@@ -5,7 +5,7 @@ require_once("elements/IFrameViewElement.php");
 
 class IFrameView
 {
-    private static $rootElementClass = "contentarea";
+    private static $rootElementClass = "iframe_pdf";
 
 	public static function write($url)
 	{

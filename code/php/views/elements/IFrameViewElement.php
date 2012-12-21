@@ -28,8 +28,8 @@ class IFrameViewElement implements ITemplateElement, ITemplateAttributes
 		$this->domElement = $domDocument->createElementNS(self::namespaceURI, "iframe");		
 		$this->domElement->setAttribute("class", $this->rootElementClass);
 		$this->domElement->setAttribute("src", $this->url);
-		$this->domElement->setAttribute("seamless", "seamless");
-		$this->domElement->setAttribute("sandbox", "");
+#		$this->domElement->setAttribute("seamless", "seamless");		
+#		$this->domElement->setAttribute("sandbox", "");
 		
 		$dummy_element->appendChild($dummy_text);
 		$this->domElement->appendChild($dummy_element);

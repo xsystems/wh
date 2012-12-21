@@ -66,6 +66,9 @@
 	    case 'iframe':
 			IFrameView::write($_GET['url']);
 			break;
+	    case 'object':
+			ObjectShowView::write($_GET['url'], $_GET['type'], $_GET['title']);
+			break;			
 		case 'meteorology':
 			MeteorologyView::write();
 			break;		

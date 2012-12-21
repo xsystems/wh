@@ -39,7 +39,7 @@ class OrganisationElement implements ITemplateElement, ITemplateAttributes
                                               <tr>
                                                 <td>Voorzitter</td>
                                                 <td>Sytse van der Zwan</td>
-                                                <td>06-14216890</td>
+                                                <td> </td>
                                                 <td> </td>
                                               </tr>
                                               <tr class='alt'>

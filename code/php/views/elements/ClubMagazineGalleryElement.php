@@ -42,8 +42,9 @@ class ClubMagazineGalleryElement extends GalleryElement
         		$img = $this->domDocument->createElementNS(self::namespaceURI, "img");	    		
         	
         	    $urlMagazine = str_replace(" ", "%20", $pageItem["media"]);
-#        	    $url = "../controllers/view.controller.php?action=iframe&url=".$urlMagazine;
-                $url = $urlMagazine;
+       	        $url = "../controllers/view.controller.php?action=iframe&url=".$urlMagazine;        	    
+#                $url = "../controllers/view.controller.php?action=object&url=".$urlMagazine."&type=application/pdf&title=".$clubmagazineInfo["filename"];
+#                $url = $urlMagazine;
         	
         		$a->setAttribute("href", $url);
         		$a->setAttribute("title", $clubmagazineInfo["filename"]);
