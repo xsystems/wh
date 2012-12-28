@@ -23,7 +23,7 @@ class CalendarElement implements ITemplateElement, ITemplateAttributes
 		$calendarElement = $domDocument->createElementNS(self::namespaceURI, "div");
 		$content = $domDocument->createElementNS(self::namespaceURI, "div");
 		$h1 = $domDocument->createElementNS(self::namespaceURI, "h1");
-		$title = $domDocument->createTextNode("Windhapper Kalender");
+		$title = $domDocument->createTextNode("Kalender");
 		
 		$calendarElement->setAttribute("class", $this->rootElementClass);
 		$content->setAttribute("class", "content");		
@@ -33,7 +33,7 @@ class CalendarElement implements ITemplateElement, ITemplateAttributes
 		
 		$h1->appendChild($title);
 		$content->appendChild($h1);
-		$calendarElement->appendChild($content);				
+#		$calendarElement->appendChild($content);				
 		$calendarElement->appendChild($domDocumentFragment);
 		
 		$this->domElement = $calendarElement;

@@ -7,7 +7,7 @@ class CanoetoursView
 {
 	public static function write()
 	{	
-		$wh = new DeWindhappersTemplate();
+		$wh = new DeWindhappersTemplate("Kanoroutes");
 		$wh->add( new CanoetoursElement("") );
 		
 		$domDocument = $wh->create();

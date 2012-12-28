@@ -240,7 +240,7 @@ body
 .banner_logo
 {
     float:left;
-    width:25%;
+    width:30%;
     height:85%;
 }
 
@@ -250,11 +250,13 @@ body
 }
 
 #banner>p
-{
-    text-align:center;
+{    
+    margin:0;    
     float:right;
-    width:75%;
-    font:40px Tahoma;    
+    font-family:Tahoma;
+    font-size:35px; 
+    transform-origin:left top;
+    transform:rotate(20deg);       
 }
 
 .media_logos

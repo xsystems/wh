@@ -7,7 +7,7 @@ class MeteorologyView
 {
 	public static function write()
 	{	
-		$wh = new DeWindhappersTemplate();
+		$wh = new DeWindhappersTemplate("Meteorologie");
 		$wh->add( new MeteorologyElement("contentarea") );
 		$domDocument = $wh->create();
 		

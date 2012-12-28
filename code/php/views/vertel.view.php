@@ -7,7 +7,7 @@ class VertelView
 {
 	public static function write()
 	{	
-		$wh = new DeWindhappersTemplate();
+		$wh = new DeWindhappersTemplate("Berichten");
 		$wh->add( new VertelElement("contentarea") );
 		$domDocument = $wh->create();
 		

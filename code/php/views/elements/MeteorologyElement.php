@@ -46,9 +46,9 @@ class MeteorologyElement implements ITemplateElement, ITemplateAttributes
 		
 		$h1->appendChild($title);
 		$content->appendChild($h1);
-		$meteorologyElement->appendChild($content);	
-		$meteorologyElement->appendChild($meteorologyBox);	
+#		$meteorologyElement->appendChild($content);	
 		$meteorologyElement->appendChild($meteorologyBox2);	
+		$meteorologyElement->appendChild($meteorologyBox);	
 		$weergadgetBox->appendChild($domDocumentFragmentWeatherstation);
 		$meteorologyBox->appendChild($domDocumentFragmentBuienradar);
 		$meteorologyBox->appendChild($weergadgetBox);

@@ -32,7 +32,7 @@ class LocationElement implements ITemplateElement, ITemplateAttributes
 		$map = $domDocument->createElementNS(self::namespaceURI, "div");
         $address = $domDocument->createElementNS(self::namespaceURI, "address");		
 		$script = $domDocument->createElementNS(self::namespaceURI, "script");
-		$title1 = $domDocument->createTextNode("Locatie");
+		$title1 = $domDocument->createTextNode("");
 		$p_text = $domDocument->createTextNode("De Windhappers is een Haagse kanovereniging die zich bevindt achter de bekende Haagse Kunstijsbaan \"De Uithof\". Ons botenhuis met stalling en kantine is herkenbaar aan ons logo. Het water waar het botenhuis aan ligt heet De Wennetjessloot.");
 		$title2 = $domDocument->createTextNode("Adres");
 		$route_text = $domDocument->createTextNode("Houd rekening met de volgende aanrijroute: Vanaf de Lozerlaan neem de afslag Uithof en Jaap Edenweg, deze weg afrijden tot het achterste deel van de parkeerplaats. Loop vanaf hier naar het verenigingsgebouw. Zie ook afbeelding hiernaast!");

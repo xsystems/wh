@@ -115,7 +115,7 @@ class MenuElement implements ITemplateElement, ITemplateAttributes
 		$vertelMenuItem = $domDocument->createElementNS(self::namespaceURI, "li");
 		$vertelLink = $domDocument->createElementNS(self::namespaceURI, "a");
 		$vertelLink->setAttribute("href", "#");
-		$vertelLink->appendChild($domDocument->createTextNode("Vertel"));
+		$vertelLink->appendChild($domDocument->createTextNode("Berichten"));
 		
 		// Vertel submenu
 		$vertelSubMenu = $domDocument->createElementNS(self::namespaceURI, "ul");

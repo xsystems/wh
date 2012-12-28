@@ -11,6 +11,7 @@ class DeWindhappersTemplate extends XHTML5Template
 	private $iconURL = "/content/logos/dewindhapperslogo.ico";
 	private $stylesheetURLs = array("/style/style.css");
 	private $scriptURLs = array("/code/js/inheritance.js", "/code/js/load.js", "/code/js/setup.js");
+    private $bannerText = "De Windhappers";	
 	private $bannerLogoURL = "/content/logos/dewindhapperslogo.png";
 	private $bannerImageURL = "/content/banners/banner_default.jpg";
 	private $mediaLogos = array(    array("logo"=>"/content/logos/f_logo.png", "url"=>"http://www.facebook.com/pages/Kanovereniging-De-Windhappers/546877148674699", "title"=>"Facebook"),
@@ -24,12 +25,18 @@ class DeWindhappersTemplate extends XHTML5Template
                                     array("name"=>"og:description", "value"=>"A canoe club."));
                                     
 
-	public function __construct($bannerImageURL=null)
+	public function __construct($bannerText=null, $bannerImageURL=null)
 	{
+	    if ($bannerText != null)
+	    {
+            $this->bannerText = $bannerText;
+	    }
+	
 	    if ($bannerImageURL != null)
 	    {
 	        $this->bannerImageURL = $bannerImageURL;
 	    }
+	    
 		parent::__construct($this->title, $this->iconURL, $this->stylesheetURLs, $this->scriptURLs);
 	}
 	
@@ -50,7 +57,7 @@ class DeWindhappersTemplate extends XHTML5Template
 		    $this->add($meta, "head");
 	    }
 	    
-		$this->add( new BannerElement("", $this->bannerLogoURL, $this->bannerImageURL, $this->mediaLogos) );
+		$this->add( new BannerElement("", $this->bannerLogoURL, $this->bannerImageURL, $this->mediaLogos, $this->bannerText) );
 		$this->add( new MenuElement("nav") );
 	}
 	

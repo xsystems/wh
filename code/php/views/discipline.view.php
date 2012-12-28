@@ -31,7 +31,7 @@ class DisciplineView
 	    }
 	
 	
-		$wh = new DeWindhappersTemplate($bannerImageURL);
+		$wh = new DeWindhappersTemplate("Discipline", $bannerImageURL);
 		$wh->add(new DisciplineElement("contentarea", $name));
 		$domDocument = $wh->create();
 

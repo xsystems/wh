@@ -17,7 +17,7 @@ class ImageGalleryView
         $imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/images/2012-06-21 kanopolo juni 2012/";
         $imageDirPath = self::$galleryDir."/2012-06-21 kanopolo juni 2012/";
         
-		$wh = new DeWindhappersTemplate();
+		$wh = new DeWindhappersTemplate("Foto's");
 
 		if ( isset($gallery) && !empty($gallery) && $gallery != "")
 		{

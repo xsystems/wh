@@ -2,7 +2,6 @@
 
 require_once("ITemplateElement.php");
 require_once("ITemplateAttributes.php");
-require_once('../configuration/framework.php');
 
 class BannerElement implements ITemplateElement, ITemplateAttributes
 {	
@@ -12,15 +11,15 @@ class BannerElement implements ITemplateElement, ITemplateAttributes
 	private $bannerLogoURL;
 	private $bannerImageURL;
 	private $mediaLogos;
-	private $bannerText = "Kanovereniging De Windhappers";
-	private $bannerTextAlt = "De Windhappers";
+	private $bannerText;
 	
-	public function __construct($rootElementClass, $bannerLogoURL=null, $bannerImageURL=null, $mediaLogos=null) 
+	public function __construct($rootElementClass, $bannerLogoURL=null, $bannerImageURL=null, $mediaLogos=null, $bannerText=null) 
 	{
 		$this->rootElementClass = $rootElementClass;
 		$this->bannerLogoURL = $bannerLogoURL;		
 		$this->bannerImageURL = $bannerImageURL;
 		$this->mediaLogos = $mediaLogos;
+		$this->bannerText = $bannerText;
 		$this->init();
 	}
 	
@@ -44,7 +43,7 @@ class BannerElement implements ITemplateElement, ITemplateAttributes
     		
 	  		$img = $domDocument->createElementNS(self::namespaceURI, "img");
 			$img->setAttribute("src", $this->bannerLogoURL);
-		    $img->setAttribute("alt", $this->bannerTextAlt);
+		    $img->setAttribute("alt", $this->bannerText);
    		    $img->setAttribute("title", "Home");
    		    $a->appendChild($img);
     		$this->domElement->appendChild($a);

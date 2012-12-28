@@ -18,7 +18,7 @@ class VideoGalleryView
 	    $videoDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/videos/2012-09-15_kanopolo_NK/";
         $videoDirPath = self::$galleryDir."/2012-09-15_kanopolo_NK/";
     
-		$wh = new DeWindhappersTemplate();		
+		$wh = new DeWindhappersTemplate("Video's");		
 		
 		if ( isset($gallery) && !empty($gallery) && $gallery != "")
 		{

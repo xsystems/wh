@@ -25,7 +25,7 @@ class CostsElement implements ITemplateElement, ITemplateAttributes
 
 		$domDocumentFragment = $domDocument->createDocumentFragment();
 		$domDocumentFragment->appendXML( "<div class='content namespace_container' xmlns='http://www.w3.org/1999/xhtml'>       
-                                            <h1>Kosten</h1>
+                                            <h1> </h1>
                                             <table>
                                               <tr>
                                                 <th class='alt'>Omschrijving</th>

@@ -16,7 +16,7 @@ class ClubMagazineGalleryView
 	    $imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST."/media/clubmagazine/De Windhapper 2012/";
         $imageDirPath = self::$galleryDir."/De Windhapper 2012/";
 	
-		$wh = new DeWindhappersTemplate();
+		$wh = new DeWindhappersTemplate("Clubblad");
 
 		if ( isset($gallery) && !empty($gallery) && $gallery != "")
 		{

@@ -7,7 +7,7 @@ class BoodschapView
 {
 	public static function write()
 	{	
-		$wh = new DeWindhappersTemplate();
+		$wh = new DeWindhappersTemplate("Berichten");
 		$wh->add( new BoodschapElement("contentarea") );
 		$domDocument = $wh->create();
 		

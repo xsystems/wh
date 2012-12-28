@@ -7,7 +7,7 @@ class OrganisationView
 {
 	public static function write()
 	{	
-		$wh = new DeWindhappersTemplate();
+		$wh = new DeWindhappersTemplate("Organisatie");
 		$wh->add( new OrganisationElement("contentarea") );
 		$domDocument = $wh->create();
 		

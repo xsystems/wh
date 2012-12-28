@@ -7,7 +7,7 @@ class CalendarView
 {
 	public static function write()
 	{	
-		$wh = new DeWindhappersTemplate();
+		$wh = new DeWindhappersTemplate("Activiteiten");
 		$wh->add( new CalendarElement("contentarea") );
 		$domDocument = $wh->create();
 		
