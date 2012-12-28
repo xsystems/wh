@@ -55,6 +55,7 @@ class GalleryElement implements ITemplateElement, ITemplateAttributes
 		$select->setIdAttribute("id", true);
 		$select->setAttribute("name", "gallery");
 		$select->setAttribute("form", $this->formID);
+		$select->setAttribute("onchange", "javascript:this.form.submit();" );					
 		$input_submit->setAttribute("type", "submit");
 		$input_submit->setAttribute("value", "Submit");
 		$input_submit->setAttribute("id", $this->inputSubmitID);		
@@ -73,13 +74,17 @@ class GalleryElement implements ITemplateElement, ITemplateAttributes
 		$input_type->setIdAttribute("id", true);
 		$input_type->setAttribute("form", $this->formID);	
 		
+        $option = $this->domDocument->createElementNS(self::namespaceURI, "option");
+        $option->setAttribute("value", "");
+        $option->appendChild($this->domDocument->createTextNode("Maak hier uw keuze..."));
+        $select->appendChild($option);		    
+		
 		$galleries = $this->scandir_for_dirs($this->galleryDir); 
 		foreach ($galleries as $gallery)
 		{			
 			$option = $this->domDocument->createElementNS(self::namespaceURI, "option");
 			$option->setAttribute("value", $gallery);
 			$option->appendChild($this->domDocument->createTextNode($gallery));
-		    $option->setAttribute("onclick", "this.form.submit()" );			
 			
 			$select->appendChild($option);
 	    }	
