@@ -256,16 +256,16 @@ body
     font-family:Tahoma;
     font-size:35px; 
     transform-origin:left top;
-    transform:rotate(20deg);  
+    transform:rotate(12deg);  
     
     -ms-transform-origin:left top;
     -webkit-transform-origin:left top;
     -o-transform-origin:left top;
     -moz-transform-origin:left top;            
-    -ms-transform: rotate(30deg); /* IE 9 */
-    -webkit-transform: rotate(30deg); /* Safari and Chrome */
-    -o-transform: rotate(30deg); /* Opera */
-    -moz-transform: rotate(30deg); /* Firefox */     
+    -ms-transform: rotate(12deg); /* IE 9 */
+    -webkit-transform: rotate(12deg); /* Safari and Chrome */
+    -o-transform: rotate(12deg); /* Opera */
+    -moz-transform: rotate(12deg); /* Firefox */     
 }
 
 .media_logos

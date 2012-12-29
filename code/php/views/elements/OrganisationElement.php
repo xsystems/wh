@@ -25,7 +25,7 @@ class OrganisationElement implements ITemplateElement, ITemplateAttributes
 
 		$domDocumentFragment = $domDocument->createDocumentFragment();
 		$domDocumentFragment->appendXML( "<div class='content namespace_container' xmlns='http://www.w3.org/1999/xhtml'>       
-                                            <h1>De Mensen achter De Windhappers</h1>
+                                            <h1>De mensen achter De Windhappers</h1>
                                             <table>
                                               <tr>
                                                 <th class='alt'>FUNCTIE</th>
@@ -46,19 +46,19 @@ class OrganisationElement implements ITemplateElement, ITemplateAttributes
                                                 <td>Secretaris</td>
                                                 <td>Marianne Scheepstra</td>
                                                 <td>070-3903165</td>
-                                                <td><a href='mailto:windhappersecretaris@hotmail.com'>E-mail</a></td>
+                                                <td><a href='mailto:windhappersecretaris@hotmail.com'>windhappersecretaris@hotmail.com</a></td>
                                               </tr>
                                               <tr>
                                                 <td>Penningmeester</td>
                                                 <td>Guus Kanters</td>
                                                 <td> </td>
-                                                <td><a href='mailto:windhapperpenningmeester@hotmail.com'>E-mail</a></td>
+                                                <td><a href='mailto:windhapperpenningmeester@hotmail.com'>windhapperpenningmeester@hotmail.com</a></td>
                                               </tr>
                                               <tr class='alt'>
                                                 <td>PR en vicevoorzitter</td>
                                                 <td>Erik Rumpff</td>
                                                 <td> </td>
-                                                <td><a href='mailto:windhapperredactie@hotmail.com'>E-mail</a></td>
+                                                <td><a href='mailto:windhapperredactie@hotmail.com'>windhapperredactie@hotmail.com</a></td>
                                               </tr>
                                               <tr>
                                                 <th colspan='4'>COORDINATOREN</th>
@@ -124,13 +124,13 @@ class OrganisationElement implements ITemplateElement, ITemplateAttributes
                                                 <td>Ledenadministratie</td>
                                                 <td>Jacques van der Toorn </td>
                                                 <td>070-3684654</td>
-                                                <td><a href='mailto:jjmvdtoorn@ziggo.nl'>E-mail</a></td>
+                                                <td><a href='mailto:jjmvdtoorn@ziggo.nl'>jjmvdtoorn@ziggo.nl</a></td>
                                               </tr>
                                               <tr class='alt'>
                                                 <td>Beheer boten en materieel</td>
                                                 <td>Hans Smits</td>
                                                 <td>070-3970983</td>
-                                                <td><a href='mailto:stalling.sleutel@online.nl'>E-mail</a></td>
+                                                <td><a href='mailto:stalling.sleutel@online.nl'>stalling.sleutel@online.nl</a></td>
                                               </tr>
                                               <tr>
                                                 <td>Onderhoud gebouw</td>
@@ -142,7 +142,7 @@ class OrganisationElement implements ITemplateElement, ITemplateAttributes
                                                 <td>Hoofdredacteur clubblad</td>
                                                 <td>Erik Rumpff </td>
                                                 <td> </td>
-                                                <td><a href='mailto:windhapperredactie@hotmail.com'>E-mail</a></td>
+                                                <td><a href='mailto:windhapperredactie@hotmail.com'>windhapperredactie@hotmail.com</a></td>
                                               </tr>
                                               <tr>
                                                 <td>Website</td>
