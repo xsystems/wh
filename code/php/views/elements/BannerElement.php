@@ -10,15 +10,15 @@ class BannerElement implements ITemplateElement, ITemplateAttributes
 	private $rootElementClass;
 	private $bannerLogoURL;
 	private $bannerImageURL;
-	private $mediaLogos;
+	private $mediaBarItems;
 	private $bannerText;
 	
-	public function __construct($rootElementClass, $bannerLogoURL=null, $bannerImageURL=null, $mediaLogos=null, $bannerText=null) 
+	public function __construct($rootElementClass, $bannerLogoURL=null, $bannerImageURL=null, $mediaBarItems=null, $bannerText=null) 
 	{
 		$this->rootElementClass = $rootElementClass;
 		$this->bannerLogoURL = $bannerLogoURL;		
 		$this->bannerImageURL = $bannerImageURL;
-		$this->mediaLogos = $mediaLogos;
+		$this->mediaBarItems = $mediaBarItems;
 		$this->bannerText = $bannerText;
 		$this->init();
 	}
@@ -57,24 +57,25 @@ class BannerElement implements ITemplateElement, ITemplateAttributes
 		$p->appendChild($domDocument->createTextNode($this->bannerText));
 		$this->domElement->appendChild($p);		
 		
-		if ( $this->mediaLogos != null)
+		if ( $this->mediaBarItems != null)
 		{
-			$mediaLogos = $domDocument->createElementNS(self::namespaceURI, "div");
-		    $mediaLogos->setAttribute("class", "media_logos");
-		    foreach ($this->mediaLogos as $mediaLogo)
+			$mediaBarItems = $domDocument->createElementNS(self::namespaceURI, "div");
+		    $mediaBarItems->setAttribute("class", "media_items");
+		    foreach ($this->mediaBarItems as $mediaLogo)
 		    {
                 $a = $domDocument->createElementNS(self::namespaceURI, "a");
                 $img = $domDocument->createElementNS(self::namespaceURI, "img");
 
                 $a->setAttribute("href", $mediaLogo["url"]);
+                $a->setAttribute("class", $mediaLogo["class"]);
                 $img->setAttribute("src", $mediaLogo["logo"]);
                 $img->setAttribute("alt", $mediaLogo["title"]);               
                 $img->setAttribute("title", $mediaLogo["title"]);
 
                 $a->appendChild($img);
-                $mediaLogos->appendChild($a);
+                $mediaBarItems->appendChild($a);
 		    }
-		    $this->domElement->appendChild($mediaLogos);
+		    $this->domElement->appendChild($mediaBarItems);
 		}
 	}
 	

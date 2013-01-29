@@ -74,7 +74,13 @@
 			break;		
 		case 'canoetours':
 			CanoetoursView::write();
-			break;									
+			break;	
+		case 'home_english':
+			HomeEnglishView::write();
+			break;	
+		case 'home_german':
+			HomeGermanView::write();
+			break;														
 		default:
 			HomeView::write();
 			break;

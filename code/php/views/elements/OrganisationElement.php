@@ -152,10 +152,20 @@ class OrganisationElement implements ITemplateElement, ITemplateAttributes
                                               </tr>
                                             </table>
 
+                                            <h2>Contact</h2>    
                                             Telefoon in het botenhuis: 070-3660789 <br/>
                                             Adres secretariaat: <br/>
                                             Hoornbruglaan 9 <br/>
-                                            2281 at Rijswijk <br/> <br/>
+                                            2281 at Rijswijk 
+                                            
+                                            <h2>Statuten en Regelementen</h2>
+                                            <ul>
+                                                <li><a href='/media/regulations/statuten-2002.pdf' title='Statuten 2002'>Statuten</a></li>
+                                                <li><a href='/media/regulations/Huishoud_reglm_2010.pdf' title='Huishoud regelement 2010'>Huishoud regelement</a></li>
+                                                <li><a href='/media/regulations/beleidsplan.pdf' title='Beleidsplan 2012'>Beleidsplan</a></li>
+                                            </ul>
+                                            <br/>
+
                                           </div>" );	
 								
 		$this->domElement->appendChild($domDocumentFragment);

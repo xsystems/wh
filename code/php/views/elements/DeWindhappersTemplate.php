@@ -14,8 +14,11 @@ class DeWindhappersTemplate extends XHTML5Template
     private $bannerText = "De Windhappers";	
 	private $bannerLogoURL = "/content/logos/dewindhapperslogo.png";
 	private $bannerImageURL = "/content/banners/banner_default.jpg";
-	private $mediaLogos = array(    array("logo"=>"/content/logos/f_logo.png", "url"=>"http://www.facebook.com/pages/Kanovereniging-De-Windhappers/546877148674699", "title"=>"Facebook"),
-                                    array("logo"=>"/content/logos/twitter-bird-dark-bgs.png", "url"=>"https://twitter.com/DeWindhappers", "title"=>"Twitter") );
+	private $mediaBarItems = array( array("logo"=>"/content/logos/f_logo.png", "url"=>"http://www.facebook.com/pages/Kanovereniging-De-Windhappers/546877148674699", "title"=>"Facebook", "class"=>"media_item_social"),
+                                    array("logo"=>"/content/logos/twitter-bird-dark-bgs.png", "url"=>"https://twitter.com/DeWindhappers", "title"=>"Twitter", "class"=>"media_item_social"),
+                                    array("logo"=>"/content/icons/flags/flag-nl.png", "url"=>"../controllers/view.controller.php?action=home", "title"=>"Nederlands", "class"=>"media_item_language"),                                    
+                                    array("logo"=>"/content/icons/flags/flag-gb.png", "url"=>"../controllers/view.controller.php?action=home_english", "title"=>"English", "class"=>"media_item_language"),
+                                    array("logo"=>"/content/icons/flags/flag-de.png", "url"=>"../controllers/view.controller.php?action=home_german", "title"=>"Deutsch", "class"=>"media_item_language") );
     private $openGraphTags = array( array("name"=>"og:title", "value"=>"Kanovereniging De Windhappers"),
                                     array("name"=>"og:type", "value"=>"sport"),
                                     array("name"=>"og:url", "value"=>"http://wh.xsystems.org/code/php/controllers/view.controller.php?action=home"),
@@ -57,7 +60,7 @@ class DeWindhappersTemplate extends XHTML5Template
 		    $this->add($meta, "head");
 	    }
 	    
-		$this->add( new BannerElement("", $this->bannerLogoURL, $this->bannerImageURL, $this->mediaLogos, $this->bannerText) );
+		$this->add( new BannerElement("", $this->bannerLogoURL, $this->bannerImageURL, $this->mediaBarItems, $this->bannerText) );
 		$this->add( new MenuElement("nav") );
 	}
 	

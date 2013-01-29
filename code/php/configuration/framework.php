@@ -24,6 +24,8 @@ require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/iframe.view.php");
 require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/objectshow.view.php");
 require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/meteorology.view.php");
 require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/canoetours.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/home_english.view.php");
+require_once(Configuration::$DOCUMENT_ROOT."/code/php/views/home_german.view.php");
 
 /** Setup database connection **/
 try
