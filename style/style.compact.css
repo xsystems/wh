@@ -122,7 +122,8 @@ body
 .content
 {
     color:black;
-    background:#98FB98;
+/*    background:#98FB98;*/
+    background-color:rgba(152,251,152,0.8);    
     width:90%;
     overflow:hidden;
     padding-left:5%;
