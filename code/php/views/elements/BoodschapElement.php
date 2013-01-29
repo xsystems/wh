@@ -26,7 +26,7 @@ class BoodschapElement implements ITemplateElement, ITemplateAttributes
 		$domDocumentFragment = $domDocument->createDocumentFragment();
 		$domDocumentFragment->appendXML( "<div class='content namespace_container' xmlns='http://www.w3.org/1999/xhtml'>
 		                                    <h1>Stel hier uw verhaal op</h1>
-		                                    <form id='bdsch' action='http://www.windhappers.nl/bdsch-cntrl.php' method='post'>
+		                                    <form id='bdsch' action='/code/php/lib/bdsch-cntrl.php' method='post'>
                                                 <label form='bdsch' for='bdsch_name'>Naam</label>
                                                 <input id='bdsch_name' name='naam' form='bdsch' type='text' maxlength='50' required='required'> </input>
                                                 <label form='bdsch' for='bdsch_email'>E-mail adres</label>

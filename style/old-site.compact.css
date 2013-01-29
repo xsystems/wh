@@ -1,27 +1,17 @@
 #vertel
 {
-    color:black;
-    background:#98FB98;
-    width:90%;
-    overflow:hidden;
-    text-align:justify;
+    background:transparent;
     font-size:10pt;
-    padding-right:5%;
-    padding-left:5%;
 }
 
-#vertel h3
+#vertel section
 {
-    font-size:2em;
+    background-color:rgba(152,251,152,0.8);    
+    overflow:hidden;
+    text-align:justify;    
+    border-radius:20px;
     margin-top:1em;
     margin-bottom:1em;
-/*    text-transform:capitalize;*/
+    padding:2em;
 }
 
-#vertel h4
-{
-    font-size:1.5em;
-    margin-top:0.5em;
-    margin-bottom:0.5em;
-/*    text-transform:capitalize;*/
-}

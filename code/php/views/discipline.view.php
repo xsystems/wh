@@ -32,7 +32,7 @@ class DisciplineView
 	
 	
 		$wh = new DeWindhappersTemplate("Discipline", $bannerImageURL);
-		$wh->add(new DisciplineElement("contentarea", $name));
+		$wh->add(new DisciplineElement("content discipline", $name));
 		$domDocument = $wh->create();
 
 		//$domDocument->schemaValidate(DeWindhappersTemplate::schemaURI);

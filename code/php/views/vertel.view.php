@@ -8,7 +8,7 @@ class VertelView
 	public static function write()
 	{	
 		$wh = new DeWindhappersTemplate("Berichten");
-		$wh->add( new VertelElement("contentarea") );
+		$wh->add( new VertelElement("") );
 		$domDocument = $wh->create();
 		
 		//$domDocument->schemaValidate(DeWindhappersTemplate::schemaURI);

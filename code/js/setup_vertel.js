@@ -5,7 +5,8 @@ var linkType = 'text/css';
 var linkMedia = 'screen';
 
 var proxyURL = "/lib/proxy.php";
-var vertelURL = "http://www.windhappers.nl/vertel.php";
+var vertelURL = "http://wh.xsystems.org/code/php/lib/vertel.php";
+//var vertelURL = "http://wh.localhost/code/php/lib/vertel.php";
 
 function extract(htmlString)
 {
@@ -15,7 +16,7 @@ function extract(htmlString)
     parser = new DOMParser();
     vertelDocument = parser.parseFromString(convertedHtmlString, "text/html");
 
-//    console.log(vertelDocument.childNodes[1].getElementsByTagName("div")[0].innerHTML);
+    console.log(vertelDocument.childNodes[1].getElementsByTagName("div")[0].innerHTML);
 
     document.getElementById("vertel").innerHTML= vertelDocument.childNodes[1].getElementsByTagName("div")[0].innerHTML;
 }

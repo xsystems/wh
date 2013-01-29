@@ -21,12 +21,12 @@ class VertelElement implements ITemplateElement, ITemplateAttributes
 		$domDocument->validateOnParse = self::validateOnParse;
 		
 		$this->domElement = $domDocument->createElementNS(self::namespaceURI, "div");		
-		$content = $domDocument->createElementNS(self::namespaceURI, "div");			
+		$content = $domDocument->createElementNS(self::namespaceURI, "article");			
 		$script = $domDocument->createElementNS(self::namespaceURI, "script");
 		$dummy_text = $domDocument->createTextNode(" ");		
 		
 		$this->domElement->setAttribute("class", $this->rootElementClass);
-		$content->setAttribute("class", "content");
+		$content->setAttribute("class", "");
 		$content->setAttribute("id", "vertel");		
 		$content->setIdAttribute("id", true);
 		$script->setAttribute("type", "text/javascript");

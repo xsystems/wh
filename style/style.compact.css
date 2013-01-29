@@ -109,11 +109,6 @@ body
     margin-bottom:0.25em;
 }
 
-.main p
-{
-    margin-bottom:2em;
-}
-
 .main span
 {
     color:red;
@@ -135,12 +130,12 @@ body
     text-transform:capitalize;
 }
 
-.discipline h2
+.discipline_images
 {
-    text-transform:capitalize;
+    margin-top:2em;
 }
 
-.img
+.discipline_image
 {
     display:inline-block;
     margin-bottom:2em;
@@ -148,7 +143,7 @@ body
     width: 48%;
 }
 
-.img a img
+.discipline_image a img
 {
     border: 1px solid transparent;
     width:440px;
@@ -156,7 +151,7 @@ body
     border-radius:20px;
 }
 
-.img a:hover img
+.discipline_image a:hover img
 {
     border: 1px solid #000000;
 }
@@ -723,7 +718,8 @@ table th
 {
     font-size:1.1em;
     padding:3px 7px 2px 7px;
-    background-color:#FFFF33;
+/*    background-color:#FFFF33;*/
+    background-color:rgba(255,255,51,0.8);    
     color:black;
 }
 
@@ -748,13 +744,15 @@ table td
 table tr
 {
     color:black;
-    background-color:#98FB98;
+/*    background-color:#98FB98;*/
+    background-color:rgba(152,251,152,0);    
 }
 
 table tr.alt
 {
     color:black;
-    background-color:#66FF66;
+/*    background-color:#66FF66;*/
+    background-color:rgba(102,255,102,0.8);        
 }
 
 td span
