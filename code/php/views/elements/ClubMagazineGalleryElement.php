@@ -47,6 +47,8 @@ class ClubMagazineGalleryElement extends GalleryElement
                 $url = $urlMagazine;
         	
         		$a->setAttribute("href", $url);
+        		$a->setAttribute("target", "_blank");
+        		$a->setAttribute("type", "application/pdf");
         		$a->setAttribute("title", $clubmagazineInfo["filename"]);
         		$a->setAttribute("class", "galleryPageItem");
         		$img->setAttribute("src", str_replace(" ", "%20", $pageItem["thumbnail"]));
