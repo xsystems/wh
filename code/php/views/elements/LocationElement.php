@@ -35,12 +35,12 @@ class LocationElement implements ITemplateElement, ITemplateAttributes
 		$title1 = $domDocument->createTextNode("");
 		$p_text = $domDocument->createTextNode("De Windhappers is een Haagse kanovereniging die zich bevindt achter de bekende Haagse Kunstijsbaan \"De Uithof\". Ons botenhuis met stalling en kantine is herkenbaar aan ons logo. Het water waar het botenhuis aan ligt heet De Wennetjessloot.");
 		$title2 = $domDocument->createTextNode("Adres");
-		$route_text = $domDocument->createTextNode("Houd rekening met de volgende aanrijroute: Vanaf de Lozerlaan neem de afslag Uithof en Jaap Edenweg, deze weg afrijden tot het achterste deel van de parkeerplaats. Loop vanaf hier naar het verenigingsgebouw. Zie ook afbeelding hiernaast!");
+		$route_text = $domDocument->createTextNode("Houd rekening met de volgende aanrijroute: Vanaf de Lozerlaan neem de afslag Uithof en Jaap Edenweg, deze weg afrijden tot het achterste deel van de parkeerplaats. Loop vanaf hier naar het verenigings-gebouw. Zie ook afbeelding hiernaast!");
 		$address_text = $domDocument->createTextNode("Nieuweweg 75, 2544NG Den Haag");;
 		$script_text = $domDocument->createTextNode(" ");
 		
 		$this->domElement->setAttribute("class", $this->rootElementClass);
-		$content->setAttribute("class", "content location_content");
+		$content->setAttribute("class", "content location_content justify-all-lines");
 		$img_route->setAttribute("src", "/content/route_windhappers.jpg");
 		$img_route->setAttribute("alt", "Aanrijroute");		
 		$img_route->setAttribute("id", "route");		

@@ -8,10 +8,12 @@ class VertelElement implements ITemplateElement, ITemplateAttributes
     private $domElement;
 
 	private $rootElementClass;
+	private $filename;
 
-	public function __construct($rootElementClass) 
+	public function __construct($rootElementClass, $filename) 
 	{
 		$this->rootElementClass = $rootElementClass;
+		$this->filename = $filename;
 		$this->init();
 	}
 	
@@ -21,20 +23,19 @@ class VertelElement implements ITemplateElement, ITemplateAttributes
 		$domDocument->validateOnParse = self::validateOnParse;
 		
 		$this->domElement = $domDocument->createElementNS(self::namespaceURI, "div");		
-		$content = $domDocument->createElementNS(self::namespaceURI, "article");			
-		$script = $domDocument->createElementNS(self::namespaceURI, "script");
-		$dummy_text = $domDocument->createTextNode(" ");		
-		
 		$this->domElement->setAttribute("class", $this->rootElementClass);
-		$content->setAttribute("class", "");
-		$content->setAttribute("id", "vertel");		
-		$content->setIdAttribute("id", true);
-		$script->setAttribute("type", "text/javascript");
-		$script->setAttribute("src", "/code/js/setup_vertel.js");		
-
-		$script->appendChild($dummy_text);
-		$this->domElement->appendChild($content);
-		$this->domElement->appendChild($script);
+		
+		$messages = "";		
+		if(filesize($this->filename) > 0)
+		{
+            $file = fopen($this->filename, 'r');
+            $messages = fread($file, filesize($this->filename));         
+            fclose($file);	
+            
+            $domDocumentFragmentMessages = $domDocument->createDocumentFragment();
+		    $domDocumentFragmentMessages->appendXML( "<article id='vertel'>$messages</article>" );     		    
+		    $this->domElement->appendChild($domDocumentFragmentMessages);		      	
+		}
 	}
 	
     public function add( $iTemplateElement )
