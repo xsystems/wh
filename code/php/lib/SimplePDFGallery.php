@@ -35,6 +35,7 @@ class SimplePDFGallery extends ASimpleGallery
 			$path_parts = pathinfo($file);
 		
 		    $im = new imagick($file."[0]");
+		    $im->scaleImage(240,340);
             $im->setImageFormat("jpg");
             $im->writeImage($thumbnailDirPath.$path_parts["filename"].".jpg");
             $im->clear();
