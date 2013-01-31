@@ -59,11 +59,7 @@ html
 body
 {
     color:black;
-/*    background-image:url(../../../content/brokenwaves_1920x1200.jpg);*/
-    background-image:url(../../../content/achtergrond.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+    background-color:rgba(136,195,103,1);
 }
 
 #main

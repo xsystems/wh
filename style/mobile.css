@@ -1,20 +1,9 @@
-body
-{
-/*    background-image:none;*/
-}
-
-#main
-{
-/*    width:100%;*/
-}
-
 .galleryPageItem
 {
     width:100%;
 }
 
-div.img img
+.section_canoetour
 {
-    width:980px;
-    height:auto;
+    width:100%;
 }
