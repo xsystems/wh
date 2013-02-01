@@ -59,7 +59,8 @@ html
 body
 {
     color:black;
-    background-color:rgba(136,195,103,1);
+/*    background-color:rgba(136,195,103,1);*/
+    background-color:#FFFFCC;
 }
 
 #main

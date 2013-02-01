@@ -4,13 +4,16 @@ require_once("XHTML5Template.php");
 require_once("BannerElement.php");
 require_once("FooterElement.php");
 require_once("MenuElement.php");
+require_once("../lib/MobileDetect.php");
 
 class DeWindhappersTemplate extends XHTML5Template
 {
 	private $title = "De Windhappers";
 	private $iconURL = "/content/logos/dewindhapperslogo.ico";
+	private $stylesheetMobile = "/style/mobile.css";
+	private $stylesheetNotMobile = "/style/not_mobile.css";
 	private $stylesheetURLs = array("/style/style.css");
-	private $scriptURLs = array("/code/js/inheritance.js", "/code/js/load.js", "/code/js/setup.js");
+	private $scriptURLs = array("/code/js/inheritance.js", "/code/js/load.js");
     private $bannerText = "De Windhappers";	
 	private $bannerLogoURL = "/content/logos/dewindhapperslogo.png";
 	private $bannerImageURL = "/content/banners/banner_default.jpg";
@@ -39,6 +42,16 @@ class DeWindhappersTemplate extends XHTML5Template
 	    {
 	        $this->bannerImageURL = $bannerImageURL;
 	    }
+	    
+	    $detect = new MobileDetect();
+	    if ($detect->isMobile()) 
+	    {
+            $this->stylesheetURLs[] = $this->stylesheetMobile;
+        }
+        else
+        {
+            $this->stylesheetURLs[] = $this->stylesheetNotMobile;            
+        }
 	    
 		parent::__construct($this->title, $this->iconURL, $this->stylesheetURLs, $this->scriptURLs);
 	}
