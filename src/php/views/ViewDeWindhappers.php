@@ -19,7 +19,7 @@ class ViewDeWindhappers extends ViewXHTML5
 	private $bannerImageURL = "/content/banners/banner_default.jpg";
 	private $mediaBarItems = array( array("logo"=>"/content/logos/f_logo.png", "url"=>"http://www.facebook.com/pages/Kanovereniging-De-Windhappers/546877148674699", "title"=>"Facebook", "class"=>"media_item_social"),
                                     array("logo"=>"/content/logos/twitter-bird-dark-bgs.png", "url"=>"https://twitter.com/DeWindhappers", "title"=>"Twitter", "class"=>"media_item_social"),
-                                    array("logo"=>"/content/icons/flags/flag-nl.png", "url"=>"", "title"=>"Nederlands", "class"=>"media_item_language"),                                    
+                                    array("logo"=>"/content/icons/flags/flag-nl.png", "url"=>"?action=home", "title"=>"Nederlands", "class"=>"media_item_language"),                                    
                                     array("logo"=>"/content/icons/flags/flag-gb.png", "url"=>"?action=home_english", "title"=>"English", "class"=>"media_item_language"),
                                     array("logo"=>"/content/icons/flags/flag-de.png", "url"=>"?action=home_german", "title"=>"Deutsch", "class"=>"media_item_language") );
     private $openGraphTags = array( array("name"=>"og:title", "value"=>"Kanovereniging De Windhappers"),
