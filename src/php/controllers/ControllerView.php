@@ -1,10 +1,24 @@
 <?php
 
-require('src/php/framework.php');	
+# Views
+require_once("src/php/views/ViewDeWindhappers.php");
+require_once("src/php/views/ViewElement.php");
+require_once("src/php/views/ViewElementHome.php");
+require_once("src/php/views/ViewElementDiscipline.php");
+require_once("src/php/views/ViewElementGalleryClubMagazine.php");
+require_once("src/php/views/ViewElementGalleryImage.php");
+require_once("src/php/views/ViewElementGalleryVideo.php");
+require_once("src/php/views/ViewElementVertel.php");
+require_once("src/php/views/ViewElementBoodschap.php");
+# Not used.
+#require_once($this->configuration->documentRoot."/src/php/views/ViewElementShowIFrame.php");
+#require_once($this->configuration->documentRoot."/src/php/views/ViewElementShowObject.php");
 
 class ControllerView
 {
     private $view;   
+    
+    private $configuration;
     
     private $gallery_items_per_page = null;
     private $gallery_screenshot_second = null;     
@@ -15,27 +29,32 @@ class ControllerView
     private $gallery_default_images = null;    
     private $gallery_default_videos = null;    
 
-    public function __construct()
+    public function __construct($configuration)
 	{
-	    $this->gallery_items_per_page = Configuration::$CONFIG_SETTINGS["gallery"]["gallery_items_per_page"]; 	
-	    $this->gallery_screenshot_second = Configuration::$CONFIG_SETTINGS["gallery"]["gallery_screenshot_second"]; 		    
-	    $this->gallery_path_clubmagazine = Configuration::$CONFIG_SETTINGS["gallery"]["gallery_path_clubmagazine"]; 
-        $this->gallery_path_images = Configuration::$CONFIG_SETTINGS["gallery"]["gallery_path_images"];	   
-        $this->gallery_path_videos = Configuration::$CONFIG_SETTINGS["gallery"]["gallery_path_videos"];	    
-        $this->gallery_default_clubmagazine = Configuration::$CONFIG_SETTINGS["gallery"]["gallery_default_clubmagazine"];	         
-        $this->gallery_default_images = Configuration::$CONFIG_SETTINGS["gallery"]["gallery_default_images"];	         
-        $this->gallery_default_videos = Configuration::$CONFIG_SETTINGS["gallery"]["gallery_default_videos"];	 
+	    $this->configuration = $configuration;
 	
-	    $this->view = new ViewDeWindhappers();
+	    $this->gallery_items_per_page = $this->configuration->get("gallery", "gallery_items_per_page"); 	
+	    $this->gallery_screenshot_second = $this->configuration->get("gallery", "gallery_screenshot_second"); 		    
+	    $this->gallery_path_clubmagazine = $this->configuration->get("gallery", "gallery_path_clubmagazine"); 
+        $this->gallery_path_images = $this->configuration->get("gallery", "gallery_path_images");	   
+        $this->gallery_path_videos = $this->configuration->get("gallery", "gallery_path_videos");	    
+        $this->gallery_default_clubmagazine = $this->configuration->get("gallery", "gallery_default_clubmagazine");	         
+        $this->gallery_default_images = $this->configuration->get("gallery", "gallery_default_images");	         
+        $this->gallery_default_videos = $this->configuration->get("gallery", "gallery_default_videos");	 
+	
+	    $this->view = new ViewDeWindhappers($this->configuration->getDatabase());
 	}
 	
 	public function getView($action, $queryString)
 	{
         switch($action){
 		    case 'calendar':
+	            $aViewElement = new ViewElement();
+	            $aViewElement->addFragment(file_get_contents("content/fragments/fragment_calendar.htm"));
+		    
 			    $this->view->setBannerText("Activiteiten");	
         	    $this->view->init();			    	    
-			    $this->view->add( new ViewElementCalendar("contentarea") );
+			    $this->view->add($aViewElement);			    		  
 			    break;
 		    case 'discipline':						    
 	            $bannerImageURL = null;
@@ -64,22 +83,23 @@ class ControllerView
 			    $this->view->setBannerText("Discipline");
 			    $this->view->setBannerImageUrl($bannerImageURL);
         	    $this->view->init();			    	    
-			    $this->view->add( new ViewElementDiscipline("content discipline", $queryString['name']) );			    
+			    $this->view->add( new ViewElementDiscipline($this->configuration->getDatabase(), $queryString['name'], "content discipline") );			    
 			    break;
 		    case 'gallery':
+		        $protocolHttpHost =  $this->configuration->get("system", "system_protocol").$this->configuration->get("system", "system_http_host");
 		        switch($queryString['type']){
 		            case 'clubmagazine':	
         			    $this->view->setBannerText("Clubblad");                        
                         $this->view->init();        			    
 
-                        $absoluteGalleryDir = Configuration::$DOCUMENT_ROOT.$this->gallery_path_clubmagazine;
+                        $absoluteGalleryDir = $this->configuration->get("system", "system_document_root").$this->gallery_path_clubmagazine;
 
 	                    //Default gallery. 		            		            
-	                    $imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST.$this->gallery_path_clubmagazine."/".$this->gallery_default_clubmagazine."/";
+	                    $imageDirURL = $protocolHttpHost.$this->gallery_path_clubmagazine."/".$this->gallery_default_clubmagazine."/";
                         $imageDirPath = $absoluteGalleryDir."/".$this->gallery_default_clubmagazine."/";
 		                if ( isset($queryString['gallery']) && !empty($queryString['gallery']) && $queryString['gallery'] != "")
 		                {
-                    	    $imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST.$this->gallery_path_clubmagazine."/".$queryString['gallery']."/"; 
+                    	    $imageDirURL = $protocolHttpHost.$this->gallery_path_clubmagazine."/".$queryString['gallery']."/"; 
 	                        $imageDirPath = $absoluteGalleryDir."/".$queryString['gallery']."/";		    
 		                }	
 
@@ -89,14 +109,14 @@ class ControllerView
         			    $this->view->setBannerText("Foto's");                        
                         $this->view->init(); 
 
-                        $absoluteGalleryDir = Configuration::$DOCUMENT_ROOT.$this->gallery_path_images;
+                        $absoluteGalleryDir = $this->configuration->get("system", "system_document_root").$this->gallery_path_images;
 
 	                    //Default gallery. 
-                        $imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST.$this->gallery_path_images."/".$this->gallery_default_images."/";
+                        $imageDirURL = $protocolHttpHost.$this->gallery_path_images."/".$this->gallery_default_images."/";
                         $imageDirPath = $absoluteGalleryDir."/".$this->gallery_default_images."/";
 		                if ( isset($queryString['gallery']) && !empty($queryString['gallery']) && $queryString['gallery'] != "")
 		                {
-                    	    $imageDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST.$this->gallery_path_images."/".$queryString['gallery']."/"; 
+                    	    $imageDirURL = $protocolHttpHost.$this->gallery_path_images."/".$queryString['gallery']."/"; 
 	                        $imageDirPath = $absoluteGalleryDir."/".$queryString['gallery']."/";		    
 		                }
 
@@ -106,14 +126,14 @@ class ControllerView
         			    $this->view->setBannerText("Video's");                        
                         $this->view->init(); 
 		
-                        $absoluteGalleryDir = Configuration::$DOCUMENT_ROOT.$this->gallery_path_videos;		
+                        $absoluteGalleryDir = $this->configuration->get("system", "system_document_root").$this->gallery_path_videos;		
 		
 	                    // Default gallery.
-	                    $videoDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST.$this->gallery_path_videos."/".$this->gallery_default_videos."/";
+	                    $videoDirURL = $protocolHttpHost.$this->gallery_path_videos."/".$this->gallery_default_videos."/";
                         $videoDirPath = $absoluteGalleryDir."/".$this->gallery_default_videos."/";		
 		                if ( isset($queryString['gallery']) && !empty($queryString['gallery']) && $queryString['gallery'] != "")
 		                {
-		                    $videoDirURL = Configuration::$PROTOCOL.Configuration::$HTTP_HOST.$this->gallery_path_videos."/".$queryString['gallery']."/";
+		                    $videoDirURL = $protocolHttpHost.$this->gallery_path_videos."/".$queryString['gallery']."/";
 			                $videoDirPath = $absoluteGalleryDir."/".$queryString['gallery']."/";
 		                }	
 
@@ -133,50 +153,77 @@ class ControllerView
 		    case 'boodschap':
 			    $this->view->setBannerText("Berichten");	
         	    $this->view->init();			    	    
-			    $this->view->add( new ViewElementBoodschap("contentarea") );		    
+			    $this->view->add( new ViewElementBoodschap("") );		    
 			    break;
 		    case 'bdsch_cntrl':
+		        #TODO: Reimplement.
 			    require_once("src/php/lib/bdsch-cntrl.php");
 			    return;
 			    break;			  
 		    case 'bdsch_opsl':
+		        #TODO: Reimplement.		    
 			    require_once("src/php/lib/bdsch-opsl.php");
 			    return;
 			    break;	
 		    case 'meteorology':
+	            $aViewElement = new ViewElement();
+	            $aViewElement->addFragment(file_get_contents("content/fragments/fragment_meteorology.htm"));
+		    
 			    $this->view->setBannerText("Meteorologie");	
         	    $this->view->init();			    	    
-			    $this->view->add( new ViewElementMeteorology("contentarea") );
+			    $this->view->add($aViewElement);
 			    break;				    			      
 		    case 'organisation':
+	            $aViewElement = new ViewElement();
+	            $aViewElement->addFragment(file_get_contents("content/fragments/fragment_organisation.htm"));
+		    
 			    $this->view->setBannerText("Organisatie");	
         	    $this->view->init();			    	    
-			    $this->view->add( new ViewElementOrganisation("contentarea") );
+			    $this->view->add($aViewElement);
 			    break;	
 		    case 'location':
+	            $aViewElement = new ViewElement();
+	            $aViewElement->addScript("/src/js/setup_map.js", "text/javascript");
+	            $aViewElement->addFragment(file_get_contents("content/fragments/fragment_location.htm"));
+		    
 			    $this->view->setBannerText("Locatie");	
         	    $this->view->init();			    	    
-			    $this->view->add( new ViewElementLocation("contentarea") );
+			    $this->view->add($aViewElement);			    		  
 			    break;	
 		    case 'costs':
+	            $aViewElement = new ViewElement();
+	            $aViewElement->addFragment(file_get_contents("content/fragments/fragment_costs.htm"));
+		    
 			    $this->view->setBannerText("Kosten");	
         	    $this->view->init();			    	    
-			    $this->view->add( new ViewElementCosts("") );
+			    $this->view->add($aViewElement);
 			    break;				    		    				
 		    case 'canoetours':
+	            $aViewElement = new ViewElement();
+	            $aViewElement->addScript("/src/js/setup_lightbox2.js", "text/javascript");
+	            $aViewElement->addFragment(file_get_contents("content/fragments/fragment_canoetours.htm"));
+		    
 			    $this->view->setBannerText("Kanoroutes");	
         	    $this->view->init();			    	    
-			    $this->view->add( new ViewElementCanoetours("") );
+			    $this->view->add($aViewElement);
 			    break;	
-		    case 'home_english':
+		    case 'home_english':			    
+	            $aViewElement = new ViewElementHome();
+	            $aViewElement->addScript("/src/js/setup_lightbox2.js", "text/javascript");
+	            $aViewElement->addFragment(file_get_contents("content/fragments/fragment_home_english.htm"));
+		    
 			    $this->view->setBannerText("Home English");	
         	    $this->view->init();			    	    
-			    $this->view->add( new ViewElementHomeEnglish("") );
+			    $this->view->add($aViewElement);			    
 			    break;	
-		    case 'home_german':
+		    case 'home_german':			    
+	            $aViewElement = new ViewElementHome();
+	            $aViewElement->addScript("/src/js/setup_lightbox2.js", "text/javascript");
+	            $aViewElement->addFragment(file_get_contents("content/fragments/fragment_home_german.htm"));
+		    
 			    $this->view->setBannerText("Home Deutsch");	
         	    $this->view->init();			    	    
-			    $this->view->add( new ViewElementHomeGerman("") );
+			    $this->view->add($aViewElement);			    
 			    break;
 	        case 'iframe':
         	    $this->view->init();			    	    
@@ -187,9 +234,13 @@ class ControllerView
 			    $this->view->add( new ViewElementShowObject("", $queryString['url'], $queryString['type'], $queryString['title']) );			    
 			    break;				    														
 		    default:
+	            $aViewElement = new ViewElementHome();
+	            $aViewElement->addScript("/src/js/setup_lightbox2.js", "text/javascript");
+	            $aViewElement->addFragment(file_get_contents("content/fragments/fragment_home_dutch.htm"));
+		    
 			    $this->view->setBannerText("Home");	
         	    $this->view->init();			    	    
-			    $this->view->add( new ViewElementHome("") );
+			    $this->view->add($aViewElement);
 			    break;
 	    }	
 	    

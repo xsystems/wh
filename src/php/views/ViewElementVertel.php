@@ -1,9 +1,8 @@
 <?php	
 
 require_once("IViewElement.php");
-require_once("IViewAttributes.php");
 
-class ViewElementVertel implements IViewElement, IViewAttributes
+class ViewElementVertel implements IViewElement
 {	
     private $domElement;
 

@@ -8,6 +8,7 @@ require_once("lib/php/MobileDetect.php");
 
 class ViewDeWindhappers extends ViewXHTML5
 {
+    private $db;
 	private $title = "De Windhappers";
 	private $iconURL = "/content/logos/dewindhapperslogo.ico";
 	private $stylesheetMobile = "/style/mobile.css";
@@ -31,8 +32,10 @@ class ViewDeWindhappers extends ViewXHTML5
                                     array("name"=>"og:description", "value"=>"A canoe club."));
                                     
 
-	public function __construct()
+	public function __construct($db)
 	{	    
+	    $this->db = $db;
+	
 	    $detect = new MobileDetect();
 	    if ($detect->isMobile()) 
 	    {
@@ -64,7 +67,7 @@ class ViewDeWindhappers extends ViewXHTML5
 	    }
 	    
 		$this->add( new ViewElementBanner("", $this->bannerLogoURL, $this->bannerImageURL, $this->mediaBarItems, $this->bannerText) );
-		$this->add( new ViewElementMenu("nav") );
+		$this->add( new ViewElementMenu($this->db, "nav") );
 	}
 	
 	public function setBannerText($bannerText)

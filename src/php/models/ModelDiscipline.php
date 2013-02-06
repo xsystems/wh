@@ -1,23 +1,23 @@
 <?php 
-require_once('src/php/framework.php');
 
 class Discipline 
 {
-	private static  $db,
-                    $dbh;
+	private $db,
+            $dbh;
 
 	public 	$id,
             $name,
             $description,
             $image_folder_location;		
 			
-	public function __construct($id = null) 
+	public function __construct($db, $id = null) 
 	{
-		self::$db = Configuration::$DB;
-		self::$dbh = self::$db->getDBH();
+		$this->db = $db;
+		$this->dbh = $this->db->getDBH();
 	
-		if($id) {
-			self::$dbh->beginTransaction();
+		if($id) 
+		{
+			$this->dbh->beginTransaction();
 			
 			$stmt = self::$dbh->prepare("SELECT * FROM discipline WHERE id = :id");
     			$stmt->bindParam(':id', $id);					
@@ -25,7 +25,7 @@ class Discipline
 			$stmt->setFetchMode(PDO::FETCH_INTO, $this);	
 			$stmt->fetch();
 			
-			self::$dbh->commit();		
+			$this->dbh->commit();		
 		}
 	}	
 
@@ -33,29 +33,29 @@ class Discipline
 	{
 		if($this->id)
 		{	
-			self::$dbh->beginTransaction();
+			$this->dbh->beginTransaction();
 			
-			$stmt = self::$dbh->prepare("UPDATE discipline SET name=:name, description=:description, image_folder_location=:image_folder_location WHERE id=:id");
+			$stmt = $this->dbh->prepare("UPDATE discipline SET name=:name, description=:description, image_folder_location=:image_folder_location WHERE id=:id");
     			$stmt->bindParam(':id', $this->id);
     			$stmt->bindParam(':name', $this->name);
     			$stmt->bindParam(':description', $this->description);
     			$stmt->bindParam(':image_folder_location', $this->image_folder_location);					
 			$stmt->execute();
 			
-			self::$dbh->commit();
+			$this->dbh->commit();
 		}
 		else
 		{
-			self::$dbh->beginTransaction();
+			$this->dbh->beginTransaction();
 			
-			$stmt = self::$dbh->prepare("INSERT INTO discipline (name, description, image_folder_location) VALUES (:name, :description, :image_folder_location)");
+			$stmt = $this->dbh->prepare("INSERT INTO discipline (name, description, image_folder_location) VALUES (:name, :description, :image_folder_location)");
     			$stmt->bindParam(':name', $this->name);
     			$stmt->bindParam(':description', $this->description);
     			$stmt->bindParam(':image_folder_location', $this->image_folder_location);					
 			$stmt->execute();
-			$this->id=self::$dbh->lastInsertId();
+			$this->id=$this->dbh->lastInsertId();
 			
-			self::$dbh->commit();
+			$this->dbh->commit();
 		}
 	}
 	
@@ -63,64 +63,61 @@ class Discipline
 	{
 		if($this->id)
 		{
-			self::$dbh->beginTransaction();
+			$this->dbh->beginTransaction();
 			
-			$stmt = self::$dbh->prepare("DELETE FROM discipline WHERE id=:id");
+			$stmt = $this->dbh->prepare("DELETE FROM discipline WHERE id=:id");
     			$stmt->bindParam(':id', $this->id);					
 			$stmt->execute();
 			
-			self::$dbh->commit();		
+			$this->dbh->commit();		
 		}
 	}
 
-	public static function getAll()
+	public static function getAll($db)
 	{		
-		self::$db = Configuration::$DB;
-		self::$dbh = self::$db->getDBH();
+		$dbh = $db->getDBH();
 	
-		self::$dbh->beginTransaction();
+		$dbh->beginTransaction();
 	
-		$stmt = self::$dbh->prepare("SELECT * FROM discipline");
+		$stmt = $dbh->prepare("SELECT * FROM discipline");
 		$stmt->execute();
-		$stmt->setFetchMode(PDO::FETCH_CLASS, 'Discipline');	
+		$stmt->setFetchMode(PDO::FETCH_CLASS, 'Discipline', array($db));	
 		$disciplines = $stmt->fetchAll();
 	
-		self::$dbh->commit();	
+		$dbh->commit();	
 		
 		return $disciplines;	
 	}
 	
-	public static function getNames()
+	public static function getNames($db)
 	{		
-		self::$db = Configuration::$DB;
-		self::$dbh = self::$db->getDBH();
+		$dbh = $db->getDBH();
 	
-		self::$dbh->beginTransaction();
+		$dbh->beginTransaction();
 	
-		$stmt = self::$dbh->prepare("SELECT name FROM discipline");
+		$stmt = $dbh->prepare("SELECT name FROM discipline");
 		$stmt->execute();
 		$stmt->setFetchMode(PDO::FETCH_ASSOC);	
 		$disciplineNames = $stmt->fetchAll();
 	
-		self::$dbh->commit();	
+		$dbh->commit();	
 		
 		return $disciplineNames;	
 	}
 	
-	public static function getByName($name)
+	public static function getByName($db, $name)
 	{		
-		self::$db = Configuration::$DB;
-		self::$dbh = self::$db->getDBH();
+		$dbh = $db->getDBH();
 	
-		self::$dbh->beginTransaction();
+		$dbh->beginTransaction();
 	
-		$stmt = self::$dbh->prepare("SELECT * FROM discipline WHERE name=:name");
+		$stmt = $dbh->prepare("SELECT * FROM discipline WHERE name=:name");
 		$stmt->bindParam(':name', $name);
 		$stmt->execute();
-		$stmt->setFetchMode(PDO::FETCH_CLASS, 'Discipline');	
+		$stmt->setFetchMode(PDO::FETCH_CLASS, 'Discipline', array($db));	
 		$discipline = $stmt->fetch();
 	
-		self::$dbh->commit();	
+		$dbh->commit();	
 		
 		return $discipline;	
 	}

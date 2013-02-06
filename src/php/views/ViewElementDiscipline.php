@@ -1,25 +1,25 @@
 <?php	
 
 require_once("IViewElement.php");
-require_once("IViewAttributes.php");
 
-class ViewElementDiscipline implements IViewElement, IViewAttributes
+class ViewElementDiscipline implements IViewElement
 {
     private $domElement;
-
 	private $rootElementClass;
+    private $db;	
 	private $name;
 	
-	public function __construct($rootElementClass, $name) 
+	public function __construct($db, $name, $rootElementClass="") 
 	{
 		$this->rootElementClass = $rootElementClass;
 		$this->name = $name;
+		$this->db = $db;
 		$this->init();
 	}
 
 	public function init()
 	{
-		$discipline = Discipline::getByName($this->name);
+		$discipline = Discipline::getByName($this->db, $this->name);
 		
 		$search = explode(",","ç,æ,œ,á,é,í,ó,ú,à,è,ì,ò,ù,ä,ë,ï,ö,ü,ÿ,â,ê,î,ô,û,å,e,i,ø,u");
 		$replace = explode(",","c,ae,oe,a,e,i,o,u,a,e,i,o,u,a,e,i,o,u,y,a,e,i,o,u,a,e,i,o,u");
@@ -50,13 +50,12 @@ class ViewElementDiscipline implements IViewElement, IViewAttributes
 		{
             $imgboxDiv = $domDocument->createElementNS(self::namespaceURI, "div");
             $imgboxDiv->setAttribute("class", "discipline_images justify-all-lines");
-			$images = scandir(Configuration::$DOCUMENT_ROOT.$image_folder_location);
+			$images = scandir($image_folder_location);
 		
 			foreach ($images as $image)
 			{
 				if (!is_dir($image))
-				{
-					
+				{					
 					$imageDiv = $domDocument->createElementNS(self::namespaceURI, "div");
 					$a = $domDocument->createElementNS(self::namespaceURI, "a");
 					$img = $domDocument->createElementNS(self::namespaceURI, "img");

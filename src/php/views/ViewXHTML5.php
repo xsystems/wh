@@ -1,9 +1,8 @@
 <?php
 
 require_once("IView.php");
-require_once("IViewAttributes.php");
 
-class ViewXHTML5 implements IView, IViewAttributes
+class ViewXHTML5 implements IView
 {
   	private $domDocument;
   	private $isInitialized;

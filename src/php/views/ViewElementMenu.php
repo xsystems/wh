@@ -1,17 +1,20 @@
 <?php	
 
 require_once("IViewElement.php");
-require_once("IViewAttributes.php");
 
-class ViewElementMenu implements IViewElement, IViewAttributes
+// Models
+require_once("src/php/models/ModelDiscipline.php");
+
+class ViewElementMenu implements IViewElement
 {
     private $domElement;
-
 	private $rootElementClass;
+	private $db;
 
-	public function __construct($rootElementClass) 
+	public function __construct($db, $rootElementClass="") 
 	{
 		$this->rootElementClass = $rootElementClass;
+		$this->db = $db;
 		$this->init();
 	}
 
@@ -53,7 +56,7 @@ class ViewElementMenu implements IViewElement, IViewAttributes
 		// Discipline submenu
 		$disciplineSubMenu = $domDocument->createElementNS(self::namespaceURI, "ul");
 		
-		foreach (Discipline::getNames() as $name)
+		foreach (Discipline::getNames($this->db) as $name)
 		{
 			$urlEncodedName = urlencode($name['name']);
 			$url = "?action=discipline&name={$urlEncodedName}";

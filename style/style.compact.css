@@ -115,6 +115,8 @@ body
     overflow:hidden;
     padding-left:5%;
     padding-right:5%;
+    padding-top:1em;
+    padding-bottom:1em;    
 }
 
 .discipline h1
@@ -130,7 +132,6 @@ body
 .discipline_image
 {
     display:inline-block;
-    margin-bottom:2em;
     height: auto;
     width: 48%;
 }
@@ -146,11 +147,6 @@ body
 .discipline_image a:hover img
 {
     border: 1px solid #000000;
-}
-
-.article_home
-{
-    padding:1em;
 }
 
 .article_home footer
@@ -194,7 +190,6 @@ body
 
 #bdsch
 {
-    margin-bottom:2em;
     padding-bottom:2em;
 }
 
@@ -490,11 +485,6 @@ body
     z-index:-5;
 }
 
-.home_content
-{
-    width:90%;
-}
-
 .location_content article
 {
     display:inline-block;
@@ -517,9 +507,13 @@ body
     text-align:center;
 }
 
-.article_canoetours h1
+.article_canoetours>h1
 {
-    margin:0;
+    background-color:rgba(136,195,103,0.75);    
+    border-radius:20px;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    text-align:center;
 }
 
 .section_canoetour

@@ -1,9 +1,8 @@
 <?php	
 
 require_once("IViewElement.php");
-require_once("IViewAttributes.php");
 
-class ViewElementGallery implements IViewElement, IViewAttributes
+class ViewElementGallery implements IViewElement
 {    
     protected $galleryPageId = "gallery_page";    
     private $formID = "gallery_form";
