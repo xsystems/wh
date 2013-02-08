@@ -1,0 +1,6 @@
+<div id="banner" style="background-image:url(<?php echo $this->bannerImageURL; ?>);">
+    <a class="banner_logo" href="<?php echo $this->bannerLogoURL; ?>">
+        <img src="<?php echo $this->bannerLogoImageURL; ?>" alt="<?php echo $this->bannerLogoText; ?>" title="<?php echo $this->bannerLogoText; ?>"/>
+    </a>
+    <p><?php echo $this->bannerText; ?></p>
+</div>

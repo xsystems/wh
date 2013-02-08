@@ -1,0 +1,5 @@
+<?php foreach($this->galleryPageImage as $item): ?>
+    <a href="<?php echo $item["media"]; ?>" rel="lightbox[page0]" title="<?php echo $item["filename"]; ?>" class="galleryPageItem">
+        <img src="<?php echo $item["thumbnail"]; ?>" alt="<?php echo $item["filename"]; ?>" class="galleryThumb"/>
+    </a>
+<?php endforeach?>

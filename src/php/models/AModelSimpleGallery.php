@@ -193,7 +193,9 @@ abstract class ASimpleGallery
 				
 			for($i=$startIndex; $i<=$endIndex; $i++)
 			{				
-				$page[] = array("media" => $this->mediaDirURL.$media[$i], "thumbnail" => $this->thumbnailDirURL.$thumbnails[$i]);
+			    $path_info = pathinfo($media[$i]);
+			
+				$page[] = array("extension" => $path_info["extension"], "filename" => $media[$i], "media" => str_replace(" ", "%20", $this->mediaDirURL.$media[$i]), "thumbnail" => str_replace(" ", "%20", $this->thumbnailDirURL.$thumbnails[$i]));
 			}
 		}
 		

@@ -1,0 +1,20 @@
+<!DOCTYPE <?php echo $this->qualifiedName; ?> PUBLIC "<?php echo $this->publicId; ?>" "<?php echo $this->systemId; ?>">
+<html xmlns="<?php echo $this->namespaceURI; ?>">
+    <head id="head">
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/> 
+        <link rel="shortcut icon" href="<?php echo $this->icon; ?>"/> 
+        <title><?php echo $this->title; ?></title>
+        <?php foreach($this->stylesheetURLs as $stylesheetURL): ?>
+            <link rel="stylesheet" type="text/css" href="<?php echo $stylesheetURL; ?>"/>
+        <?php endforeach; ?>
+        <?php foreach($this->scriptURLs as $scriptURL): ?>
+            <script type="text/javascript" src="<?php echo $scriptURL; ?>"> </script>
+        <?php endforeach; ?>        
+    </head>
+    <body>
+        <div id="main" class="main">
+
+        </div>
+    </body>
+</html>
+

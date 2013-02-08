@@ -1,0 +1,7 @@
+<div class="media_items">
+    <?php foreach($this->mediaBarItems as $item): ?>
+        <a href="<?php echo $item["url"] ?>" class="<?php echo $item["class"] ?>">
+            <img src="<?php echo $item["logo"] ?>" alt="<?php echo $item["title"] ?>" title="<?php echo $item["title"] ?>"/>
+        </a>
+    <?php endforeach; ?>
+</div>

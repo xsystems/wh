@@ -1,0 +1,3 @@
+<?php foreach($this->openGraphTags as $tag): ?>
+    <meta content="<?php echo $tag["value"] ?>" property="<?php echo $tag["name"] ?>"/>
+<?php endforeach; ?>

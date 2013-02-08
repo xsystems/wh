@@ -1,0 +1,5 @@
+<?php foreach($this->galleryPageClubMagazine as $item): ?>
+    <a href="<?php echo $item["media"]; ?>" target="_blank" type="application/pdf" title="<?php echo $item["filename"]; ?>" class="galleryPageItem">
+        <img src="<?php echo $item["thumbnail"]; ?>" alt="<?php echo $item["filename"]; ?>" class="galleryThumb"/>
+    </a>
+<?php endforeach?>

@@ -1,6 +1,6 @@
 //var videojsCSS = "../../../lib/video-js/css/tube.css";
-var videojsCSS = "/lib/js/video-js/css/video-js.css";
-var videojsJS = "/lib/js/video-js/js/video.js";
+var videojsCSS = "/lib/js/video-js/video-js.min.css";
+var videojsJS = "/lib/js/video-js/video.min.js";
 var os = "/src/js/os.js";
 
 var linkRel = 'stylesheet';
@@ -8,8 +8,8 @@ var linkType = 'text/css';
 var linkMedia = 'screen';
 
 var aspectRatio = 9/16; //aspect ratio
-var flashPlayer = "/lib/js/video-js/bin/video-js.swf";
-var options = {"controls": true, "preload": "metadata", "width": "100%"};
+var flashPlayer = "/lib/js/video-js/video-js.swf";
+var options = {"controls":true, "preload":"metadata", "width":"100%"};
 
 var timeout = 2000; //ms
 
@@ -31,8 +31,7 @@ function playEvent()
 {
     var os = new OS();
     
-    if(os.isMobile())
-    {
+    if(os.isMobile()){
         console.log("mobile --> play");
         console.log("mobile --> video to fullscreen");
         //Is not allowed, only when the user performs a specific action.
@@ -49,8 +48,7 @@ function setupPlayer(player)
 
 function initPlayer(videoElementIndex, videoElements)
 {
-    if(videoElementIndex < videoElements.length)
-    {
+    if(videoElementIndex < videoElements.length){
         var id = videoElements[videoElementIndex].getAttribute("id");
 
         _V_(id , options, initPlayer(videoElementIndex+1, videoElements)).ready(

@@ -1,0 +1,9 @@
+<?php $videoID = 0 ?>
+<?php foreach($this->galleryPageVideo as $item): ?>  
+    <video id="video<?php echo $videoID ?>" class="video-js vjs-default-skin galleryPageItem" poster="<?php echo $item["thumbnail"]; ?>">
+        <source src="<?php echo $item["media"]; ?>" type="video/<?php echo $item["extension"]; ?>" />
+    </video>
+    <?php $videoID++ ?>
+<?php endforeach?>
+
+
