@@ -2,20 +2,20 @@
     <header> </header>
     <section>
         <h1>De Windhappers</h1>
-        <em>Welkom op de website van Kanovereniging De Windhappers. Op deze site vind je alles wat je wilt weten over kajak- of kanovaren in de regio Den Haag/Westland.</em>
+        <em>Welkom op de website van Kanovereniging De Windhappers. Op deze site vind je alles wat je wilt weten over kajak- of kanovaren in de regio Den Haag, Westland en Delftland.</em>
         <section class='section_home_h2 justify-all-lines'>
             <h2>Wie zijn wij</h2>
             <div class='section_home_text'>
                 <p>
-                    Kanovereniging De Windhappers is een Haagse kano<wbr> </wbr>vereniging die is opgericht in februari 1958 en is aangesloten bij het Watersportverbond. We zijn er trots op dat de vereniging in 1967 bij Koninklijk Besluit koninklijk is goedgekeurd.
+                    Kanovereniging De Windhappers is een Haagse kanovereniging die is opgericht in februari 1958 en is aangesloten bij het Watersportverbond. We zijn er trots op dat de vereniging in 1967 bij Koninklijk Besluit koninklijk is goedgekeurd.
                     <br/>
-                    Wij zijn een enthousiaste en actieve kanoclub met ongeveer 200 leden. Onze leden doen mee aan alle vormen van kano<wbr> </wbr>sport, zoals: kanopolo, zowel recreatief als in competitievorm; toervaren in kajaks en in Canadese kano’s (open kano's); varen met een groep in onze eigen C-10-kano; toertochten en kampeerweekends door heel Nederland; zee- en brandingvaren; varen op wildwater en Freestyle kanoën. 
+                    Wij zijn een enthousiaste en actieve kanoclub met ongeveer 200 leden. Onze leden doen mee aan alle vormen van kanosport, zoals: kanopolo, zowel recreatief als in competitievorm; toervaren in kajaks en in Canadese kano’s (open kano's); varen met een groep in onze eigen C-10-kano; toertochten en kampeerweekends door heel Nederland; zee- en brandingvaren; varen op wildwater en freestyle kanoën. 
                     <br/>
                     Kortom op kanogebied is er voor elk wat wils en voor elke leeftijd wat te doen. 
                     <br/>
                     Elke woensdagavond is onze clubavond, kom gerust eens langs voor informatie of maak een afspraak voor een eerste gratis begeleide kanotocht met een clubboot. Onze leden helpen u graag op weg (zie verder contacten).
                     <br/>
-                    Wil je iets aan je conditie doen? Denk dan eens aan de kanosport in plaats van aan de sportschool. Kanovaren is niet aan leeftijd gebonden en je bent lekker in de buitenlucht. Bij de Windhappers hebben we leden van 8 tot 80 jaar. Dus kom woensdagavond eens langs op onze clubavond.
+                    Wil je iets aan je conditie doen? Denk dan eens aan de kanosport in plaats van aan de sportschool. Kanovaren is niet aan leeftijd gebonden en je bent lekker in de buitenlucht. Bij De Windhappers hebben we leden van 8 tot 80 jaar. Dus kom woensdagavond eens langs op onze clubavond.
                     <br/>
                     Heb je geen eigen kano? Geen probleem! Wij beschikken over een aantal clubboten zoals vlakwater- , zee- en wildwater<wbr> </wbr>kajaks en de Canadese kano’s. Deze boten zijn beschikbaar voor leden die (nog) geen eigen boot bezitten. Voor leden met een eigen boot zijn er stallingplaatsen beschikbaar in de botenloods.
                     <br/>
@@ -34,9 +34,9 @@
         <section class='section_home_h2 justify-all-lines'>
             <h2>Waar kunt u ons vinden</h2>
             <div class='section_home_images'>
-                <a href='/content/images/home/ww-2.jpg' rel='lightbox[home]' title='Wildwatervaren'>
-                    <img src='/content/images/home/ww-2.jpg' alt='Wildwatervaren' title='Wildwatervaren'> </img>
-                </a>
+                <a href='/content/images/home/toervaren.original.jpg' rel='lightbox[home]' title='Toervaren'>
+                    <img src='/content/images/home/toervaren.jpg' alt='Toervaren' title='Toervaren'> </img>
+                </a>            
             </div>  
             <div class='section_home_text'>                                                                                      
                 <p>                          
@@ -58,17 +58,20 @@
                 </p> 
             </div>                                           
             <div class='section_home_images'>
-                <a href='/content/images/home/banner_building.original.jpg' rel='lightbox[home]' title='Verenigingsgebouw'>
-                    <img src='/content/images/home/banner_building.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
+                <a href='/content/images/home/ww-2.jpg' rel='lightbox[home]' title='Wildwatervaren'>
+                    <img src='/content/images/home/ww-2.jpg' alt='Wildwatervaren' title='Wildwatervaren'> </img>
                 </a>
             </div>
         </section>                            
         <section class='section_home_h2 justify-all-lines'>
             <h2>Cursussen</h2>
             <div class='section_home_images'>
-                <a href='/content/images/home/eskimoteer 13-02-09 026.original.JPG' rel='lightbox[home]' title='Verenigingsgebouw'>
-                    <img src='/content/images/home/eskimoteer 13-02-09 026.JPG' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
+                <a href='/content/images/home/eskimoteer 13-02-09 026.original.JPG' rel='lightbox[home]' title='Eskimoteren'>
+                    <img src='/content/images/home/eskimoteer 13-02-09 026.JPG' alt='Verenigingsgebouw' title='Eskimoteren'> </img>
                 </a>
+                <a href='/content/images/home/eskimoteren_onderwater.original.jpg' rel='lightbox[home]' title='Eskimoteren onderwater'>
+                    <img src='/content/images/home/eskimoteren_onderwater.jpg' alt='Eskimoteren' title='Eskimoteren onderwater'> </img>
+                </a>                
             </div>  
             <div class='section_home_text'>                                          
                 <p>                          

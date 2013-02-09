@@ -30,10 +30,10 @@
         </section>  
         <section class='section_home_h2 justify-all-lines'>
             <h2>Aktivitäten</h2>
-            <div class='section_home_images'>
-                <a href='/content/images/home/ww-2.jpg' rel='lightbox[home]' title='Wildwatervaren'>
-                    <img src='/content/images/home/ww-2.jpg' alt='Wildwatervaren' title='Wildwatervaren'> </img>
-                </a>                                                                                                                                 
+            <div class='section_home_images'> 
+                <a href='/content/images/home/toervaren.original.jpg' rel='lightbox[home]' title='Toervaren'>
+                    <img src='/content/images/home/toervaren.jpg' alt='Toervaren' title='Toervaren'> </img>
+                </a>                                                                                                                                                  
             </div>                                              
             <div class='section_home_text'>                                            
                 <p>
@@ -49,16 +49,16 @@
                 </p>
             </div>                                            
             <div class='section_home_images'>
-                <a href='/content/images/home/banner_building.original.jpg' rel='lightbox[home]' title='Verenigingsgebouw'>
-                    <img src='/content/images/home/banner_building.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
-                </a>                                                                                                                                 
+                <a href='/content/images/home/ww-2.jpg' rel='lightbox[home]' title='Wildwatervaren'>
+                    <img src='/content/images/home/ww-2.jpg' alt='Wildwatervaren' title='Wildwatervaren'> </img>
+                </a>                                                                                                                            
             </div>                                 
         </section>  
         <section class='section_home_h2 justify-all-lines'>
             <h2>Diziplinen</h2>
             <div class='section_home_images'>
-                <a href='/content/images/home/eskimoteer 13-02-09 026.original.JPG' rel='lightbox[home]' title='Verenigingsgebouw'>
-                    <img src='/content/images/home/eskimoteer 13-02-09 026.JPG' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
+                <a href='/content/images/home/eskimoteer 13-02-09 026.original.JPG' rel='lightbox[home]' title='Eskimoteren'>
+                    <img src='/content/images/home/eskimoteer 13-02-09 026.JPG' alt='Eskimoteren' title='Eskimoteren'> </img>
                 </a>                                                                                                                                  
             </div>                                             
             <div class='section_home_text'>     

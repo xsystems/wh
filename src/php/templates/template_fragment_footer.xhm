@@ -9,6 +9,10 @@
         <img src='http://www.w3.org/html/logo/badge/html5-badge-h-css3-multimedia-semantics.png' alt='HTML5 Powered with CSS3 / Styling, Multimedia, and Semantics' title='HTML5 Powered with CSS3 / Styling, Multimedia, and Semantics' /> 
     </a>
     <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.en_US'> 
-        <img alt='Creative Commons License' style='border-width:0px' src='http://i.creativecommons.org/l/by/3.0/88x31.png' /> 
+        <img alt='Creative Commons License' src='http://i.creativecommons.org/l/by/3.0/88x31.png' /> 
+    </a>
+    
+    <a style="float:left;" href='http://www.watersportverbond.nl'> 
+        <img alt='Watersportverbond' src='/content/logos/watersportverbond_logo.jpg' /> 
     </a>
 </div>

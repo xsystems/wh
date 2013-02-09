@@ -45,6 +45,7 @@ class ControllerView
         $view->stylesheetURLs = $stylesheetURLs;
                 
         // Opengraph tags template fragment.
+        // TODO: Move data to configuration file.
         $view->openGraphTags = array(   array("name"=>"og:title", "value"=>"Kanovereniging De Windhappers"),
                                         array("name"=>"og:type", "value"=>"sport"),
                                         array("name"=>"og:url", "value"=>"http://wh.xsystems.org?action=home"),
@@ -54,13 +55,14 @@ class ControllerView
                                         array("name"=>"og:description", "value"=>"A canoe club."));
         
         // Banner template fragment.
-        $bannerText = "De Windhappers";        
-        $bannerImageURL = "/content/banners/banner_default.jpg";
-        $view->bannerLogoImageURL = "/content/logos/dewindhapperslogo.png";
-        $view->bannerLogoText = "Home";
-        $view->bannerLogoURL = "?action=home";
+        $bannerText = $this->configuration->get("banner", "banner_default_text");        
+        $bannerImageURL = $this->configuration->get("banner", "banner_default_background_image");
+        $view->bannerLogoImageURL = $this->configuration->get("banner", "banner_logo_image");
+        $view->bannerLogoText = $this->configuration->get("banner", "banner_logo_title");
+        $view->bannerLogoURL = $this->configuration->get("banner", "banner_logo_url");
                 
         // Mediabar template fragment.
+        // TODO: Move data to configuration file.
         $view->mediaBarItems = array(   array("logo"=>"/content/logos/f_logo.png", "url"=>"http://www.facebook.com/pages/Kanovereniging-De-Windhappers/546877148674699", "title"=>"Facebook", "class"=>"media_item_social"),
                                         array("logo"=>"/content/logos/twitter-bird-dark-bgs.png", "url"=>"https://twitter.com/DeWindhappers", "title"=>"Twitter", "class"=>"media_item_social"),
                                         array("logo"=>"/content/icons/flags/flag-nl.png", "url"=>"?action=home", "title"=>"Nederlands", "class"=>"media_item_language"),                                    
@@ -89,6 +91,7 @@ class ControllerView
 			    break;
 		    case 'discipline':	
                 $scriptURLs[] = "/src/js/setup_lightbox2.js";
+                // TODO: Move data to configuration file.
 	            switch ($queryString['name']){
 	                case 'zee varen': 
 	                    $bannerImageURL = "/content/banners/banner_seafarers_1.jpg";
@@ -116,10 +119,7 @@ class ControllerView
                         break;
 	            }
 	            
-		        $discipline = Discipline::getByName($this->configuration->getDatabase(), $queryString['name']);		
-		        $search = explode(",","ç,æ,œ,á,é,í,ó,ú,à,è,ì,ò,ù,ä,ë,ï,ö,ü,ÿ,â,ê,î,ô,û,å,e,i,ø,u");
-		        $replace = explode(",","c,ae,oe,a,e,i,o,u,a,e,i,o,u,a,e,i,o,u,y,a,e,i,o,u,a,e,i,o,u");
-		        
+		        $discipline = Discipline::getByName($this->configuration->getDatabase(), $queryString['name']);		        
 		        $imageFolder = $discipline->image_folder_location;	    		        
 		        $disciplineImagesURL = array();
         		if($imageFolder){
@@ -132,7 +132,7 @@ class ControllerView
 		        }
 		        
                 $view->disciplineName = $discipline->name;
-		        $view->disciplineDescription = str_replace($search, $replace, $discipline->description);
+		        $view->disciplineDescription = $this->replaceSpecialCharacters($discipline->description);
 		        $view->disciplineImagesURL = $disciplineImagesURL;
 
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_discipline.pxh");   
@@ -206,7 +206,8 @@ class ControllerView
                     	break;
         	    }
 			    break;
-		    case 'vertel':			    
+		    case 'vertel':	
+		        // TODO: Reimplement.		    
                 $filename = "db/vertel.txt";		    			    
                 $messages = "";		
 		        if(filesize($filename) > 0){
@@ -242,12 +243,12 @@ class ControllerView
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_write.pxh");
 			    break;
 		    case 'bdsch_cntrl':
-		        #TODO: Reimplement.
+		        // TODO: Reimplement.
 			    require_once("src/php/lib/bdsch-cntrl.php");
 			    return;
 			    break;			  
 		    case 'bdsch_opsl':
-		        #TODO: Reimplement.		    
+		        // TODO: Reimplement.		    
 			    require_once("src/php/lib/bdsch-opsl.php");
 			    return;
 			    break;	
@@ -276,16 +277,19 @@ class ControllerView
 		    case 'home_english':			    
 		        $scriptURLs[] = "/src/js/setup_lightbox2.js";
 		        $bannerText = "Home English";
+		        $bannerImageURL = "/content/banners/banner_home.jpg";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_home_english.xhm");
 			    break;	
 		    case 'home_german':			    
 		        $scriptURLs[] = "/src/js/setup_lightbox2.js";
 		        $bannerText = "Home Deutsch";
+		        $bannerImageURL = "/content/banners/banner_home.jpg";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_home_german.xhm");
 			    break;		    														
 		    default:
 		        $scriptURLs[] = "/src/js/setup_lightbox2.js";
 		        $bannerText = "Home";
+		        $bannerImageURL = "/content/banners/banner_home.jpg";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_home_dutch.xhm");
 			    break;
 	    }
@@ -321,6 +325,13 @@ class ControllerView
 		}	
 		
 		return $dirs;
+	}
+	
+	private function replaceSpecialCharacters($str)
+	{
+        $search = explode(",","ç,æ,œ,á,é,í,ó,ú,à,è,ì,ò,ù,ä,ë,ï,ö,ü,ÿ,â,ê,î,ô,û,å,e,i,ø,u");
+        $replace = explode(",","c,ae,oe,a,e,i,o,u,a,e,i,o,u,a,e,i,o,u,y,a,e,i,o,u,a,e,i,o,u");
+        return str_replace($search, $replace, $str);
 	}
 }	
 	
