@@ -149,18 +149,15 @@ class ControllerView
 		        
 	            switch($queryString["type"]){
 	                case 'clubmagazine':
-	                    $bannerText = "Clubblad";
 	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_clubmagazine");
 	                    $galleries_default = $this->configuration->get("galleries", "galleries_default_clubmagazine");
 	                    break;
 	                case 'image':
-	                    $bannerText = "Foto's'";
 	                    $scriptURLs[] = "/src/js/setup_lightbox2.js";
 	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_images");
 	                    $galleries_default = $this->configuration->get("galleries", "galleries_default_images");
 	                    break;
 	                case 'video': 
-	                    $bannerText = "Video's'";
 	                    $scriptURLs[] = "/src/js/setup_videojs.js";
 	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_videos");
 	                    $galleries_default = $this->configuration->get("galleries", "galleries_default_videos");
@@ -172,14 +169,16 @@ class ControllerView
 		        
 		        $galleries_path_absolute = $this->configuration->get("system", "system_document_root").$galleries_path;
 		        
-                //Default gallery. 		            		            
+                //Default gallery. 		    
+                $bannerText = $galleries_default;        		            
                 $gallery_url = $protocolHttpHost.$galleries_path."/".$galleries_default."/";
                 $gallery_path_absolute = $galleries_path_absolute."/".$galleries_default."/";
                 if ( isset($queryString['gallery']) && !empty($queryString['gallery']) && $queryString['gallery'] != ""){
+                    $bannerText = $queryString['gallery'];
                     $gallery_url = $protocolHttpHost.$galleries_path."/".$queryString['gallery']."/"; 
                     $gallery_path_absolute = $galleries_path_absolute."/".$queryString['gallery']."/";		    
                 }		        
-		        
+                
 		        $view->galleryAction = $action;
 		        $view->galleryType = $queryString["type"];
                 $view->galleryNames = $this->scandir_for_dirs($galleries_path_absolute); 		        
