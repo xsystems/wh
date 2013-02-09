@@ -8,7 +8,7 @@ $sessionID = session_id();
 
 # Error and Exception handling.
 require_once("src/php/models/ModelException.php");
-ModelException::getInstance("log/error.log", "Oeps, something went wrong. Sorry.");
+#ModelException::getInstance("log/error.log", "Oeps, something went wrong. Sorry.");
  
 # Configuration
 require_once("src/php/models/ModelConfiguration.php");
