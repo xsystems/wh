@@ -112,7 +112,10 @@ class ControllerView
 	                case 'freestyle': 
 	                    $bannerImageURL = "/content/banners/banner_freestyle.jpg";
 	                    $bannerText = "Freestyle";	
-	                    break;		                
+	                    break;	
+	                case 'brandingvaren':
+	                    $bannerText = "Brandingvaren";
+	                    break;
                     default:
                         $bannerImageURL = "/content/banners/banner_default.jpg";
                         $bannerText = "Discipline";	
