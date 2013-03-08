@@ -1,4 +1,4 @@
-<div id="banner" style="background-image:linear-gradient( to right, #FFFFF0 , transparent 50%, #FFFFF0 ), url(<?php echo $this->bannerImageURL; ?>);">
+<div id="banner" style="background-image:-webkit-linear-gradient(left, #FFFFF0, transparent 50%, #FFFFF0), url(<?php echo $this->bannerImageURL; ?>);  background-image:-moz-linear-gradient(left, #FFFFF0, transparent 50%, #FFFFF0), url(<?php echo $this->bannerImageURL; ?>); -o-linear-gradient(left, #FFFFF0 , transparent 50%, #FFFFF0 ), url(<?php echo $this->bannerImageURL; ?>); -ms-linear-gradient(left, #FFFFF0 , transparent 50%, #FFFFF0 ), url(<?php echo $this->bannerImageURL; ?>); linear-gradient(left, #FFFFF0 , transparent 50%, #FFFFF0 ), url(<?php echo $this->bannerImageURL; ?>);">
     <a class="banner_logo" href="<?php echo $this->bannerLogoURL; ?>">
         <img src="<?php echo $this->bannerLogoImageURL; ?>" alt="<?php echo $this->bannerLogoText; ?>" title="<?php echo $this->bannerLogoText; ?>"/>
     </a>
