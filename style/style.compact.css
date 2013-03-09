@@ -185,12 +185,12 @@ ul, ol
     width:100%;
     overflow:hidden; 
     margin-bottom:1em; 
+    text-decoration:none;
 }
 
 #sponsors_list img
 {
     width:100%;
-    height:100%;
 }
 
 .discipline h1
