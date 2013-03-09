@@ -1,102 +1,63 @@
-<article class='content article_home'>
-    <header> </header>
-    <section>
-        <h1>De Windhappers</h1>
-        <em>Welkom op de website van Kanovereniging De Windhappers. Op deze site vind je alles wat je wilt weten over kajak- of kanovaren in de regio Den Haag, Westland en Delfland.</em>
-        <section class='section_home_h2 justify-all-lines'>
-            <h2>Wie zijn wij</h2>
-            <div class='section_home_text'>
-                <p>
-                    Kanovereniging De Windhappers is een Haagse kanovereniging die is opgericht in februari 1958 en is aangesloten bij het Watersportverbond.
-                </p>   
-                <p>                
-                    Wij zijn een enthousiaste en actieve kanoclub met ongeveer 200 leden. Onze leden doen mee aan alle vormen van kanosport, zoals: kanopolo, zowel recreatief als in competitievorm; toervaren in kajaks en in Canadees kano’s (open kano's); varen met een groep in onze eigen C-10 Canadees (10 persoons Canadees kano); toertochten en kampeerweekends door heel Nederland; zee- en brandingvaren; varen op wildwater en freestyle kanoën. 
-                </p>  
-                <p>                 
-                    Kortom op kanogebied is er voor elk wat wils en voor elke leeftijd wat te doen. 
-                </p>   
-                <p>                
-                    Elke woensdagavond is onze clubavond, kom gerust eens langs voor informatie of maak een afspraak voor een eerste gratis begeleide kanotocht met een clubboot. Onze leden helpen u graag op weg (zie verder contacten).
-                </p>   
-                <p>                
-                    Wil je iets aan je conditie doen? Denk dan eens aan de kanosport in plaats van aan de sportschool. Kanovaren is niet aan leeftijd gebonden en je bent lekker in de buitenlucht. Bij De Windhappers hebben we leden van 8 tot 80 jaar. Dus kom woensdagavond eens langs op onze clubavond.
-                </p>   
-                <p>                
-                    Heb je geen eigen kano? Geen probleem! Wij beschikken over een aantal clubboten zoals vlakwater- , zee- en wildwater<wbr> </wbr>kajaks en de Canadees kano’s. Deze boten zijn beschikbaar voor leden die (nog) geen eigen boot bezitten. Voor leden met een eigen boot zijn er stallingplaatsen beschikbaar in de botenloods.
-                </p> 
-                <p>                  
-                    Bij toertochten is er een botentrailer beschikbaar voor het vervoer van de kajaks. 
-                </p>
-            </div>
-            <div class='section_home_images'>
-                <a href='/content/images/home/banner_freestyle.original.jpg' rel='lightbox[home]' title='Verenigingsgebouw'>
-                    <img src='/content/images/home/banner_freestyle.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
-                </a>
-                <a href='/content/images/home/kanopolo juni 2012 010.original.JPG' rel='lightbox[home]' title='Kanopolo'>
-                    <img src='/content/images/home/kanopolo juni 2012 010.JPG' alt='Kanopolo' title='Kanopolo'> </img>
-                </a>           
-            </div>                                 
-        </section>
-        <section class='section_home_h2 justify-all-lines'>
-            <h2>Waar kunt u ons vinden</h2>
-            <div class='section_home_images'>
-                <a href='/content/images/home/toervaren.original.jpg' rel='lightbox[home]' title='Toervaren'>
-                    <img src='/content/images/home/toervaren.jpg' alt='Toervaren' title='Toervaren'> </img>
-                </a>            
-            </div>  
-            <div class='section_home_text'>                                                                                      
-                <p>                          
-                    <em>Ons adres is Nieuweweg 75, 2544NG Den Haag.</em>
-                </p> 
-                <p>   
-                    Het verenigingsgebouw met botenloods ligt aan de Wennetjessloot achter het laatste parkeerterrein van schaatscentrum de Uithof. Je kunt dit bereiken via de Jaap Edenweg (<a href='?action=location' title='Adresgegevens'>zie platte<wbr> </wbr>grond</a>).
-                </p> 
-                <p>   
-                    Ons goed onderhouden gebouw heeft een gezellige kantine met bar en is voorzien van kleedruimtes, warme douches en toiletten. In de botenloods is plaats voor kajaks en Canadees kano’s.
-                </p> 
-                <p>   
-                    Door de ligging aan een uitgebreid netwerk van kanovaarwegen, kan je vanuit het clubhuis langere of kortere kanotochten maken door de grachten van Den Haag of dwalen tussen de kassen van het Westland en Delfland (zie varen in het Westland).
-                </p>
-            </div>
-        </section>
-        <section class='section_home_h2 justify-all-lines'>
-            <h2>Welke activiteiten zijn er</h2>
-            <div class='section_home_text'>                                            
-                <p>
-                    Naast de toertochten organiseren we ieder jaar een open dag (in april of mei); het windhapperweekend, waarbij vanuit een camping ergens in Nederland tochten worden gevaren; kanopolotoernooien; winteractiviteiten met lezingen over uiteenlopende onderwerpen. Er worden wandeltochten georganiseerd. Daarnaast is er maandelijks een nordic walkingtocht om de conditie op peil te houden.
-                </p> 
-            </div>                                           
-            <div class='section_home_images'>
-                <a href='/content/images/home/ww-2.jpg' rel='lightbox[home]' title='Wildwatervaren'>
-                    <img src='/content/images/home/ww-2.jpg' alt='Wildwatervaren' title='Wildwatervaren'> </img>
-                </a>
-            </div>
-        </section>                            
-        <section class='section_home_h2 justify-all-lines'>
-            <h2>Cursussen</h2>
-            <div class='section_home_images'>
-                <a href='/content/images/home/eskimoteer 13-02-09 026.original.JPG' rel='lightbox[home]' title='Eskimoteren'>
-                    <img src='/content/images/home/eskimoteer 13-02-09 026.JPG' alt='Verenigingsgebouw' title='Eskimoteren'> </img>
-                </a>
-                <a href='/content/images/home/eskimoteren_onderwater.original.jpg' rel='lightbox[home]' title='Eskimoteren onderwater'>
-                    <img src='/content/images/home/eskimoteren_onderwater.jpg' alt='Eskimoteren' title='Eskimoteren onderwater'> </img>
-                </a>                
-            </div>  
-            <div class='section_home_text'>                                          
-                <p>                          
-                    Elk jaar worden regelmatig basiscursussen voor nieuwe leden georganiseerd. Hierbij worden de grondbeginselen van het kanovaren aangeleerd. Elk nieuw lid volgt deze basiscursus waar, naast zaken als <strong>techniek en veiligheid, ook materiaal<wbr> </wbr>kennis, keuze van kano of kajak</strong> aan bod komen. 
-                </p> 
-                <p>   
-                    Tevens kan er op aanvraag ook les worden gegeven in het varen in open kano’s.
-                </p> 
-                <p>   
-                    In de wintermaanden wordt een cursus gegeven in eskimoteren in een verwarmd zwembad. Eskimoteren is de kunst van het, zonder uit te stappen, overeind komen als je bent omgeslagen.
-                </p> 
-                <p>   
-                    Bij voldoende belangstelling worden ook andere cursussen aangeboden zoals een beginnerscursus zeevaren.
-                </p>
-            </div>
-        </section>
-    </section>                                            
-    <footer></footer>
-</article>
+<div id="home">
+    <article class='content article_home_intro'>
+        <header> </header>
+        <section>
+            <h1>De Windhappers</h1>
+            <em>Welkom op de website van Kanovereniging De Windhappers. Op deze site vind je alles wat je wilt weten over kajak- of kanovaren in de regio Den Haag, Westland en Delfland.</em>
+            <section class='section_home_h2 justify-all-lines'>
+                <h2>Wie zijn wij</h2>
+                <div class='section_home_text'>
+                    <p>
+                        Kanovereniging De Windhappers is een Haagse kanovereniging die is opgericht in februari 1958 en is aangesloten bij het Watersportverbond. 
+                    </p>   
+                    <p>                
+                        Wij zijn een enthousiaste en actieve kanoclub met ongeveer 200 leden. Onze leden doen mee aan (bijna) alle vormen van kanosport, <a href='?action=discipline&amp;name=toervaren' title='Toervaren'>toervaren</a> (zowel in kajak als Canadese kano), <a href='?action=discipline&amp;name=kanopolo' title='Kanopolo'>kanopolo</a>, <a href='?action=discipline&amp;name=zeevaren' title='Zeevaren'>zeevaren</a>, <a href='?action=discipline&amp;name=brandingvaren' title='Brandingvaren'>brandingvaren</a>, en <a href='?action=discipline&amp;name=wildwatervaren' title='Wildwatervaren'>wildwatervaren</a>. 
+                    </p> 
+                </div>  
+                <div class='section_home_images justify-all-lines'>
+                    <a href='/content/images/home/banner_freestyle.original.jpg' rel='lightbox[home]' title='Verenigingsgebouw'>
+                        <img src='/content/images/home/banner_freestyle.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
+                    </a>             
+                    <a href='/content/images/home/kanopolo juni 2012 010.original.JPG' rel='lightbox[home]' title='Kanopolo'>
+                        <img src='/content/images/home/kanopolo juni 2012 010.JPG' alt='Kanopolo' title='Kanopolo'> </img>
+                    </a>         
+                </div>              
+                <div class='section_home_text'>                           
+                    <p>                 
+                        We verzorgen leuke cursussen in kajak- en kanovaren voor beginners, eskimoteren en zeevaren voor beginners.
+                    </p>   
+                    <p>                
+                        We organiseren een groot aantal <a href='?action=calendar' title='Activiteiten'>activiteiten</a> zoals toertochten op vlakwater en zee, kanokampeerweekenden, kanopolocompetitie, wildwatervaren in het buitenland. In de winter zijn er  winteractiviteiten met interessante lezingen, nordic-walking of wandeltochten.
+                    </p>   
+                    <p>                
+                        Bijna het gehele jaar wordt er op woensdagavond, op vrijdag en zondag gevaren vanaf het clubgebouw in het uitgebreide stelsel van <a href='?action=canoetours' title='Kanoroutes'>kanoroutes</a> in het Westland en Midden Delfland.
+                    </p>   
+                    <p>                
+                        Ons goed onderhouden gebouw heeft een gezellige kantine met bar en is voorzien van kleedruimtes, warme douches en toiletten. In de botenloods is plaats voor kajaks en Canadees kano’s. We hebben een groot aantal verenigingsboten, die door leden gebruikt kunnen worden, en een botentrailer. Ons topstuk is een 10 persoons canadese kano die stamt uit de jaren dertig. 
+                    </p> 
+                </div>              
+                <div class='section_home_text'>                
+                    <p>                  
+                        In ons <a href='?action=gallery&amp;type=clubmagazine' title='Clubblad'>clubblad</a>, dat vier keer per jaar uitkomt, doen we verslag van onze avonturen en worden nieuwe activiteiten aangekondigd.
+                    </p>
+                    <p>
+                        Ben je geïnteresseerd om lid te worden? Dan vind je meer uitgebreide informatie onder <a href='?action=prospect' title='Aspirant-leden'>Nieuwe Leden</a>. Kom naar onze open dag of loop op woensdagavond een keer binnen.
+                    </p>                
+                </div>                               
+            </section>
+        </section>                                            
+        <footer></footer>
+    </article>
+    <div id="sidebar">
+        <div id="news_latest">
+            <h1>Nieuws</h1>
+
+        </div>   
+        <div id="sponsors_list">
+            <h1>Sponsoren</h1>
+                <a href='?action=sponsors#kanoshop' title='Kanoshop'>
+                    <img src='/content/logos/kanoshoplogo_2012.png' alt='Kanoshop' title='Kanoshop'> </img>
+                </a> 
+        </div>         
+    </div>  
+</div>

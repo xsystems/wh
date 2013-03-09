@@ -78,7 +78,7 @@ class ControllerView
 		    $menuItemsSubDiscipline .= $name["name"].";";
 			$menuItemsUrl[$name["name"]] = "?action=discipline&name=".urlencode($name["name"]);
     	}    
-    	$menuItemsSub["Disciplines"] = $menuItemsSubDiscipline;
+    	$menuItemsSub["Activiteiten"] = $menuItemsSubDiscipline;
         $view->menuItemsSub = $menuItemsSub;
         $view->menuItemsUrl = $menuItemsUrl;
         $view->menuItems = $this->configuration->get("menu", "menu_items");
@@ -257,7 +257,11 @@ class ControllerView
 		    case 'meteorology':			    
 		        $bannerText = "Meteorologie";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_meteorology.xhm");				    
-			    break;				    			      
+			    break;
+		    case 'prospect':
+		        $bannerText = "Aspirant-leden";
+                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_prospect.xhm");			    
+			    break;				    				    			      
 		    case 'organisation':
 		        $bannerText = "Organisatie";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_organisation.xhm");			    
@@ -270,7 +274,11 @@ class ControllerView
 		    case 'costs':
 		        $bannerText = "Kosten";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_costs.xhm");			    
-			    break;				    		    				
+			    break;		
+		    case 'sponsors':
+		        $bannerText = "Sponsoren";
+                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_sponsors.xhm");			    
+			    break;				    		    		    				
 		    case 'canoetours':
 		        $scriptURLs[] = "/src/js/setup_lightbox2.js";
 		        $bannerText = "Kanoroutes";

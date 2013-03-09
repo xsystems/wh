@@ -121,40 +121,73 @@ ul, ol
     overflow:hidden;
     padding-left:5%;
     padding-right:5%;
-    padding-top:1em;
-    padding-bottom:1em;    
+    padding-top:2%;
+    padding-bottom:2%;    
 }
 
-.article_home footer
+/* This is fixed, could be improved.*/
+#home
+{
+    height:850px;
+}
+
+.article_home_intro
+{
+    float:left;
+    width:56%;
+    height:100%;
+}
+
+.article_home_intro footer
 {
     text-align:right;
-}
-
-.section_home_text
-{
-    display:inline-block;
-    vertical-align:top;
-    width:48%;
-}
-
-.section_home_images
-{
-    display:inline-block;
-    vertical-align:top;
-    width:48%;
 }
 
 .section_home_images a
 {
     display:inline-block;
-    width:100%;
-    height:248px;
+    width:48%;
+    height:150px;
     border-radius:20px;  
     overflow:hidden; 
     margin-bottom:1em; 
 }
 
 .section_home_images img
+{
+    width:100%;
+    height:100%;
+}
+
+#sidebar
+{
+    float:right;
+    background-color:rgb(255,255,51); 
+    background-color:rgba(255,255,51,0.75); 
+    width:30%;
+    height:100%;    
+    padding-left:2%;
+    padding-right:2%;    
+    padding-top:2%;
+    padding-bottom:2%;  
+    position:relative          
+}
+
+#sponsors_list
+{
+    position:absolute; 
+    bottom:0;
+}
+
+#sponsors_list a
+{
+    display:inline-block;
+    width:100%;
+    overflow:hidden; 
+    margin-bottom:1em; 
+}
+
+#sponsors_list img
 {
     width:100%;
     height:100%;
@@ -402,6 +435,11 @@ ul, ol
     overflow:hidden;
 }
 
+.gallery_page_item_clubmagazine
+{
+    width:24%;
+}
+
 .galleryThumb
 {
     float:left;
@@ -547,6 +585,22 @@ ul, ol
     border-bottom-right-radius:20px; 
     padding:0; 
     margin:0;
+}
+
+.sponsor
+{
+    width:50%;
+    overflow:hidden;
+    border-radius:20px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2%;
+    margin-bottom:2%;    
+}
+
+.sponsor img
+{
+    width:100%;
 }
 
 .justify-all-lines
@@ -726,8 +780,7 @@ table th
 {
     font-size:1.1em;
     padding:3px 7px 2px 7px;
-    background-color:rgb(255,255,51);     
-    background-color:rgba(255,255,51,0.75);    
+    background-color:rgb(255,255,51);
     color:black;
 }
 
@@ -753,14 +806,12 @@ table tr
 {
     color:black;
     background-color:rgb(136,195,103);        
-    background-color:rgba(136,195,103,0);    
 }
 
 table tr.alt
 {
     color:black;
     background-color:rgb(102,255,102);            
-    background-color:rgba(102,255,102,0.6);        
 }
 
 td span
