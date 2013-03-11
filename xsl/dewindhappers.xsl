@@ -57,26 +57,28 @@
             </xsl:attribute>
             <h1><xsl:value-of select="title"/></h1>
             <em><xsl:value-of select="abstract"/></em>
-            <a>
-                <xsl:attribute name="href">
-                    <xsl:value-of select=".//img/@src"/>
-                </xsl:attribute>   
-                <xsl:attribute name="title">
-                    <xsl:value-of select=".//img/@title"/>
-                </xsl:attribute>                                                 
-                <xsl:attribute name="rel">lightbox[news]</xsl:attribute> 
-                <img>
-                    <xsl:attribute name="src">
+            <xsl:if test="local-name(.//img) = 'img'">            
+                <a>
+                    <xsl:attribute name="href">
                         <xsl:value-of select=".//img/@src"/>
-                    </xsl:attribute>
-                    <xsl:attribute name="alt">
-                        <xsl:value-of select=".//img/@alt"/>
-                    </xsl:attribute>
+                    </xsl:attribute>   
                     <xsl:attribute name="title">
                         <xsl:value-of select=".//img/@title"/>
-                    </xsl:attribute>
-                </img>
-            </a>
+                    </xsl:attribute>                                                 
+                    <xsl:attribute name="rel">lightbox[news]</xsl:attribute> 
+                    <img>
+                        <xsl:attribute name="src">
+                            <xsl:value-of select=".//img/@src"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="alt">
+                            <xsl:value-of select=".//img/@alt"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="title">
+                            <xsl:value-of select=".//img/@title"/>
+                        </xsl:attribute>
+                    </img>
+                </a>
+            </xsl:if>                           
             <a href="?action=news#{generate-id()}" title="Lees verder">lees verder</a>            
         </article>    
     </xsl:template>     
