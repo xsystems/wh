@@ -51,7 +51,7 @@
     <div id="sidebar">
         <div id="news_latest">
             <h1>Nieuws</h1>
-
+            <?php echo $this->newsAbstracts; ?>
         </div>   
         <div id="sponsors_list">
             <h1>Sponsoren</h1>

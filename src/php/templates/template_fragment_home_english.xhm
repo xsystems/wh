@@ -29,7 +29,7 @@
                 We hope to see you at our club meetings on a Wednesday evening. Be our Guest then. 
                 </p>
             </div>
-            <div class='section_home_images'>
+            <div class='section_home_images section_home_images_alt'>
                 <a href='/content/images/home/banner_freestyle.original.jpg' rel='lightbox[home]' title='Verenigingsgebouw'>
                     <img src='/content/images/home/banner_freestyle.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
                 </a>

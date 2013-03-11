@@ -1,7 +1,7 @@
 <?php
     include_once('src/php/lib/wh-functies.inc.php');
 
-    $filename = "db/vertel.txt"; 
+    $filename = "data/vertel.txt"; 
 
     $naam = $_POST['naam'];
     $email = $_POST['email'];

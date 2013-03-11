@@ -2,26 +2,55 @@
 
 class ControllerNews
 {      
-    private $filePath;
-    private $domDocument;
+    private $pathXML;
+    private $pathXSLT;    
+    private $domDocumentXML;
+    private $domDocumentXSLT;
+    private $xsltProcessor;
 
-    public function __construct($filePath)
+    public function __construct($pathXML, $pathXSLT)
     {
-        $filePath->path = $filePath;        
+        $this->pathXML = $pathXML; 
+        $this->pathXSLT = $pathXSLT;         
+              
         $domImplementation = new DOMImplementation();	
-		$this->domDocument = $domImplementation->createDocument();       
-		$this->domDocument->load($filePath);
+		$this->domDocumentXML = $domImplementation->createDocument();       
+		$this->domDocumentXML->load($pathXML);
+		$this->domDocumentXSLT = $domImplementation->createDocument();       
+		$this->domDocumentXSLT->load($pathXSLT);		
+		
+		$this->xsltProcessor = new XSLTProcessor();
+		$this->xsltProcessor->importStyleSheet($this->domDocumentXSLT);
+		
+		$this->xsltProcessor->setParameter("", "tag", "news");
     }
 	
 	public function getAllArticles()
 	{
-	    
-	    return null;
+	    $this->xsltProcessor->setParameter("", "action", "all");	
+	    return $this->xsltProcessor->transformToXML($this->domDocumentXML);
     }
     
-    public function getLatestArticles($numberOfAticles)
+	public function countArticles()
 	{
-	    return null;
+	    $this->xsltProcessor->setParameter("", "action", "count");
+	    return $this->xsltProcessor->transformToXML($this->domDocumentXML);
+    }    
+    
+    public function getRangeOfArticles($positionStart, $positionEnd)
+	{
+	    $this->xsltProcessor->setParameter("", "action", "articlesRange");	
+	    $this->xsltProcessor->setParameter("", "positionStart", $positionStart);	
+	    $this->xsltProcessor->setParameter("", "positionEnd", $positionEnd);		    	    
+	    return $this->xsltProcessor->transformToXML($this->domDocumentXML);
+    }
+    
+    public function getRangeOfArticleAbstracts($positionStart, $positionEnd)
+	{
+	    $this->xsltProcessor->setParameter("", "action", "articlesRangeAbstract");	
+	    $this->xsltProcessor->setParameter("", "positionStart", $positionStart);	
+	    $this->xsltProcessor->setParameter("", "positionEnd", $positionEnd);		    	    
+	    return $this->xsltProcessor->transformToXML($this->domDocumentXML);
     }
 }	
 	

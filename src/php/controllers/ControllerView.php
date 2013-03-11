@@ -11,6 +11,9 @@ require_once("src/php/models/ModelSimpleGalleryVideo.php");
 // Views
 require_once("src/php/views/View.php");
 
+// Controllers
+require_once("src/php/controllers/ControllerNews.php");
+
 
 class ControllerView
 {
@@ -34,13 +37,13 @@ class ControllerView
         $view->namespaceURI = View::namespaceURI;
         
         $scriptURLs = array("/src/js/load.js");          
-        $stylesheetURLs = array("/style/style.css");
+        $stylesheetURLs = array("/css/style.css");
 	    $detect = new MobileDetect();
 	    if ($detect->isMobile()){
-            $stylesheetURLs[] = "/style/mobile.css";
+            $stylesheetURLs[] = "/css/mobile.css";
         }
         else{
-            $stylesheetURLs[] = "/style/not_mobile.css";            
+            $stylesheetURLs[] = "/css/not_mobile.css";            
         }
         $view->stylesheetURLs = $stylesheetURLs;
                 
@@ -210,7 +213,7 @@ class ControllerView
 			    break;
 		    case 'vertel':	
 		        // TODO: Reimplement.		    
-                $filename = "db/vertel.txt";		    			    
+                $filename = "data/vertel.txt";		    			    
                 $messages = "";		
 		        if(filesize($filename) > 0){
                     $file = fopen($filename, 'r');
@@ -295,12 +298,30 @@ class ControllerView
 		        $bannerText = "Home Deutsch";
 		        $bannerImageURL = "/content/banners/banner_home.jpg";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_home_german.xhm");
-			    break;		    														
+			    break;	
+		    case 'news':	
+		        $scriptURLs[] = "/src/js/setup_lightbox2.js";		    		    
+		        $bannerText = "Nieuws";
+                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_news.pxh");
+
+                $controllerNews = new ControllerNews("data/dewindhappers.xml", "xsl/dewindhappers.xsl");
+                $articleCount = $controllerNews->countArticles();
+                $view->news = $controllerNews->getRangeOfArticles(0,$articleCount);
+			    break;				    	    														
 		    default:
 		        $scriptURLs[] = "/src/js/setup_lightbox2.js";
 		        $bannerText = "Home";
 		        $bannerImageURL = "/content/banners/banner_home.jpg";
-                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_home_dutch.xhm");
+                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_home_dutch.pxh");
+                
+                $controllerNews = new ControllerNews("data/dewindhappers.xml", "xsl/dewindhappers.xsl");
+                
+                $positionEnd = $controllerNews->countArticles();
+                if($positionEnd > 3){
+                    $positionEnd = 3;
+                }
+                
+                $view->newsAbstracts = $controllerNews->getRangeOfArticleAbstracts(0,$positionEnd);                
 			    break;
 	    }
 

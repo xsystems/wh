@@ -128,7 +128,7 @@ ul, ol
 /* This is fixed, could be improved.*/
 #home
 {
-    height:850px;
+    height:1200px;
 }
 
 .article_home_intro
@@ -153,6 +153,12 @@ ul, ol
     margin-bottom:1em; 
 }
 
+.section_home_images_alt a
+{
+    width:48%;
+    height:240px;    
+}
+
 .section_home_images img
 {
     width:100%;
@@ -164,19 +170,12 @@ ul, ol
     float:right;
     background-color:rgb(255,255,51); 
     background-color:rgba(255,255,51,0.75); 
-    width:30%;
+    width:32%;
     height:100%;    
-    padding-left:2%;
-    padding-right:2%;    
+    padding-left:1%;
+    padding-right:1%;    
     padding-top:2%;
     padding-bottom:2%;  
-    position:relative          
-}
-
-#sponsors_list
-{
-    position:absolute; 
-    bottom:0;
 }
 
 #sponsors_list a
@@ -191,6 +190,89 @@ ul, ol
 #sponsors_list img
 {
     width:100%;
+}
+
+#news
+{
+    text-align:justify;
+}
+
+#news h1
+{
+    text-align:left;
+}
+
+#news em
+{ 
+    display:inline-block;
+}
+
+#news:after
+{
+    display: inline-block;
+    width: 100%;
+    content: '.';
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+#news article
+{
+    display:inline-block;
+    vertical-align:top;
+    overflow:hidden;       
+    border-radius:20px;
+    width:39%;
+    margin-top:2%;
+    margin-bottom:2%;    
+    padding-left:5%;   
+    padding-right:5%;  
+    padding-top:5%;   
+    padding-bottom:5%;     
+    background-color:rgb(136,195,103);
+    background-color:rgba(136,195,103,0.75);              
+}
+
+#news img
+{
+    height:240px;
+    border-radius:20px; 
+}
+
+#newsAbstracts article
+{
+    overflow:hidden;       
+    border-radius:20px;
+    margin-top:2%;
+    margin-bottom:2%;    
+    padding:5%;      
+    background-color:rgb(136,195,103);
+    background-color:rgba(136,195,103,0.75);              
+}
+
+#newsAbstracts h1
+{ 
+    font-size:1.5em;
+}
+
+#newsAbstracts em
+{ 
+    display:inline-block;
+}
+
+
+#newsAbstracts a{
+    display:block;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+#newsAbstracts img
+{ 
+    border-radius:20px; 
+    height:10em;
 }
 
 .discipline h1
