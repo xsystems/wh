@@ -96,9 +96,9 @@ class ControllerView
                 $scriptURLs[] = "/src/js/setup_lightbox2.js";
                 // TODO: Move data to configuration file.
 	            switch ($queryString['name']){
-	                case 'zee varen': 
+	                case 'zeevaren': 
 	                    $bannerImageURL = "/content/banners/banner_seafarers_1.jpg";
-	                    $bannerText = "Zee Varen";	
+	                    $bannerText = "Zeevaren";	
 	                    break;
 	                case 'kanopolo': 
 	                    $bannerImageURL = "/content/banners/banner_canoepolo.jpg";
@@ -110,7 +110,7 @@ class ControllerView
 	                    break;	       
 	                case 'wildwatervaren': 
 	                    $bannerImageURL = "/content/banners/banner_whitewaterrafting.jpg";
-	                    $bannerText = "Wildwater varen";	
+	                    $bannerText = "Wildwatervaren";	
 	                    break;	 	             
 	                case 'freestyle': 
 	                    $bannerImageURL = "/content/banners/banner_freestyle.jpg";
