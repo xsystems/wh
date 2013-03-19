@@ -283,7 +283,7 @@ ul, ol
     padding-top:5%;   
     padding-bottom:5%;     
     background-color:rgb(136,195,103);
-    background-color:rgba(136,195,103,0.75);              
+    background-color:rgba(136,195,103,0.90);              
 }
 
 #news img
@@ -403,7 +403,7 @@ ul, ol
 #vertel section
 {
     background-color:rgb(136,195,103);
-    background-color:rgba(136,195,103,0.75);    
+    background-color:rgba(136,195,103,0.90);    
     overflow:hidden;
 /*    text-align:justify;    */
     border-radius:20px;
@@ -495,7 +495,7 @@ ul, ol
     display:inline-block;
     color:black;
     background-color:rgb(255,255,51);
-    background-color:rgba(255,255,51,0.75); 
+    background-color:rgba(255,255,51,0.90); 
     overflow:hidden;
     width:94%;
     border-bottom-left-radius:40px;
@@ -666,7 +666,7 @@ ul, ol
 .article_canoetours section
 {
     background-color:rgb(136,195,103); 
-    background-color:rgba(136,195,103,0.75);    
+    background-color:rgba(136,195,103,0.90);    
     border-radius:20px;
     margin-top:0.5em;
     margin-bottom:0.5em;
@@ -676,7 +676,7 @@ ul, ol
 .article_canoetours>h1
 {
     background-color:rgb(136,195,103); 
-    background-color:rgba(136,195,103,0.75);    
+    background-color:rgba(136,195,103,0.90);    
     border-radius:20px;
     margin-top:0.5em;
     margin-bottom:0.5em;
@@ -692,7 +692,7 @@ ul, ol
 .section_canoetour h2
 {
     background-color:rgb(255,255,51); 
-    background-color:rgba(255,255,51,0.75); 
+    background-color:rgba(255,255,51,0.90); 
     margin:0;
     border-top-left-radius:20px;
     border-top-right-radius:20px;
