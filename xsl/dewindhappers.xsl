@@ -33,7 +33,7 @@
             <xsl:for-each select="//article">
                 <xsl:sort select="datetime" order="descending"/>   
                 <xsl:if test="position() &gt; $positionStart and position() &lt;= $positionEnd">
-                    <xsl:apply-templates select="."/>  
+                    <xsl:call-template name="article"/>  
                 </xsl:if>               
             </xsl:for-each>
         </div>        
@@ -53,7 +53,7 @@
     <xsl:template name="articleAbstract"> 
         <article>
             <xsl:attribute name="id">
-                <xsl:value-of select="generate-id()"/>
+                <xsl:value-of select="position()"/>
             </xsl:attribute>
             <h1><xsl:value-of select="title"/></h1>
             <em><xsl:value-of select="abstract"/></em>
@@ -79,7 +79,7 @@
                     </img>
                 </a>
             </xsl:if>                           
-            <a href="?action=news#{generate-id()}" title="Lees verder">lees verder</a>            
+            <a href="?action=news#{position()}" title="Lees verder">lees verder</a>            
         </article>    
     </xsl:template>     
     
@@ -89,17 +89,17 @@
         </div>
     </xsl:template>    
 
-    <xsl:template match="articles">
+    <xsl:template name="articles" match="articles">
         <xsl:for-each select="article">
             <xsl:sort select="datetime" order="descending"/>   
-                <xsl:apply-templates select="."/>  
+                <xsl:call-template name="article"/>  
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template match="article"> 
+    <xsl:template name="article" match="article"> 
         <article>
             <xsl:attribute name="id">
-                <xsl:value-of select="generate-id()"/>
+                <xsl:value-of select="position()"/>
             </xsl:attribute>
             <h1><xsl:value-of select="title"/></h1>
             <em><xsl:copy-of select="abstract/text() | abstract/*"/></em>

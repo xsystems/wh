@@ -131,7 +131,23 @@
         <td> </td>
       </tr>
     </table>
-    <h2>Contact</h2>    
+    <h2>Contact</h2> 
+    <h3>Zend ons een email</h3>  
+    <span>Dit gedeelte van de site werkt nog niet ...</span>
+    <form id="contact_form" action="?action=organisation&amp;contact=true" autocomplete="on" method="post">
+        <label form="contact_form" for="contact_form_input_firstname">Voornaam</label>
+        <input id="contact_form_input_firstname" name="firstname" form="contact_form" type="text" required="required" autofocus="autofocus"/>
+        <label form="contact_form" for="contact_form_input_lastname">Achternaam</label>
+        <input id="contact_form_input_lastname" name="lastname" form="contact_form" type="text" required="required"/>
+        <label form="contact_form" for="contact_form_input_email">Email</label>
+        <input id="contact_form_input_email" name="email" form="contact_form" type="text" required="required"/>
+        <label form="contact_form" for="contact_form_input_subject">Onderwerp</label>
+        <input id="contact_form_input_subject" name="subject" form="contact_form" type="text" required="required"/>
+        <label form="contact_form" for="contact_form_input_text">Tekst</label>
+        <textarea id="contact_form_input_text" name="text" form="contact_form" required="required"> </textarea>               
+        <input form="contact_form" type="submit" value="Submit"/>
+    </form>     
+    <h3>Telefoonnummer en adres</h3> 
     Telefoon in het botenhuis: 070-3660789 <br/>
     Adres secretariaat: Hoornbruglaan 9, 2281 Rijswijk 
     <h2>Statuten en Reglementen</h2>

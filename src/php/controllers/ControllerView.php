@@ -266,6 +266,27 @@ class ControllerView
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_prospect.xhm");			    
 			    break;				    				    			      
 		    case 'organisation':
+		        if(isset($_GET["contact"]) && $_GET["contact"] == "true")
+		        {
+		            // This needs to be moved.		        
+		            $headers  = "From: " . $_POST["email"] . "\r\n";
+                    $headers .= "X-Mailer: PHP/" . phpversion();
+                    
+                    $message  = "Voornaam: " . $_POST["firstname"] . "\r\n";
+                    $message .= "Achternaam" . $_POST["lastname"] . "\r\n";
+                    $message .= "\r\n";     
+                    $message .= $_POST["text"];       
+                    $message = wordwrap($message, 70, "\r\n");
+                    
+		            mail("koenboes@gmail.com", $_POST["subject"],  $message, $headers );
+
+#		            if($mail_status){
+#		                echo "mail send succesfully.<br/>";
+#		            }else{
+#		                echo "mail send failed.<br/>";		                
+#		            }
+		        }
+		        
 		        $bannerText = "Organisatie";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_organisation.xhm");			    
 			    break;	
