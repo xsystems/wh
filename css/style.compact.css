@@ -68,8 +68,8 @@ body
 
 .main
 {
-    text-align:justify;
-    font-size:10pt;   
+/*    text-align:justify;*/
+    font-size:12pt;   
 }    
 
 .main h1
@@ -116,7 +116,7 @@ ul, ol
 {
     color:black;
     background-color:rgb(136,195,103);
-    background-color:rgba(136,195,103,0.75);    
+    background-color:rgba(136,195,103,0.90);    
     width:90%;
     overflow:hidden;
     padding-left:5%;
@@ -128,7 +128,7 @@ ul, ol
 /* This is fixed, could be improved.*/
 #home
 {
-    height:1200px;
+/*    height:1200px;*/
 }
 
 .article_home_intro
@@ -169,13 +169,29 @@ ul, ol
 {
     float:right;
     background-color:rgb(255,255,51); 
-    background-color:rgba(255,255,51,0.75); 
+    background-color:rgba(255,255,51,0); 
     width:32%;
     height:100%;    
     padding-left:1%;
     padding-right:1%;    
     padding-top:2%;
     padding-bottom:2%;  
+}
+
+#news_latest>h1
+{
+    background-color:rgb(255,255,51); 
+    border-radius:20px;    
+    padding-left:5%;   
+    padding-right:5%;                     
+}
+
+#sponsors_list>h1
+{
+    background-color:rgb(255,255,51); 
+    border-radius:20px;    
+    padding-left:5%;   
+    padding-right:5%;                     
 }
 
 #newsAbstracts article
@@ -186,7 +202,7 @@ ul, ol
     margin-bottom:2%;    
     padding:5%;      
     background-color:rgb(136,195,103);
-    background-color:rgba(136,195,103,0.75);              
+    background-color:rgba(136,195,103,0.90);              
 }
 
 #newsAbstracts h1
@@ -229,7 +245,7 @@ ul, ol
 
 #news
 {
-    text-align:justify;
+/*    text-align:justify;*/
 }
 
 #news h1
@@ -259,7 +275,7 @@ ul, ol
     vertical-align:top;
     overflow:hidden;       
     border-radius:20px;
-    width:39%;
+    width:90%;
     margin-top:2%;
     margin-bottom:2%;    
     padding-left:5%;   
@@ -389,7 +405,7 @@ ul, ol
     background-color:rgb(136,195,103);
     background-color:rgba(136,195,103,0.75);    
     overflow:hidden;
-    text-align:justify;    
+/*    text-align:justify;    */
     border-radius:20px;
     margin-top:1em;
     margin-bottom:1em;
