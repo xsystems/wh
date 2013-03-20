@@ -1,9 +1,9 @@
 <div class="meteorology_box2">
-  <img alt="Hoek van Holland, Netherlands tide times for the next 7 days" src="http://www.tide-forecast.com/tides/Hoek-van-Holland-Netherlands.png"> </img>
+  <img alt="Hoek van Holland, Netherlands tide times for the next 7 days" src="http://www.tide-forecast.com/tides/Hoek-van-Holland-Netherlands.png"/>
 </div>
 <div class="meteorology_box">
-  <iframe class="buienradar" src="http://www2.buienradar.nl/display.php?width=1024&amp;height=1000&amp;country=nl&amp;maptype=2&amp;opacity=75" hspace="0" vspace="0" marginheight="0" marginwidth="0" frameborder="0" scrolling="no"> </iframe>
+  <iframe class="buienradar" src="http://www2.buienradar.nl/display.php?width=1024&amp;height=1000&amp;country=nl&amp;maptype=2&amp;opacity=75" hspace="0" vspace="0" marginheight="0" marginwidth="0" frameborder="0" scrolling="no"/>
   <div class="weergadget">
-    <iframe src="http://gratisweerdata.buienradar.nl/weergadget/index6330.html" hspace="0" vspace="0" marginheight="0" marginwidth="0" frameborder="0" scrolling="no"> </iframe>
+    <iframe src="http://gratisweerdata.buienradar.nl/weergadget/index6330.html" hspace="0" vspace="0" marginheight="0" marginwidth="0" frameborder="0" scrolling="no"/>
   </div>
 </div>

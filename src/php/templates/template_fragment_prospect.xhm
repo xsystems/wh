@@ -18,8 +18,19 @@
                 </p>
             </section>
         </section>                                            
-        <footer></footer>
+        <footer> </footer>
     </article>
     <h2>Inschrijven</h2>
-    TODO: formulier.
+    <span>Dit gedeelte van de site werkt nog niet ...</span>
+    <form id="register_form" action="?action=prospect&amp;register=true" autocomplete="on" method="post">
+        <label form="register_form" for="register_form_input_firstname">Voornaam</label>
+        <input id="register_form_input_firstname" name="firstname" form="register_form" type="text" required="required" autofocus="autofocus"/>
+        <label form="register_form" for="register_form_input_lastname">Achternaam</label>
+        <input id="register_form_input_lastname" name="lastname" form="register_form" type="text" required="required"/>
+        <label form="register_form" for="register_form_input_email">Email</label>
+        <input id="register_form_input_email" name="email" form="register_form" type="email" required="required"/>    
+        <label form="register_form" for="register_form_input_phone">Telefoonnummer</label>
+        <input id="register_form_input_phone" name="phone" form="register_form" type="tel" required="required"/>                       
+        <input form="register_form" type="submit" value="Submit"/>
+    </form> 
 </div>

@@ -13,7 +13,7 @@
             <em>Houd rekening met de volgende aanrijroute: Vanaf de Lozerlaan neem de afslag Uithof en Jaap Edenweg, deze weg afrijden tot het achterste deel van de parkeerplaats. Loop vanaf hier naar het verenigings-gebouw. Zie ook afbeelding hiernaast!</em>
         </p>
     </article>
-    <img src="/content/route_windhappers.jpg" alt="Aanrijroute" id="route"></img>
+    <img src="/content/route_windhappers.jpg" alt="Aanrijroute" id="route" />
 </div> 
 <div id="map_canvas"> </div>
 

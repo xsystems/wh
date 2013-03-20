@@ -31,22 +31,22 @@
             </div>
             <div class='section_home_images section_home_images_alt'>
                 <a href='/content/images/home/banner_freestyle.original.jpg' rel='lightbox[home]' title='Verenigingsgebouw'>
-                    <img src='/content/images/home/banner_freestyle.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
+                    <img src='/content/images/home/banner_freestyle.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'/>
                 </a>
                 <a href='/content/images/home/kanopolo juni 2012 010.original.JPG' rel='lightbox[home]' title='Kanopolo'>
-                    <img src='/content/images/home/kanopolo juni 2012 010.JPG' alt='Kanopolo' title='Kanopolo'> </img>
+                    <img src='/content/images/home/kanopolo juni 2012 010.JPG' alt='Kanopolo' title='Kanopolo'/>
                 </a>   
                 <a href='/content/images/home/toervaren.original.jpg' rel='lightbox[home]' title='Toervaren'>
-                    <img src='/content/images/home/toervaren.jpg' alt='Toervaren' title='Toervaren'> </img>
+                    <img src='/content/images/home/toervaren.jpg' alt='Toervaren' title='Toervaren'/>
                 </a>                  
                 <a href='/content/images/home/ww-2.jpg' rel='lightbox[home]' title='Wildwatervaren'>
-                    <img src='/content/images/home/ww-2.jpg' alt='Wildwatervaren' title='Wildwatervaren'> </img>
+                    <img src='/content/images/home/ww-2.jpg' alt='Wildwatervaren' title='Wildwatervaren'/>
                 </a>    
                 <a href='/content/images/home/eskimoteer 13-02-09 026.original.JPG' rel='lightbox[home]' title='Eskimoteren'>
-                    <img src='/content/images/home/eskimoteer 13-02-09 026.JPG' alt='Eskimoteren' title='Eskimoteren'> </img>
+                    <img src='/content/images/home/eskimoteer 13-02-09 026.JPG' alt='Eskimoteren' title='Eskimoteren'/>
                 </a>                                                                                                                                    
             </div>                                 
         </section>
     </section>
-    <footer></footer>
+    <footer> </footer>
 </article>

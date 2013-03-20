@@ -140,9 +140,11 @@
         <label form="contact_form" for="contact_form_input_lastname">Achternaam</label>
         <input id="contact_form_input_lastname" name="lastname" form="contact_form" type="text" required="required"/>
         <label form="contact_form" for="contact_form_input_email">Email</label>
-        <input id="contact_form_input_email" name="email" form="contact_form" type="text" required="required"/>
+        <input id="contact_form_input_email" name="email" form="contact_form" type="email" required="required"/>
+        <label form="contact_form" for="contact_form_input_phone">Telefoonnummer</label>
+        <input id="contact_form_input_phone" name="phone" form="register_form" type="tel" />         
         <label form="contact_form" for="contact_form_input_subject">Onderwerp</label>
-        <input id="contact_form_input_subject" name="subject" form="contact_form" type="text" required="required"/>
+        <input id="contact_form_input_subject" name="subject" form="contact_form" type="text" required="required"/>           
         <label form="contact_form" for="contact_form_input_text">Tekst</label>
         <textarea id="contact_form_input_text" name="text" form="contact_form" required="required"> </textarea>               
         <input form="contact_form" type="submit" value="Submit"/>

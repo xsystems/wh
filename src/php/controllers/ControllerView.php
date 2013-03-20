@@ -117,6 +117,7 @@ class ControllerView
 	                    $bannerText = "Freestyle";	
 	                    break;	
 	                case 'brandingvaren':
+	                    $bannerImageURL = "/content/banners/banner_brandingvaren.jpg";	                
 	                    $bannerText = "Brandingvaren";
 	                    break;
                     default:
@@ -189,6 +190,7 @@ class ControllerView
 		        
                 switch($queryString["type"]){
 		            case 'clubmagazine':
+                        $bannerImageURL = "/content/banners/banner_clubmagazine.jpg";		            
     		            $pageNumber = 0;
 		                $sg = new SimpleGalleryPDF($galleries_items_per_page, $gallery_url, $gallery_path_absolute, null, null); 	
                     	$view->galleryPageClubMagazine = $sg->generatePage($pageNumber);
@@ -306,6 +308,7 @@ class ControllerView
 		    case 'canoetours':
 		        $scriptURLs[] = "/src/js/setup_lightbox2.js";
 		        $bannerText = "Kanoroutes";
+                        $bannerImageURL = "/content/banners/banner_canoetours.jpg";		            		        
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_canoetours.xhm");
 			    break;	
 		    case 'home_english':			    

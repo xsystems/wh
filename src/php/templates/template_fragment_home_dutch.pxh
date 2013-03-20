@@ -16,10 +16,10 @@
                 </div>  
                 <div class='section_home_images justify-all-lines'>
                     <a href='/content/images/home/banner_freestyle.original.jpg' rel='lightbox[home]' title='Verenigingsgebouw'>
-                        <img src='/content/images/home/banner_freestyle.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'> </img>
+                        <img src='/content/images/home/banner_freestyle.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'/>
                     </a>             
                     <a href='/content/images/home/kanopolo juni 2012 010.original.JPG' rel='lightbox[home]' title='Kanopolo'>
-                        <img src='/content/images/home/kanopolo juni 2012 010.JPG' alt='Kanopolo' title='Kanopolo'> </img>
+                        <img src='/content/images/home/kanopolo juni 2012 010.JPG' alt='Kanopolo' title='Kanopolo'/>
                     </a>         
                 </div>              
                 <div class='section_home_text'>                           
@@ -46,7 +46,7 @@
                 </div>                               
             </section>
         </section>                                            
-        <footer></footer>
+        <footer> </footer>
     </article>
     <div id="sidebar">
         <div id="news_latest">
@@ -56,7 +56,7 @@
         <div id="sponsors_list">
             <h1>Sponsoren</h1>
                 <a href='?action=sponsors#kanoshop' title='Kanoshop'>
-                    <img src='/content/logos/kanoshoplogo_2012.png' alt='Kanoshop' title='Kanoshop'> </img>
+                    <img src='/content/logos/kanoshoplogo_2012.png' alt='Kanoshop' title='Kanoshop'/>
                 </a> 
         </div>         
     </div>  
