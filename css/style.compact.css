@@ -168,7 +168,6 @@ ul, ol
     background-color:rgba(255,255,51,0); 
     width:33%;
     height:100%;    
-    padding-left:1%;
     padding-bottom:2%;  
 }
 
@@ -178,7 +177,8 @@ ul, ol
     border-bottom-left-radius:20px;    
     border-bottom-right-radius:20px;        
     padding-left:5%;   
-    padding-right:5%;                     
+    padding-right:5%;     
+    margin-bottom:0;                
 }
 
 #sponsors_list>h1
@@ -186,7 +186,7 @@ ul, ol
     background-color:rgb(255,255,51); 
     border-radius:20px;    
     padding-left:5%;   
-    padding-right:5%;                     
+    padding-right:5%;      
 }
 
 #newsAbstracts article
