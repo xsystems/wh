@@ -1,18 +1,18 @@
 <?php
 // Libs
-require_once("lib/php/MobileDetect.php");
+require_once($_SERVER["DOCUMENT_ROOT"]."/lib/php/MobileDetect.php");
 
 // Models
-require_once("src/php/models/ModelDiscipline.php");
-require_once("src/php/models/ModelSimpleGalleryPDF.php");
-require_once("src/php/models/ModelSimpleGalleryImage.php");
-require_once("src/php/models/ModelSimpleGalleryVideo.php");
+require_once($_SERVER["DOCUMENT_ROOT"]."/src/php/models/ModelDiscipline.php");
+require_once($_SERVER["DOCUMENT_ROOT"]."/src/php/models/ModelSimpleGalleryPDF.php");
+require_once($_SERVER["DOCUMENT_ROOT"]."/src/php/models/ModelSimpleGalleryImage.php");
+require_once($_SERVER["DOCUMENT_ROOT"]."/src/php/models/ModelSimpleGalleryVideo.php");
 
 // Views
-require_once("src/php/views/View.php");
+require_once($_SERVER["DOCUMENT_ROOT"]."/src/php/views/View.php");
 
 // Controllers
-require_once("src/php/controllers/ControllerNews.php");
+require_once($_SERVER["DOCUMENT_ROOT"]."/src/php/controllers/ControllerNews.php");
 
 
 class ControllerView

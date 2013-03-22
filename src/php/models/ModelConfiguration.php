@@ -1,6 +1,6 @@
 <?php
 
-require_once("src/php/models/ModelDatabase.php");
+require_once("ModelDatabase.php");
 
 # This is implemented according to the Singleton Pattern
 final class Configuration 

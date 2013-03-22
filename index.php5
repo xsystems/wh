@@ -11,10 +11,10 @@ $sessionID = session_id();
 #ModelException::getInstance("log/error.log", "Oeps, something went wrong. Sorry.");
  
 # Configuration
-require_once("src/php/models/ModelConfiguration.php");
+require_once($_SERVER["DOCUMENT_ROOT"]."/src/php/models/ModelConfiguration.php");
 
 # Controllers
-require_once("src/php/controllers/ControllerView.php");  
+require_once($_SERVER["DOCUMENT_ROOT"]."/src/php/controllers/ControllerView.php");  
     
     
 $get = null;
