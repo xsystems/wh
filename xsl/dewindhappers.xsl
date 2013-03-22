@@ -105,6 +105,7 @@
             <em><xsl:copy-of select="abstract/text() | abstract/*"/></em>
             <xsl:for-each select="section">
                 <section>
+                    <xsl:attribute name="class">justify-all-lines</xsl:attribute>                
                     <h2><xsl:value-of select="title"/></h2>
                     <xsl:for-each select="paragraph">
                         <p><xsl:copy-of select="./text() | ./*"/></p>

@@ -209,6 +209,7 @@ ul, ol
 #newsAbstracts em
 { 
     display:inline-block;
+    margin-bottom:0.2em;
 }
 
 
@@ -216,12 +217,13 @@ ul, ol
     display:block;
     margin-top:1%;
     margin-bottom:1%;
+    width:100%;
 }
 
 #newsAbstracts img
 { 
+    width:100%;
     border-radius:20px; 
-    height:10em;
 }
 
 #sponsors_list a
@@ -236,11 +238,6 @@ ul, ol
 #sponsors_list img
 {
     width:100%;
-}
-
-#news
-{
-/*    text-align:justify;*/
 }
 
 #news h1
@@ -281,9 +278,14 @@ ul, ol
     background-color:rgba(136,195,103,0.90);              
 }
 
+#news a
+{
+    text-decoration:none;
+}
+
 #news img
 {
-    height:240px;
+    width:24%;
     border-radius:20px; 
 }
 
@@ -446,7 +448,6 @@ ul, ol
     background-color:rgb(136,195,103);
     background-color:rgba(136,195,103,0.90);    
     overflow:hidden;
-/*    text-align:justify;    */
     border-radius:20px;
     margin-top:1em;
     margin-bottom:1em;
