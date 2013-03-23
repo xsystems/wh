@@ -3,7 +3,7 @@
 require_once("lib/php/MobileDetect.php");
 
 // Models
-require_once("src/php/models/ModelDiscipline.php");
+require_once("src/php/models/ModelDisciplines.php");
 require_once("src/php/models/ModelSimpleGalleryPDF.php");
 require_once("src/php/models/ModelSimpleGalleryImage.php");
 require_once("src/php/models/ModelSimpleGalleryVideo.php");
@@ -75,13 +75,15 @@ class ControllerView
         // Menu template fragment.    
         $menuItemsSub = $this->configuration->get("menu", "menu_items_sub");
         $menuItemsUrl = $this->configuration->get("menu", "menu_items_url"); 
+        
         $menuItemsSubDiscipline = "";
-		foreach (Discipline::getNames($this->configuration->getDatabase()) as $name){
-		    // Why is $name an array ?
-		    $menuItemsSubDiscipline .= $name["name"].";";
-			$menuItemsUrl[$name["name"]] = "?action=discipline&name=".urlencode($name["name"]);
+        $disciplines = new Disciplines("data/dewindhappers.xml", "xsl/dewindhappers.xsl");        
+		foreach ($disciplines->getNames() as $name){
+		    $menuItemsSubDiscipline .= $name.";";
+			$menuItemsUrl[$name] = "?action=discipline&name=".urlencode($name);
     	}    
     	$menuItemsSub["Activiteiten"] = $menuItemsSubDiscipline;
+    	
         $view->menuItemsSub = $menuItemsSub;
         $view->menuItemsUrl = $menuItemsUrl;
         $view->menuItems = $this->configuration->get("menu", "menu_items");
@@ -96,27 +98,27 @@ class ControllerView
                 $scriptURLs[] = "/src/js/setup_lightbox2.js";
                 // TODO: Move data to configuration file.
 	            switch ($queryString['name']){
-	                case 'zeevaren': 
+	                case 'Zeevaren': 
 	                    $bannerImageURL = "/content/banners/banner_seafarers_1.jpg";
 	                    $bannerText = "Zeevaren";	
 	                    break;
-	                case 'kanopolo': 
+	                case 'Kanopolo': 
 	                    $bannerImageURL = "/content/banners/banner_canoepolo.jpg";
 	                    $bannerText = "Kanopolo";	
 	                    break;
-	                case 'toervaren': 
+	                case 'Toervaren': 
 	                    $bannerImageURL = "/content/banners/banner_cruising.jpg";
 	                    $bannerText = "Toervaren";	
 	                    break;	       
-	                case 'wildwatervaren': 
+	                case 'Wildwatervaren': 
 	                    $bannerImageURL = "/content/banners/banner_whitewaterrafting.jpg";
 	                    $bannerText = "Wildwatervaren";	
 	                    break;	 	             
-	                case 'freestyle': 
+	                case 'Freestyle': 
 	                    $bannerImageURL = "/content/banners/banner_freestyle.jpg";
 	                    $bannerText = "Freestyle";	
 	                    break;	
-	                case 'brandingvaren':
+	                case 'Brandingvaren':
 	                    $bannerImageURL = "/content/banners/banner_brandingvaren.jpg";	                
 	                    $bannerText = "Brandingvaren";
 	                    break;
@@ -124,23 +126,9 @@ class ControllerView
                         $bannerImageURL = "/content/banners/banner_default.jpg";
                         $bannerText = "Discipline";	
                         break;
-	            }
-	            
-		        $discipline = Discipline::getByName($this->configuration->getDatabase(), $queryString['name']);		        
-		        $imageFolder = $discipline->image_folder_location;	    		        
-		        $disciplineImagesURL = array();
-        		if($imageFolder){
-			        $images = scandir($imageFolder);	
-			        foreach ($images as $image){
-				        if (!is_dir($image)){		
-				            $disciplineImagesURL[] = array("name"=>$image, "url"=>$imageFolder."/".$image);
-				        }
-			        }
-		        }
-		        
-                $view->disciplineName = $discipline->name;
-		        $view->disciplineDescription = $this->replaceSpecialCharacters($discipline->description);
-		        $view->disciplineImagesURL = $disciplineImagesURL;
+	            }    	          
+
+                $view->discipline = $discipline = $disciplines->getByName($queryString['name']);
 
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_discipline.pxh");   
 			    break;
@@ -270,7 +258,7 @@ class ControllerView
 		    case 'organisation':
 		        if(isset($_GET["contact"]) && $_GET["contact"] == "true")
 		        {
-		            // This needs to be moved.		        
+		            //TODO: This needs to be moved.		        
 		            $headers  = "From: " . $_POST["email"] . "\r\n";
                     $headers .= "X-Mailer: PHP/" . phpversion();
                     

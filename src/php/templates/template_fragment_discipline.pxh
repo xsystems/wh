@@ -1,11 +1,1 @@
-<div class="content discipline">
-    <h1><?php echo $this->disciplineName; ?></h1>
-    <?php echo $this->disciplineDescription; ?>   
-    <div class="discipline_images justify-all-lines">
-        <?php foreach($this->disciplineImagesURL as $imageAndUrl): ?>
-            <a class="discipline_image" href="<?php echo $imageAndUrl["url"] ?>" rel="lightbox[discipline]" title="<?php echo $imageAndUrl["name"] ?>">
-                <img src="<?php echo $imageAndUrl["url"] ?>" alt="<?php echo $imageAndUrl["name"] ?>"/>
-            </a>
-        <?php endforeach; ?>
-    </div>
-</div>
+<?php echo $this->discipline; ?>

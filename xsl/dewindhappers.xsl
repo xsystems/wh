@@ -20,7 +20,14 @@
                         <xsl:apply-templates match="news"/>
                     </xsl:when>
                 </xsl:choose> 
-            </xsl:when>    
+            </xsl:when> 
+            <xsl:when test="$tag = 'disciplines'">  
+                <xsl:choose> 
+                    <xsl:when test="$action = 'disciplineByName'">
+                        <xsl:call-template name="disciplineByName"/>
+                    </xsl:when>       
+                </xsl:choose>             
+            </xsl:when>                          
         </xsl:choose>    
     </xsl:template>
         
@@ -92,7 +99,7 @@
     <xsl:template name="articles" match="articles">
         <xsl:for-each select="article">
             <xsl:sort select="datetime" order="descending"/>   
-                <xsl:call-template name="article"/>  
+            <xsl:call-template name="article"/>  
         </xsl:for-each>
     </xsl:template>
     
@@ -141,6 +148,43 @@
                 <xsl:copy-of select="." />
             </xsl:for-each>                       
         </article>    
-    </xsl:template>       
+    </xsl:template>    
+    
+    <xsl:template name="disciplineByName" > 
+        <xsl:apply-templates select="/dewindhappers/disciplines/discipline[normalize-space(name/text()) = $name]"/>
+    </xsl:template>    
+    
+    <xsl:template name="discipline" match="discipline"> 
+        <article id="discipline">
+            <h1><xsl:value-of select="name"/></h1>
+            <section>
+                <xsl:copy-of select="description/node()"/>
+            </section>    
+            <section>
+                <xsl:for-each select="image">
+                    <a>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="url"/>
+                        </xsl:attribute>   
+                        <xsl:attribute name="title">
+                            <xsl:value-of select="title"/>
+                        </xsl:attribute>                                                 
+                        <xsl:attribute name="rel">lightbox[discipline]</xsl:attribute> 
+                        <img>
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="url"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="alt">
+                                <xsl:value-of select="title"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="title">
+                                <xsl:value-of select="title"/>
+                            </xsl:attribute>
+                        </img>
+                    </a>
+                </xsl:for-each>
+            </section>
+        </article> 
+    </xsl:template>  
 
 </xsl:transform>

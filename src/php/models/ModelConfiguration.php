@@ -1,6 +1,6 @@
 <?php
 
-require_once("ModelDatabase.php");
+#require_once("ModelDatabase.php");
 
 # This is implemented according to the Singleton Pattern
 final class Configuration 
@@ -8,9 +8,9 @@ final class Configuration
 	private static $instance = null;
 
 	private $configFile = null;
-	private $databaseErrMode = PDO::ERRMODE_EXCEPTION;		
+#	private $databaseErrMode = PDO::ERRMODE_EXCEPTION;		
 	private $configSettings	= null;		
-	private $database = null;
+#	private $database = null;
 	
 	# We don't permit an explicit call of the constructor! (like $v = new Singleton()).
 	private function __construct($configFile = null)
@@ -58,23 +58,23 @@ final class Configuration
 	    return $this->configSettings[$section][$key];
 	}
 	
-	public function getDatabase()
-	{	    
-        # Setup database only once.
-        if($this->database == null)
-        {
-            #TODO check if settings are present.
-            try
-            {
-	            $this->database = Database::getInstance($this->get("system", "system_document_root").$this->get("database", "database_path")."/", $this->get("database", "database_file"), $this->databaseErrMode);
-            }
-            catch(PDOException $e) 
-            {  
-	            echo "ERROR: unable to setup database.";  
-	            file_put_contents($this->get("system", "system_document_root").$this->get("log", "log_path")."/".$this->get("database", "database_log"), $e->getMessage()."\n", FILE_APPEND);  
-            } 
-        }	        
-        return $this->database;
-	}
+#	public function getDatabase()
+#	{	    
+#        # Setup database only once.
+#        if($this->database == null)
+#        {
+#            #TODO check if settings are present.
+#            try
+#            {
+#	            $this->database = Database::getInstance($this->get("system", "system_document_root").$this->get("database", "database_path")."/", $this->get("database", "database_file"), $this->databaseErrMode);
+#            }
+#            catch(PDOException $e) 
+#            {  
+#	            echo "ERROR: unable to setup database.";  
+#	            file_put_contents($this->get("system", "system_document_root").$this->get("log", "log_path")."/".$this->get("database", "database_log"), $e->getMessage()."\n", FILE_APPEND);  
+#            } 
+#        }	        
+#        return $this->database;
+#	}
 }
 ?>
