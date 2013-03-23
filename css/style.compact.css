@@ -313,33 +313,6 @@ ul, ol
     border-radius:20px; 
 }
 
-/*.discipline_images*/
-/*{*/
-/*    margin-top:2em;*/
-/*}*/
-
-/*.discipline_image*/
-/*{*/
-/*    display:inline-block;*/
-/*    width: 48%;*/
-/*    height: auto;   */
-/*    overflow:hidden;       */
-/*    border-radius:20px;*/
-/*    border: 1px solid transparent;  */
-/*    margin-bottom:1em;*/
-/*}*/
-
-/*.discipline_image img*/
-/*{*/
-/*    width:100%;*/
-/*    height:240px;*/
-/*}*/
-
-/*.discipline_image:hover*/
-/*{*/
-/*    border: 1px solid #000000;*/
-/*}*/
-
 #register_form
 {
     margin-bottom:1em;
