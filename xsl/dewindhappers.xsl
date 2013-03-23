@@ -216,8 +216,7 @@
                     <a>    
                         <xsl:attribute name="href">
                             <xsl:value-of select="concat('?action=discipline&amp;name=', normalize-space(name))"/>
-                        </xsl:attribute>   
-
+                        </xsl:attribute> 
                         <xsl:value-of select="name"/>
                     </a>                                  
                 </li> 
