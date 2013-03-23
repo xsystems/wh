@@ -25,7 +25,7 @@ if (filter_has_var(INPUT_GET, "action"))
     $action = array_shift($get);
 }
 
-$controllerView = new ControllerView( Configuration::getInstance($_SERVER['DOCUMENT_ROOT']."/config.ini") );
+$controllerView = new ControllerView( Configuration::getInstance("config.ini") );
 echo $controllerView->getView($action, $get);        
 
 ?>
