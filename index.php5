@@ -11,7 +11,7 @@ $sessionID = session_id();
 #ModelException::getInstance("log/error.log", "Oeps, something went wrong. Sorry.");
  
 # Configuration
-require_once("src/php/models/ModelConfiguration.php");
+require_once("src/php/models/ModelConfiguration.php5");
 
 # Controllers
 require_once("src/php/controllers/ControllerView.php");  
