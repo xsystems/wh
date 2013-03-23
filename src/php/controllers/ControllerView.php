@@ -3,6 +3,7 @@
 require_once("lib/php/MobileDetect.php");
 
 // Models
+require_once("src/php/models/ModelMenu.php");
 require_once("src/php/models/ModelDisciplines.php");
 require_once("src/php/models/ModelSimpleGalleryPDF.php");
 require_once("src/php/models/ModelSimpleGalleryImage.php");
@@ -72,22 +73,12 @@ class ControllerView
                                         array("logo"=>"/content/icons/flags/flag-gb.png", "url"=>"?action=home_english", "title"=>"English", "class"=>"media_item_language"),
                                         array("logo"=>"/content/icons/flags/flag-de.png", "url"=>"?action=home_german", "title"=>"Deutsch", "class"=>"media_item_language") );
         
-        // Menu template fragment.    
-        $menuItemsSub = $this->configuration->get("menu", "menu_items_sub");
-        $menuItemsUrl = $this->configuration->get("menu", "menu_items_url"); 
+        // Menu template fragment.  
+        $menu = new Menu("data/dewindhappers.xml", "xsl/dewindhappers.xsl");        
+        $view->menu = $menu->getMenu();
         
-        $menuItemsSubDiscipline = "";
-        $disciplines = new Disciplines("data/dewindhappers.xml", "xsl/dewindhappers.xsl");        
-		foreach ($disciplines->getNames() as $name){
-		    $menuItemsSubDiscipline .= $name.";";
-			$menuItemsUrl[$name] = "?action=discipline&name=".urlencode($name);
-    	}    
-    	$menuItemsSub["Activiteiten"] = $menuItemsSubDiscipline;
-    	
-        $view->menuItemsSub = $menuItemsSub;
-        $view->menuItemsUrl = $menuItemsUrl;
-        $view->menuItems = $this->configuration->get("menu", "menu_items");
-        $view->menuItemsClass = $this->configuration->get("menu", "menu_items_class");     
+        $disciplines = new Disciplines("data/dewindhappers.xml", "xsl/dewindhappers.xsl");
+        $view->disciplineMenu = $disciplines->getMenu();     
         	
         switch($action){
 		    case 'calendar':			    
@@ -345,7 +336,8 @@ class ControllerView
         $view->add("head", "src/php/templates/template_fragment_opengraph_tags.pxh");   
         $view->add("main", "src/php/templates/template_fragment_banner.pxh");   
         $view->add("banner", "src/php/templates/template_fragment_mediabar.pxh");  
-        $view->add("main", "src/php/templates/template_fragment_menu.pxh");        
+        $view->add("main", "src/php/templates/template_fragment_menu.pxh");  
+        $view->add("disciplineMenu", "src/php/templates/template_fragment_menu_discipline.pxh");                      
         if(count($actionTemplateFragments) > 0){
             foreach($actionTemplateFragments as $actionTemplateFragment){
                 $view->add($actionTemplateFragment[0], $actionTemplateFragment[1]); 

@@ -1,5 +1,89 @@
 <?xml version="1.0"?>
 <dewindhappers>
+    <menu>
+        <menuItem>
+            <name>Home</name>
+            <url>?action=home</url>
+            <alignment>left</alignment>
+        </menuItem>
+        <menuItem>
+            <name>Kalender</name>
+            <url>?action=calendar</url>
+            <alignment>left</alignment>
+        </menuItem>
+        <menuItem>
+            <id>disciplineMenu</id>
+            <name>Activiteiten</name>
+            <alignment>left</alignment>
+        </menuItem>
+        <menuItem>
+            <name>Media</name>
+            <alignment>left</alignment>
+            <menuItem>
+                <name>Clubblad</name>
+                <url>?action=gallery&amp;type=clubmagazine</url>
+            </menuItem>
+            <menuItem>
+                <name>Foto's</name>
+                <url>?action=gallery&amp;type=image</url>
+            </menuItem>
+            <menuItem>
+                <name>Video's</name>
+                <url>?action=gallery&amp;type=video</url>
+            </menuItem>                        
+        </menuItem>
+        <menuItem>
+            <name>Nieuws</name>
+            <alignment>left</alignment>
+            <menuItem>
+                <name>Nieuwsberichten</name>
+                <url>?action=news</url>
+            </menuItem>
+            <menuItem>
+                <name>Lees Berichten</name>
+                <url>?action=vertel</url>
+            </menuItem>
+            <menuItem>
+                <name>Schrijf Berichten</name>
+                <url>?action=boodschap</url>
+            </menuItem>                
+        </menuItem>   
+        <menuItem>
+            <name>Contact</name>
+            <alignment>right</alignment>
+            <menuItem>
+                <name>Organisatie</name>
+                <url>?action=organisation</url>
+            </menuItem>
+            <menuItem>
+                <name>Locatie</name>
+                <url>?action=location</url>
+            </menuItem>
+            <menuItem>
+                <name>Kosten</name>
+                <url>?action=costs</url>
+            </menuItem>     
+            <menuItem>
+                <name>Sponsoren</name>
+                <url>?action=sponsors</url>
+            </menuItem>                      
+        </menuItem>           
+        <menuItem>
+            <name>Meteorologie</name>
+            <url>?action=meteorology</url>
+            <alignment>right</alignment>
+        </menuItem>   
+        <menuItem>
+            <name>Kanoroutes</name>
+            <url>?action=canoetours</url>
+            <alignment>right</alignment>
+        </menuItem>   
+        <menuItem>
+            <name>Aspirant-leden</name>
+            <url>?action=prospect</url>
+            <alignment>right</alignment>
+        </menuItem>                                                     
+    </menu>
     <disciplines>
         <discipline>
             <name>
@@ -208,135 +292,133 @@
         </discipline>                                        
     </disciplines>
     <news>
-        <articles>    
-            <article>
-                <datetime>2013-03-10T10:00:00</datetime>
+        <article>
+            <datetime>2013-03-10T10:00:00</datetime>
+            <title>
+                Open dag Kanovereniging "De Windhappers"
+            </title>
+            <abstract>
+                Op zondagmiddag 21 april a.s. kun je lekker komen varen en spetteren bij kanovereniging De Windhappers, Aan het eind van de Jaap Edenweg (voorbij het sportcentrum de Uithof) in Den Haag. Op de open dag van de club maak je kennis met alle soorten van kanovaren.
+            </abstract>
+            <section>
                 <title>
-                    Open dag Kanovereniging "De Windhappers"
+                    Lekker bezig op het water op 21 april
                 </title>
-                <abstract>
-                    Op zondagmiddag 21 april a.s. kun je lekker komen varen en spetteren bij kanovereniging De Windhappers, Aan het eind van de Jaap Edenweg (voorbij het sportcentrum de Uithof) in Den Haag. Op de open dag van de club maak je kennis met alle soorten van kanovaren.
-                </abstract>
-                <section>
-                    <title>
-                        Lekker bezig op het water op 21 april
-                    </title>
-                    <paragraph>
-                        Er komt een rolbaan waarmee je met bootje en al het water in plonst. Je mag allerlei soorten boten uitproberen en krijgt een beetje les. Er zijn demonstraties van kanopolo en eskimoteren. Dit jaar komt een speciale gast, Vincent Melotte, het Stand-up paddling (suppen) demonstreren.            
-                    </paragraph>
-                    <paragraph>
-                        Kanovereniging “De windhappers” is een van de grotere en actieve clubs van Nederland. Het hele jaar worden op woensdag, vrijdag en zondag gevaren in het Westland en Midden Delfland voor zowegevorderden en minder gevorderden.    
-                    </paragraph>        
-                    <paragraph>
-                         Er worden toertochten en kano kampeerweekenden georganiseerd in Nieuwkoop, Loosdrecht en de Kaag. Onze zeekanoërs varen op de Grevelingen, Oosterschelde, Noordzee en de Wadden. Een paar keer per jaar gaan we wild water varen in het buitenland. Regelmatig zijn er Windhappers bezig in de branding bij Scheveningen.            
-                    </paragraph>
-                    <paragraph>
-                        De club heeft een enthousiaste groep kano-poloërs die meedoet aan de landelijke competitie.            
-                    </paragraph>
-                    <paragraph>
-                        Als je lid wordt, krijg je een gratis introductiecursus in kajak- en/of Canadeesvaren. Daarna mag je gebruik maken van verenigingsboten. In de winter worden in een zwembad eskimoteerlessen gegeven, om te leren omslaan en weer boven te komen.            
-                    </paragraph>    
-                    <paragraph>     
-                        Interesse? Kom langs op de OPEN DAG op zondagmiddag 21 april a.s. Je bent welkom vanaf 13.00 uur tot 17.00 uur. Of loop eens binnen op woensdagavond, de vaste clubavond. Je vindt ons haventje en ons gezellige clubgebouw aan het teinde van de parkeerplaatsen van Sportcentrum “De Uithof” aan de Jaap Edenweg in Den Haag. Helemaal doorrijden of lopen en nog een keer naar rechts. Meer informatie vind je op de website www.windhappers.nl.                                       
-                    </paragraph>  
-                    <img src="/content/images/news/flyer_opendag_2013.jpg" alt="Flyer Opendag" title="Flyer Opendag"/>                          
-                </section>
-            </article>
-            <article>
-                <datetime>2013-03-09T11:00:00</datetime>
-                <title>
-                    Toertocht Nieuwkoop
-                </title>
-                <abstract>
-                    FOUT IN DE VORIGE NIEUWSFLITS van 9 maart. De toertocht op Nieuwkoop is op zaterdag 23 maart. Met excuses voor de verwarring van Erik Rumpff.
-                </abstract>
-                <section>
                 <paragraph>
-                    Op zaterdag 23 maart is de eerste toertocht van dit jaar naar Nieuwkoop. Erik Rumpff zal als tochtleider optreden. We verzamelen om 8.30 bij het clubgebouw en bekijken dan hoe we ons verdelen over de auto’s en of de trailer nodig is. Graag voor 22 maart doorgeven bij <a href="mailto:erik.rumpff@12move.nl">erik.rumpff@12move.nl</a> of je meegaat. Houdt er rekening mee dat het water nog koud kan zijn. Neem dus een zwemvest, eten, warme kleding en warme drank mee. Verder komt alles wel weer windhappergoed. Op 14 april is de volgende toertocht op vlak water. Deze gaat naar de Biesbosch.                
+                    Er komt een rolbaan waarmee je met bootje en al het water in plonst. Je mag allerlei soorten boten uitproberen en krijgt een beetje les. Er zijn demonstraties van kanopolo en eskimoteren. Dit jaar komt een speciale gast, Vincent Melotte, het Stand-up paddling (suppen) demonstreren.            
                 </paragraph>
-                </section>
-            </article>   
-            <article>
-                <datetime>2013-03-09T10:30:00</datetime>
-                <title>
-                    Toekomst van "de Windhapper"
-                </title>
-                <abstract>
-                    Zoals jullie hebben kunnen lezen, krijgen we binnenkort een nieuwe Windhappersite. Hiermee worden de mogelijkheden om te communiceren voor het bestuur en de leden veel groter. We krijgen de mogelijkheid om nieuws te melden, er komt een dynamische kalender die op ieder moment kan worden aangepast en de mogelijkheid om berichten op de site te zetten blijft bestaan.
-                </abstract>
-                <section>
-                    <paragraph>
-                        De afgelopen drie jaar is de Windhapper steeds 4 keer per jaar uitgebracht. Deze frequentie bleek nerzijds te klein om goed te communiceren met de leden en anderzijds vrij hoog voor de werkdruk an de redactie. Voor het eerste is als oplossing de “Nieuwsflits” gekomen. In feite zijn dit mailtjes anuit het bestuur aan alle leden. Dit laatste blijkt goed te werken; bijna iedereen blijkt de mailtjes te ezen. De frequentie van de mailtjes neemt de laatste tijd toe.                  
-                    </paragraph>
-                    <paragraph>
-                        Voor wat betreft de gedrukte Windhapper valt op dat steeds nagenoeg de hele oplage in de hal van et gebouw blijft liggen. Ook de digitale versie wordt volgens peilingen op woensdagavond nauwelijks elezen. Slechts weinig leden zijn enthousiast in het aanleveren van kopij. Het maken van een indhapper (lay-out, stukken schrijven, kopij verzamelen) kost ongeveer 40 uur.                 
-                    </paragraph>        
-                    <paragraph>
-                        Ik wil als redacteur van De Windhapper daarom aan de ALV het voorstel doen om te stoppen met het itbrengen van de Windhapper in zijn huidige vorm. De communicatie met de leden zal via de site en d hoc mailberichten verlopen. Als er belangrijke items aan de site worden toegevoegd, zal via de mail en attenderingsbericht (Nieuwsflits) worden gestuurd. De coördinatie van deze communicatie zal bij et bestuurslid PR liggen, ondersteund door de PR commissie en uiteraard in overleg met het bestuur.
-                    </paragraph>
-                    <paragraph>
-                        Bij agendapunt 8 van de ALV op 27 maart zal ik dit voorstel inbrengen.
-                    </paragraph>
-                    <paragraph>
-                        Indien de ALV instemt met dit voorstel dient artikel 8 van het Huishoudelijk Reglement te worden aangepast. Onderstaand een voorstel voor de tekst.
-                    </paragraph>    
-                </section>             
-                <section>
-                    <title> 
-                        Artikel 8.               
-                    </title>
-                    <paragraph>
-                        De vereniging communiceert met haar leden middels de website van de vereniging en met digitale e-mailberichten. Als redactie is een bestuurlid aangewezen die in samenspraak met het bestuur en een PR ommissie de communicatie coördineert. eder lid heeft de vrijheid teksten aangaande kanosport en/of recreatie voor verspreiding onder de leden aan e bieden aan de redactie met het verzoek om deze teksten af te laten drukken in het clubblad.             
-                    </paragraph>                
-                    <paragraph>
-                        De verantwoording voor de publicatie ligt bij de redactie, die het recht heeft bepaalde ter plaatsing angeboden artikelen (met uitzondering van officiële publicaties van het bestuur) met opgaaf van redenen niet e plaatsen.                
-                    </paragraph>  
-                </section>
-                <footer>
-                    Erik Rumpff
-                </footer>                
-            </article>        
-            <article>
-                <datetime>2013-03-09T10:15:00</datetime>
-                <title>
-                    Jaaroverzicht 2012 regioteam West-Holland
-                </title>
-                <abstract>
-                    De leden van het regioteam West-Holland hebben er ook in 2012 weer veel aan gedaan om het vaarwater in de regio bevaarbaar en aantrekkelijk te houden en maken. Er is veel overlegd met onder andere gemeenten, de provincie en het waterschap.
-                </abstract>
-                <a href="/media/news/West Holland Jaaroverzicht 2012.pdf" target="_blank" title="West Holland Jaaroverzicht 2012">West Holland Jaaroverzicht 2012.pdf</a>
-            </article>                      
-            <article>
-                <datetime>2013-03-09T10:00:00</datetime>
-                <title>
-                    Schoonmaak botenhuis
-                </title>
-                <abstract>
-                    De schoonmaak van het botenhuis is, in tegenstelling tot wat in Windhapper 402 stond, op 16 maart om 10 uur en wordt georganiseerd door Anne Zwaan. Anne kan uiteraard alle hulp gebruiken. Voor meer informatie zie de bijlage en je kunt je ook per e-mail aanmelden bij <a href="mailto:z.wanne@live.nl">z.wanne@live.nl</a>.
-                </abstract>
-            </article>     
-            <article>
-                <datetime>2013-03-22T11:00:00</datetime>
-                <title>
-                    De eerste serie kanosteigers geplaatst in Den Haag
-                </title>
-                <abstract>
-                    Vorig jaar heeft De Windhappers via de gemeente Westland aan de gemeente Den Haag de mogelijke locaties voor de kanosteigers in de kanoroute door Den Haag doorgegeven en nu kregen we onverwachts het bericht dat de eerste serie steigers zijn geplaatst. 
-                </abstract>
-                <section>
                 <paragraph>
-                    Met de boekenkastplanksteigers van de gemeente Westland zijn De Windhappers ook bezig met het opstarten. De eerste serie losse onderdelen van de steigers liggen sinds vorige week bij De Windhappers opgeslagen. De planning is dat De windhappers begin april zullen starten met het plaatsen van de boekenkastplanksteigers. 
+                    Kanovereniging “De windhappers” is een van de grotere en actieve clubs van Nederland. Het hele jaar worden op woensdag, vrijdag en zondag gevaren in het Westland en Midden Delfland voor zowegevorderden en minder gevorderden.    
+                </paragraph>        
+                <paragraph>
+                     Er worden toertochten en kano kampeerweekenden georganiseerd in Nieuwkoop, Loosdrecht en de Kaag. Onze zeekanoërs varen op de Grevelingen, Oosterschelde, Noordzee en de Wadden. Een paar keer per jaar gaan we wild water varen in het buitenland. Regelmatig zijn er Windhappers bezig in de branding bij Scheveningen.            
                 </paragraph>
-                <img src="/content/images/news/chinees.jpg" alt="Chinees" title="Chinees"/> 
-                <img src="/content/images/news/Erasmusweg.jpg" alt="Erasmusweg" title="Erasmusweg"/> 
-                <img src="/content/images/news/Houtwijklaan.jpg" alt="Houtwijklaan" title="Houtwijklaan"/> 
-                <img src="/content/images/news/Loosduinseweg.jpg" alt="Loosduinseweg" title="Loosduinseweg"/> 
-                <img src="/content/images/news/Loosduinseweg1.jpg" alt="Loosduinseweg1" title="Loosduinseweg1"/> 
-                <img src="/content/images/news/Theetuin.jpg" alt="Theetuin" title="Theetuin"/> 
-                <img src="/content/images/news/Tuincentrum.jpg" alt="Tuincentrum" title="Tuincentrum"/> 
-                <img src="/content/images/news/Tuincentrum2.jpg" alt="Tuincentrum2" title="Tuincentrum2"/> 
-                </section>
-            </article>                              
-        </articles>
+                <paragraph>
+                    De club heeft een enthousiaste groep kano-poloërs die meedoet aan de landelijke competitie.            
+                </paragraph>
+                <paragraph>
+                    Als je lid wordt, krijg je een gratis introductiecursus in kajak- en/of Canadeesvaren. Daarna mag je gebruik maken van verenigingsboten. In de winter worden in een zwembad eskimoteerlessen gegeven, om te leren omslaan en weer boven te komen.            
+                </paragraph>    
+                <paragraph>     
+                    Interesse? Kom langs op de OPEN DAG op zondagmiddag 21 april a.s. Je bent welkom vanaf 13.00 uur tot 17.00 uur. Of loop eens binnen op woensdagavond, de vaste clubavond. Je vindt ons haventje en ons gezellige clubgebouw aan het teinde van de parkeerplaatsen van Sportcentrum “De Uithof” aan de Jaap Edenweg in Den Haag. Helemaal doorrijden of lopen en nog een keer naar rechts. Meer informatie vind je op de website www.windhappers.nl.                                       
+                </paragraph>  
+                <img src="/content/images/news/flyer_opendag_2013.jpg" alt="Flyer Opendag" title="Flyer Opendag"/>                          
+            </section>
+        </article>
+        <article>
+            <datetime>2013-03-09T11:00:00</datetime>
+            <title>
+                Toertocht Nieuwkoop
+            </title>
+            <abstract>
+                FOUT IN DE VORIGE NIEUWSFLITS van 9 maart. De toertocht op Nieuwkoop is op zaterdag 23 maart. Met excuses voor de verwarring van Erik Rumpff.
+            </abstract>
+            <section>
+            <paragraph>
+                Op zaterdag 23 maart is de eerste toertocht van dit jaar naar Nieuwkoop. Erik Rumpff zal als tochtleider optreden. We verzamelen om 8.30 bij het clubgebouw en bekijken dan hoe we ons verdelen over de auto’s en of de trailer nodig is. Graag voor 22 maart doorgeven bij <a href="mailto:erik.rumpff@12move.nl">erik.rumpff@12move.nl</a> of je meegaat. Houdt er rekening mee dat het water nog koud kan zijn. Neem dus een zwemvest, eten, warme kleding en warme drank mee. Verder komt alles wel weer windhappergoed. Op 14 april is de volgende toertocht op vlak water. Deze gaat naar de Biesbosch.                
+            </paragraph>
+            </section>
+        </article>   
+        <article>
+            <datetime>2013-03-09T10:30:00</datetime>
+            <title>
+                Toekomst van "de Windhapper"
+            </title>
+            <abstract>
+                Zoals jullie hebben kunnen lezen, krijgen we binnenkort een nieuwe Windhappersite. Hiermee worden de mogelijkheden om te communiceren voor het bestuur en de leden veel groter. We krijgen de mogelijkheid om nieuws te melden, er komt een dynamische kalender die op ieder moment kan worden aangepast en de mogelijkheid om berichten op de site te zetten blijft bestaan.
+            </abstract>
+            <section>
+                <paragraph>
+                    De afgelopen drie jaar is de Windhapper steeds 4 keer per jaar uitgebracht. Deze frequentie bleek nerzijds te klein om goed te communiceren met de leden en anderzijds vrij hoog voor de werkdruk an de redactie. Voor het eerste is als oplossing de “Nieuwsflits” gekomen. In feite zijn dit mailtjes anuit het bestuur aan alle leden. Dit laatste blijkt goed te werken; bijna iedereen blijkt de mailtjes te ezen. De frequentie van de mailtjes neemt de laatste tijd toe.                  
+                </paragraph>
+                <paragraph>
+                    Voor wat betreft de gedrukte Windhapper valt op dat steeds nagenoeg de hele oplage in de hal van et gebouw blijft liggen. Ook de digitale versie wordt volgens peilingen op woensdagavond nauwelijks elezen. Slechts weinig leden zijn enthousiast in het aanleveren van kopij. Het maken van een indhapper (lay-out, stukken schrijven, kopij verzamelen) kost ongeveer 40 uur.                 
+                </paragraph>        
+                <paragraph>
+                    Ik wil als redacteur van De Windhapper daarom aan de ALV het voorstel doen om te stoppen met het itbrengen van de Windhapper in zijn huidige vorm. De communicatie met de leden zal via de site en d hoc mailberichten verlopen. Als er belangrijke items aan de site worden toegevoegd, zal via de mail en attenderingsbericht (Nieuwsflits) worden gestuurd. De coördinatie van deze communicatie zal bij et bestuurslid PR liggen, ondersteund door de PR commissie en uiteraard in overleg met het bestuur.
+                </paragraph>
+                <paragraph>
+                    Bij agendapunt 8 van de ALV op 27 maart zal ik dit voorstel inbrengen.
+                </paragraph>
+                <paragraph>
+                    Indien de ALV instemt met dit voorstel dient artikel 8 van het Huishoudelijk Reglement te worden aangepast. Onderstaand een voorstel voor de tekst.
+                </paragraph>    
+            </section>             
+            <section>
+                <title> 
+                    Artikel 8.               
+                </title>
+                <paragraph>
+                    De vereniging communiceert met haar leden middels de website van de vereniging en met digitale e-mailberichten. Als redactie is een bestuurlid aangewezen die in samenspraak met het bestuur en een PR ommissie de communicatie coördineert. eder lid heeft de vrijheid teksten aangaande kanosport en/of recreatie voor verspreiding onder de leden aan e bieden aan de redactie met het verzoek om deze teksten af te laten drukken in het clubblad.             
+                </paragraph>                
+                <paragraph>
+                    De verantwoording voor de publicatie ligt bij de redactie, die het recht heeft bepaalde ter plaatsing angeboden artikelen (met uitzondering van officiële publicaties van het bestuur) met opgaaf van redenen niet e plaatsen.                
+                </paragraph>  
+            </section>
+            <footer>
+                Erik Rumpff
+            </footer>                
+        </article>        
+        <article>
+            <datetime>2013-03-09T10:15:00</datetime>
+            <title>
+                Jaaroverzicht 2012 regioteam West-Holland
+            </title>
+            <abstract>
+                De leden van het regioteam West-Holland hebben er ook in 2012 weer veel aan gedaan om het vaarwater in de regio bevaarbaar en aantrekkelijk te houden en maken. Er is veel overlegd met onder andere gemeenten, de provincie en het waterschap.
+            </abstract>
+            <a href="/media/news/West Holland Jaaroverzicht 2012.pdf" target="_blank" title="West Holland Jaaroverzicht 2012">West Holland Jaaroverzicht 2012.pdf</a>
+        </article>                      
+        <article>
+            <datetime>2013-03-09T10:00:00</datetime>
+            <title>
+                Schoonmaak botenhuis
+            </title>
+            <abstract>
+                De schoonmaak van het botenhuis is, in tegenstelling tot wat in Windhapper 402 stond, op 16 maart om 10 uur en wordt georganiseerd door Anne Zwaan. Anne kan uiteraard alle hulp gebruiken. Voor meer informatie zie de bijlage en je kunt je ook per e-mail aanmelden bij <a href="mailto:z.wanne@live.nl">z.wanne@live.nl</a>.
+            </abstract>
+        </article>     
+        <article>
+            <datetime>2013-03-22T11:00:00</datetime>
+            <title>
+                De eerste serie kanosteigers geplaatst in Den Haag
+            </title>
+            <abstract>
+                Vorig jaar heeft De Windhappers via de gemeente Westland aan de gemeente Den Haag de mogelijke locaties voor de kanosteigers in de kanoroute door Den Haag doorgegeven en nu kregen we onverwachts het bericht dat de eerste serie steigers zijn geplaatst. 
+            </abstract>
+            <section>
+            <paragraph>
+                Met de boekenkastplanksteigers van de gemeente Westland zijn De Windhappers ook bezig met het opstarten. De eerste serie losse onderdelen van de steigers liggen sinds vorige week bij De Windhappers opgeslagen. De planning is dat De windhappers begin april zullen starten met het plaatsen van de boekenkastplanksteigers. 
+            </paragraph>
+            <img src="/content/images/news/chinees.jpg" alt="Chinees" title="Chinees"/> 
+            <img src="/content/images/news/Erasmusweg.jpg" alt="Erasmusweg" title="Erasmusweg"/> 
+            <img src="/content/images/news/Houtwijklaan.jpg" alt="Houtwijklaan" title="Houtwijklaan"/> 
+            <img src="/content/images/news/Loosduinseweg.jpg" alt="Loosduinseweg" title="Loosduinseweg"/> 
+            <img src="/content/images/news/Loosduinseweg1.jpg" alt="Loosduinseweg1" title="Loosduinseweg1"/> 
+            <img src="/content/images/news/Theetuin.jpg" alt="Theetuin" title="Theetuin"/> 
+            <img src="/content/images/news/Tuincentrum.jpg" alt="Tuincentrum" title="Tuincentrum"/> 
+            <img src="/content/images/news/Tuincentrum2.jpg" alt="Tuincentrum2" title="Tuincentrum2"/> 
+            </section>
+        </article>                              
     </news>
 </dewindhappers>

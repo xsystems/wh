@@ -1,6 +1,6 @@
 <?php
 
-class Disciplines
+class Menu
 {      
     private $pathXML;
     private $pathXSLT;    
@@ -25,32 +25,13 @@ class Disciplines
 		$this->xsltProcessor = new XSLTProcessor();
 		$this->xsltProcessor->importStyleSheet($this->domDocumentXSLT);
 		
-		$this->xsltProcessor->setParameter("", "tag", "disciplines");
-    }
-    
-    public function getNames()
-    {
-        $query = "/dewindhappers/disciplines/discipline/name/text()";
-        
-        $names = array();
-        foreach($this->xpathProcessor->evaluate($query) as $domTextNode){
-            $names[] = trim($domTextNode->wholeText);
-        }
-        
-        return $names;
-    }
-    
-    public function getByName($name)
-    {
-		$this->xsltProcessor->setParameter("", "action", "disciplineByName");
-		$this->xsltProcessor->setParameter("", "name", $name);		 
-        return $this->xsltProcessor->transformToXML($this->domDocumentXML);		   
+		$this->xsltProcessor->setParameter("", "tag", "menu");
     }
     
     public function getMenu()
     {
-		$this->xsltProcessor->setParameter("", "action", "disciplineMenu");
-        return $this->xsltProcessor->transformToXML($this->domDocumentXML);		        
+		$this->xsltProcessor->setParameter("", "action", "menu");
+        return $this->xsltProcessor->transformToXML($this->domDocumentXML);		
     }
 }	
 	

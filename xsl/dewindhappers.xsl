@@ -17,7 +17,7 @@
                         <xsl:call-template name="articlesRangeAbstract"/>
                     </xsl:when>                                                    
                     <xsl:when test="$action = 'all'">
-                        <xsl:apply-templates match="news"/>
+                        <xsl:apply-templates select="/dewindhappers/news"/>
                     </xsl:when>
                 </xsl:choose> 
             </xsl:when> 
@@ -25,19 +25,29 @@
                 <xsl:choose> 
                     <xsl:when test="$action = 'disciplineByName'">
                         <xsl:call-template name="disciplineByName"/>
+                    </xsl:when>     
+                    <xsl:when test="$action = 'disciplineMenu'">
+                        <xsl:call-template name="disciplineMenu"/>
+                    </xsl:when>                        
+                </xsl:choose>             
+            </xsl:when> 
+            <xsl:when test="$tag = 'menu'">  
+                <xsl:choose> 
+                    <xsl:when test="$action = 'menu'">
+                        <xsl:apply-templates select="/dewindhappers/menu"/>
                     </xsl:when>       
                 </xsl:choose>             
-            </xsl:when>                          
+            </xsl:when>                                     
         </xsl:choose>    
     </xsl:template>
         
     <xsl:template name="articlesCount">
-        <xsl:value-of select="count(//article)"/>
+        <xsl:value-of select="count(/dewindhappers/news/article)"/>
     </xsl:template>    
 
     <xsl:template name="articlesRange">
         <div id="news">    
-            <xsl:for-each select="//article">
+            <xsl:for-each select="/dewindhappers/news/article">
                 <xsl:sort select="datetime" order="descending"/>   
                 <xsl:if test="position() &gt; $positionStart and position() &lt;= $positionEnd">
                     <xsl:call-template name="article"/>  
@@ -48,7 +58,7 @@
     
     <xsl:template name="articlesRangeAbstract">
         <div id="newsAbstracts">    
-            <xsl:for-each select="//article">
+            <xsl:for-each select="/dewindhappers/news/article">
                 <xsl:sort select="datetime" order="descending"/>   
                 <xsl:if test="position() &gt; $positionStart and position() &lt;= $positionEnd">
                     <xsl:call-template name="articleAbstract"/>  
@@ -64,46 +74,21 @@
             </xsl:attribute>
             <h1><xsl:value-of select="title"/></h1>
             <em><xsl:value-of select="abstract"/></em>
-            <xsl:if test="local-name(.//img) = 'img'">            
-                <a>
-                    <xsl:attribute name="href">
-                        <xsl:value-of select=".//img/@src"/>
-                    </xsl:attribute>   
-                    <xsl:attribute name="title">
-                        <xsl:value-of select=".//img/@title"/>
-                    </xsl:attribute>                                                 
-                    <xsl:attribute name="rel">lightbox[news]</xsl:attribute> 
-                    <img>
-                        <xsl:attribute name="src">
-                            <xsl:value-of select=".//img/@src"/>
-                        </xsl:attribute>
-                        <xsl:attribute name="alt">
-                            <xsl:value-of select=".//img/@alt"/>
-                        </xsl:attribute>
-                        <xsl:attribute name="title">
-                            <xsl:value-of select=".//img/@title"/>
-                        </xsl:attribute>
-                    </img>
-                </a>
-            </xsl:if>                           
+            <xsl:apply-templates select="section[position() = 1]/img[position() = 1]"/>                          
             <a href="?action=news#{position()}" title="Lees verder">lees verder</a>            
         </article>    
     </xsl:template>     
     
     <xsl:template match="news">
         <div id="news">
-            <xsl:apply-templates select="articles"/>
+            <xsl:for-each select="article">
+                <xsl:sort select="datetime" order="descending"/>   
+                <xsl:call-template name="article"/>  
+            </xsl:for-each>
         </div>
-    </xsl:template>    
-
-    <xsl:template name="articles" match="articles">
-        <xsl:for-each select="article">
-            <xsl:sort select="datetime" order="descending"/>   
-            <xsl:call-template name="article"/>  
-        </xsl:for-each>
     </xsl:template>
     
-    <xsl:template name="article" match="article"> 
+    <xsl:template name="article"> 
         <article>
             <xsl:attribute name="id">
                 <xsl:value-of select="position()"/>
@@ -111,33 +96,14 @@
             <h1><xsl:value-of select="title"/></h1>
             <em><xsl:copy-of select="abstract/text() | abstract/*"/></em>
             <xsl:for-each select="section">
-                <section>
-                    <xsl:attribute name="class">justify-all-lines</xsl:attribute>                
+                <section class="justify-all-lines">
                     <h2><xsl:value-of select="title"/></h2>
                     <xsl:for-each select="paragraph">
+                        <!-- This could maybe be done in a nicer way -->
                         <p><xsl:copy-of select="./text() | ./*"/></p>
                     </xsl:for-each>
                     <xsl:for-each select="img">
-                        <a>
-                            <xsl:attribute name="href">
-                                <xsl:value-of select="@src"/>
-                            </xsl:attribute>   
-                            <xsl:attribute name="title">
-                                <xsl:value-of select="@title"/>
-                            </xsl:attribute>                                                 
-                            <xsl:attribute name="rel">lightbox[news]</xsl:attribute> 
-                            <img>
-                                <xsl:attribute name="src">
-                                    <xsl:value-of select="@src"/>
-                                </xsl:attribute>
-                                <xsl:attribute name="alt">
-                                    <xsl:value-of select="@alt"/>
-                                </xsl:attribute>
-                                <xsl:attribute name="title">
-                                    <xsl:value-of select="@title"/>
-                                </xsl:attribute>
-                            </img>
-                        </a>
+                        <xsl:apply-templates select="."/>
                     </xsl:for-each>
                 </section>
             </xsl:for-each>
@@ -148,13 +114,36 @@
                 <xsl:copy-of select="." />
             </xsl:for-each>                       
         </article>    
-    </xsl:template>    
+    </xsl:template>  
+    
+    <xsl:template match="img">
+        <a>
+            <xsl:attribute name="href">
+                <xsl:value-of select="@src"/>
+            </xsl:attribute>   
+            <xsl:attribute name="title">
+                <xsl:value-of select="@title"/>
+            </xsl:attribute>                                                 
+            <xsl:attribute name="rel">lightbox[news]</xsl:attribute> 
+            <img>
+                <xsl:attribute name="src">
+                    <xsl:value-of select="@src"/>
+                </xsl:attribute>
+                <xsl:attribute name="alt">
+                    <xsl:value-of select="@alt"/>
+                </xsl:attribute>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="@title"/>
+                </xsl:attribute>
+            </img>
+        </a>    
+    </xsl:template>            
     
     <xsl:template name="disciplineByName" > 
         <xsl:apply-templates select="/dewindhappers/disciplines/discipline[normalize-space(name/text()) = $name]"/>
     </xsl:template>    
     
-    <xsl:template name="discipline" match="discipline"> 
+    <xsl:template match="discipline"> 
         <article id="discipline">
             <h1><xsl:value-of select="name"/></h1>
             <section>
@@ -186,5 +175,54 @@
             </section>
         </article> 
     </xsl:template>  
+    
+    <xsl:template match="menu">
+        <ul id="menu" class="nav">    
+            <xsl:apply-templates select="menuItem[alignment = 'left']"/>  
+            <xsl:apply-templates select="menuItem[alignment = 'right']"/>           
+        </ul>        
+    </xsl:template>    
+    
+    <xsl:template match="menuItem"> 
+        <li>
+            <xsl:if test="id">
+                    <xsl:attribute name="id">
+                        <xsl:value-of select="id"/>
+                    </xsl:attribute>              
+            </xsl:if>         
+            <xsl:if test="alignment/text() = 'right'">
+                <xsl:attribute name="class">rightitem</xsl:attribute> 
+            </xsl:if>           
+            <a>         
+                <xsl:if test="url">       
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="url"/>
+                    </xsl:attribute>   
+                </xsl:if>           
+                <xsl:value-of select="name"/>
+            </a>  
+            <xsl:if test="menuItem">
+                <ul>
+                    <xsl:apply-templates select="menuItem"/> 
+                </ul>
+            </xsl:if>                                 
+        </li>    
+    </xsl:template>    
+    
+    <xsl:template name="disciplineMenu"> 
+        <ul>
+            <xsl:for-each select="/dewindhappers/disciplines/discipline">
+                <li>          
+                    <a>    
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="concat('?action=discipline&amp;name=', normalize-space(name))"/>
+                        </xsl:attribute>   
+
+                        <xsl:value-of select="name"/>
+                    </a>                                  
+                </li> 
+            </xsl:for-each>
+        </ul>
+    </xsl:template>   
 
 </xsl:transform>
