@@ -133,7 +133,6 @@
     </table>
     <h2>Contact</h2> 
     <h3>Zend ons een email</h3>  
-    <span>Dit gedeelte van de site werkt nog niet ...</span>
     <form id="contact_form" action="?action=organisation&amp;contact=true" autocomplete="on" method="post">
         <label form="contact_form" for="contact_form_input_firstname">Voornaam</label>
         <input id="contact_form_input_firstname" name="firstname" form="contact_form" type="text" required="required" autofocus="autofocus"/>

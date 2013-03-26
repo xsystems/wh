@@ -80,6 +80,7 @@ class ControllerView
         $disciplines = new Disciplines("data/dewindhappers.xml", "xsl/dewindhappers.xsl");
         $view->disciplineMenu = $disciplines->getMenu();     
         	
+        // Choose template correspinding to the action.	
         switch($action){
 		    case 'calendar':			    
 		        $bannerText = "Activiteiten";
@@ -243,29 +244,48 @@ class ControllerView
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_meteorology.xhm");				    
 			    break;
 		    case 'prospect':
-		        $bannerText = "Aspirant-leden";
-                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_prospect.xhm");			    
-			    break;				    				    			      
-		    case 'organisation':
-		        if(isset($_GET["contact"]) && $_GET["contact"] == "true")
+	            //TODO: This needs to be moved.		        		    
+		        if(isset($_GET["register"]) && $_GET["register"] == "true")
 		        {
-		            //TODO: This needs to be moved.		        
 		            $headers  = "From: " . $_POST["email"] . "\r\n";
                     $headers .= "X-Mailer: PHP/" . phpversion();
                     
-                    $message  = "Voornaam: " . $_POST["firstname"] . "\r\n";
-                    $message .= "Achternaam" . $_POST["lastname"] . "\r\n";
+                    $message  = "[Windhappers lidmaatschap aanvraag]" . "\r\n";  
+                    $message .= "\r\n";                                                             
+                    $message .= "Voornaam: " . $_POST["firstname"] . "\r\n";
+                    $message .= "Achternaam: " . $_POST["lastname"] . "\r\n";
+                    $message .= "Telefoonnummer: " . $_POST["phone"] . "\r\n";
+                    $message .= "Email: " . $_POST["email"] . "\r\n";                    
                     $message .= "\r\n";     
                     $message .= $_POST["text"];       
                     $message = wordwrap($message, 70, "\r\n");
                     
-		            mail("koenboes@gmail.com", $_POST["subject"],  $message, $headers );
-
-#		            if($mail_status){
-#		                echo "mail send succesfully.<br/>";
-#		            }else{
-#		                echo "mail send failed.<br/>";		                
-#		            }
+		            mail("koenboes@gmail.com", "[Windhappers] Lidmaatschap aanvraag",  $message, $headers );
+		        }
+		        		    
+		        $bannerText = "Aspirant-leden";
+                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_prospect.xhm");			    
+			    break;				    				    			      
+		    case 'organisation':
+	            //TODO: This needs to be moved.		        		    
+		        if(isset($_GET["contact"]) && $_GET["contact"] == "true")
+		        {
+		            $headers  = "From: " . $_POST["email"] . "\r\n";
+                    $headers .= "X-Mailer: PHP/" . phpversion();
+                    
+                    $message  = "[Windhappers website contact bericht]" . "\r\n";
+                    $message .= "\r\n";         
+                    $message .= "Onderwerp: " . $_POST["subject"] . "\r\n";    
+                    $message .= "\r\n";                                                             
+                    $message .= "Voornaam: " . $_POST["firstname"] . "\r\n";
+                    $message .= "Achternaam: " . $_POST["lastname"] . "\r\n";
+                    $message .= "Telefoonnummer: " . $_POST["phone"] . "\r\n";
+                    $message .= "Email: " . $_POST["email"] . "\r\n";                    
+                    $message .= "\r\n";     
+                    $message .= $_POST["text"];       
+                    $message = wordwrap($message, 70, "\r\n");
+                    
+		            mail("koenboes@gmail.com", "[Windhappers] " . $_POST["subject"],  $message, $headers );
 		        }
 		        
 		        $bannerText = "Organisatie";
