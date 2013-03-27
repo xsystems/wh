@@ -1,5 +1,5 @@
 <?php
-    header("Location: ?action=vertel");
+#    header("Location: ?action=vertel");
 
     include_once('src/php/lib/wh-functies.inc.php');
 
@@ -50,4 +50,7 @@
     fwrite($file, $inhoud);
     fclose($file);
 ?>
+<div class="content">
+    Klik <a href='?action=home' title='Home'>hier</a> om naar de site terug te keren.
+</div>
 
