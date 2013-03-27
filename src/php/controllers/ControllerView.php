@@ -260,7 +260,7 @@ class ControllerView
                     $message .= $_POST["text"];       
                     $message = wordwrap($message, 70, "\r\n");
                     
-		            mail("koenboes@gmail.com", "[Windhappers] Lidmaatschap aanvraag",  $message, $headers );
+		            mail("windhappersecretaris@hotmail.com", "[Windhappers] Lidmaatschap aanvraag",  $message, $headers );
 		        }
 		        		    
 		        $bannerText = "Aspirant-leden";
@@ -285,7 +285,7 @@ class ControllerView
                     $message .= $_POST["text"];       
                     $message = wordwrap($message, 70, "\r\n");
                     
-		            mail("koenboes@gmail.com", "[Windhappers] " . $_POST["subject"],  $message, $headers );
+		            mail("windhappersecretaris@hotmail.com", "[Windhappers] " . $_POST["subject"],  $message, $headers );
 		        }
 		        
 		        $bannerText = "Organisatie";
