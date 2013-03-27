@@ -1,4 +1,6 @@
 <?php
+    header("Location: ?action=vertel");
+
     include_once('src/php/lib/wh-functies.inc.php');
 
     $filename = "data/vertel.txt"; 
@@ -47,7 +49,5 @@
     $file = fopen($filename, 'r+');
     fwrite($file, $inhoud);
     fclose($file);
-    
-    header("Location: ?action=vertel");
 ?>
 
