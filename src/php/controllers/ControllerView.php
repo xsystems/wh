@@ -347,6 +347,11 @@ class ControllerView
                 $view->newsAbstracts = $controllerNews->getRangeOfArticleAbstracts(0,$positionEnd);                
 			    break;
 	    }
+	    
+	    // If the bannerText is larger then it will go to a new line.
+	    if(strlen($bannerText) > 20){
+	        $bannerText = substr($bannerText, 0, 20);
+	    }
 
         $view->scriptURLs = $scriptURLs;
         $view->bannerText = $bannerText;

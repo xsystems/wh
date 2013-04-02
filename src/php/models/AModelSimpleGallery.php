@@ -46,6 +46,7 @@ abstract class ASimpleGallery
 			
 			if( !file_exists($this->thumbnailDirPath) )
 			{
+			    // Make accessible to all, just in case we're not able to setup the correct groups on the server.
                 $umask_old = umask(0); 			
 				mkdir($this->thumbnailDirPath, 0777);
 				umask($umask_old); 
