@@ -46,7 +46,9 @@ abstract class ASimpleGallery
 			
 			if( !file_exists($this->thumbnailDirPath) )
 			{
+                $umask_old = umask(0); 			
 				mkdir($this->thumbnailDirPath, 0777);
+				umask($umask_old); 
 			}		
 			
 			$this->synchronizeThumbnailDir($this->mediaDirPath, $this->thumbnailDirPath);
