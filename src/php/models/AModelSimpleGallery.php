@@ -26,7 +26,6 @@ abstract class ASimpleGallery
 	private $thumbnailDirPath;
 	private $mediaDirURL;
 	private $thumbnailDirURL;
-	private $filePermissions = 0770;
 	
 	public function __construct($itemsPerPage, $mediaDirURL, $mediaDirPath, $thumbnailDirURL=null, $thumbnailDirPath=null)
 	{
@@ -47,7 +46,7 @@ abstract class ASimpleGallery
 			
 			if( !file_exists($this->thumbnailDirPath) )
 			{
-				mkdir($this->thumbnailDirPath, $this->filePermissions);
+				mkdir($this->thumbnailDirPath, 0777);
 			}		
 			
 			$this->synchronizeThumbnailDir($this->mediaDirPath, $this->thumbnailDirPath);
