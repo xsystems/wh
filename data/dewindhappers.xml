@@ -156,9 +156,9 @@
                 <h2>Sites voor informatie</h2>
                 De volgende sites geven gedetailleerde informatie over kanopolo:
                 <ul>
-                    <li><a href='http://www.kanopolo.org' title='nationale kanopolosite'>http://www.kanopolo.org</a></li>
-                    <li><a href='http://www.watersportverbond.nl/kanopolo' title='nationale kanopolo site van het watersportverbond'>http://www.watersportverbond.nl/kanopolo</a></li>
-                    <li><a href='http://www.canoepolo.com' title='internationale kanopolo site'>http://www.canoepolo.com</a></li>
+                    <li><a href='http://www.kanopolo.org' title='nationale kanopolosite' target="_blank">http://www.kanopolo.org</a></li>
+                    <li><a href='http://www.watersportverbond.nl/kanopolo' title='nationale kanopolo site van het watersportverbond' target="_blank">http://www.watersportverbond.nl/kanopolo</a></li>
+                    <li><a href='http://www.canoepolo.com' title='internationale kanopolo site' target="_blank">http://www.canoepolo.com</a></li>
                 </ul>
             </description>
             <image>
@@ -183,15 +183,15 @@
                 Zeevaren
             </name>
             <description>
-                <p>Varen op zee is het mooiste dat er is, volgens onze zoutwatervaarders. De golven, de branding, het heldere, zoute water en het avontuur maken het de ultieme kano-ervaring. </p>
+                <p>Varen op zee is het mooiste dat er is, volgens onze zoutwatervaarders. De golven, de branding, het heldere, zoute water en het avontuur maken het de ultieme kano-ervaring.</p>
 
-                <p>Er zijn echter ook gevaren aan verbonden. Daarom hebben het Watersportverbond, de andere landelijke kanoverenigingen Peddelpraat en TKBN een opleidingsprogramma voor zeevaren ontwikkeld.</p>
+                <p><em>Er zijn echter ook gevaren aan verbonden. Daarom hebben het Watersportverbond, de andere landelijke kanoverenigingen Peddelpraat en TKBN een opleidingsprogramma voor zeevaren ontwikkeld.</em></p>
 
-                <p>Binnen onze vereniging is een groep zeevaarders actief, die samen met leden van andere verenigingen, tochten organiseert op Haringvliet, Grevelingen en Oosterschelde. Ook wordt er geoefend voor de kust bij Ter Heide en Hoek van Holland (zie kalender). Zij varen mee met tochten op de Wadden of in Zeeland die georganiseerd worden door Peddelpraat of het Watersportverbond.</p>
+                <p>Om op een verantwoorde manier op zee plezierig te kunnen varen, biedt de landelijke commissie NZKV (nederlandse zeekajakvaarders) opleidingen, tochten en clinic’s aan. Zie daarvoor <a href="http://www.nzkv.nl"  title="NZKV" target="_blank">www.nzkv.nl</a>  Sinds kort hebben we een eigen zeekajak instructeur in ons midden, waardoor alle ondersteuning van het watersportverbond en de NZKV voor activiteiten en kennismakingscursussen mogelijk geworden is. </p>
 
-                <p>De cursus eskimoteren is een must voor de aspirant zeevaarder.</p>
+                <p>Binnen onze vereniging is een groep zeevaarders actief, die samen met leden van andere verenigingen, tochten organiseert op Haringvliet, Grevelingen en Oosterschelde. Ook wordt er geoefend voor de kust bij Ter Heide en Hoek van Holland (zie kalender). </p>
 
-                <p>Bij voldoende belangstelling wordt er een beginnerscursus zeevaren georganiseerd door De Windhappers. Deze cursus is bedoeld om de technieken van het zeevaren te oefenen als onderdeel van het opleidingsprogramma van Peddelpraat en het Watersportverbond.</p>
+                <p>Een geoefende vlakwatervaarder(-ster) met een goed ontwikkelde lage steun kan de stap naar zout water gaan maken. </p>
             </description>
             <image>
                 <url>/content/images/discipline/seafarers/DSC_0100.JPG</url>
