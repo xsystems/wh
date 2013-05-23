@@ -52,7 +52,7 @@ abstract class AView implements IView
 	
 	public function save()
 	{
-	    return $this->domDocument->saveXML();
+	    return $this->domDocument->saveXML($this->domDocument);
 	}
 	
 	public function validate($suppressErrors = true)
