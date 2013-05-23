@@ -160,5 +160,6 @@
         <li><a href='/media/regulations/Huishoud_reglm_2010.pdf' target='_blank' title='Huishoud reglement 2010'>Huishoud reglement</a></li>
         <li><a href='/media/regulations/beleidsplan.pdf' target='_blank' title='Beleidsplan 2012'>Beleidsplan</a></li>
     </ul>
-    <br/>
+    <h2>Kantine Rooster</h2>
+    <iframe id="canteen_roster" src="/media/canteen_roster/canteen_roster.xhm" frameborder="0">Kantine Rooster</iframe>     
 </div>

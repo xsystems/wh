@@ -400,6 +400,12 @@ ul, ol
     height:18em;
 }
 
+#canteen_roster
+{
+    width:100%;
+    height:650px;
+}
+
 #bdsch
 {
     padding-bottom:2em;
