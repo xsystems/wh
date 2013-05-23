@@ -14,6 +14,7 @@ abstract class AView implements IView
 		
 		$this->domDocument = $domImplementation->createDocument(self::namespaceURI, self::qualifiedName, $docType);
 		$this->domDocument->encoding = self::xmlEncoding;
+		$this->domDocument->substituteEntities = true;
 		$this->domDocument->formatOutput = self::formatOutput;
 		$this->domDocument->preserveWhiteSpace = self::preserveWhiteSpace;
 		$this->domDocument->validateOnParse = self::validateOnParse;
