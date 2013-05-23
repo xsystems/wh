@@ -2,7 +2,7 @@
 <html xmlns="<?php echo $this->namespaceURI; ?>">
     <head id="head">
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/> 
-        <meta charset="utf-8">        
+        <meta charset="utf-8"/>        
         <link rel="shortcut icon" href="<?php echo $this->icon; ?>"/> 
         <title><?php echo $this->title; ?></title>
         <?php foreach($this->stylesheetURLs as $stylesheetURL): ?>
