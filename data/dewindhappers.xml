@@ -43,10 +43,10 @@
                 <name>Lees Berichten</name>
                 <url>?action=vertel</url>
             </menuItem>
-            <menuItem>
-                <name>Schrijf Berichten</name>
-                <url>?action=boodschap</url>
-            </menuItem>                
+<!--            <menuItem>-->
+<!--                <name>Schrijf Berichten</name>-->
+<!--                <url>?action=boodschap</url>-->
+<!--            </menuItem>                -->
         </menuItem>   
         <menuItem>
             <name>Contact</name>
