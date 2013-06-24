@@ -208,26 +208,26 @@ class ControllerView
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_read.pxh");				    
 			    break;
 		    case 'boodschap':
-                $messagesName = "";
-                $messagesEmail = "";
-                $messagesTelf = "";
-                $messagesOnderw = "";
-                $messagesVerhaal = " ";
-                if( isset($_POST['naam']) ){
-                    $messagesName = $_POST['naam'];
-                    $messagesEmail = $_POST['email'];
-                    $messagesTelf = $_POST['telf'];
-                    $messagesOnderw = $_POST['onderw'];
-                    $messagesVerhaal = $_POST['verhaal'];
-                }		    
+#                $messagesName = "";
+#                $messagesEmail = "";
+#                $messagesTelf = "";
+#                $messagesOnderw = "";
+#                $messagesVerhaal = " ";
+#                if( isset($_POST['naam']) ){
+#                    $messagesName = $_POST['naam'];
+#                    $messagesEmail = $_POST['email'];
+#                    $messagesTelf = $_POST['telf'];
+#                    $messagesOnderw = $_POST['onderw'];
+#                    $messagesVerhaal = $_POST['verhaal'];
+#                }		    
 
-                $view->messagesName = $messagesName;
-                $view->messagesEmail = $messagesEmail;
-                $view->messagesTelf = $messagesTelf;
-                $view->messagesOnderw = $messagesOnderw;
-                $view->messagesVerhaal = $messagesVerhaal;
-                $bannerText = "Berichten";                
-                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_write.pxh");
+#                $view->messagesName = $messagesName;
+#                $view->messagesEmail = $messagesEmail;
+#                $view->messagesTelf = $messagesTelf;
+#                $view->messagesOnderw = $messagesOnderw;
+#                $view->messagesVerhaal = $messagesVerhaal;
+#                $bannerText = "Berichten";                
+#                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_write.pxh");
 			    break;
 		    case 'bdsch_cntrl':
 		        // TODO: Reimplement.
