@@ -729,8 +729,20 @@ ul, ol
 {
     background-color:rgb(136,195,103); 
     background-color:rgba(136,195,103,0.90);    
-    border-radius:20px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;    
     margin-top:0.5em;
+    margin-bottom:0em;
+    text-align:center;
+}
+
+.article_canoetours>h2
+{
+    background-color:rgb(136,195,103); 
+    background-color:rgba(136,195,103,0.90);    
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;    
+    margin-top:0em;
     margin-bottom:0.5em;
     text-align:center;
 }

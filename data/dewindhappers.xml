@@ -293,6 +293,23 @@
     </disciplines>
     <news>
         <article>
+            <datetime>2013-09-08T12:00:00</datetime>
+            <title>
+                Nieuwe kanovoorzieningen in Midden Delfland
+            </title>
+            <abstract>
+                Deze zomer wordt Midden-Delfland nog leuker. Het Recreatieschap Midden-Delfland realiseert op vlieten en vaarten een kanoroute met aanlegvoorzieningen en steigers.
+            </abstract>
+            <section>
+                <paragraph>            
+                    Het project is één van de vijf projecten uit de Recreatieve Routestructuur. Dit plan biedt nieuwe recreatieve verbindingen met als doel de beleving van het landschap te vergroten, de toegankelijkheid vanaf de stad te verbeteren en barrières te verminderen door voor elke doelgroep in mooie routes te voorzien. Recreatieve Routestructuur is een kwalitatieve compensatie voor de aanleg van de rijksweg A4 Delft-Schiedam (IODS).
+                </paragraph>    
+                <paragraph>  
+                    Zie voor meer informatie: <a href="http://www.recreatiezuidholland.nl" target="_blank" title="Recreatie Zuid-Holland">www.recreatiezuidholland.nl</a>.                    
+                </paragraph>                                                      
+            </section>
+        </article>       
+        <article>
             <datetime>2013-09-01T12:00:00</datetime>
             <title>
                 Kanotoerweekend Westland en Delfland
@@ -424,7 +441,7 @@
             <a href="/media/news/Haagse stadsparkentocht op 2 juni 2013 voor de website.pdf" target="_blank" title="Haagse stadsparkentocht">Haagse stadsparkentocht op 2 juni 2013.pdf</a>            
         </article>   
         <article>
-            <datetime>2013-06-03T13:00:00</datetime>
+            <datetime>2013-09-07T13:00:00</datetime>
             <title>
                 Zaterdag 7 september 2013 zal de Haringvlietoversteek weer gezwommen worden
             </title>
