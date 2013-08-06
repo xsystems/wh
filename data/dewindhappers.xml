@@ -293,7 +293,76 @@
     </disciplines>
     <news>
         <article>
-            <datetime>2013-09-08T12:00:00</datetime>
+            <datetime>2013-08-31T12:00:00</datetime>
+            <title>
+                14-Bruggen-KanoTocht
+            </title>
+            <abstract>
+                Dit is een unieke kanotocht van Schipluiden naar Maasland. Het bijzondere zit hem hierin
+                dat speciaal voor deze tocht de 14 ophaalbruggen over de Gaag zullen worden opengezet.
+                Behalve de speciale kano-beleving bevat het evenement ook een wedstrijdelement:
+                Voor de snelste en de meest orginele kano zijn er leuke prijzen beschikbaar!
+            </abstract>
+            <section>
+                <title>
+                    Datum/Tijd en Locatie
+                </title>
+                <paragraph>
+                    Zaterdag 31-AUG-2013, Inschrijving tot 9:00 uur!
+                </paragraph>                    
+                <paragraph>                    
+                    Startschot 9:30 uur te Paviljoen 't Middelpunt, Dorpsstraat 57 te Schipluiden. Finish midden in Maasland.
+                </paragraph>                    
+                <paragraph>                                        
+                    Prijsuitreiking en koffie op de muziekvlonder van het Nazomerfeest-Maasland.
+                </paragraph>
+                <img src="/media/news/14bkt2013.png" alt="14 Bruggen Kanotocht" title="14 Bruggen Kanotocht"/>                 
+            </section>
+            <section>
+                <title>
+                    Inschrijven
+                </title>
+                <paragraph>
+                    Inschrijven bij Sabine Langstraat, Paviljoen 't Middelpunt.
+                </paragraph>
+                <paragraph>
+                    Telefonisch: 06-30731248 of 015-3809932.
+                </paragraph>
+                <paragraph>
+                    Internet: <a href="http://www.paviljoenschipluiden.nl/contact" target="_blank" title="Contact">http://www.paviljoenschipluiden.nl/contact</a>, via het contactformulier dat daar staat.              
+                </paragraph>
+                <paragraph>
+                    E-mail: <a href="mailto:info@paviljoenschipluiden.nl" target="_blank" title="Contact">info@paviljoenschipluiden.nl</a>.
+                </paragraph>
+                <paragraph>
+                    Eigen kano EURO 5,- of huurkano EURO 7.50,-
+                </paragraph>                                
+            </section>
+            <section>
+                <title>
+                    Info
+                </title>
+                <paragraph>                
+                Meer info: Leo Tetteroo
+                </paragraph>                
+                <paragraph>
+                    Mobiel: 06-53670298
+                </paragraph>
+                <paragraph>
+                    E-mail: l.tetteroo@online.nl
+                </paragraph>
+            </section>            
+            <section>
+                <title>
+                    Affiche
+                </title>
+                <paragraph>
+                    <a href="/media/news/Affiche-14BKT-2013_v1.02.pdf" target="_blank" title="Contact">Affiche-14BKT-2013_v1.02.pdf</a>                
+                </paragraph>
+            </section>
+        </article>    
+        <article>
+            <datetime>2013-08-08T12:00:00</datetime>
             <title>
                 Nieuwe kanovoorzieningen in Midden Delfland
             </title>
@@ -310,7 +379,7 @@
             </section>
         </article>       
         <article>
-            <datetime>2013-09-01T12:00:00</datetime>
+            <datetime>2013-08-30T12:00:00</datetime>
             <title>
                 Kanotoerweekend Westland en Delfland
             </title>
