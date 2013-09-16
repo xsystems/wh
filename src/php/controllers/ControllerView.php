@@ -132,10 +132,10 @@ class ControllerView
 		        $galleries_screenshot_second = $this->configuration->get("galleries", "galleries_screenshot_second");
 		        
 	            switch($queryString["type"]){
-	                case 'clubmagazine':
-	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_clubmagazine");
-	                    $galleries_default = $this->configuration->get("galleries", "galleries_default_clubmagazine");
-	                    break;
+#	                case 'clubmagazine':
+#	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_clubmagazine");
+#	                    $galleries_default = $this->configuration->get("galleries", "galleries_default_clubmagazine");
+#	                    break;
 	                case 'image':
 	                    $scriptURLs[] = "/src/js/setup_lightbox2.js";
 	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_images");
@@ -207,7 +207,7 @@ class ControllerView
                 $view->messages = $messages;
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_read.pxh");				    
 			    break;
-		    case 'boodschap':
+#		    case 'boodschap':
 #                $messagesName = "";
 #                $messagesEmail = "";
 #                $messagesTelf = "";
@@ -228,7 +228,7 @@ class ControllerView
 #                $view->messagesVerhaal = $messagesVerhaal;
 #                $bannerText = "Berichten";                
 #                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_write.pxh");
-			    break;
+#			    break;
 		    case 'bdsch_cntrl':
 		        // TODO: Reimplement.
 			    require_once("src/php/lib/bdsch-cntrl.php");

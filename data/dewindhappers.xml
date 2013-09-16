@@ -19,10 +19,10 @@
         <menuItem>
             <name>Media</name>
             <alignment>left</alignment>
-            <menuItem>
-                <name>Clubblad</name>
-                <url>?action=gallery&amp;type=clubmagazine</url>
-            </menuItem>
+<!--            <menuItem>-->
+<!--                <name>Clubblad</name>-->
+<!--                <url>?action=gallery&amp;type=clubmagazine</url>-->
+<!--            </menuItem>-->
             <menuItem>
                 <name>Foto's</name>
                 <url>?action=gallery&amp;type=image</url>
