@@ -35,14 +35,14 @@
         <menuItem>
             <name>Nieuws</name>
             <alignment>left</alignment>
-            <menuItem>
-                <name>Nieuwsberichten</name>
+<!--            <menuItem>-->
+<!--                <name>Nieuwsberichten</name>-->
                 <url>?action=news</url>
-            </menuItem>
-            <menuItem>
-                <name>Lees Berichten</name>
-                <url>?action=vertel</url>
-            </menuItem>
+<!--            </menuItem>-->
+<!--            <menuItem>-->
+<!--                <name>Lees Berichten</name>-->
+<!--                <url>?action=vertel</url>-->
+<!--            </menuItem>-->
 <!--            <menuItem>-->
 <!--                <name>Schrijf Berichten</name>-->
 <!--                <url>?action=boodschap</url>-->
@@ -293,6 +293,47 @@
     </disciplines>
     <news>
         <article>
+            <datetime>2014-01-17T11:22:00</datetime>
+            <title>
+                Voorinschrijving cursus eskimoteren
+            </title>
+            <abstract>
+                Bij voldoende aanmeldingen (minimaal 16) zal in januari en februari 2014 door de commissie branding- en wildwatervaren de jaarlijkse cursus eskimoteren voor beginners en gevorderden worden georganiseerd in het overdekte zwembad van Het Westerhonk te Monster.
+            </abstract>
+            <section>
+                <title>Download het volledige bericht:</title>
+            </section>
+            <a href="/media/news/Vooraankondiging cursus eskimoteren 2014.pdf" target="_blank" title="Cursus Eskimoteren">Vooraankondiging cursus eskimoteren 2014.pdf</a>                                                                 
+        </article>     
+        <article>
+            <datetime>2013-11-16T11:22:00</datetime>
+            <title>
+                Najaars wildwaterweekend België
+            </title>
+            <abstract>
+                De commissie branding-en wildwatervaren organiseert op 16 en 17 november 2013 weer een weekend wildwatervaren in België. Dit weekend is ook bijzonder geschikt voor senior Windhappers die eens de sfeer van het wildwatervaren willen opsnuiven.
+            </abstract>
+            <section>
+                <title>Download het volledige bericht:</title>
+            </section>
+            <a href="/media/news/Vooraankondiging najaarsweekend wildwatervaren Belgie.pdf" target="_blank" title="Cursus Eskimoteren">Vooraankondiging najaarsweekend wildwatervaren Belgie.pdf.pdf</a>                                                                 
+        </article>    
+        <article>
+            <datetime>2013-09-29T11:22:00</datetime>
+            <title>
+                De Windhappers op TV
+            </title>
+            <abstract>
+                Het TROS programma Zappsport heeft een uitzending gewijd aan de sport kanopolo. In deze uitzending battelen jongens en meiden van basisschool Verburch-hof tegen elkaar op het kanopoloveld van De Windhappers.
+            </abstract>
+            <section>
+                <title>Bekijk de aflevering:</title>            
+            </section>     
+            <a href="?action=gallery&amp;type=video&amp;gallery=De Windhappers op TV" target="_self" title="Zappsport - Kanopolo">
+                <img src="/media/videos/De%20Windhappers%20op%20TV/.thumbnails/Uitzending_van_21_september_2013_ochtend_-_Programma_-_ZappS.jpg" alt="Zappsport - Kanopolo" title="Zappsport - Kanopolo"/>                 
+            </a>                   
+        </article>         
+        <article>
             <datetime>2013-09-27T11:22:00</datetime>
             <title>
                 Zeekajakken in Noorwegen - Nordland – Helgeland  / 2013
@@ -301,7 +342,7 @@
                 In de studieruimte bij Sea Kayaking Cornwall trekt een schitterend boek getiteld "Åpen horisont" van Inge en Bent Skauen  mijn aandacht. Vanaf dat moment is twijfelen niet meer mogelijk; kajakken, wandelen, kamperen in het wild en overweldigende natuur vormen dit jaar ingrediënten voor uitdagend buitensportavontuur in Noorwegen. Enkele maanden later vertrekt het vliegtuig vanaf Schiphol richting Trondheim. YES….avonturieren in het voetspoor van de Noormannen!
             </abstract>
             <section>
-            <title>Download het volledige verslag:</title>
+                <title>Download het volledige verslag:</title>
             </section>
             <a href="/media/news/norway.pdf" target="_blank" title="Norway">norway.pdf</a>                                                                 
         </article>      

@@ -74,7 +74,14 @@
             </xsl:attribute>
             <h1><xsl:value-of select="title"/></h1>
             <em><xsl:value-of select="abstract"/></em>
-            <xsl:apply-templates select="section[position() = 1]/img[position() = 1]"/>                          
+            <xsl:choose>             
+                <xsl:when test="a[position() = 1]/img">            
+                    <xsl:copy-of select="a[position() = 1]"/>
+                </xsl:when>
+                <xsl:otherwise>    
+                    <xsl:apply-templates select="section[position() = 1]/img[position() = 1]"/>                                          
+               </xsl:otherwise>                        
+            </xsl:choose>
             <a href="?action=news#{position()}" title="Lees verder">lees verder</a>            
         </article>    
     </xsl:template>     

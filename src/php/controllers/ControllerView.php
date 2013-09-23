@@ -193,20 +193,20 @@ class ControllerView
                     	break;
         	    }
 			    break;
-		    case 'vertel':	
-		        // TODO: Reimplement.		    
-                $filename = "data/vertel.txt";		    			    
-                $messages = "";		
-		        if(filesize($filename) > 0){
-                    $file = fopen($filename, 'r');
-                    $messages = fread($file, filesize($filename));         
-                    fclose($file);      	
-		        }			    
-			    
-                $bannerText = "Berichten";
-                $view->messages = $messages;
-                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_read.pxh");				    
-			    break;
+#		    case 'vertel':	
+#		        // TODO: Reimplement.		    
+#                $filename = "data/vertel.txt";		    			    
+#                $messages = "";		
+#		        if(filesize($filename) > 0){
+#                    $file = fopen($filename, 'r');
+#                    $messages = fread($file, filesize($filename));         
+#                    fclose($file);      	
+#		        }			    
+#			    
+#                $bannerText = "Berichten";
+#                $view->messages = $messages;
+#                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_read.pxh");				    
+#			    break;
 #		    case 'boodschap':
 #                $messagesName = "";
 #                $messagesEmail = "";
@@ -220,7 +220,7 @@ class ControllerView
 #                    $messagesOnderw = $_POST['onderw'];
 #                    $messagesVerhaal = $_POST['verhaal'];
 #                }		    
-
+#
 #                $view->messagesName = $messagesName;
 #                $view->messagesEmail = $messagesEmail;
 #                $view->messagesTelf = $messagesTelf;
@@ -229,16 +229,16 @@ class ControllerView
 #                $bannerText = "Berichten";                
 #                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_write.pxh");
 #			    break;
-		    case 'bdsch_cntrl':
-		        // TODO: Reimplement.
-			    require_once("src/php/lib/bdsch-cntrl.php");
-			    return;
-			    break;			  
-		    case 'bdsch_opsl':
-		        // TODO: Reimplement.		    
-			    require_once("src/php/lib/bdsch-opsl.php");
-			    return;
-			    break;	
+#		    case 'bdsch_cntrl':
+#		        // TODO: Reimplement.
+#			    require_once("src/php/lib/bdsch-cntrl.php");
+#			    return;
+#			    break;			  
+#		    case 'bdsch_opsl':
+#		        // TODO: Reimplement.		    
+#			    require_once("src/php/lib/bdsch-opsl.php");
+#			    return;
+#			    break;	
 		    case 'meteorology':			    
 		        $bannerText = "Meteorologie";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_meteorology.xhm");				    
