@@ -157,13 +157,13 @@ class ControllerView
                 $gallery_url = $protocolHttpHost.$galleries_path."/".$galleries_default."/";
                 $gallery_path_absolute = $galleries_path_absolute."/".$galleries_default."/";
                 if ( isset($queryString['gallery']) && !empty($queryString['gallery']) && $queryString['gallery'] != ""){
-                    $gallerie_name = $queryString['gallery'];
+                    $gallery_name = $queryString['gallery'];
                     $gallery_url = $protocolHttpHost.$galleries_path."/".$queryString['gallery']."/"; 
                     $gallery_path_absolute = $galleries_path_absolute."/".$queryString['gallery']."/";		    
                 }		        
 
-                $gallerie_name_split = preg_split("/ /", $gallerie_name, 2);
-                $bannerText = $gallerie_name_split[1];
+                $gallery_name_split = preg_split("/ /", $gallery_name, 2);
+                $bannerText = $gallery_name_split[1];
                 
 		        $view->galleryAction = $action;
 		        $view->galleryType = $queryString["type"];
