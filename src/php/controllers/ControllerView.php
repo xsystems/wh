@@ -153,16 +153,17 @@ class ControllerView
                 $galleries_default =  reset($galleryNames);
 
                 //Default gallery. 		    
-#                $bannerText = $galleries_default;
-                $galleries_default_split = preg_split("/ /", $galleries_default,2);
-                $bannerText = $galleries_default_split[1];
+                $gallery_name = $galleries_default;
                 $gallery_url = $protocolHttpHost.$galleries_path."/".$galleries_default."/";
                 $gallery_path_absolute = $galleries_path_absolute."/".$galleries_default."/";
                 if ( isset($queryString['gallery']) && !empty($queryString['gallery']) && $queryString['gallery'] != ""){
-                    $bannerText = $queryString['gallery'];
+                    $gallerie_name = $queryString['gallery'];
                     $gallery_url = $protocolHttpHost.$galleries_path."/".$queryString['gallery']."/"; 
                     $gallery_path_absolute = $galleries_path_absolute."/".$queryString['gallery']."/";		    
                 }		        
+
+                $gallerie_name_split = preg_split("/ /", $gallerie_name, 2);
+                $bannerText = $gallerie_name_split[1];
                 
 		        $view->galleryAction = $action;
 		        $view->galleryType = $queryString["type"];
