@@ -165,7 +165,7 @@ class ControllerView
                 
 		        $view->galleryAction = $action;
 		        $view->galleryType = $queryString["type"];
-                $view->galleryNames = $this->scandir_for_dirs($galleries_path_absolute); 		        
+                $view->galleryNames = array_reverse($this->scandir_for_dirs($galleries_path_absolute);)
 		        $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_gallery.pxh");
 		        
                 switch($queryString["type"]){
