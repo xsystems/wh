@@ -154,7 +154,8 @@ class ControllerView
 
                 //Default gallery. 		    
 #                $bannerText = $galleries_default;
-                $bannerText = preg_split(" ", $galleries_default,1)[1];
+                $galleries_default_split = preg_split(" ", $galleries_default,1);
+                $bannerText = $galleries_default_split[1];
                 $gallery_url = $protocolHttpHost.$galleries_path."/".$galleries_default."/";
                 $gallery_path_absolute = $galleries_path_absolute."/".$galleries_default."/";
                 if ( isset($queryString['gallery']) && !empty($queryString['gallery']) && $queryString['gallery'] != ""){
