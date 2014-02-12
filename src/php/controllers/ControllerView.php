@@ -134,17 +134,14 @@ class ControllerView
 	            switch($queryString["type"]){
 #	                case 'clubmagazine':
 #	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_clubmagazine");
-#	                    $galleries_default = $this->configuration->get("galleries", "galleries_default_clubmagazine");
 #	                    break;
 	                case 'image':
 	                    $scriptURLs[] = "/src/js/setup_lightbox2.js";
 	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_images");
-	                    $galleries_default = $this->configuration->get("galleries", "galleries_default_images");
 	                    break;
 	                case 'video': 
 	                    $scriptURLs[] = "/src/js/setup_videojs.js";
 	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_videos");
-	                    $galleries_default = $this->configuration->get("galleries", "galleries_default_videos");
 	                    break;
 	                default:
 	                    // TODO: Do something smart.
