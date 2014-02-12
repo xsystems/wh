@@ -77,6 +77,10 @@
                 <name>Sponsoren</name>
                 <url>?action=sponsors</url>
             </menuItem>                      
+            <menuItem>
+                <name>Aspirant-leden</name>
+                <url>?action=prospect</url>
+            </menuItem>
         </menuItem>           
         <menuItem>
             <name>Meteorologie</name>
@@ -88,11 +92,6 @@
             <url>?action=canoetours</url>
             <alignment>right</alignment>
         </menuItem>   
-        <menuItem>
-            <name>Aspirant-leden</name>
-            <url>?action=prospect</url>
-            <alignment>right</alignment>
-        </menuItem>                                                     
     </menu>
     <disciplines>
         <discipline>
