@@ -16,31 +16,33 @@
             <name>Activiteiten</name>
             <alignment>left</alignment>
         </menuItem>
-<!--        <menuItem>
-            <name>Media</name>
-            <alignment>left</alignment>
+<!--        <menuItem>-->
+<!--            <name>Media</name>-->
+<!--            <alignment>left</alignment>-->
 <!--            <menuItem>-->
 <!--                <name>Clubblad</name>-->
 <!--                <url>?action=gallery&amp;type=clubmagazine</url>-->
 <!--            </menuItem>-->
-<!--            <menuItem>
-                <name>Foto's</name>
-                <url>?action=gallery&amp;type=image</url>
-            </menuItem>
-            <menuItem>
-                <name>Video's</name>
-                <url>?action=gallery&amp;type=video</url>
-            </menuItem>                        
-        </menuItem>-->
-    <menuItem>
-        <name>Foto's</name>
-        <url>?action=gallery&amp;type=image</url>
-    </menuItem>
-    <menuItem>
-        <name>Video's</name>
-        <url>?action=gallery&amp;type=video</url>
-    </menuItem>                        
-    <menuItem>
+<!--            <menuItem>-->
+<!--                <name>Foto's</name> -->
+<!--                <url>?action=gallery&amp;type=image</url> -->
+<!--            </menuItem> -->
+<!--            <menuItem> -->
+<!--                <name>Video's</name> -->
+<!--                <url>?action=gallery&amp;type=video</url> -->
+<!--            </menuItem> -->
+<!--        </menuItem>-->
+        <menuItem>
+            <name>Foto's</name>
+            <url>?action=gallery&amp;type=image</url>
+            <alignment>left</alignment>
+        </menuItem>
+        <menuItem>
+            <name>Video's</name>
+            <url>?action=gallery&amp;type=video</url>
+            <alignment>left</alignment>
+        </menuItem>                        
+        <menuItem>
             <name>Nieuws</name>
             <alignment>left</alignment>
 <!--            <menuItem>-->
