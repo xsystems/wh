@@ -152,7 +152,9 @@ class ControllerView
 	            }
 		        
 		        $galleries_path_absolute = $this->configuration->get("system", "system_document_root").$galleries_path;
-		        
+		        $galleryNames = array_reverse($this->scandir_for_dirs($galleries_path_absolute));
+                $galleries_default =  reset($galleryNames);
+
                 //Default gallery. 		    
                 $bannerText = $galleries_default;        		            
                 $gallery_url = $protocolHttpHost.$galleries_path."/".$galleries_default."/";
@@ -165,7 +167,7 @@ class ControllerView
                 
 		        $view->galleryAction = $action;
 		        $view->galleryType = $queryString["type"];
-                $view->galleryNames = array_reverse($this->scandir_for_dirs($galleries_path_absolute));
+                $view->galleryNames = $galleryNames;
 		        $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_gallery.pxh");
 		        
                 switch($queryString["type"]){
