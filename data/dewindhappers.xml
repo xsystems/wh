@@ -16,14 +16,14 @@
             <name>Activiteiten</name>
             <alignment>left</alignment>
         </menuItem>
-        <menuItem>
+<!--        <menuItem>
             <name>Media</name>
             <alignment>left</alignment>
 <!--            <menuItem>-->
 <!--                <name>Clubblad</name>-->
 <!--                <url>?action=gallery&amp;type=clubmagazine</url>-->
 <!--            </menuItem>-->
-            <menuItem>
+<!--            <menuItem>
                 <name>Foto's</name>
                 <url>?action=gallery&amp;type=image</url>
             </menuItem>
@@ -31,8 +31,16 @@
                 <name>Video's</name>
                 <url>?action=gallery&amp;type=video</url>
             </menuItem>                        
-        </menuItem>
-        <menuItem>
+        </menuItem>-->
+    <menuItem>
+        <name>Foto's</name>
+        <url>?action=gallery&amp;type=image</url>
+    </menuItem>
+    <menuItem>
+        <name>Video's</name>
+        <url>?action=gallery&amp;type=video</url>
+    </menuItem>                        
+    <menuItem>
             <name>Nieuws</name>
             <alignment>left</alignment>
 <!--            <menuItem>-->
