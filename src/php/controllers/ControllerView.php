@@ -356,6 +356,8 @@ class ControllerView
 	    if(strlen($bannerText) > 20){
 	        $bannerText = substr($bannerText, 0, 20);
 	    }
+	    
+	    print_r($stylesheetURLs);
 
         $view->stylesheetURLs = $stylesheetURLs;
         $view->scriptURLs = $scriptURLs;
