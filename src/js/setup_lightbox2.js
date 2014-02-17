@@ -7,7 +7,7 @@ var linkType = 'text/css';
 var linkMedia = 'screen';
 
 var loader = new Loader();
-window.onload = loader.loadScript(jqueryJS,
-                    loader.loadScript(lightboxJS,
+window.onload = loader.loadScript(lightboxJS,
+                    loader.loadScript(jqueryJS,
                         loader.loadLink(lightboxCSS, linkRel, linkType, linkMedia, "")));
 
