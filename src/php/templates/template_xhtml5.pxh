@@ -8,7 +8,7 @@
             <link rel="stylesheet" type="text/css" href="<?php echo $stylesheetURL; ?>"/>
         <?php endforeach; ?>
         <?php foreach($this->scriptURLs as $scriptURL): ?>
-            <script type="text/javascript" src="<?php echo $scriptURL; ?>" /> \n
+            <script type="text/javascript" src="<?php echo $scriptURL; ?>" />
         <?php endforeach; ?>        
     </head>
     <body>
