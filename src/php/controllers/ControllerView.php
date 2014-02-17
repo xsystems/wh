@@ -136,7 +136,10 @@ class ControllerView
 #	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_clubmagazine");
 #	                    break;
 	                case 'image':
-	                    $scriptURLs[] = "/src/js/setup_lightbox2.js";
+#	                    $scriptURLs[] = "/src/js/setup_lightbox2.js";
+	                    $scriptURLs[] = "/lib/js/lightbox/js/jquery-1.10.2.min.js";
+	                    $scriptURLs[] = "/lib/js/lightbox/js/lightbox-2.6.min.js";
+                        $stylesheetURLs[] = "/lib/js/lightbox/css/lightbox.css"
 	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_images");
 	                    break;
 	                case 'video': 
