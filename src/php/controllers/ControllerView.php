@@ -46,7 +46,6 @@ class ControllerView
         else{
             $stylesheetURLs[] = "/css/not_mobile.css";            
         }
-        $view->stylesheetURLs = $stylesheetURLs;
                 
         // Opengraph tags template fragment.
         // TODO: Move data to configuration file.
@@ -358,6 +357,7 @@ class ControllerView
 	        $bannerText = substr($bannerText, 0, 20);
 	    }
 
+        $view->stylesheetURLs = $stylesheetURLs;
         $view->scriptURLs = $scriptURLs;
         $view->bannerText = $bannerText;
         $view->bannerImageURL = $bannerImageURL; 
