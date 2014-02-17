@@ -86,7 +86,9 @@ class ControllerView
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_calendar.xhm");			    		    		  
 			    break;
 		    case 'discipline':	
-                $scriptURLs[] = "/src/js/setup_lightbox2.js";
+                $scriptURLs[] = "/lib/js/lightbox/js/jquery-1.10.2.min.js";
+                $scriptURLs[] = "/lib/js/lightbox/js/lightbox-2.6.min.js";
+                $stylesheetURLs[] = "/lib/js/lightbox/css/lightbox.css";
                 // TODO: Move data to configuration file.
 	            switch ($queryString['name']){
 	                case 'Zeevaren': 
@@ -135,7 +137,6 @@ class ControllerView
 #	                    $galleries_path = $this->configuration->get("galleries", "galleries_path_clubmagazine");
 #	                    break;
 	                case 'image':
-#	                    $scriptURLs[] = "/src/js/setup_lightbox2.js";
 	                    $scriptURLs[] = "/lib/js/lightbox/js/jquery-1.10.2.min.js";
 	                    $scriptURLs[] = "/lib/js/lightbox/js/lightbox-2.6.min.js";
                         $stylesheetURLs[] = "/lib/js/lightbox/css/lightbox.css";
@@ -309,25 +310,33 @@ class ControllerView
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_sponsors.xhm");			    
 			    break;				    		    		    				
 		    case 'canoetours':
-		        $scriptURLs[] = "/src/js/setup_lightbox2.js";
+                $scriptURLs[] = "/lib/js/lightbox/js/jquery-1.10.2.min.js";
+                $scriptURLs[] = "/lib/js/lightbox/js/lightbox-2.6.min.js";
+                $stylesheetURLs[] = "/lib/js/lightbox/css/lightbox.css";		        
 		        $bannerText = "Kanoroutes";
                         $bannerImageURL = "/content/banners/banner_canoetours.jpg";		            		        
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_canoetours.xhm");
 			    break;	
 		    case 'home_english':			    
-		        $scriptURLs[] = "/src/js/setup_lightbox2.js";
+                $scriptURLs[] = "/lib/js/lightbox/js/jquery-1.10.2.min.js";
+                $scriptURLs[] = "/lib/js/lightbox/js/lightbox-2.6.min.js";
+                $stylesheetURLs[] = "/lib/js/lightbox/css/lightbox.css";
 		        $bannerText = "Home English";
 		        $bannerImageURL = "/content/banners/banner_home.jpg";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_home_english.xhm");
 			    break;	
 		    case 'home_german':			    
-		        $scriptURLs[] = "/src/js/setup_lightbox2.js";
+                $scriptURLs[] = "/lib/js/lightbox/js/jquery-1.10.2.min.js";
+                $scriptURLs[] = "/lib/js/lightbox/js/lightbox-2.6.min.js";
+                $stylesheetURLs[] = "/lib/js/lightbox/css/lightbox.css";
 		        $bannerText = "Home Deutsch";
 		        $bannerImageURL = "/content/banners/banner_home.jpg";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_home_german.xhm");
 			    break;	
 		    case 'news':	
-		        $scriptURLs[] = "/src/js/setup_lightbox2.js";		    		    
+                $scriptURLs[] = "/lib/js/lightbox/js/jquery-1.10.2.min.js";
+                $scriptURLs[] = "/lib/js/lightbox/js/lightbox-2.6.min.js";
+                $stylesheetURLs[] = "/lib/js/lightbox/css/lightbox.css";		    		    
 		        $bannerText = "Nieuws";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_news.pxh");
 
@@ -336,7 +345,9 @@ class ControllerView
                 $view->news = $controllerNews->getRangeOfArticles(0,$articleCount);
 			    break;				    	    														
 		    default:
-		        $scriptURLs[] = "/src/js/setup_lightbox2.js";
+                $scriptURLs[] = "/lib/js/lightbox/js/jquery-1.10.2.min.js";
+                $scriptURLs[] = "/lib/js/lightbox/js/lightbox-2.6.min.js";
+                $stylesheetURLs[] = "/lib/js/lightbox/css/lightbox.css";
 		        $bannerText = "Home";
 		        $bannerImageURL = "/content/banners/banner_home.jpg";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_home_dutch.pxh");
@@ -356,8 +367,6 @@ class ControllerView
 	    if(strlen($bannerText) > 20){
 	        $bannerText = substr($bannerText, 0, 20);
 	    }
-	    
-	    print_r($stylesheetURLs);
 
         $view->stylesheetURLs = $stylesheetURLs;
         $view->scriptURLs = $scriptURLs;
