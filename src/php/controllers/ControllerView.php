@@ -341,8 +341,7 @@ class ControllerView
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_news.pxh");
 
                 $controllerNews = new ControllerNews("data/dewindhappers.xml", "xsl/dewindhappers.xsl");
-                $articleCount = $controllerNews->countArticles();
-                $view->news = $controllerNews->getRangeOfArticles(0,$articleCount);
+                $view->news = $controllerNews->getAllArticles();
 			    break;				    	    														
 		    default:
                 $scriptURLs[] = "/lib/js/lightbox/js/jquery-1.10.2.min.js";
