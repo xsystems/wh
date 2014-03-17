@@ -6,7 +6,9 @@
     
     <?php
         include_once('wh-functies.inc.php');
-
+        require_once('lib/php/recaptcha-php-1.11/recaptchalib.php');
+        $privatekey = "6Lc_vu8SAAAAABx6tdRIzRuKT0WUOoI2Ikp-zrQb";
+        
         $naam = $_POST['naam'];
         $email = $_POST['email'];
         $telf = $_POST['telf'];
@@ -18,15 +20,23 @@
         $verh_len = strlen($verhaal);
         $verh_max = 1000;
         $verh_prc = ($verh_len / $verh_max * 100) - 100;
+                
+        $resp = recaptcha_check_answer ($privatekey,
+                                        $_SERVER["REMOTE_ADDR"],
+                                        $_POST["recaptcha_challenge_field"],
+                                        $_POST["recaptcha_response_field"]);
 
         $rap = "";
+        
+        // What happens when the CAPTCHA was entered incorrectly
+        if (!$resp->is_valid) {$rap .= "De CAPTCHA is incorrect ingevuld. <br/>";};
         if (strlen($naam) < 2){ $rap .= "Vul je naam in. <br>"; };
-        if ((strlen($email) > 0) && (is_email($email) == false)){ $rap .= "Het E-mail adres heeft een verkeerde structuur. <br>"; };
-    #	if ((strlen($telf) < 1) && (strlen($email) < 1)){ $rap .= "Vul je E-mail adres of telefoonnummer in. <br>"; };
-        if ((strlen($telf) > 0) && (tel_cyf($telf) < 10)){ $rap .= "Het telefoonnummer heeft minder dan 10 cijfers. <br>"; };
-        if (strlen($onderw) < 2){ $rap .= "Vul je onderwerp in. <br>"; };
-        if ($verh_len < 5){ $rap .= "Je verhaal is te kort. <br>"; };
-        if ($verh_len > $verh_max){ $rap .= "Je verhaal is " . $verh_prc . " procent te lang. <br>"; };
+        if ((strlen($email) > 0) && (is_email($email) == false)){ $rap .= "Het E-mail adres heeft een verkeerde structuur. <br/>"; };
+    #	if ((strlen($telf) < 1) && (strlen($email) < 1)){ $rap .= "Vul je E-mail adres of telefoonnummer in. <br/>"; };
+        if ((strlen($telf) > 0) && (tel_cyf($telf) < 10)){ $rap .= "Het telefoonnummer heeft minder dan 10 cijfers. <br/>"; };
+        if (strlen($onderw) < 2){ $rap .= "Vul je onderwerp in. <br/>"; };
+        if ($verh_len < 5){ $rap .= "Je verhaal is te kort. <br/>"; };
+        if ($verh_len > $verh_max){ $rap .= "Je verhaal is " . $verh_prc . " procent te lang. <br/>"; };
     ?>
 
 

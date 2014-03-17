@@ -78,6 +78,8 @@ class ControllerView
         
         $disciplines = new Disciplines("data/dewindhappers.xml", "xsl/dewindhappers.xsl");
         $view->disciplineMenu = $disciplines->getMenu();     
+        
+        $controllerNews = new ControllerNews("data/dewindhappers.xml", "xsl/dewindhappers.xsl");        
         	
         // Choose template correspinding to the action.	
         switch($action){
@@ -198,52 +200,52 @@ class ControllerView
                     	break;
         	    }
 			    break;
-#		    case 'vertel':	
-#		        // TODO: Reimplement.		    
-#                $filename = "data/vertel.txt";		    			    
-#                $messages = "";		
-#		        if(filesize($filename) > 0){
-#                    $file = fopen($filename, 'r');
-#                    $messages = fread($file, filesize($filename));         
-#                    fclose($file);      	
-#		        }			    
-#			    
-#                $bannerText = "Berichten";
-#                $view->messages = $messages;
-#                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_read.pxh");				    
-#			    break;
-#		    case 'boodschap':
-#                $messagesName = "";
-#                $messagesEmail = "";
-#                $messagesTelf = "";
-#                $messagesOnderw = "";
-#                $messagesVerhaal = " ";
-#                if( isset($_POST['naam']) ){
-#                    $messagesName = $_POST['naam'];
-#                    $messagesEmail = $_POST['email'];
-#                    $messagesTelf = $_POST['telf'];
-#                    $messagesOnderw = $_POST['onderw'];
-#                    $messagesVerhaal = $_POST['verhaal'];
-#                }		    
-#
-#                $view->messagesName = $messagesName;
-#                $view->messagesEmail = $messagesEmail;
-#                $view->messagesTelf = $messagesTelf;
-#                $view->messagesOnderw = $messagesOnderw;
-#                $view->messagesVerhaal = $messagesVerhaal;
-#                $bannerText = "Berichten";                
-#                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_write.pxh");
-#			    break;
-#		    case 'bdsch_cntrl':
-#		        // TODO: Reimplement.
-#			    require_once("src/php/lib/bdsch-cntrl.php");
-#			    return;
-#			    break;			  
-#		    case 'bdsch_opsl':
-#		        // TODO: Reimplement.		    
-#			    require_once("src/php/lib/bdsch-opsl.php");
-#			    return;
-#			    break;	
+		    case 'vertel':	
+		        // TODO: Reimplement.		    
+                $filename = "data/vertel.txt";		    			    
+                $messages = "";		
+		        if(filesize($filename) > 0){
+                    $file = fopen($filename, 'r');
+                    $messages = fread($file, filesize($filename));         
+                    fclose($file);      	
+		        }			    
+			    
+                $bannerText = "Berichten";
+                $view->messages = $messages;
+                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_read.pxh");				    
+			    break;
+		    case 'boodschap':
+                $messagesName = "";
+                $messagesEmail = "";
+                $messagesTelf = "";
+                $messagesOnderw = "";
+                $messagesVerhaal = " ";
+                if( isset($_POST['naam']) ){
+                    $messagesName = $_POST['naam'];
+                    $messagesEmail = $_POST['email'];
+                    $messagesTelf = $_POST['telf'];
+                    $messagesOnderw = $_POST['onderw'];
+                    $messagesVerhaal = $_POST['verhaal'];
+                }		    
+
+                $view->messagesName = $messagesName;
+                $view->messagesEmail = $messagesEmail;
+                $view->messagesTelf = $messagesTelf;
+                $view->messagesOnderw = $messagesOnderw;
+                $view->messagesVerhaal = $messagesVerhaal;
+                $bannerText = "Berichten";                
+                $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_messages_write.pxh");
+			    break;
+		    case 'bdsch_cntrl':
+		        // TODO: Reimplement.
+			    require_once("src/php/lib/bdsch-cntrl.php");
+			    return;
+			    break;			  
+		    case 'bdsch_opsl':
+		        // TODO: Reimplement.		    
+			    require_once("src/php/lib/bdsch-opsl.php");
+			    return;
+			    break;	
 		    case 'meteorology':			    
 		        $bannerText = "Meteorologie";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_meteorology.xhm");				    
@@ -340,7 +342,6 @@ class ControllerView
 		        $bannerText = "Nieuws";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_news.pxh");
 
-                $controllerNews = new ControllerNews("data/dewindhappers.xml", "xsl/dewindhappers.xsl");
                 $view->news = $controllerNews->getAllArticles();
 			    break;				    	    														
 		    default:
@@ -350,8 +351,6 @@ class ControllerView
 		        $bannerText = "Home";
 		        $bannerImageURL = "/content/banners/banner_home.jpg";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_home_dutch.pxh");
-                
-                $controllerNews = new ControllerNews("data/dewindhappers.xml", "xsl/dewindhappers.xsl");
                 
                 $positionEnd = $controllerNews->countArticles();
                 if($positionEnd > 3){

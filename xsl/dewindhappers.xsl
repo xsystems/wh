@@ -48,7 +48,7 @@
     <xsl:template name="articlesRange">
         <div id="news">    
             <xsl:for-each select="/dewindhappers/news/article">
-                <xsl:sort select="datetime" order="descending"/>   
+                <xsl:sort select="datetime" order="ascending"/>   
                 <xsl:variable name="dateToday" select="translate(substring-before(date:date-time(), 'T'), '-', '')"/>
                 <xsl:variable name="dateArticle" select="translate(substring-before(datetime, 'T'), '-', '')"/>           
                 <xsl:if test="$dateArticle &gt;= $dateToday and position() &gt; $positionStart and position() &lt;= $positionEnd">
@@ -61,10 +61,11 @@
     <xsl:template name="articlesRangeAbstract">
         <div id="newsAbstracts">    
             <xsl:for-each select="/dewindhappers/news/article">
-                <xsl:sort select="datetime" order="descending"/>   
+                <xsl:sort select="datetime" order="ascending"/>   
                 <xsl:variable name="dateToday" select="translate(substring-before(date:date-time(), 'T'), '-', '')"/>
-                <xsl:variable name="dateArticle" select="translate(substring-before(datetime, 'T'), '-', '')"/>                   
-                <xsl:if test="$dateArticle &gt;= $dateToday and position() &gt; $positionStart and position() &lt;= $positionEnd">
+                <xsl:variable name="dateArticle" select="translate(substring-before(datetime, 'T'), '-', '')"/>          
+                <xsl:variable name="siblingsAndSelfCount" select="count(preceding-sibling::*|self|following-sibling::*)"/>                
+                <xsl:if test="$dateArticle &gt;= $dateToday and $siblingsAndSelfCount - position() + 1 &gt;= $positionStart and $siblingsAndSelfCount - position() + 1 &lt; $positionEnd">
                     <xsl:call-template name="articleAbstract"/>  
                 </xsl:if>               
             </xsl:for-each>
@@ -93,7 +94,7 @@
     <xsl:template match="news">
         <div id="news">
             <xsl:for-each select="article">
-                <xsl:sort select="datetime" order="descending"/> 
+                <xsl:sort select="datetime" order="ascending"/> 
                 <xsl:variable name="dateToday" select="translate(substring-before(date:date-time(), 'T'), '-', '')"/>
                 <xsl:variable name="dateArticle" select="translate(substring-before(datetime, 'T'), '-', '')"/>                  
                 <xsl:if test="$dateArticle &gt;= $dateToday">                 
@@ -108,16 +109,12 @@
             <xsl:attribute name="id">
                 <xsl:value-of select="position()"/>
             </xsl:attribute>
-            <h1><xsl:value-of select="title"/> <small><xsl:value-of select="datetime"/></small></h1>
+            <h1><xsl:value-of select="title"/></h1>
             <em><xsl:copy-of select="abstract/text() | abstract/*"/></em>
             <xsl:for-each select="section">
                 <section class="justify-all-lines">
                     <h2><xsl:value-of select="title"/></h2>
-                    <xsl:for-each select="paragraph">
-                        <!-- This could maybe be done in a nicer way -->
-                        <p><xsl:copy-of select="./text() | ./*"/></p>
-                    </xsl:for-each>
-                    <xsl:for-each select="img">
+                    <xsl:for-each select="img | paragraph | table">
                         <xsl:apply-templates select="."/>
                     </xsl:for-each>
                 </section>
@@ -130,6 +127,14 @@
             </xsl:for-each>                       
         </article>    
     </xsl:template>  
+    
+    <xsl:template match="paragraph">
+        <p><xsl:copy-of select="node()"/></p>  
+    </xsl:template>       
+    
+    <xsl:template match="table">
+        <xsl:copy-of select="."/>     
+    </xsl:template>       
     
     <xsl:template match="img">
         <a>

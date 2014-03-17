@@ -45,18 +45,18 @@
         <menuItem>
             <name>Nieuws</name>
             <alignment>left</alignment>
-<!--            <menuItem>-->
-<!--                <name>Nieuwsberichten</name>-->
+            <menuItem>
+                <name>Nieuwsberichten</name>
                 <url>?action=news</url>
-<!--            </menuItem>-->
-<!--            <menuItem>-->
-<!--                <name>Lees Berichten</name>-->
-<!--                <url>?action=vertel</url>-->
-<!--            </menuItem>-->
-<!--            <menuItem>-->
-<!--                <name>Schrijf Berichten</name>-->
-<!--                <url>?action=boodschap</url>-->
-<!--            </menuItem>                -->
+            </menuItem>
+            <menuItem>
+                <name>Lees Berichten</name>
+                <url>?action=vertel</url>
+            </menuItem>
+            <menuItem>
+                <name>Schrijf Berichten</name>
+                <url>?action=boodschap</url>
+            </menuItem>                
         </menuItem>   
         <menuItem>
             <name>Contact</name>
@@ -300,7 +300,168 @@
             </image>              
         </discipline>                                        
     </disciplines>
-    <news>
+    <news>     
+        <article>
+            <datetime>2014-04-13T23:59:00</datetime>
+            <title>
+                Open dag Kanovereniging "De Windhappers"
+            </title>
+            <abstract>
+                Hou je van water? Op zondagmiddag 13 april a.s. kun je lekker komen varen en spetteren (of rustig kijken) bij kanovereniging De Windhappers. Aan het eind van de Jaap Edenweg (voorbij het sportcentrum de Uithof) in Den Haag. Op de open dag van de club maak je kennis met alle soorten van kanovaren.
+            </abstract>
+            <section>  
+                <title>Lekker bezig op het water op 13 april 2014</title>             
+                <paragraph>
+                    Onder toezicht mag je zelf allerlei boten uitproberen Er zijn demonstraties van allerlei soorten van kanovaren en eskimoteren (dat is met boot en al omslaan en weer rechtop komen).
+                </paragraph>                    
+                <paragraph>                    
+                    Kanovereniging “De windhappers” is een van de grotere en actieve kanoclubs van Nederland. De club heeft naast toervaarders ook een enthousiaste groep kano-poloërs die meedoet aan de landelijke competitie.
+                </paragraph>   
+                <paragraph>                    
+                    Het hele jaar worden op woensdag, vrijdag en zondag tochten gemaakt door het Westland en Midden Delfland.                
+                </paragraph>  
+                <img src="/media/news/Opendag_Windhappers_2014_poster.jpg" alt="Opendag_Windhappers_2014_poster" title="Opendag_Windhappers_2014_poster"/>
+                <img src="/media/news/Opendag_Windhappers_2014_image1.jpg" alt="Opendag_Windhappers_2014_image1" title="Opendag_Windhappers_2014_image1"/>                         
+                <paragraph>                    
+                    Regelmatig worden er toertochten en kano kampeerweekenden georganiseerd in Nieuwkoop, Loosdrecht en de Kaag. Onze zeekanoërs varen op de Grevelingen, Oosterschelde, Noordzee en de Wadden.                
+                </paragraph>  
+                <paragraph>                    
+                    In de winter worden in een zwembad eskimoteerlessen gegeven, om te leren omslaan en weer boven te komen.                
+                </paragraph>   
+                <paragraph>
+                    <em>
+                        Als je lid wordt, krijg je een gratis introductiecursus in kajak- en/of Canadeesvaren. Na een afsluitende proefvaart mag je onbeperkt gebruik maken van verenigingsboten.                    
+                    </em>
+                </paragraph>        
+                <paragraph>
+                    Interesse? Kom langs op de OPEN DAG op zondagmiddag 13 april a.s. Je bent welkom vanaf 13.00 uur tot 17.00 uur. Of loop eens binnen op woensdagavond, de vaste clubavond. Je vindt ons haventje en ons gezellige clubgebouw aan het einde van de parkeerplaatsen van Sportcentrum “De Uithof” aan de Jaap Edenweg in Den Haag. Helemaal doorrijden of lopen en nog een keer naar rechts. Meer informatie vind je op onze website: <a href="/" target="_blank" title="Home">windhappers.nl</a>.                
+                </paragraph>                                                                                                                   
+            </section>    
+        </article>     
+        <article>
+            <datetime>2014-04-13T23:59:00</datetime>
+            <title>
+                Komende evenementen
+            </title>
+            <abstract>
+                Hoera, het is lente. De bomen lopen uit, de vogels zingen en De Windhappers worden ook actief, zie onderstaande tabel. Voor verdere bijzonderheden raadpleeg de kalender.
+            </abstract>
+            <section>         
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Datum(s)</th>
+                            <th>Dag(en)</th>                            
+                            <th>Activiteit</th>
+                        </tr>                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2014-03-23</td>
+                            <td>Zondag</td>                            
+                            <td>Eerste toertocht van het seizoen. Naar de Nieuwkoopse Plassen. Tijd en plaats: zie de kalender. Voor overige data zie overzicht 2014.</td>
+                        </tr>                          
+                        <tr class="alt">
+                            <td>2014-03-26</td>                        
+                            <td>Woensdag</td>
+                            <td>Algemene Ledenvergadering. Komt allen. Er zijn vacatures in het bestuur. Bestuurlijke ervaring staat goed op je CV.</td>
+                        </tr>
+                        <tr>
+                            <td>2014-03-29</td>
+                            <td>Zaterdag</td>                            
+                            <td>Schoonmaak botenloods. Vele handen maken licht werk. Gratis broodjes en koffie.</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>2014-04-02</td>                        
+                            <td>Woensdag</td>
+                            <td>Opening Vaarseizoen. Met korte toertocht.</td>
+                        </tr>
+                        <tr>
+                            <td>2014-04-13</td>                        
+                            <td>Zondag</td>
+                            <td>Open dag. Aanvangstijd 13:00 uur. Zegt het voort. Voor meer informatie zie de flyer.</td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </section>    
+        </article>
+        <article>
+            <datetime>2014-10-12T23:59:00</datetime>
+            <title>
+                Overzicht Toertochten 2014 – coördinator: Willy de Jong
+            </title>
+            <abstract>
+
+            </abstract>
+            <section>         
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Datum(s)</th>
+                            <th>Dag(en)</th>                            
+                            <th>Activiteit</th>
+                            <th>Organisator(en)</th>
+                        </tr>                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2014-03-23</td>
+                            <td>Zondag</td>                            
+                            <td>Nieuwkoop</td>
+                            <td>Jan Weerdenburg</td>
+                        </tr>                          
+                        <tr class="alt">
+                            <td>2014-04-04 t/m 2014-04-06</td>
+                            <td>Vrijdag t/m Zondag</td>
+                            <td>Wildwatervaren Ardennen</td>
+                            <td>Jan de Koster en Hans Smits</td>
+                        </tr>
+                        <tr>
+                            <td>2014-04-19 t/m 2014-04-20</td>
+                            <td>Zaterdag t/m Zondag</td>
+                            <td>Bollentocht</td>
+                            <td>Arie Ouwehand</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>2014-05-16 t/m 2014-05-18</td>
+                            <td>Vrijdag t/m Zondag</td>
+                            <td>Windhapperweekend/Reusel</td>
+                            <td>Arie Ouwehand/Louis v.d. Hoeven</td>
+                        </tr>
+                        <tr>
+                            <td>2014-06-06 t/m 2014-06-09</td>
+                            <td>Vijdag t/m Zondag</td>
+                            <td>Canadees varen Nieuwkoop</td>
+                            <td>Hans Ammerlaan</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>2014-05-07</td>
+                            <td>Zaterdag</td>
+                            <td>Bommeer/Delfland</td>
+                            <td>Louis van der Hoeven</td>
+                        </tr>
+                        <tr>
+                            <td>2014-08-17</td>
+                            <td>Zondag</td>
+                            <td>toertocht Kaag</td>
+                            <td>Willie de Jong</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>2014-09-28</td>
+                            <td>Zondag</td>
+                            <td>Veluwe Rally – Lathum</td>
+                            <td>Hans Ammerlaan</td>
+                        </tr>
+                        <tr>
+                            <td>2014-10-11 t/m 2014-10-12</td>
+                            <td>Zaterdag t/m Zondag</td>
+                            <td>Dinkeldagen</td>
+                            <td>Alfons Finkers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>    
+        </article>      
         <article>
             <datetime>2013-11-06T23:59:00</datetime>
             <title>
