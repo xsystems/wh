@@ -1,1 +1,4 @@
+<div class="alert alert-info">
+  <strong>NB!</strong> Het is mogelijk evenementen aan uw eigen <em>Google Calendar</em> toe te voegen. Klik hiervoor op een evenement en vervolgens op <em>kopieren naar mijn agenda</em>. Wilt u graag alle evenementen naar uw eigen <em>Google Calendar</em> importeren, klik dan de <em>"+ Google Agenda"</em> knop, rechts onderaan de kalender, en volg de stappen op uw scherm.
+</div>
 <iframe id='calendar' class='' xmlns='http://www.w3.org/1999/xhtml' src='https://www.google.com/calendar/embed?title=%20&amp;wkst=2&amp;hl=nl&amp;bgcolor=%23FFFFFF&amp;src=dewindhappers%40gmail.com&amp;color=%232952A3&amp;src=nl.dutch%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;ctz=Europe%2FAmsterdam'> Windhapper Calendar </iframe>

@@ -592,11 +592,21 @@ ul, ol
 
 #gallery_form select
 {
-    border-width:1px;
-    border-style:ridge;
-    border-radius:4px;
-    font-size:100%;
+    padding: 0.3em;
+    padding-bottom: 0.6em;
+    border-width:0px;
+    border-radius:8px;
+    font-size:14pt;
+    font-weight: bold;
     width:100%;
+    background-color:rgb(136,195,103);
+    background-color:rgba(136,195,103,0.90);    
+}
+
+#gallery_form option
+{
+    font-size:12pt;
+    font-weight: normal;
 }
 
 #gallery_page
@@ -795,9 +805,20 @@ ul, ol
     width:100%;
 }
 
+.alert
+{
+    padding: 1em;
+}
+
+.alert-info
+{
+    background-color: #d9edf7;
+    color: #31708f;
+}
+
 .justify-all-lines
 {
-    /* This element will need layout for the text-justify
+    /* This element will need layout for the#d9edf7 text-justify
      * to take effect in IE7 (and possibly previous versions);
      * this will force it, for more info Google "hasLayout in IE"
      */

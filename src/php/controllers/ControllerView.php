@@ -187,7 +187,8 @@ class ControllerView
     		            $pageNumber = 0;
 		                $sg = new SimpleGalleryImage($galleries_items_per_page, $gallery_url, $gallery_path_absolute, null, null); 	
                     	$view->galleryPageImage = $sg->generatePage($pageNumber);
-                    	$actionTemplateFragments[] = array("gallery_page", "src/php/templates/template_fragment_gallery_image.pxh");                	
+                    	$actionTemplateFragments[] = array("gallery_page", "src/php/templates/template_fragment_gallery_image.pxh");
+                        $actionTemplateFragments[] = array("gallery_alerts", "src/php/templates/template_fragment_gallery_image_alerts.xhm");
                 	    break;
                 	case 'video':
     		            $pageNumber = 0;

@@ -1,3 +1,6 @@
+<div id="gallery_alerts">
+
+</div>
 <form id="gallery_form" action="" method="get">
     <input id="gallery_input_action" form="gallery_form" name="action" value="<?php echo $this->galleryAction; ?>" type="hidden" />
     <input id="gallery_input_type" form="gallery_form" name="type" value="<?php echo $this->galleryType; ?>"  type="hidden" />
@@ -5,7 +8,7 @@
         <input id="gallery_input_submit" form="gallery_form" type="submit" value="Submit" />
     </noscript>
     <select id="gallery_select" form="gallery_form" name="gallery" onchange="javascript:this.form.submit();">
-        <option value="">Maak hier uw keuze...</option>
+        <option value="" selected="selected" disabled="disabled">Maak hier uw keuze...</option>
         <?php foreach($this->galleryNames as $name): ?>
             <option value="<?php echo $name; ?>"><?php echo $name; ?></option>
         <?php endforeach; ?>
@@ -14,4 +17,3 @@
 <div id="gallery_page" class="justify-all-lines">
 
 </div>
-      
