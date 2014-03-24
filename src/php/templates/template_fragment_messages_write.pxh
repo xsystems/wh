@@ -15,7 +15,7 @@
         <label form="bdsch" for="bdsch_verhaal">Verhaal</label>
         <span>(max 1000 tekens.)</span>
         <textarea id="bdsch_verhaal" form="bdsch" name="verhaal" maxlength="1000" required="required"><?php echo $this->messagesVerhaal; ?></textarea>
-        <div>
+        <div class="container_recaptcha">
             <?php
                 require_once('lib/php/recaptcha-php-1.11/recaptchalib.php');
                 $publickey = "6Lc_vu8SAAAAACWtGS0bwHT-9rr7h5p55symw9Dc";

@@ -849,6 +849,12 @@ ul, ol
     visibility: hidden;
 }
 
+.container_recaptcha
+{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 /*--------------------------------------*/
 
 
