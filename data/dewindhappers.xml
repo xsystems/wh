@@ -302,6 +302,57 @@
     </disciplines>
     <news>     
         <article>
+            <datetime>2014-10-08T23:59:00</datetime>
+            <title>
+                Goed nieuws. De C-10 gaat weer varen!
+            </title>
+            <abstract>
+                Je weet wel, dat is die héééle lange open kano waar je met 10 personen tegelijk in kan varen. 
+            </abstract>
+            <section>  
+                <paragraph>
+                    Wil je meevaren geef je dan op bij de coördinator Loes Ram.  
+                </paragraph>       
+                <paragraph>
+                    De C-10 vaart 1x per maand op de volgende woensdagavonden, start om 19.00 uur.
+                </paragraph>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Datum(s)</th>
+                        </tr>                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2014-04-16</td>
+                        </tr>           
+                        <tr>
+                            <td>2014-05-14</td>
+                        </tr> 
+                        <tr>
+                            <td>2014-06-18</td>
+                        </tr> 
+                        <tr>
+                            <td>2014-07-09</td>
+                        </tr>
+                        <tr>
+                            <td>2014-09-09</td>
+                        </tr> 
+                        <tr>
+                            <td>2014-10-08</td>
+                        </tr>                         
+                    </tbody>
+                    <tfoot>
+                        <tr> 
+                            <td colspan="1">
+                                <!-- Empty foot. -->
+                            </td>
+                        </tr>
+                  </tfoot>                      
+                </table>
+            </section>    
+        </article>  
+        <article>
             <datetime>2014-04-13T23:59:00</datetime>
             <title>
                 Open dag Kanovereniging "De Windhappers"
@@ -382,6 +433,13 @@
                             <td>Open dag. Aanvangstijd 13:00 uur. Zegt het voort. Voor meer informatie zie de flyer.</td>
                         </tr>                        
                     </tbody>
+                    <tfoot>
+                        <tr> 
+                            <td colspan="4">
+                                <!-- Empty foot. -->
+                            </td>
+                        </tr>
+                  </tfoot>                     
                 </table>
             </section>    
         </article>
@@ -459,6 +517,13 @@
                             <td>Alfons Finkers</td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                        <tr> 
+                            <td colspan="4">
+                                <!-- Empty foot. -->
+                            </td>
+                        </tr>
+                  </tfoot>                      
                 </table>
             </section>    
         </article>      

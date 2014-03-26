@@ -989,45 +989,20 @@ ul, ol
 /** Default Table **/
 table
 {
-    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
     width:100%;
     margin-bottom:2em;
-    border-radius:20px;   
+    background-color: white;
 }
 
-table th 
+th, td
 {
-    font-size:1.1em;
     padding:3px 7px 2px 7px;
+}
+
+th, tfoot td
+{
     background-color:rgb(255,255,51);
-    color:black;
-}
-
-table th.alt
-{
-    border-bottom-style:double;
-    border-bottom-width:3px;
-    border-bottom-color:black;
-}
-
-
-table td 
-{
-    font-size:1em;
-    border:0px solid black;
-    padding:3px 7px 2px 7px;
-}
-
-table tr
-{
-    color:black;
-    background-color:rgb(136,195,103);        
-}
-
-table tr.alt
-{
-    color:black;
-    background-color:rgb(102,255,102);            
+    font-weight: bold;
 }
 
 td span
@@ -1035,31 +1010,44 @@ td span
     color:red;
 }
 
+thead tr:nth-child(even)
+{
+    border-top-style: solid;
+    border-top-width: 2px;
+}
+
+tbody tr:nth-child(odd)
+{
+    background-color: #f9f9f9;
+}
+
+tfoot td
+{
+    height: 1em;
+}
+
 /* Rounded table corners */
-/*NOTE: The table rows do not round ...*/
-table tr:first-child {
-    border-top-right-radius:20px;
-    border-top-left-radius:20px; 
+table
+{
+    border-radius:20px;
 }
 
-table tr:last-child {
-    border-bottom-right-radius:20px;
-    border-bottom-left-radius:20px;   
-}
-
-table tr:first-child th:first-child {
+thead tr:first-child th:first-child
+{
     border-top-left-radius:20px;
 }
 
-table tr:first-child th:last-child {
+thead tr:first-child th:last-child
+{
     border-top-right-radius:20px;
 }
 
-table tr:last-child td:first-child {
+tfoot tr:last-child td:first-child
+{
     border-bottom-left-radius:20px;
 }
 
-table tr:last-child td:last-child {
+tfoot tr:last-child td:last-child
+{
     border-bottom-right-radius:20px;
 }
-

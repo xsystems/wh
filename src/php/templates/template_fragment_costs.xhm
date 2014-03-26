@@ -1,42 +1,53 @@
 <div class='content namespace_container' xmlns='http://www.w3.org/1999/xhtml'> 
     <table>
-      <tr>
-        <th class='alt'>Omschrijving</th>
-        <th class='alt'>Bedrag (1-okt-2013 tot 1-jul-2014)*</th>
-      </tr>
-      <tr>
-        <th colspan='2' scope='col'>Contributie**</th>
-      </tr>
-      <tr>
-        <td>Senioren</td>
-        <td>&#8364; 87.00</td>
-      </tr>
-      <tr class='alt'>
-        <td>Junioren (&lt;18)</td>
-        <td>&#8364; 62.00</td>
-      </tr>
-      <tr>
-        <th colspan='2'>Stalling</th>
-      </tr>
-      <tr>
-        <td>Kajak klein</td>
-        <td>&#8364; 30.00</td>
-      </tr>
-      <tr class='alt'>
-        <td>Kajak groot</td>
-        <td>&#8364; 40.00</td>
-      </tr>                                                                                            
-      <tr>
-        <td>Canadees</td>
-        <td>&#8364; 50.00</td>
-      </tr>
-      <tr>
-        <th colspan='4'>Overige</th>
-      </tr>
-      <tr>
-        <td>Gebruik verenigingskajak of canadees</td>
-        <td>&#8364; 30.00</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Omschrijving</th>
+          <th>Bedrag (1-okt-2013 tot 1-jul-2014)*</th>
+        </tr>
+        <tr>
+          <th colspan='2' scope='col'>Contributie**</th>
+        </tr>        
+      </thead>
+      <tbody>
+        <tr>
+          <td>Senioren</td>
+          <td>&#8364; 87.00</td>
+        </tr>
+        <tr>
+          <td>Junioren (&lt;18)</td>
+          <td>&#8364; 62.00</td>
+        </tr>
+        <tr>
+          <th colspan='2'>Stalling</th>
+        </tr>
+        <tr>
+          <td>Kajak klein</td>
+          <td>&#8364; 30.00</td>
+        </tr>
+        <tr>
+          <td>Kajak groot</td>
+          <td>&#8364; 40.00</td>
+        </tr>                                                                                            
+        <tr>
+          <td>Canadees</td>
+          <td>&#8364; 50.00</td>
+        </tr>
+        <tr>
+          <th colspan='4'>Overige</th>
+        </tr>
+        <tr>
+          <td>Gebruik verenigingskajak of canadees</td>
+          <td>&#8364; 30.00</td>
+        </tr>        
+      </tbody>
+      <tfoot>
+        <tr> 
+          <td colspan="4">
+           <!-- Empty foot. -->
+          </td>
+        </tr>
+      </tfoot> 
     </table>                                            
     <p>      
         * Voor leden die na 1 juli lid worden geldt een kortingsregeling. <br/>    

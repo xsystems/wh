@@ -1,135 +1,146 @@
 <div class='content'>       
     <h1>De mensen achter De Windhappers</h1>
     <table>
-      <tr>
-        <th class='alt'>FUNCTIE</th>
-        <th class='alt'>NAAM</th>
-        <th class='alt'>TELEFOON</th>
-        <th class='alt'>EMAIL</th>
-      </tr>
-      <tr>
-        <th colspan='4' scope='col'>BESTUUR</th>
-      </tr>
-      <tr>
-        <td>Voorzitter</td>
-        <td>Sytse van der Zwan</td>
-        <td> </td>
-        <td> </td>
-      </tr>
-      <tr class='alt'>
-        <td>Secretaris 1</td>
-        <td>Marianne Scheepstra</td>
-        <td>06-16234082</td>
-        <td><a href='mailto:windhappersecretaris@hotmail.com'>windhappersecretaris@hotmail.com</a></td>
-      </tr>
-      <tr>
-        <td>Secretaris 2</td>
-        <td>Marianne van der Kleij</td>
-        <td> </td>
-        <td><a href='mailto:windhappersecretaris@hotmail.com'>windhappersecretaris@hotmail.com</a></td>
-      </tr>      
-      <tr class='alt'>
-        <td>Penningmeester</td>
-        <td>Marianne Scheepstra</td>
-        <td> </td>
-        <td><a href='mailto:windhapperpenningmeester@hotmail.com'>windhapperpenningmeester@hotmail.com</a></td>
-      </tr>
-      <tr>
-        <td>PR en vicevoorzitter</td>
-        <td>Erik Rumpff</td>
-        <td> </td>
-        <td><a href='mailto:windhapperredactie@hotmail.com'>windhapperredactie@hotmail.com</a></td>
-      </tr>
-      <tr>
-        <th colspan='4'>COORDINATOREN</th>
-      </tr>
-      <tr>
-        <td>Toervaren</td>
-        <td>Willie de Jong</td>
-        <td> </td>
-        <td> </td>
-      </tr>
-      <tr class='alt'>
-        <td>Zeevaren</td>
-        <td>Willem Oosting</td>
-        <td> </td>
-        <td> </td>
-      </tr>                                                                                            
-      <tr>
-        <td>Kanopolo</td>
-        <td>Arie van Leeuwen </td>
-        <td>0174-648016</td>
-        <td> </td>
-      </tr>
-      <tr class='alt'>
-        <td>Branding en wildwatervaren</td>
-        <td>Jan de Koster</td>
-        <td> </td>
-        <td> </td>
-      </tr>  
-      <tr>
-        <td>Winteractiviteiten</td>
-        <td>Vacature</td>
-        <td> </td>
-        <td> </td>
-      </tr>   
-      <tr class='alt'>
-        <td>PR</td>
-        <td>Jacques van der Toorn </td>
-        <td>070-3684654</td>
-        <td><a href='mailto:jjmvdtoorn@gmail.com'>jjmvdtoorn@gmail.com</a></td>
-      </tr>                                                                                                                                     
-      <tr>
-        <td>Jeugd</td>
-        <td>Jan de Koster </td>
-        <td>070-3912510</td>
-        <td> </td>
-      </tr>
-      <tr class='alt'>
-        <td>Introductiecursus</td>
-        <td>Koen Tiel</td>
-        <td> </td>
-        <td> </td>
-      </tr>
-      <tr>
-        <td>Kantine</td>
-        <td>Bert Quist</td>
-        <td> </td>
-        <td> </td>
-      </tr>
-      <tr>
-        <th colspan='4'>OVERIGE FUNCTIES</th>
-      </tr>
-      <tr>
-        <td>Ledenadministratie</td>
-        <td>Jacques van der Toorn </td>
-        <td>070-3684654</td>
-        <td><a href='mailto:jjmvdtoorn@gmail.com'>jjmvdtoorn@gmail.com</a></td>
-      </tr>
-      <tr class='alt'>
-        <td>Beheer boten en materieel</td>
-        <td>Hans Smits</td>
-        <td>070-3970983</td>
-        <td><a href='mailto:stalling.sleutel@tele2.nl'>stalling.sleutel@tele2.nl</a></td>
-      </tr>
-      <tr>
-        <td>Onderhoud gebouw</td>
-        <td>Hans Grottendieck</td>
-        <td> </td>
-        <td> </td>
-      </tr>                                              
-      <tr class='alt'>
-        <td>Hoofdredacteur clubblad</td>
-        <td>Erik Rumpff </td>
-        <td> </td>
-        <td><a href='mailto:windhapperredactie@hotmail.com'>windhapperredactie@hotmail.com</a></td>
-      </tr>
-      <tr>
-        <td>Website</td>
-        <td>Koen Boes</td>
-        <td> </td>
-        <td> </td>
-      </tr>
+      <thead>
+        <tr>
+          <th>FUNCTIE</th>
+          <th>NAAM</th>
+          <th>TELEFOON</th>
+          <th>EMAIL</th>
+        </tr>
+        <tr>
+          <th colspan='4' scope='col'>BESTUUR</th>
+        </tr>        
+      </thead>
+      <tbody>
+        <tr>
+          <td>Voorzitter</td>
+          <td>Sytse van der Zwan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Secretaris 1</td>
+          <td>Marianne Scheepstra</td>
+          <td>06-16234082</td>
+          <td><a href='mailto:windhappersecretaris@hotmail.com'>windhappersecretaris@hotmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Secretaris 2</td>
+          <td>Marianne van der Kleij</td>
+          <td> </td>
+          <td><a href='mailto:windhappersecretaris@hotmail.com'>windhappersecretaris@hotmail.com</a></td>
+        </tr>      
+        <tr>
+          <td>Penningmeester</td>
+          <td>Marianne Scheepstra</td>
+          <td> </td>
+          <td><a href='mailto:windhapperpenningmeester@hotmail.com'>windhapperpenningmeester@hotmail.com</a></td>
+        </tr>
+        <tr>
+          <td>PR en vicevoorzitter</td>
+          <td>Erik Rumpff</td>
+          <td> </td>
+          <td><a href='mailto:windhapperredactie@hotmail.com'>windhapperredactie@hotmail.com</a></td>
+        </tr>
+        <tr>
+          <th colspan='4'>COORDINATOREN</th>
+        </tr>
+        <tr>
+          <td>Toervaren</td>
+          <td>Willie de Jong</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Zeevaren</td>
+          <td>Willem Oosting</td>
+          <td> </td>
+          <td> </td>
+        </tr>                                                                                            
+        <tr>
+          <td>Kanopolo</td>
+          <td>Arie van Leeuwen </td>
+          <td>0174-648016</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Branding en wildwatervaren</td>
+          <td>Jan de Koster</td>
+          <td> </td>
+          <td> </td>
+        </tr>  
+        <tr>
+          <td>Winteractiviteiten</td>
+          <td>Vacature</td>
+          <td> </td>
+          <td> </td>
+        </tr>   
+        <tr>
+          <td>PR</td>
+          <td>Jacques van der Toorn </td>
+          <td>070-3684654</td>
+          <td><a href='mailto:jjmvdtoorn@gmail.com'>jjmvdtoorn@gmail.com</a></td>
+        </tr>                                                                                                                                     
+        <tr>
+          <td>Jeugd</td>
+          <td>Jan de Koster </td>
+          <td>070-3912510</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Introductiecursus</td>
+          <td>Koen Tiel</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Kantine</td>
+          <td>Bert Quist</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <th colspan='4'>OVERIGE FUNCTIES</th>
+        </tr>
+        <tr>
+          <td>Ledenadministratie</td>
+          <td>Jacques van der Toorn </td>
+          <td>070-3684654</td>
+          <td><a href='mailto:jjmvdtoorn@gmail.com'>jjmvdtoorn@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Beheer boten en materieel</td>
+          <td>Hans Smits</td>
+          <td>070-3970983</td>
+          <td><a href='mailto:stalling.sleutel@tele2.nl'>stalling.sleutel@tele2.nl</a></td>
+        </tr>
+        <tr>
+          <td>Onderhoud gebouw</td>
+          <td>Hans Grottendieck</td>
+          <td> </td>
+          <td> </td>
+        </tr>                                              
+        <tr>
+          <td>Hoofdredacteur clubblad</td>
+          <td>Erik Rumpff </td>
+          <td> </td>
+          <td><a href='mailto:windhapperredactie@hotmail.com'>windhapperredactie@hotmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Website</td>
+          <td>Koen Boes</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+      </tbody>   
+      <tfoot>
+        <tr> 
+          <td colspan="4">
+           <!-- Empty foot. -->
+          </td>
+        </tr>
+      </tfoot>     
     </table>
     <h2>Contact</h2> 
     <h3>Zend ons een email</h3>  
