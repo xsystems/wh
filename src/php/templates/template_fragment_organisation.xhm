@@ -21,16 +21,10 @@
         </tr>
         <tr>
           <td>Secretaris 1</td>
-          <td>Marianne Scheepstra</td>
-          <td>06-16234082</td>
+          <td>Jacques van der Toorn</td>
+          <td>070-3684654</td>
           <td><a href='mailto:windhappersecretaris@hotmail.com'>windhappersecretaris@hotmail.com</a></td>
-        </tr>
-        <tr>
-          <td>Secretaris 2</td>
-          <td>Marianne van der Kleij</td>
-          <td> </td>
-          <td><a href='mailto:windhappersecretaris@hotmail.com'>windhappersecretaris@hotmail.com</a></td>
-        </tr>      
+        </tr>    
         <tr>
           <td>Penningmeester</td>
           <td>Marianne Scheepstra</td>
@@ -38,10 +32,22 @@
           <td><a href='mailto:windhapperpenningmeester@hotmail.com'>windhapperpenningmeester@hotmail.com</a></td>
         </tr>
         <tr>
-          <td>PR en vicevoorzitter</td>
-          <td>Erik Rumpff</td>
+          <td>Vice-voorzitter</td>
+          <td>Simon van der Zwan</td>
           <td> </td>
-          <td><a href='mailto:windhapperredactie@hotmail.com'>windhapperredactie@hotmail.com</a></td>
+          <td> </td>
+        </tr>        
+        <tr>
+          <td>Bestuurslid algemeen</td>
+          <td>Marianne van der Kleij</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Bestuurslid algemeen</td>
+          <td>Hans Smits</td>
+          <td>070-3970983</td>
+          <td> </td>
         </tr>
         <tr>
           <th colspan='4'>COORDINATOREN</th>
@@ -67,8 +73,8 @@
         <tr>
           <td>Branding en wildwatervaren</td>
           <td>Jan de Koster</td>
-          <td> </td>
-          <td> </td>
+          <td>070-3912510</td>
+          <td>jandekoster@tele2.nl</td>
         </tr>  
         <tr>
           <td>Winteractiviteiten</td>
@@ -80,12 +86,13 @@
           <td>PR</td>
           <td>Jacques van der Toorn </td>
           <td>070-3684654</td>
-          <td><a href='mailto:jjmvdtoorn@gmail.com'>jjmvdtoorn@gmail.com</a></td>
+          <td><a href='mailto:windhapperredactie@hotmail.com'>windhapperredactie@hotmail.com</a></td>
+          <!-- <td><a href='mailto:jjmvdtoorn@gmail.com'>jjmvdtoorn@gmail.com</a></td> -->
         </tr>                                                                                                                                     
         <tr>
           <td>Jeugd</td>
-          <td>Jan de Koster </td>
-          <td>070-3912510</td>
+          <td>Hans Smits</td>
+          <td>070-3970983</td>
           <td> </td>
         </tr>
         <tr>
@@ -121,12 +128,6 @@
           <td> </td>
           <td> </td>
         </tr>                                              
-        <tr>
-          <td>Hoofdredacteur clubblad</td>
-          <td>Erik Rumpff </td>
-          <td> </td>
-          <td><a href='mailto:windhapperredactie@hotmail.com'>windhapperredactie@hotmail.com</a></td>
-        </tr>
         <tr>
           <td>Website</td>
           <td>Koen Boes</td>
