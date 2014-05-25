@@ -30,13 +30,7 @@
           <td>Marianne Scheepstra</td>
           <td> </td>
           <td><a href='mailto:windhapperpenningmeester@hotmail.com'>windhapperpenningmeester@hotmail.com</a></td>
-        </tr>
-        <tr>
-          <td>Vice-voorzitter</td>
-          <td>Simon van der Zwan</td>
-          <td> </td>
-          <td> </td>
-        </tr>        
+        </tr>       
         <tr>
           <td>Bestuurslid algemeen</td>
           <td>Marianne van der Kleij</td>
@@ -49,6 +43,12 @@
           <td>070-3970983</td>
           <td> </td>
         </tr>
+        <tr>
+          <td>Bestuurslid algemeen</td>
+          <td>Simon van der Zwan</td>
+          <td> </td>
+          <td> </td>
+        </tr>        
         <tr>
           <th colspan='4'>COORDINATOREN</th>
         </tr>
@@ -63,7 +63,13 @@
           <td>Willem Oosting</td>
           <td> </td>
           <td> </td>
-        </tr>                                                                                            
+        </tr>   
+        <tr>
+          <td>C10</td>
+          <td>Loes Ram</td>
+          <td> </td>
+          <td> </td>
+        </tr>
         <tr>
           <td>Kanopolo</td>
           <td>Arie van Leeuwen </td>
@@ -78,7 +84,7 @@
         </tr>  
         <tr>
           <td>Winteractiviteiten</td>
-          <td>Vacature</td>
+          <td>Cobi Bult</td>
           <td> </td>
           <td> </td>
         </tr>   
@@ -98,7 +104,7 @@
         <tr>
           <td>Introductiecursus</td>
           <td>Koen Tiel</td>
-          <td> </td>
+          <td>06-48815519</td>
           <td> </td>
         </tr>
         <tr>
@@ -114,7 +120,7 @@
           <td>Ledenadministratie</td>
           <td>Jacques van der Toorn </td>
           <td>070-3684654</td>
-          <td><a href='mailto:jjmvdtoorn@gmail.com'>jjmvdtoorn@gmail.com</a></td>
+          <td><a href='mailto:windhapperledenadministratie@ziggo.nl'>windhapperledenadministratie@ziggo.nl</a></td>
         </tr>
         <tr>
           <td>Beheer boten en materieel</td>
@@ -162,7 +168,7 @@
     </form>     
     <h3>Telefoonnummer en adres</h3> 
     Telefoon in het botenhuis: 070-3660789 <br/>
-    Adres secretariaat: Hoornbruglaan 9, 2281 Rijswijk 
+    Adres secretariaat: Duke Ellingtonstraat 231, 2551 WG Den Haag
     <h2>De Windhappers geschiedenis</h2>  
     <h3>De oude Windhappers website</h3>  
     De oude Windhappers website is onder de volgende URL the vinden: <a href="http://oud.windhappers.nl" target="_blank" title="Oude Windhappers website">oud.windhappers.nl</a>.
@@ -170,8 +176,8 @@
     <ul>
         <li><a href='/media/regulations/statuten-2002.pdf' target='_blank' title='Statuten 2002'>Statuten</a></li>
         <li><a href='/media/regulations/Huishoud_reglm_2010.pdf' target='_blank' title='Huishoud reglement 2010'>Huishoud reglement</a></li>
-        <li><a href='/media/regulations/beleidsplan.pdf' target='_blank' title='Beleidsplan 2012'>Beleidsplan</a></li>
+        <!-- <li><a href='/media/regulations/beleidsplan.pdf' target='_blank' title='Beleidsplan 2012'>Beleidsplan</a></li> -->
     </ul>
-    <h2>Kantine Rooster</h2>
-    <iframe id="canteen_roster" src="/media/canteen_roster/canteen_roster.xhtml" frameborder="0">Kantine Rooster</iframe>     
+    <!-- <h2>Kantine Rooster</h2> -->
+    <!-- <iframe id="canteen_roster" src="/media/canteen_roster/canteen_roster.xhtml" frameborder="0">Kantine Rooster</iframe>      -->
 </div>
