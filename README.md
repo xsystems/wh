@@ -15,7 +15,7 @@ TODO: Write setup section
 
 
 
-[img_logo]: http://git.xsystems.org/?p=wh.git;a=blob_plain;f=content/dewindhapperslogo.gif;h=c330df5efc2c542e8fb12938d648eb12e6651d1d;hb=HEAD  "Windhapper Logo"
+[img_logo]: /?p=wh.git;a=blob_plain;f=content/dewindhapperslogo.gif;h=c330df5efc2c542e8fb12938d648eb12e6651d1d;hb=HEAD  "Windhapper Logo"
 
 
 [lnk_whsite]: http://www.windhappers.nl "Windhapper Website"
