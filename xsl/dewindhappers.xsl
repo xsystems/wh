@@ -65,7 +65,7 @@
                 <xsl:variable name="dateToday" select="translate(substring-before(date:date-time(), 'T'), '-', '')"/>
                 <xsl:variable name="dateArticle" select="translate(substring-before(datetime, 'T'), '-', '')"/>          
                 <xsl:variable name="siblingsAndSelfCount" select="count(preceding-sibling::*|self|following-sibling::*)"/>                
-                <xsl:if test="$dateArticle &gt;= $dateToday and $siblingsAndSelfCount - position() &gt;= $positionStart and $siblingsAndSelfCount - position() &lt; $positionEnd">
+                <xsl:if test="$dateArticle &gt;= $dateToday and $siblingsAndSelfCount - position() + 1 &gt;= $positionStart and $siblingsAndSelfCount - position() &lt; $positionEnd">
                     <xsl:call-template name="articleAbstract"/>  
                 </xsl:if>               
             </xsl:for-each>
