@@ -3,20 +3,20 @@
       <thead>
         <tr>
           <th>Omschrijving</th>
-          <th>Bedrag (1-okt-2013 tot 1-jul-2014)*</th>
+          <th>Bedrag (2015)</th>
         </tr>
         <tr>
-          <th colspan='2' scope='col'>Contributie**</th>
+          <th colspan='2' scope='col'>Contributie <sup>1,2,3,4</sup> </th>
         </tr>        
       </thead>
       <tbody>
         <tr>
           <td>Senioren</td>
-          <td>&#8364; 87.00</td>
+          <td>&#8364; 88.00</td>
         </tr>
         <tr>
           <td>Junioren (&lt;18)</td>
-          <td>&#8364; 62.00</td>
+          <td>&#8364; 63.00</td>
         </tr>
         <tr>
           <th colspan='2'>Stalling</th>
@@ -48,11 +48,14 @@
           </td>
         </tr>
       </tfoot> 
-    </table>                                            
+    </table>     
+    <p>
+      Een <span>opzegging</span> voor het volgende kalenderjaar, dient <span>voor 31 December</span> bekend te zijn bij de <a href=".?action=organisation" title="Organisatie">ledenadministrateur</a>.
+    </p>                                       
     <p>      
-        * Voor leden die na 1 juli lid worden geldt een kortingsregeling. <br/>    
-        * Bij inschrijvingen tussen 1 oktober en 31 december is de contributie gratis als de contributie voor het daarop volgende jaar wordt betaald. <br/>      
-        ** Het lidmaatschap van het Watersportverbond is in deze contributie begrepen. <br/>
-        Een <span>opzegging</span> voor het volgende kalenderjaar, dient <span>voor 31 December</span> bekend te zijn bij de <a href=".?action=organisation" title="Organisatie">ledenadministrateur</a>.
+        <sup>1</sup> Voor leden die na 1 juli lid worden geldt een kortingsregeling. <br/>    
+        <sup>2</sup> Bij inschrijvingen tussen 1 oktober en 31 december is de contributie gratis als de contributie voor het daarop volgende jaar wordt betaald. <br/>      
+        <sup>3</sup> Het lidmaatschap van het Watersportverbond is in deze contributie begrepen. <br/>
+        <sup>4</sup> Indien meerdere personen uit één samenlevingsverband (wonende op hetzelfde adres) lid zijn, betalen het 4e en volgende lid geen contributie.
     </p>                          
 </div>
