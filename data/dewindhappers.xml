@@ -302,6 +302,21 @@
     </disciplines>
     <news> 
         <article>
+            <datetime>2015-03-10T23:59:00</datetime>
+            <title>
+                Actuele zweminformatie tijdens het kanovaren
+            </title>
+            <abstract>
+                Natuurwater wordt niet continu gezuiverd, zoals het water in zwembaden. De kwaliteit van een zwemwaterplas kan in een warme periode in de zomer snel veranderen. Daarom is het verstandig om als je graag tijdens een kanotocht in Nederland in een plas wilt zwemmen eerst de actuele informatie leest op <a href="http://www.zwemwater.nl" target="_blank" title="zweminformatie">www.zwemwater.nl</a>.
+            </abstract>
+            <section>
+                <paragraph>
+                Kijk ook op de borden bij de zwemplassen. Volg ook de regionale krantenberichten over mogelijke waterverontreinigingen zoals de blauwalg en de ziekte van Weil.
+                </paragraph>
+                <img src="/media/news/2014/zweminformatie.jpg" alt="zweminformatie.jpg" title="Zweminformatie"/>
+            </section>
+        </article>         
+        <article>
             <datetime>2014-12-10T23:59:00</datetime>
             <title>
                 Kano- en wandeltochten van John Gerritzen door de jungle van Frans Guyana in juli en augustus 2014
