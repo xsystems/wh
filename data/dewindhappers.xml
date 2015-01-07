@@ -86,7 +86,12 @@
             <name>Meteorologie</name>
             <url>?action=meteorology</url>
             <alignment>right</alignment>
-        </menuItem>   
+        </menuItem>  
+        <menuItem>
+            <name>Waterkwaliteit</name>
+            <url>http://zwemwater.nl/</url>
+            <alignment>right</alignment>
+        </menuItem>  
         <menuItem>
             <name>Kanoroutes</name>
             <url>?action=canoetours</url>
