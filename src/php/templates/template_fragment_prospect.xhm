@@ -29,7 +29,9 @@
         <label form="register_form" for="register_form_input_email">Email</label>
         <input id="register_form_input_email" name="email" form="register_form" type="email" required="required"/>    
         <label form="register_form" for="register_form_input_phone">Telefoonnummer</label>
-        <input id="register_form_input_phone" name="phone" form="register_form" type="tel" required="required"/>                       
+        <input id="register_form_input_phone" name="phone" form="register_form" type="tel" required="required"/>       
+        <label form="register_form" for="register_form_input_text">Bericht</label>
+        <textarea id="register_form_input_text" name="text" form="register_form" required="required"> </textarea>                  
         <input form="register_form" type="submit" value="Submit"/>
     </form> 
 </div>

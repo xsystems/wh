@@ -256,6 +256,7 @@ class ControllerView
 		        if(isset($_GET["register"]) && $_GET["register"] == "true")
 		        {
 		            $headers  = "From: " . $_POST["email"] . "\r\n";
+                    $headers  = "Reply-To: " . $_POST["email"] . "\r\n";
                     $headers .= "X-Mailer: PHP/" . phpversion();
                     
                     $message  = "[Windhappers lidmaatschap aanvraag]" . "\r\n";  
@@ -263,12 +264,13 @@ class ControllerView
                     $message .= "Voornaam: " . $_POST["firstname"] . "\r\n";
                     $message .= "Achternaam: " . $_POST["lastname"] . "\r\n";
                     $message .= "Telefoonnummer: " . $_POST["phone"] . "\r\n";
-                    $message .= "Email: " . $_POST["email"] . "\r\n";                    
+                    $message .= "Email: " . $_POST["email"] . "\r\n";
                     $message .= "\r\n";     
-                    $message .= $_POST["text"];       
+                    $message .= $_POST["text"];              
+      
                     $message = wordwrap($message, 70, "\r\n");
                     
-		            mail("windhappersecretaris@hotmail.com", "[Windhappers] Lidmaatschap aanvraag",  $message, $headers );
+		            mail("windhapperledenadministratie@ziggo.nl", "[Windhappers] Lidmaatschap aanvraag",  $message, $headers );
 		        }
 		        		    
 		        $bannerText = "Aspirant-leden";
@@ -279,6 +281,7 @@ class ControllerView
 		        if(isset($_GET["contact"]) && $_GET["contact"] == "true")
 		        {
 		            $headers  = "From: " . $_POST["email"] . "\r\n";
+                    $headers  = "Reply-To: " . $_POST["email"] . "\r\n";
                     $headers .= "X-Mailer: PHP/" . phpversion();
                     
                     $message  = "[Windhappers website contact bericht]" . "\r\n";
@@ -290,10 +293,11 @@ class ControllerView
                     $message .= "Telefoonnummer: " . $_POST["phone"] . "\r\n";
                     $message .= "Email: " . $_POST["email"] . "\r\n";                    
                     $message .= "\r\n";     
-                    $message .= $_POST["text"];       
+                    $message .= $_POST["text"];
+
                     $message = wordwrap($message, 70, "\r\n");
                     
-		            mail("windhappersecretaris@hotmail.com", "[Windhappers] " . $_POST["subject"],  $message, $headers );
+		            mail($_POST["to"], "[Windhappers] " . $_POST["subject"],  $message, $headers );
 		        }
 		        
 		        $bannerText = "Organisatie";
@@ -317,7 +321,7 @@ class ControllerView
                 $scriptURLs[] = "/lib/js/lightbox/js/lightbox-2.6.min.js";
                 $stylesheetURLs[] = "/lib/js/lightbox/css/lightbox.css";		        
 		        $bannerText = "Kanoroutes";
-                        $bannerImageURL = "/content/banners/banner_canoetours.jpg";		            		        
+                $bannerImageURL = "/content/banners/banner_canoetours.jpg";		            		        
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_canoetours.xhm");
 			    break;	
 		    case 'home_english':			    

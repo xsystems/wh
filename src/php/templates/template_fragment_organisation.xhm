@@ -21,14 +21,14 @@
         </tr>
         <tr>
           <td>Secretaris</td>
-          <td>Jacques van der Toorn</td>
-          <td>070-3684654</td>
+          <td>Harm Teuben</td>
+          <td>070-3281319</td>
           <td><a href='mailto:windhappersecretaris@hotmail.com'>windhappersecretaris@hotmail.com</a></td>
         </tr>    
         <tr>
           <td>Penningmeester</td>
-          <td>Marianne Scheepstra</td>
-          <td> </td>
+          <td>Twan Wouters</td>
+          <td>06-39215276</td>
           <td><a href='mailto:windhapperpenningmeester@hotmail.com'>windhapperpenningmeester@hotmail.com</a></td>
         </tr>       
         <tr>
@@ -152,6 +152,11 @@
     <h2>Contact</h2> 
     <h3>Zend ons een email</h3>  
     <form id="contact_form" action="?action=organisation&amp;contact=true" autocomplete="on" method="post">
+        <label form="contarct_form" for="contact_form_input_to">Aan</label>
+        <select id="contact_form_input_to" name="to" form="contact_form" required="required">
+          <option value="windhappersecretaris@hotmail.com" selected="selected">Secretariaat</option>
+          <option value="windhapperledenadministratie@ziggo.nl">Ledenadministratie</option>         
+        </select>
         <label form="contact_form" for="contact_form_input_firstname">Voornaam</label>
         <input id="contact_form_input_firstname" name="firstname" form="contact_form" type="text" required="required" autofocus="autofocus"/>
         <label form="contact_form" for="contact_form_input_lastname">Achternaam</label>
@@ -162,13 +167,13 @@
         <input id="contact_form_input_phone" name="phone" form="contact_form" type="tel" />         
         <label form="contact_form" for="contact_form_input_subject">Onderwerp</label>
         <input id="contact_form_input_subject" name="subject" form="contact_form" type="text" required="required"/>           
-        <label form="contact_form" for="contact_form_input_text">Tekst</label>
+        <label form="contact_form" for="contact_form_input_text">Bericht</label>
         <textarea id="contact_form_input_text" name="text" form="contact_form" required="required"> </textarea>               
         <input form="contact_form" type="submit" value="Submit"/>
     </form>     
     <h3>Telefoonnummer en adres</h3> 
     Telefoon in het botenhuis: 070-3660789 <br/>
-    Adres secretariaat: Duke Ellingtonstraat 231, 2551 WG Den Haag
+    Adres secretariaat: J. Bildersstraat 52, 2596 EJ  Den Haag
     <h2>De Windhappers geschiedenis</h2>  
     <h3>De oude Windhappers website</h3>  
     De oude Windhappers website is onder de volgende URL the vinden: <a href="http://oud.windhappers.nl" target="_blank" title="Oude Windhappers website">oud.windhappers.nl</a>.
