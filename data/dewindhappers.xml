@@ -305,7 +305,24 @@
             </image>              
         </discipline>                                        
     </disciplines>
-    <news> 
+    <news>
+        <article>
+            <datetime>2015-06-01T22:00:00</datetime>
+            <title>
+                Voortvarend Westland
+            </title>
+            <abstract>
+                De Windhappers kunnen ook de nieuwsbrief “Voortvarend Westland” gebruiken om een bericht te plaatsen, bijvoorbeeld kanotochten en kano-polowedstrijden.
+            </abstract>
+            <section>
+                <paragraph>
+                    <strong>Download de nieuwsbrief!</strong>
+                </paragraph>
+                <paragraph>
+                    <a href="/media/news/2015/2015-februari-Westland Nieuwsbrief.pdf" target="_blank" title="2015-februari-Westland Nieuwsbrief">2015-februari-Westland Nieuwsbrief.pdf</a>
+                </paragraph>
+            </section>
+        </article>    
         <article>
             <datetime>2015-04-20T07:00:00</datetime>
             <section>
