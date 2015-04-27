@@ -307,7 +307,7 @@
     </disciplines>
     <news>
         <article>
-            <datetime>2015-06-01T22:00:00</datetime>
+            <datetime>2015-08-01T22:00:00</datetime>
             <title>
                 Voortvarend Westland
             </title>
@@ -316,13 +316,16 @@
             </abstract>
             <section>
                 <paragraph>
-                    <strong>Download de nieuwsbrief!</strong>
+                    <strong>Download de nieuwsbrieven!</strong>
                 </paragraph>
                 <paragraph>
-                    <a href="/media/news/2015/2015-februari-Westland Nieuwsbrief.pdf" target="_blank" title="2015-februari-Westland Nieuwsbrief">2015-februari-Westland Nieuwsbrief.pdf</a>
+                    <a href="/media/news/2015/2015-februari-Nieuwsbrief Voortvarend Westland.pdf" target="_blank" title="2015-februari-Westland Nieuwsbrief">2015-februari-Nieuwsbrief Voortvarend Westland.pdf</a>
+                </paragraph>
+                <paragraph>
+                    <a href="/media/news/2015/2015-april-Nieuwsbrief Voortvarend Westland.pdf" target="_blank" title="2015-april-Westland Nieuwsbrief">2015-april-Nieuwsbrief Voortvarend Westland.pdf</a>
                 </paragraph>
             </section>
-        </article>    
+        </article>   
         <article>
             <datetime>2015-04-20T07:00:00</datetime>
             <section>
