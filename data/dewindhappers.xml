@@ -307,7 +307,27 @@
     </disciplines>
     <news>
         <article>
-            <datetime>2015-08-01T22:00:00</datetime>
+            <datetime>2015-06-08T12:00:00</datetime>
+            <title>
+                Haagse stadsparkentocht
+            </title>
+            <abstract>
+                Den Haag staat bekend als een mooie stad achter de duinen. Maar Den Haag heeft nog veel meer te bieden zoals mooie parken, duinbossen, sloten, grachten, waterpartijen, paleizen en oude en moderne gebouwen in het centrum. Deze bijzonder leuke afwisselende Haagse stadsparkentocht wordt door kanovereniging De Windhappers georganiseerd en is geschikt voor zowel de canadees- als kajakvaarders.
+            </abstract>
+            <section>
+                <paragraph>
+                    <strong>Download de informatie!</strong>
+                </paragraph>
+                <paragraph>
+                    <a href="/media/news/2015/Haagse stadsparkentocht op 7 juni 2015-k.v. De Windhappers.pdf" target="_blank" title="Haagse stadsparkentocht op 7 juni 2015-k.v. De Windhappers">Haagse stadsparkentocht op 7 juni 2015-k.v. De Windhappers.pdf</a>
+                </paragraph>
+                <paragraph>
+                    <a href="/media/news/2015/Haagse stadsparkentocht op 7 juni 2015-k.v. De Windhappers.docx" target="_blank" title="Haagse stadsparkentocht op 7 juni 2015-k.v. De Windhappers">Haagse stadsparkentocht op 7 juni 2015-k.v. De Windhappers.docx</a>
+                </paragraph>          
+            </section>            
+        </article>        
+        <article>
+            <datetime>2015-09-01T22:00:00</datetime>
             <title>
                 Voortvarend Westland
             </title>
@@ -319,10 +339,13 @@
                     <strong>Download de nieuwsbrieven!</strong>
                 </paragraph>
                 <paragraph>
-                    <a href="/media/news/2015/2015-februari-Nieuwsbrief Voortvarend Westland.pdf" target="_blank" title="2015-februari-Westland Nieuwsbrief">2015-februari-Nieuwsbrief Voortvarend Westland.pdf</a>
+                    <a href="/media/news/2015/2015-mei-Nieuwsbrief Voortvarend Westland.pdf" target="_blank" title="2015-mei-Westland Nieuwsbrief">2015-mei-Nieuwsbrief Voortvarend Westland.pdf</a>
                 </paragraph>
                 <paragraph>
                     <a href="/media/news/2015/2015-april-Nieuwsbrief Voortvarend Westland.pdf" target="_blank" title="2015-april-Westland Nieuwsbrief">2015-april-Nieuwsbrief Voortvarend Westland.pdf</a>
+                </paragraph>
+                <paragraph>
+                    <a href="/media/news/2015/2015-februari-Nieuwsbrief Voortvarend Westland.pdf" target="_blank" title="2015-februari-Westland Nieuwsbrief">2015-februari-Nieuwsbrief Voortvarend Westland.pdf</a>
                 </paragraph>
             </section>
         </article>   
