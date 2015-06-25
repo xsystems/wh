@@ -88,9 +88,16 @@
             <alignment>right</alignment>
         </menuItem>  
         <menuItem>
-            <name>Waterkwaliteit</name>
-            <url>http://zwemwater.nl/</url>
+            <name>Veiligheid</name>
             <alignment>right</alignment>
+            <menuItem>
+                <name>Waterkwaliteit</name>https://www.knrm.nl/
+                <url>http://zwemwater.nl/</url>
+            </menuItem>
+            <menuItem>
+                <name>KNRM</name>
+                <url>https://www.knrm.nl/</url>
+            </menuItem>            
         </menuItem>  
         <menuItem>
             <name>Kanoroutes</name>
@@ -338,6 +345,9 @@
                 <paragraph>
                     <strong>Download de nieuwsbrieven!</strong>
                 </paragraph>
+                <paragraph>
+                    <a href="/media/news/2015/2015-juni-Nieuwsbrief Voortvarend Westland.pdf" target="_blank" title="2015-juni-Westland Nieuwsbrief">2015-juni-Nieuwsbrief Voortvarend Westland.pdf</a>
+                </paragraph>                
                 <paragraph>
                     <a href="/media/news/2015/2015-mei-Nieuwsbrief Voortvarend Westland.pdf" target="_blank" title="2015-mei-Westland Nieuwsbrief">2015-mei-Nieuwsbrief Voortvarend Westland.pdf</a>
                 </paragraph>
