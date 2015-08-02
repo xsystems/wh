@@ -3,10 +3,10 @@
       <thead>
         <tr>
           <th>Omschrijving</th>
-          <th>Bedrag (2015)</th>
+          <th>Bedrag</th>
         </tr>
         <tr>
-          <th colspan='2' scope='col'>Contributie <sup>1,2,3,4</sup> </th>
+          <th colspan='2' scope='col'>Contributie <sup>1,2,3</sup> </th>
         </tr>        
       </thead>
       <tbody>
@@ -15,8 +15,16 @@
           <td>&#8364; 88.00</td>
         </tr>
         <tr>
+          <td>Senioren, vanaf 1 juli</td>
+          <td>&#8364; 66.00</td>
+        </tr>
+        <tr>
           <td>Junioren (&lt;18)</td>
           <td>&#8364; 63.00</td>
+        </tr>
+        <tr>
+          <td>Junioren (&lt;18), vanaf 1 juli</td>
+          <td>&#8364; 47.00</td>
         </tr>
         <tr>
           <th colspan='2'>Stalling</th>
@@ -26,20 +34,36 @@
           <td>&#8364; 30.00</td>
         </tr>
         <tr>
+          <td>Kajak klein, vanaf 1 juli</td>
+          <td>&#8364; 15.00</td>
+        </tr>        
+        <tr>
           <td>Kajak groot</td>
           <td>&#8364; 40.00</td>
-        </tr>                                                                                            
+        </tr>   
+        <tr>
+          <td>Kajak groot, vanaf 1 juli</td>
+          <td>&#8364; 20.00</td>
+        </tr> 
         <tr>
           <td>Canadees</td>
           <td>&#8364; 50.00</td>
         </tr>
+        <tr>
+          <td>Canadees, vanaf 1 juli</td>
+          <td>&#8364; 25.00</td>
+        </tr>        
         <tr>
           <th colspan='4'>Overige</th>
         </tr>
         <tr>
           <td>Gebruik verenigingskajak of canadees</td>
           <td>&#8364; 30.00</td>
-        </tr>        
+        </tr>   
+        <tr>
+          <td>Gebruik verenigingskajak of canadees, vanaf 1 juli</td>
+          <td>&#8364; 15.00</td>
+        </tr>               
       </tbody>
       <tfoot>
         <tr> 
@@ -53,9 +77,8 @@
       Een <span>opzegging</span> voor het volgende kalenderjaar, dient <span>voor 31 December</span> bekend te zijn bij de <a href=".?action=organisation" title="Organisatie">ledenadministrateur</a>.
     </p>                                       
     <p>      
-        <sup>1</sup> Voor leden die na 1 juli lid worden geldt een kortingsregeling. <br/>    
-        <sup>2</sup> Bij inschrijvingen tussen 1 oktober en 31 december is de contributie gratis als de contributie voor het daarop volgende jaar wordt betaald. <br/>      
-        <sup>3</sup> Het lidmaatschap van het Watersportverbond is in deze contributie begrepen. <br/>
-        <sup>4</sup> Indien meerdere personen uit één samenlevingsverband (wonende op hetzelfde adres) lid zijn, betalen het 4e en volgende lid geen contributie.
+        <sup>1</sup> Bij inschrijvingen tussen 1 oktober en 31 december is de contributie gratis als de contributie voor het daarop volgende jaar wordt betaald. <br/>      
+        <sup>2</sup> Het lidmaatschap van het Watersportverbond is in deze contributie begrepen. <br/>
+        <sup>3</sup> Indien meerdere personen uit één samenlevingsverband (wonende op hetzelfde adres) lid zijn, betalen het 4e en volgende lid geen contributie.
     </p>                          
 </div>

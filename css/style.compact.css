@@ -732,48 +732,32 @@ ul, ol
     border-radius:20px;
 }
 
-.article_canoetours section
-{
-    background-color:rgb(136,195,103); 
-    background-color:rgba(136,195,103,0.90);    
-    border-radius:20px;
-    margin-top:0.5em;
-    margin-bottom:0.5em;
-    text-align:center;
-}
-
-.article_canoetours>h1
-{
-    background-color:rgb(136,195,103); 
-    background-color:rgba(136,195,103,0.90);    
+.article_canoetours h1
+{  
     border-top-left-radius:20px;
-    border-top-right-radius:20px;    
-    margin-top:0.5em;
-    margin-bottom:0em;
-    text-align:center;
-}
-
-.article_canoetours>h2
-{
-    background-color:rgb(136,195,103); 
-    background-color:rgba(136,195,103,0.90);    
+    border-top-right-radius:20px;
     border-bottom-left-radius:20px;
-    border-bottom-right-radius:20px;    
-    margin-top:0em;
+    border-bottom-right-radius:20px;         
+    margin-top:0.5em;
     margin-bottom:0.5em;
     text-align:center;
+    background-color:rgb(136,195,103); 
+    background-color:rgba(136,195,103,0.90);   
 }
 
 .section_canoetour
 {
-    display:inline-block;
+    display:inline-table;
     width:48%;
+    background-color:rgb(255,255,51); 
+    background-color:rgba(255,255,51,0.90);  
+    border-radius:20px;
+    margin-bottom:0.5em;
+    text-align:center;
 }
 
 .section_canoetour h2
 {
-    background-color:rgb(255,255,51); 
-    background-color:rgba(255,255,51,0.90); 
     margin:0;
     border-top-left-radius:20px;
     border-top-right-radius:20px;
@@ -786,14 +770,8 @@ ul, ol
     margin:0;
 }
 
-.section_canoetour a
-{
-    display:block;
-    width:100%;
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius:20px; 
-    padding:0; 
-    margin:0;
+.section_canoetour_footer {
+    min-height: 1.5em;   
 }
 
 .sponsor

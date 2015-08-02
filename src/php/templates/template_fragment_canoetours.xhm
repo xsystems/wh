@@ -1,60 +1,108 @@
 <article class='article_canoetours justify-all-lines'>
-    <h1>Kanoroutes in het Westland + GPS</h1>
-    <h2>Voor meer kano-, wandel- en fietsroutes in Zuid-Holland kijk op <a href='http://www.recreatiezuidholland.nl' target='_black' title='Recreatie Zuid-Holland'>www.recreatiezuidholland.nl</a>.</h2>
+    <h1>Kanoroutes Midden-Delfland, Haaglanden en Krimpenerwaard</h1>
+    <section class='section_canoetour'>
+        <h2>Kanoroutes Midden-Delfland</h2>
+        <a href='/media/canoetours/vaarnetwerk_md_wl_2015_def.pdf' target='blank' title='Kanoroutes Midden-Delfland'>
+            <img src='/media/canoetours/vaarnetwerk_md_wl_2015_def_thumbnail.jpg' alt='Kanoroutes Midden-Delfland' title='Klik met de rechter muisknop om te downloaden.'/>
+        </a>
+        <div class='section_canoetour_footer'>
+            <span> </span>            
+        </div>
+    </section>
+     <section class='section_canoetour'>
+        <h2>Kanoroutes Haaglanden</h2>
+        <a href='/media/canoetours/vaarnetwerk_Haaglanden_2015_V1.pdf' target='blank' title='Kanoroutes Haaglanden'>
+            <img src='/media/canoetours/vaarnetwerk_Haaglanden_2015_V1_thumbnail.jpg' alt='Kanoroutes Haaglanden' title='Klik met de rechter muisknop om te downloaden.'/>
+        </a>
+        <div class='section_canoetour_footer'>
+            <span> </span>            
+        </div>
+    </section>
+     <section class='section_canoetour'>
+        <h2>Kanoroutes Krimpenerwaard</h2>
+        <a href='/media/canoetours/vaarnetwerk_folder_krimpenerwaard.pdf' target='blank' title='Kanoroutes Krimpenerwaard'>
+            <img src='/media/canoetours/vaarnetwerk_folder_krimpenerwaard_thumbnail.jpg' alt='Kanoroutes Krimpenerwaard' title='Klik met de rechter muisknop om te downloaden.'/>
+        </a>
+        <div class='section_canoetour_footer'>
+            <span> </span>            
+        </div>
+    </section>
+</article>
+<article class='article_canoetours justify-all-lines'>
+    <h1>Kanoroutes Westland + GPS</h1>
      <section class='section_canoetour'>
         <h2>Kanoroutes gemeente Westland</h2>
-        <a href='/media/canoetours/kanoroute_midden_delfland.jpg' rel='lightbox[canoetours]' title='Kanoroutes miden Delfland'>
-            <img src='/media/canoetours/kanoroute_midden_delfland_thumbnail.jpg' alt='Kano routes midden Delfland' title='Klik met de rechter muisknop om te downloaden.'/>
+        <a href='/media/canoetours/kanoroute_midden_delfland.jpg' rel='lightbox[canoetours]' title='Kanoroutes Midden-Delfland'>
+            <img src='/media/canoetours/kanoroute_midden_delfland_thumbnail.jpg' alt='Kanoroutes Midden-Delfland' title='Klik met de rechter muisknop om te downloaden.'/>
         </a>
-        <a href='/media/canoetours/kanoroute_midden_delfland.jpg'>kanoroute_midden_delfland.jpg</a>
+        <div class='section_canoetour_footer'>
+            <span> </span>
+        </div>
     </section>
     <section class='section_canoetour'>
         <h2>Kanoroutes gemeente Westland</h2>
         <a href='/media/canoetours/kanoroute_0_gemeente-westland.jpg' rel='lightbox[canoetours]' title='Kanoroutes gemeente Westland'>
-            <img src='/media/canoetours/kanoroute_0_gemeente-westland_thumbnail.jpg' alt='Kano routes gemeente Westland' title='Klik met de rechter muisknop om te downloaden.'/>
+            <img src='/media/canoetours/kanoroute_0_gemeente-westland_thumbnail.jpg' alt='Kanoroutes gemeente Westland' title='Klik met de rechter muisknop om te downloaden.'/>
         </a>
-        <a href='/media/canoetours/kanoroute_0_gemeente-westland.jpg'>kanoroute_0_gemeente-westland.jpg</a>
+        <div class='section_canoetour_footer'>
+            <span> </span>
+        </div>
     </section>
     <section class='section_canoetour'>
         <h2>Kanoroutes in het Westland</h2>
         <a href='/media/canoetours/kanoroute_0_overzicht.jpg' rel='lightbox[canoetours]' title='Kanoroutes in het Westland'>
-            <img src='/media/canoetours/kanoroute_0_overzicht_thumbnail.jpg' alt='Kano routes in het Westland' title='Klik met de rechter muisknop om te downloaden.'/>
+            <img src='/media/canoetours/kanoroute_0_overzicht_thumbnail.jpg' alt='Kanoroutes in het Westland' title='Klik met de rechter muisknop om te downloaden.'/>
         </a>
-        <a href='/media/canoetours/kanoroute_0_overzicht.jpg'>kanoroute_overzicht.jpg</a>
+        <div class='section_canoetour_footer'>
+            <span> </span>
+        </div>
     </section>
     <section class='section_canoetour'>
         <h2>De Lier</h2>
         <a href='/media/canoetours/kanoroute_de_lier.jpg' rel='lightbox[canoetours]' title='Kano route De Lier'>
             <img src='/media/canoetours/kanoroute_de_lier_thumbnail.jpg' alt='Kano route De Lier' title='Klik met de rechter muisknop om te downloaden.'/>
         </a>
-        <a href='/media/canoetours/kanoroute_de_lier.gpx' type='application/gpx+xml'>kanoroute_de_lier.gpx</a>
+        <div class='section_canoetour_footer'>
+            <a href='/media/canoetours/kanoroute_de_lier.gpx' type='application/gpx+xml'>kanoroute_de_lier.gpx</a>
+        </div>
     </section>
     <section class='section_canoetour'>
         <h2>Honselersdijk</h2>
         <a href='/media/canoetours/kanoroute_honselersdijk.jpg' rel='lightbox[canoetours]' title='Kano route Honselersdijk'>
             <img src='/media/canoetours/kanoroute_honselersdijk_thumbnail.jpg' alt='Kano route Honselersdijk' title='Klik met de rechter muisknop om te downloaden.'/>
         </a>
-        <a href='/media/canoetours/kanoroute_honselersdijk.gpx' type='application/gpx+xml'>kanoroute_honselersdijk.gpx</a>
+         <div class='section_canoetour_footer'>
+            <a href='/media/canoetours/kanoroute_honselersdijk.gpx' type='application/gpx+xml'>kanoroute_honselersdijk.gpx</a>
+        </div>
     </section>
     <section class='section_canoetour'>
         <h2>Naaldwijk</h2>
         <a href='/media/canoetours/kanoroute_naaldwijk.jpg' rel='lightbox[canoetours]' title='Kano route Naaldwijk'>
             <img src='/media/canoetours/kanoroute_naaldwijk_thumbnail.jpg' alt='Kano route Naaldwijk' title='Klik met de rechter muisknop om te downloaden.'/>
         </a>
-        <a href='/media/canoetours/kanoroute_naaldwijk.gpx' type='application/gpx+xml'>kanoroute_naaldwijk.gpx</a>
+        <div class='section_canoetour_footer'>
+             <a href='/media/canoetours/kanoroute_naaldwijk.gpx' type='application/gpx+xml'>kanoroute_naaldwijk.gpx</a>
+        </div>
     </section>
     <section class='section_canoetour'>
         <h2>Oranjesluis</h2>
         <a href='/media/canoetours/kanoroute_oranjesluis.jpg' rel='lightbox[canoetours]' title='Kano route Oranjesluis'>
             <img src='/media/canoetours/kanoroute_oranjesluis_thumbnail.jpg' alt='Kano route Oranjesluis' title='Klik met de rechter muisknop om te downloaden.'/>
         </a>
-        <a href='/media/canoetours/kanoroute_oranjesluis.gpx' type='application/gpx+xml'>kanoroute_oranjesluis.gpx</a>
+        <div class='section_canoetour_footer'>
+            <a href='/media/canoetours/kanoroute_oranjesluis.gpx' type='application/gpx+xml'>kanoroute_oranjesluis.gpx</a>
+        </div>
     </section>
     <section class='section_canoetour'>
         <h2>Schipluiden</h2>
         <a href='/media/canoetours/kanoroute_schipluiden.jpg' rel='lightbox[canoetours]' title='Kano route Schipluiden'>
             <img src='/media/canoetours/kanoroute_schipluiden_thumbnail.jpg' alt='Kano route Schipluiden' title='Klik met de rechter muisknop om te downloaden.'/>
         </a>
-        <a href='/media/canoetours/kanoroute_schipluiden.gpx' type='application/gpx+xml'>kanoroute_schipluiden.gpx</a>
+        <div class='section_canoetour_footer'>
+            <a href='/media/canoetours/kanoroute_schipluiden.gpx' type='application/gpx+xml'>kanoroute_schipluiden.gpx</a>        
+        </div>
     </section>
+</article>
+<article class='article_canoetours justify-all-lines'>
+    <h1>Voor meer kano-, wandel- en fietsroutes in Zuid-Holland kijk op <a href='http://www.recreatiezuidholland.nl' target='_black' title='Recreatie Zuid-Holland'>www.recreatiezuidholland.nl</a>.</h1>
 </article>
