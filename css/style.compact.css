@@ -130,8 +130,6 @@ ul, ol
     float:left;
     width:56%;
     height:100%;
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius:20px;       
 }
 
 .article_home_intro footer
@@ -144,7 +142,7 @@ ul, ol
     display:inline-block;
     width:48%;
     height:150px;
-    border-radius:20px;  
+    border-radius:5px;  
     overflow:hidden; 
     margin-bottom:1em; 
 }
@@ -171,22 +169,12 @@ ul, ol
     padding-bottom:2%;  
 }
 
-#news_latest>h1
+#sidebar>div>h2
 {
-    background-color:rgb(255,255,51); 
-    border-bottom-left-radius:20px;    
-    border-bottom-right-radius:20px;        
+    background-color:rgb(255,255,51);      
     padding-left:5%;   
     padding-right:5%;     
-    margin-bottom:0;                
-}
-
-#sponsors_list>h1
-{
-    background-color:rgb(255,255,51); 
-    border-radius:20px;    
-    padding-left:5%;   
-    padding-right:5%;      
+    margin:0;                
 }
 
 #newsAbstracts article
@@ -238,6 +226,12 @@ ul, ol
 #sponsors_list img
 {
     width:100%;
+}
+
+#agenda {
+    width:100%;
+    height:300px;
+    border:0;
 }
 
 #news h1
@@ -308,15 +302,16 @@ ul, ol
 
 #discipline img
 {
-    width:48%;
+    width:49%;
     height:240px;    
-    border-radius:20px; 
+    padding-bottom: 1%;
+    border-radius:5px; 
 }
 
 #register_form
 {
     margin-bottom:1em;
-    border-radius:20px; 
+    border-radius:5px; 
     background-color:rgb(255,255,51); 
     padding-top:2%;   
     padding-bottom:2%;      
@@ -363,7 +358,7 @@ ul, ol
 #contact_form
 {
     margin-bottom:1em;
-    border-radius:20px; 
+    border-radius:5px; 
     background-color:rgb(255,255,51); 
     padding-top:2%;   
     padding-bottom:2%;      
@@ -476,8 +471,6 @@ ul, ol
     width:100%;
     height:160px;
     margin-top:0.2em;
-    border-top-left-radius:40px;
-    border-top-right-radius:40px;
     overflow:hidden;
     font-size:12pt; 
     background-repeat:no-repeat; 
@@ -498,7 +491,9 @@ ul, ol
 
 #banner>p
 {    
-    margin:0;    
+    margin:0;
+    padding-top: 1%;
+    padding-right: 1%;
     float:right;
     font-family:Tahoma;
     font-size:35px; 
@@ -510,10 +505,10 @@ ul, ol
     -webkit-transform-origin:left top;
     -o-transform-origin:left top;
     -moz-transform-origin:left top;            
-    -ms-transform: rotate(12deg); /* IE 9 */
-    -webkit-transform: rotate(12deg); /* Safari and Chrome */
-    -o-transform: rotate(12deg); /* Opera */
-    -moz-transform: rotate(12deg); /* Firefox */     
+    -ms-transform: rotate(14deg); /* IE 9 */
+    -webkit-transform: rotate(14deg); /* Safari and Chrome */
+    -o-transform: rotate(14deg); /* Opera */
+    -moz-transform: rotate(14deg); /* Firefox */     
 }
 
 .media_items
@@ -557,8 +552,6 @@ ul, ol
     background-color:rgba(255,255,51,0.90); 
     overflow:hidden;
     width:94%;
-    border-bottom-left-radius:40px;
-    border-bottom-right-radius:40px;
     margin-bottom:0.5em;
     padding-left:3%;
     padding-right:3%;
@@ -602,7 +595,7 @@ ul, ol
     padding: 0.3em;
     padding-bottom: 0.6em;
     border-width:0px;
-    border-radius:8px;
+    border-radius:5px;
     font-size:14pt;
     font-weight: bold;
     width:100%;
@@ -628,7 +621,7 @@ ul, ol
     text-decoration:none;
     width:48%;
     margin-bottom:1em;
-    border-radius:20px;
+    border-radius:5px;
     overflow:hidden;
 }
 
@@ -689,9 +682,7 @@ ul, ol
     left:720px;
     top:800px;
     width:300px;
-    height:190px;   
-/*    border-radius:10px; */
-/*    overflow:hidden;*/
+    height:190px;
 }
 
 .weergadget iframe
@@ -705,8 +696,6 @@ ul, ol
     float:right;
     border:none;
     overflow:hidden;
-/*    width:225px; */
-/*    height:80px;*/
     width:25%;
     height:100%;
     background-color:white;
@@ -729,15 +718,15 @@ ul, ol
 {
     display:inline-block;
     width:50%;
-    border-radius:20px;
+    border-radius:5px;
 }
 
 .article_canoetours h1
-{  
-    border-top-left-radius:20px;
-    border-top-right-radius:20px;
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius:20px;         
+{        
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;         
     margin-top:0.5em;
     margin-bottom:0.5em;
     text-align:center;
@@ -750,8 +739,8 @@ ul, ol
     display:inline-table;
     width:48%;
     background-color:rgb(255,255,51); 
-    background-color:rgba(255,255,51,0.90);  
-    border-radius:20px;
+    background-color:rgba(255,255,51,0.90);
+    border-radius:5px;
     margin-bottom:0.5em;
     text-align:center;
 }
@@ -759,8 +748,8 @@ ul, ol
 .section_canoetour h2
 {
     margin:0;
-    border-top-left-radius:20px;
-    border-top-right-radius:20px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
 }
 
 .section_canoetour img
@@ -778,7 +767,6 @@ ul, ol
 {
     width:50%;
     overflow:hidden;
-    border-radius:20px;
     margin-left:auto;
     margin-right:auto;
     margin-top:2%;
@@ -888,7 +876,7 @@ ul, ol
     text-decoration:none;
     height:inherit;
     line-height:30px; /* static */
-    border-radius:20px;
+    border-radius:5px;
 }
 
 .nav a:hover
@@ -912,13 +900,13 @@ ul, ol
 {
     padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
     float:none;
-    border-radius:20px;
+    border-radius:5px;
 }
 
 .nav ul a
 {
     white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
-    border-radius:20px;
+    border-radius:5px;
     text-transform:capitalize;
 }
 
@@ -1014,25 +1002,25 @@ tfoot td
 /* Rounded table corners */
 table
 {
-    border-radius:20px;
+    border-radius:5px;
 }
 
 thead tr:first-child th:first-child
 {
-    border-top-left-radius:20px;
+    border-top-left-radius:5px;
 }
 
 thead tr:first-child th:last-child
 {
-    border-top-right-radius:20px;
+    border-top-right-radius:5px;
 }
 
 tfoot tr:last-child td:first-child
 {
-    border-bottom-left-radius:20px;
+    border-bottom-left-radius:5px;
 }
 
 tfoot tr:last-child td:last-child
 {
-    border-bottom-right-radius:20px;
+    border-bottom-right-radius:5px;
 }

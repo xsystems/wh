@@ -49,12 +49,16 @@
         <footer> </footer>
     </article>
     <div id="sidebar">
+        <div>
+            <h2>Agenda</h2>
+            <iframe id="agenda" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=dewindhappers%40gmail.com&amp;color=%232952A3&amp;src=nl.dutch%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;src=p%23weeknum%40group.v.calendar.google.com&amp;color=%235229A3&amp;ctz=Europe%2FAmsterdam"></iframe>
+        </div>
         <div id="news_latest">
-            <h1>Nieuws</h1>
+            <h2>Nieuws</h2>
             <?php echo $this->newsAbstracts; ?>
         </div>   
         <div id="sponsors_list">
-            <h1>Sponsoren</h1>
+            <h2>Sponsoren</h2>
             <a href='?action=sponsors#kanoshop' title='Kanoshop'>
                 <img src='/content/logos/kanoshoplogo_2012.png' alt='Kanoshop' title='Kanoshop'/>
             </a> 

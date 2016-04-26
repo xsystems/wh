@@ -13,7 +13,7 @@
         </menuItem>
         <menuItem>
             <id>disciplineMenu</id>
-            <name>Activiteiten</name>
+            <name>Disciplines</name>
             <alignment>left</alignment>
         </menuItem>
 <!--        <menuItem>-->

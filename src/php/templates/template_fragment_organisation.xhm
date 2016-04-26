@@ -136,8 +136,7 @@
         </tr>
       </tfoot>     
     </table>
-    <h2>Contact</h2> 
-    <h3>Zend ons een email</h3>  
+    <h2>Zend ons een email</h2> 
     <form id="contact_form" action="?action=organisation&amp;contact=true" autocomplete="on" method="post">
         <label form="contarct_form" for="contact_form_input_to">Aan</label>
         <select id="contact_form_input_to" name="to" form="contact_form" required="required">

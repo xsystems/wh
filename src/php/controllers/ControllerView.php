@@ -84,7 +84,7 @@ class ControllerView
         // Choose template correspinding to the action.	
         switch($action){
 		    case 'calendar':			    
-		        $bannerText = "Activiteiten";
+		        $bannerText = "Kalender";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_calendar.xhm");			    		    		  
 			    break;
 		    case 'discipline':	
@@ -273,7 +273,7 @@ class ControllerView
 		            mail("windhapperledenadministratie@ziggo.nl", "[Windhappers] Lidmaatschap aanvraag",  $message, $headers );
 		        }
 		        		    
-		        $bannerText = "Aspirant-leden";
+		        $bannerText = "Nieuwe Leden";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_prospect.xhm");			    
 			    break;				    				    			      
 		    case 'organisation':

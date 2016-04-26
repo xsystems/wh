@@ -169,7 +169,7 @@
             <section>
                 <xsl:copy-of select="description/node()"/>
             </section>    
-            <section>
+            <section class="justify-all-lines">
                 <xsl:for-each select="image">
                     <a>
                         <xsl:attribute name="href">
