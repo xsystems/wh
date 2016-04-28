@@ -14,6 +14,24 @@
                         Wij zijn een enthousiaste en actieve kanoclub met ongeveer 200 leden. Onze leden doen mee aan (bijna) alle vormen van kanosport, <a href='?action=discipline&amp;name=Toervaren' title='Toervaren'>toervaren</a> (zowel in kajak als Canadese kano), <a href='?action=discipline&amp;name=Kanopolo' title='Kanopolo'>kanopolo</a>, <a href='?action=discipline&amp;name=Zeevaren' title='Zeevaren'>zeevaren</a>, <a href='?action=discipline&amp;name=Brandingvaren' title='Brandingvaren'>brandingvaren</a>, en <a href='?action=discipline&amp;name=Wildwatervaren' title='Wildwatervaren'>wildwatervaren</a>. 
                     </p> 
                 </div>  
+
+                <google-youtube fluid="true"
+                                video-id="IrEgMeSyn-E"
+                                rel="0"
+                                showinfo="0"
+                                iv_load_policy="3"
+                                modestbranding="1">
+                </google-youtube>   
+
+                <div class='section_home_text'>                           
+                    <p>                 
+                        We verzorgen leuke cursussen in kajak- en kanovaren voor beginners, eskimoteren en zeevaren voor beginners.
+                    </p>   
+                    <p>                
+                        We organiseren een groot aantal <a href='?action=calendar' title='Activiteiten'>activiteiten</a> zoals toertochten op vlakwater en zee, kanokampeerweekenden, kanopolocompetitie, wildwatervaren in het buitenland. In de winter zijn er  winteractiviteiten met interessante lezingen, nordic-walking of wandeltochten.
+                    </p>
+                </div>
+
                 <div class='section_home_images justify-all-lines'>
                     <a href='/content/images/home/banner_freestyle.original.jpg' rel='lightbox[home]' title='Verenigingsgebouw'>
                         <img src='/content/images/home/banner_freestyle.jpg' alt='Verenigingsgebouw' title='Verenigingsgebouw'/>
@@ -21,25 +39,15 @@
                     <a href='/content/images/home/kanopolo juni 2012 010.original.JPG' rel='lightbox[home]' title='Kanopolo'>
                         <img src='/content/images/home/kanopolo juni 2012 010.JPG' alt='Kanopolo' title='Kanopolo'/>
                     </a>         
-                </div>              
-                <div class='section_home_text'>                           
-                    <p>                 
-                        We verzorgen leuke cursussen in kajak- en kanovaren voor beginners, eskimoteren en zeevaren voor beginners.
-                    </p>   
-                    <p>                
-                        We organiseren een groot aantal <a href='?action=calendar' title='Activiteiten'>activiteiten</a> zoals toertochten op vlakwater en zee, kanokampeerweekenden, kanopolocompetitie, wildwatervaren in het buitenland. In de winter zijn er  winteractiviteiten met interessante lezingen, nordic-walking of wandeltochten.
-                    </p>   
+                </div>   
+
+                <div class='section_home_text'>
                     <p>                
                         Bijna het gehele jaar wordt er op woensdagavond, op vrijdag en zondag gevaren vanaf het clubgebouw in het uitgebreide stelsel van <a href='?action=canoetours' title='Kanoroutes'>kanoroutes</a> in het Westland en Midden Delfland.
                     </p>   
                     <p>                
                         Ons goed onderhouden gebouw heeft een gezellige kantine met bar en is voorzien van kleedruimtes, warme douches en toiletten. In de botenloods is plaats voor kajaks en Canadees kano’s. We hebben een groot aantal verenigingsboten, die door leden gebruikt kunnen worden, en een botentrailer. Ons topstuk is een 10 persoons canadese kano die stamt uit de jaren dertig. 
                     </p> 
-                </div>              
-                <div class='section_home_text'>                
-<!--                    <p>                  -->
-<!--                        In ons <a href='?action=gallery&amp;type=clubmagazine' title='Clubblad'>clubblad</a>, dat vier keer per jaar uitkomt, doen we verslag van onze avonturen en worden nieuwe activiteiten aangekondigd.-->
-<!--                    </p>-->
                     <p>
                         Ben je geïnteresseerd om lid te worden? Dan vind je meer uitgebreide informatie onder <a href='?action=prospect' title='Aspirant-leden'>Nieuwe Leden</a>. Kom naar onze open dag of loop op woensdagavond een keer binnen.
                     </p>                

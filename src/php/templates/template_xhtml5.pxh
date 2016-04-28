@@ -9,7 +9,10 @@
         <?php endforeach; ?>
         <?php foreach($this->scriptURLs as $scriptURL): ?>
             <script type="text/javascript" src="<?php echo $scriptURL; ?>" />
-        <?php endforeach; ?>        
+        <?php endforeach; ?>
+        <?php foreach($this->importURLs as $importURL): ?>
+            <link rel="import" href="<?php echo $importURL; ?>"/>
+        <?php endforeach; ?>
     </head>
     <body>
         <div id="main" class="main">

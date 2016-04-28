@@ -39,6 +39,7 @@ class ControllerView
         
         $scriptURLs = array("/src/js/load.js");          
         $stylesheetURLs = array("/css/style.css");
+        $importURLs = array();
 	    $detect = new MobileDetect();
 	    if ($detect->isMobile()){
             $stylesheetURLs[] = "/css/mobile.css";
@@ -352,7 +353,9 @@ class ControllerView
 		    default:
                 $scriptURLs[] = "/lib/js/lightbox/js/jquery-1.10.2.min.js";
                 $scriptURLs[] = "/lib/js/lightbox/js/lightbox-2.6.min.js";
+                $scriptURLs[] = "bower_components/webcomponentsjs/webcomponents-lite.js";
                 $stylesheetURLs[] = "/lib/js/lightbox/css/lightbox.css";
+                $importURLs[] = "elements/elements.html";
 		        $bannerText = "Home";
 		        $bannerImageURL = "/content/banners/banner_home.jpg";
                 $actionTemplateFragments[] = array("main", "src/php/templates/template_fragment_home_dutch.pxh");
@@ -373,6 +376,7 @@ class ControllerView
 
         $view->stylesheetURLs = $stylesheetURLs;
         $view->scriptURLs = $scriptURLs;
+        $view->importURLs = $importURLs;
         $view->bannerText = $bannerText;
         $view->bannerImageURL = $bannerImageURL; 
         

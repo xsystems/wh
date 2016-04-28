@@ -5,7 +5,7 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textar
 {
     margin:0;
     padding:0;
-    font-family:Tahoma;
+    font-family:Verdana;
 }
 
 table
@@ -69,7 +69,7 @@ body
 .main
 {
 /*    text-align:justify;*/
-    font-size:12pt;   
+    font-size:1em;   
 }    
 
 .main h1
@@ -143,8 +143,7 @@ ul, ol
     width:48%;
     height:150px;
     border-radius:5px;  
-    overflow:hidden; 
-    margin-bottom:1em; 
+    overflow:hidden;
 }
 
 .section_home_images_alt a
@@ -159,6 +158,11 @@ ul, ol
     height:100%;
 }
 
+.section_home_text
+{
+    margin-top: 2%;
+}
+
 #sidebar
 {
     float:right;
@@ -167,6 +171,11 @@ ul, ol
     width:33%;
     height:100%;    
     padding-bottom:2%;  
+}
+
+#sidebar>div
+{
+    padding-top:3%;              
 }
 
 #sidebar>div>h2
@@ -495,8 +504,8 @@ ul, ol
     padding-top: 1%;
     padding-right: 1%;
     float:right;
-    font-family:Tahoma;
-    font-size:35px; 
+    font-family:Verdana;
+    font-size:2em; 
     font-weight:bold;    
     transform-origin:left top;
     transform:rotate(12deg);  
