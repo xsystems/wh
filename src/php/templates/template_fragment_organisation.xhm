@@ -1,4 +1,4 @@
-<div class='content'>       
+<div class='content'>
     <h1>De mensen achter De Windhappers</h1>
     <table>
       <thead>
@@ -10,7 +10,7 @@
         </tr>
         <tr>
           <th colspan='4' scope='col'>BESTUUR</th>
-        </tr>        
+        </tr>
       </thead>
       <tbody>
         <tr>
@@ -24,13 +24,13 @@
           <td>Harm Teuben</td>
           <td>06-48932059</td>
           <td><a href='mailto:windhappersecretaris@hotmail.com'>windhappersecretaris@hotmail.com</a></td>
-        </tr>    
+        </tr>
         <tr>
           <td>Penningmeester</td>
           <td>Twan Wouters</td>
           <td>06-39215276</td>
           <td><a href='mailto:penningmeester@windhappers.nl'>penningmeester@windhappers.nl</a></td>
-        </tr>       
+        </tr>
         <tr>
           <td>Bestuurslid algemeen</td>
           <td>Hans Smits</td>
@@ -42,21 +42,9 @@
           <td>Simon van der Zwan</td>
           <td> </td>
           <td> </td>
-        </tr>        
+        </tr>
         <tr>
           <th colspan='4'>COORDINATOREN</th>
-        </tr>
-        <tr>
-          <td>Toervaren</td>
-          <td>Willie de Jong</td>
-          <td> </td>
-          <td> </td>
-        </tr>
-        <tr>
-          <td>Zeevaren</td>
-          <td>Willie de Jong</td>
-          <td> </td>
-          <td> </td>
         </tr>
         <tr>
           <td>Kanopolo</td>
@@ -69,19 +57,19 @@
           <td>Jan de Koster</td>
           <td>070-3912510</td>
           <td><a href='mailto:jandekoster@tele2.nl'>jandekoster@tele2.nl</a></td>
-        </tr>  
+        </tr>
         <tr>
           <td>Winteractiviteiten</td>
           <td>Cobi Bult</td>
           <td> </td>
           <td><a href='mailto:cobi.b@casema.nl'>cobi.b@casema.nl</a></td>
-        </tr>   
+        </tr>
         <tr>
           <td>Redactie &amp; PR</td>
           <td>Joke de Jongh</td>
           <td>06-46326761</td>
           <td><a href='mailto:pr@windhappers.nl'>pr@windhappers.nl</a></td>
-        </tr>                                                                                                                                     
+        </tr>
         <tr>
           <td>Jeugd</td>
           <td>Marianne van der Kleij</td>
@@ -120,28 +108,28 @@
           <td>Hans Grottendieck</td>
           <td> </td>
           <td> </td>
-        </tr>                                              
+        </tr>
         <tr>
           <td>Website</td>
           <td>Koen Boes</td>
           <td> </td>
           <td><a href='mailto:webmaster@windhappers.nl'>webmaster@windhappers.nl</a></td>
         </tr>
-      </tbody>   
+      </tbody>
       <tfoot>
-        <tr> 
+        <tr>
           <td colspan="4">
            <!-- Empty foot. -->
           </td>
         </tr>
-      </tfoot>     
+      </tfoot>
     </table>
-    <h2>Zend ons een email</h2> 
+    <h2>Zend ons een email</h2>
     <form id="contact_form" action="?action=organisation&amp;contact=true" autocomplete="on" method="post">
         <label form="contarct_form" for="contact_form_input_to">Aan</label>
         <select id="contact_form_input_to" name="to" form="contact_form" required="required">
           <option value="windhappersecretaris@hotmail.com" selected="selected">Secretariaat</option>
-          <option value="windhapperledenadministratie@ziggo.nl">Ledenadministratie</option>         
+          <option value="windhapperledenadministratie@ziggo.nl">Ledenadministratie</option>
         </select>
         <label form="contact_form" for="contact_form_input_firstname">Voornaam</label>
         <input id="contact_form_input_firstname" name="firstname" form="contact_form" type="text" required="required" autofocus="autofocus"/>
@@ -150,14 +138,14 @@
         <label form="contact_form" for="contact_form_input_email">Email</label>
         <input id="contact_form_input_email" name="email" form="contact_form" type="email" required="required"/>
         <label form="contact_form" for="contact_form_input_phone">Telefoonnummer</label>
-        <input id="contact_form_input_phone" name="phone" form="contact_form" type="tel" />         
+        <input id="contact_form_input_phone" name="phone" form="contact_form" type="tel" />
         <label form="contact_form" for="contact_form_input_subject">Onderwerp</label>
-        <input id="contact_form_input_subject" name="subject" form="contact_form" type="text" required="required"/>           
+        <input id="contact_form_input_subject" name="subject" form="contact_form" type="text" required="required"/>
         <label form="contact_form" for="contact_form_input_text">Bericht</label>
-        <textarea id="contact_form_input_text" name="text" form="contact_form" required="required"> </textarea>               
+        <textarea id="contact_form_input_text" name="text" form="contact_form" required="required"> </textarea>
         <input form="contact_form" type="submit" value="Submit"/>
-    </form>     
-    <h3>Telefoonnummer en adres</h3> 
+    </form>
+    <h3>Telefoonnummer en adres</h3>
     Telefoon in het botenhuis: 070-3660789 <br/>
     Adres secretariaat: J. Bildersstraat 52, 2596 EJ  Den Haag
 
