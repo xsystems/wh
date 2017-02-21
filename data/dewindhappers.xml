@@ -41,7 +41,7 @@
             <name>Video's</name>
             <url>?action=gallery&amp;type=video</url>
             <alignment>left</alignment>
-        </menuItem>                        
+        </menuItem>
         <menuItem>
             <name>Nieuws</name>
             <alignment>left</alignment>
@@ -56,8 +56,8 @@
             <menuItem>
                 <name>Schrijf Berichten</name>
                 <url>?action=boodschap</url>
-            </menuItem>                
-        </menuItem>   
+            </menuItem>
+        </menuItem>
         <menuItem>
             <name>Contact</name>
             <alignment>right</alignment>
@@ -72,21 +72,21 @@
             <menuItem>
                 <name>Kosten</name>
                 <url>?action=costs</url>
-            </menuItem>     
+            </menuItem>
             <menuItem>
                 <name>Sponsoren</name>
                 <url>?action=sponsors</url>
-            </menuItem>                      
+            </menuItem>
             <menuItem>
                 <name>Inschrijven nieuwe leden</name>
                 <url>?action=prospect</url>
             </menuItem>
-        </menuItem>           
+        </menuItem>
         <menuItem>
             <name>Meteorologie</name>
             <url>?action=meteorology</url>
             <alignment>right</alignment>
-        </menuItem>  
+        </menuItem>
         <menuItem>
             <name>Veiligheid</name>
             <alignment>right</alignment>
@@ -97,13 +97,13 @@
             <menuItem>
                 <name>KNRM</name>
                 <url>/media/files/Veiliger onderweg met de KNRM Helpt app.pdf</url>
-            </menuItem>            
-        </menuItem>  
+            </menuItem>
+        </menuItem>
         <menuItem>
             <name>Kanoroutes</name>
             <url>?action=canoetours</url>
             <alignment>right</alignment>
-        </menuItem>   
+        </menuItem>
     </menu>
     <disciplines>
         <discipline>
@@ -117,7 +117,7 @@
 
                 <p>Elke zondagochtend vanaf 8.30 uur wordt er ook een rustige tocht gevaren.</p>
 
-                <p>Regelmatig leggen we de boten op de auto of verenigingstrailer om ergens in het land een tocht te maken. Bijvoorbeeld naar de Nieuwkoopse- of Reeuwijkse plassen; naar Leiden en omgeving; de Haagse Grachtentocht; naar de Rottemeren; door de Delftse grachten, etc.  Deze tochten worden door ervaren leden georganiseerd en begeleid. Zie hiervoor de agenda.</p>                                               
+                <p>Regelmatig leggen we de boten op de auto of verenigingstrailer om ergens in het land een tocht te maken. Bijvoorbeeld naar de Nieuwkoopse- of Reeuwijkse plassen; naar Leiden en omgeving; de Haagse Grachtentocht; naar de Rottemeren; door de Delftse grachten, etc.  Deze tochten worden door ervaren leden georganiseerd en begeleid. Zie hiervoor de agenda.</p>
             </description>
             <image>
                 <url>/content/images/discipline/cruising/toervaren_delft.jpg</url>
@@ -134,7 +134,7 @@
             <image>
                 <url>/content/images/discipline/cruising/toervaren_wei.jpg</url>
                 <title>Toervaren Wei</title>
-            </image>                                    
+            </image>
         </discipline>
         <discipline>
             <name>
@@ -197,7 +197,7 @@
             <image>
                 <url>/content/images/discipline/canoepolo/windhappers_team_a_b.jpg</url>
                 <title>Team A &amp; Team B</title>
-            </image>              
+            </image>
         </discipline>
         <discipline>
             <name>
@@ -229,7 +229,7 @@
             <image>
                 <url>/content/images/discipline/seafarers/zeevaren1.jpg</url>
                 <title>zeevaren1</title>
-            </image>             
+            </image>
         </discipline>
         <discipline>
             <name>
@@ -255,7 +255,7 @@
             <image>
                 <url>/content/images/discipline/brandingvaren/ww-2.jpg</url>
                 <title>Brandingvaren 4</title>
-            </image>                 
+            </image>
         </discipline>
         <discipline>
             <name>
@@ -293,7 +293,7 @@
             <image>
                 <url>/content/images/discipline/whitewater_canoeing/ww-3.jpg</url>
                 <title>Wildwater 4</title>
-            </image>              
+            </image>
         </discipline>
         <discipline>
             <name>
@@ -309,10 +309,84 @@
             <image>
                 <url>/content/images/discipline/freestyle/Freestyle - Tom Mulder.JPG</url>
                 <title>Freestyle</title>
-            </image>              
-        </discipline>                                        
+            </image>
+        </discipline>
     </disciplines>
     <news>
+        <article>
+            <datetime>2017-05-21T23:59:00</datetime>
+            <title>
+                Haagse stadsparkentocht
+            </title>
+            <abstract>
+              Den Haag staat bekend als een mooie stad achter de duinen. Maar Den Haag heeft nog veel meer te bieden zoals mooie parken, duinbossen,
+              sloten, grachten, waterpartijen, oude en moderne gebouwen in het centrum. Deze bijzonder leuke afwisselende Haagse stadsparkentocht wordt
+              door kanovereniging De Windhappers <b>voor alle kanovaarders uit heel Nederland en omstreken</b> georganiseerd en is geschikt voor zowel de
+              canadees- als kajakvaarders.
+            </abstract>
+            <section>
+                <paragraph>
+                  De tocht start vanaf het hoofdkantoor van de ANWB en we varen langs het Malieveld en het
+                  Centraal station naar de Haagse grachtengordel waar we tussendoor even stil liggen om over de
+                  leuke bezienswaardigheden te lezen en naar te kijken.
+                  Nadat de grachtengordel is gevaren wordt bij het Malieveld gestopt voor de lunch.
+                  Na de lunch kan er gekozen worden tussen de korte- of lange tocht.
+                </paragraph>
+                <img src="/media/images/[2015-06-07]%20Haagse%20Stadsparkentocht/Haagse%20Stadsparkentocht%2018.JPG" alt="Haagse stadsparkentocht" title="Haagse stadsparkentocht"/>
+                <paragraph>
+                  De korte tochtvaarders varen langs het Haagse Bos en via Duindigt naar het Landgoed
+                  Clingendael.
+                </paragraph>
+                <paragraph>
+                  De lange tochtvaarders kanoën langs het park Arendsdorp en Madurodam naar de waterpartij in
+                  de Scheveningse Bosjes. In het Rosarium van het Westbroekpark is er een korte rustpauze.
+                  Daarna wordt er terug gevaren en gaat de kanotocht verder via Duindigt naar het Landgoed
+                  Clingendael.
+                </paragraph>
+                <paragraph>
+                  Op het landgoed zien we onder het varen de bloeiende rododendrons en azalea's en stappen we
+                  bij de theeschenkerij uit de kano. We krijgen voldoende tijd om de benen te strekken. Ook kan er
+                  een bezoek gebracht worden aan de bekende Japanse tuin. Na de rustpauze is het nog maar een
+                  klein stukje varen naar het ANWB- parkeerterrein waar de tocht zal eindigen.
+                </paragraph>
+            </section>
+            <section>
+                <title>Informatie</title>
+                <paragraph>
+                  De leden van <b>De Windhappers vertrekken om 9:00 uur met auto’s</b> en kanokar vanaf het
+                  verenigingsgebouw naar de ANWB. I.v.m. de coördinatie van vervoer van meerijdende leden in de
+                  auto’s en het aantal kano’s van leden op eigen auto’s of op de kanokar is het aanmelden
+                  noodzakelijk.
+                </paragraph>
+                <paragraph>
+                  De gastvrije ANWB biedt alle deelnemers een <b>gratis warme drank en gebruik van toiletten</b> aan.
+
+                  <ul>
+                    <li>ANWB-hoofdkantoor: <b>Wassenaarseweg 220, 2596 EC Den Haag</b></li>
+                    <li>Vertrektijd kanotocht vanaf de ANWB: <b>10:30 uur</b></li>
+                    <li>Lengte korte tocht: <b>15 km</b></li>
+                    <li>Lengte lange tocht: <b>25 km</b></li>
+                  </ul>
+
+                  Voor foto's van eerdere Haagse stadsparkentochten zie <a href="http://windhappers.nl/?action=gallery&amp;type=image">windhappers.nl</a>.
+                </paragraph>
+                <paragraph>
+                  <a href="/media/news/2017/haagse_stadsparkentocht_2017.pdf" target="_blank" title="haagse_stadsparkentocht_2017.pdf">Download informatie als PDF</a>
+                </paragraph>
+            </section>
+            <section>
+                <title>Organisatie en inschrijvingen</title>
+                <paragraph>
+                  Jacques van der Toorn
+                </paragraph>
+                <paragraph>
+                  Telefoon: 070-3684654 / 06-43484789
+                </paragraph>
+                <paragraph>
+                  E-mail: <a href="mailto:hjjmvdtoorn@ziggo.nl" target="_blank" title="Jacques van der Toorn">hjjmvdtoorn@ziggo.nl</a>
+                </paragraph>
+            </section>
+        </article>
         <article>
             <datetime>2016-06-19T23:59:00</datetime>
             <title>
@@ -330,7 +404,7 @@
                     De teams uit de Derde klasse spelen alleen op zaterdag.
                     De teams uit de Tweede klasse hebben al een halve competitie gespeeld en spelen het weekend niet mee.
                 </paragraph>
-                <img src="/media/news/2016/nk_kanopolo_2016_den-haag.jpg" alt="Kanopolo" title="Kanopolo"/>                               
+                <img src="/media/news/2016/nk_kanopolo_2016_den-haag.jpg" alt="Kanopolo" title="Kanopolo"/>
             </section>
             <section>
                 <title>Deelnemende teams</title>
@@ -339,7 +413,7 @@
                 </paragraph>
                 <paragraph>
                     AKV Odysseus A, GKV Groningen, Michiel de Ruyter 1, Viking Venlo A, Viking Amsterdam, Keistad A, Trekvogels.
-                </paragraph>            
+                </paragraph>
                 <paragraph>
                     <b>Eerste Klasse</b>
                 </paragraph>
@@ -362,7 +436,7 @@
                     In onze gezellige kantine met terras, op de kop van het haventje boven de botenloods, bent u op beide dagen welkom voor een hapje of een drankje.
                 </paragraph>
             </section>
-        </article>          
+        </article>
         <article>
             <datetime>2016-04-18T23:59:00</datetime>
             <title>
@@ -373,11 +447,11 @@
             </abstract>
             <section>
                 <paragraph>
-                    We verzorgen leuke cursussen in kajak- en kanovaren voor beginners, eskimoteren en zeevaren voor beginners. 
+                    We verzorgen leuke cursussen in kajak- en kanovaren voor beginners, eskimoteren en zeevaren voor beginners.
                 </paragraph>
                 <paragraph>
                     Wil je meer weten of wil je lid worden? Kijk dan op onze site <a href="http://windhappers.nl">windhappers.nl</a> onder <a href="http://wh.nl/?action=prospect">Nieuwe Leden</a>. Kom naar onze open dag of loop op woensdagavond een keer binnen.
-                </paragraph>            
+                </paragraph>
                 <paragraph>
                     <h2>Er zijn demonstaties van</h2>
                     <ul>
@@ -400,10 +474,10 @@
                     <h2>En als extra activiteit</h2>
                         Een demonstratie SURFSKI van Ronald Schmetz. Hij showt de peddeltechniek en de “remount” op de SURFSKI. Ronald neemt een Epic V8, een V7 en misschien nog een V10sport mee. Deze kano’s mogen ook getest worden. Bekijk ook enkele filmpjes van Boyan van SurfskiEducation, de surfski-specialist uit Tarifa.
                 </paragraph>
-                <img src="/media/news/2016/Opendag_Windhappers_2016_poster.jpg" alt="Opendag_Windhappers_2016_poster" title="Opendag_Windhappers_2016_poster"/>                               
-                <img src="/media/news/2016/Opendag_Windhappers_2016_image1.jpg" alt="Opendag_Windhappers_2016_image1" title="Opendag_Windhappers_2016_image1"/> 
-            </section>    
-        </article>          
+                <img src="/media/news/2016/Opendag_Windhappers_2016_poster.jpg" alt="Opendag_Windhappers_2016_poster" title="Opendag_Windhappers_2016_poster"/>
+                <img src="/media/news/2016/Opendag_Windhappers_2016_image1.jpg" alt="Opendag_Windhappers_2016_image1" title="Opendag_Windhappers_2016_image1"/>
+            </section>
+        </article>
         <article>
             <datetime>2015-11-15T23:00:00</datetime>
             <title>
@@ -430,9 +504,9 @@
                 </paragraph>
                 <paragraph>
                     <i>Commissie branding- en wildwatervaren.</i>
-                </paragraph>                
+                </paragraph>
             </section>
-        </article>    
+        </article>
         <article>
             <datetime>2016-01-15T19:30:00</datetime>
             <title>
@@ -456,8 +530,8 @@
                         <tr>
                             <td style="border: 1px solid black">
                                 Beginners-en gevorderdencursus 4 avonden.
-                            </td> 
-                            <td style="border: 1px solid black">                                                                 
+                            </td>
+                            <td style="border: 1px solid black">
                                 Vrijdagavonden 15, 22 en 29 januari en 5 februari. Extra inhaalles is 12 februari. Tijdstip: 19.30 – 21.30 uur. <b>Datums zijn nog onder voorbehoud!</b>
                             </td>
                             <td style="border: 1px solid black">
@@ -465,9 +539,9 @@
                             </td>
                         </tr>
                     </table>
-                </paragraph>       
-            </section>            
-        </article>         
+                </paragraph>
+            </section>
+        </article>
         <article>
             <datetime>2015-06-08T12:00:00</datetime>
             <title>
@@ -485,9 +559,9 @@
                 </paragraph>
                 <paragraph>
                     <a href="/media/news/2015/Haagse stadsparkentocht op 7 juni 2015-k.v. De Windhappers.docx" target="_blank" title="Haagse stadsparkentocht op 7 juni 2015-k.v. De Windhappers">Haagse stadsparkentocht op 7 juni 2015-k.v. De Windhappers.docx</a>
-                </paragraph>          
-            </section>            
-        </article>        
+                </paragraph>
+            </section>
+        </article>
         <article>
             <datetime>2015-09-01T22:00:00</datetime>
             <title>
@@ -502,7 +576,7 @@
                 </paragraph>
                 <paragraph>
                     <a href="/media/news/2015/2015-juni-Nieuwsbrief Voortvarend Westland.pdf" target="_blank" title="2015-juni-Westland Nieuwsbrief">2015-juni-Nieuwsbrief Voortvarend Westland.pdf</a>
-                </paragraph>                
+                </paragraph>
                 <paragraph>
                     <a href="/media/news/2015/2015-mei-Nieuwsbrief Voortvarend Westland.pdf" target="_blank" title="2015-mei-Westland Nieuwsbrief">2015-mei-Nieuwsbrief Voortvarend Westland.pdf</a>
                 </paragraph>
@@ -513,7 +587,7 @@
                     <a href="/media/news/2015/2015-februari-Nieuwsbrief Voortvarend Westland.pdf" target="_blank" title="2015-februari-Westland Nieuwsbrief">2015-februari-Nieuwsbrief Voortvarend Westland.pdf</a>
                 </paragraph>
             </section>
-        </article>   
+        </article>
         <article>
             <datetime>2015-04-20T07:00:00</datetime>
             <section>
@@ -525,7 +599,7 @@
                 </paragraph>
                 <img src="/media/news/2015/WHposteropendag 2015.jpg" alt="WHposteropendag 2015.jpg" title="WHposteropendag 2015.jpg"/>
             </section>
-        </article> 
+        </article>
         <article>
             <datetime>2015-03-10T23:59:00</datetime>
             <title>
@@ -540,7 +614,7 @@
                 </paragraph>
                 <img src="/media/news/2014/zweminformatie.jpg" alt="zweminformatie.jpg" title="Zweminformatie"/>
             </section>
-        </article>         
+        </article>
         <article>
             <datetime>2014-12-10T23:59:00</datetime>
             <title>
@@ -553,7 +627,7 @@
                 <title>Voor meer informatie over deze interessante en gezellige avond zie de bijlage:</title>
             </section>
             <a href="/media/news/20141201-Nieuwsflits van De Windhappers-Frans Guyana.pdf" target="_blank" title="20141201-Nieuwsflits van De Windhappers-Frans Guyana">20141201-Nieuwsflits van De Windhappers-Frans Guyana.pdf</a>
-        </article>         
+        </article>
         <article>
             <datetime>2014-11-12T23:59:00</datetime>
             <title>
@@ -573,7 +647,7 @@
                     Cobi Bult
                 </paragraph>
             </section>
-        </article>         
+        </article>
         <article>
             <datetime>2015-02-13T22:00:00</datetime>
             <title>
@@ -586,7 +660,7 @@
                 <title>Voor meer informatie, de kosten en inschrijving zie de bijlage Cursus eskimoteren:</title>
             </section>
             <a href="/media/news/Cursus eskimoteren 2015.pdf" target="_blank" title="Cursus Eskimoteren">Cursus eskimoteren 2015.pdf</a>
-        </article>       
+        </article>
         <article>
             <datetime>2014-11-16T23:59:00</datetime>
             <title>
@@ -598,8 +672,8 @@
             <section>
                 <title>Voor meer informatie, de kosten en inschrijving zie de bijlage Wildwaterweekend België:</title>
             </section>
-            <a href="/media/news/Wildwaterweekend België 15  en 16 november 2014.pdf" target="_blank" title="Wildwaterweekend België">Wildwaterweekend België 15  en 16 november 2014.pdf</a>                                                                 
-        </article>  
+            <a href="/media/news/Wildwaterweekend België 15  en 16 november 2014.pdf" target="_blank" title="Wildwaterweekend België">Wildwaterweekend België 15  en 16 november 2014.pdf</a>
+        </article>
         <article>
             <datetime>2015-01-20T22:00:00</datetime>
             <title>
@@ -611,120 +685,120 @@
             <section>
                 <img src="/media/news/Oorberlaan.jpg" alt="Oorberlaan.jpg" title="Oorberlaan.jpg"/>
             </section>
-        </article>                      
+        </article>
         <article>
             <datetime>2014-08-17T23:59:00</datetime>
             <title>
                 Windhappertoertocht Nieuwkoopse Plassen
             </title>
             <abstract>
-                Aanstaande zondag 17 augustus wordt de Windhappertoertocht Nieuwkoopse Plassen georganiseerd. 
+                Aanstaande zondag 17 augustus wordt de Windhappertoertocht Nieuwkoopse Plassen georganiseerd.
             </abstract>
-            <section>               
+            <section>
                 <paragraph>
                    Deze tocht is geschikt voor leden die 5 km per uur kunnen varen.
-                </paragraph>                    
-                <paragraph>                    
+                </paragraph>
+                <paragraph>
                     Wij verzamelen om 8:00 uur bij de loods van De Windhappers en vertrekken om 8:30 uur. Vervoer dien je zelf te regelen, eventueel in overleg met mij.
-                </paragraph>                
+                </paragraph>
                <paragraph>
-                    Graag zou ik van degenen die meegaan willen weten of zij wel of geen vervoer/kanoplek hebben.                
-                </paragraph>                    
-                <paragraph>                    
+                    Graag zou ik van degenen die meegaan willen weten of zij wel of geen vervoer/kanoplek hebben.
+                </paragraph>
+                <paragraph>
                     De tocht is ongeveer 20 km, onderweg gaan we picknicken en bij mooi weer kunnen we zwemmen.
                 </paragraph>
                <paragraph>
                     Wat moet je meenemen: Eten, drinken, regenkleding, zwemvest en zonnebrand.
-                </paragraph>                    
+                </paragraph>
                 <paragraph>
-                    Je kunt je bij mij via de mail opgeven tot en met vrijdag 15 augustus.               
+                    Je kunt je bij mij via de mail opgeven tot en met vrijdag 15 augustus.
                 </paragraph>
                 <paragraph>
                     Met vriendelijke kanogroet,
-                </paragraph>           
+                </paragraph>
                 <paragraph>
                     Willie de Jong
                 </paragraph>
                 <paragraph>
                     <a href="mailto:weedeejee@caiway.nl" target="_blank" title="Willie de Jong">weedeejee@caiway.nl</a>
-                </paragraph>                                                  
-            </section>    
-        </article>          
+                </paragraph>
+            </section>
+        </article>
         <article>
             <datetime>2014-06-19T23:59:00</datetime>
             <title>
                 Rondje Tiengemeten
             </title>
             <abstract>
-                Nog nooit was het zo warm op 9 maart. Alle warmte records werden verpletterd. Met een heerlijke 19 graden was het dan ook bijna zomers op het Haringvliet. Perfect weer voor een rondje Tiengemeten. 
+                Nog nooit was het zo warm op 9 maart. Alle warmte records werden verpletterd. Met een heerlijke 19 graden was het dan ook bijna zomers op het Haringvliet. Perfect weer voor een rondje Tiengemeten.
             </abstract>
-            <section>               
+            <section>
                 <paragraph>
-                    Willy, Erik en ik vertrokken vroeg in de ochtend vanuit de Windhappers om aan de Haringvliet, Jan en Kees van Natsec en Max en Annelies van de Dajaks te ontmoeten. Voor mij was het de eerste tocht op open water van het jaar. Dat is altijd weer even wennen. Ook wennen was het instappen vanaf een mee kantelende steiger. Via een spagaat, wist niet dat ik dat kon, een natte kuip en vele helpende handen belande ik uiteindelijk toch in mijn kajak. Weer wat geleerd. 
-                </paragraph>                    
-                <paragraph>  
-                    Zonder verdere capriolen verlieten we de beschutting van de haven van Nieuwendijk. Eenmaal op het “Hitstertsche of Vuile gat” werd direct een stevige bries vanuit het zuidoosten merkbaar. Met een windje en golven van schuin opzij ging het westwaarts, onder de kust van de Hoekse waard door langs het Tiendgros. Het Tiendgors is een van de weinige plaatsen in Nederland waar de Noordse woelmuis voorkomt. Helaas hebben we het schattige beestje niet gezien, wel de duizenden ganzen die boven het Tiendgors vlogen. Een prachtig gezicht.                  
-                </paragraph>   
+                    Willy, Erik en ik vertrokken vroeg in de ochtend vanuit de Windhappers om aan de Haringvliet, Jan en Kees van Natsec en Max en Annelies van de Dajaks te ontmoeten. Voor mij was het de eerste tocht op open water van het jaar. Dat is altijd weer even wennen. Ook wennen was het instappen vanaf een mee kantelende steiger. Via een spagaat, wist niet dat ik dat kon, een natte kuip en vele helpende handen belande ik uiteindelijk toch in mijn kajak. Weer wat geleerd.
+                </paragraph>
+                <paragraph>
+                    Zonder verdere capriolen verlieten we de beschutting van de haven van Nieuwendijk. Eenmaal op het “Hitstertsche of Vuile gat” werd direct een stevige bries vanuit het zuidoosten merkbaar. Met een windje en golven van schuin opzij ging het westwaarts, onder de kust van de Hoekse waard door langs het Tiendgros. Het Tiendgors is een van de weinige plaatsen in Nederland waar de Noordse woelmuis voorkomt. Helaas hebben we het schattige beestje niet gezien, wel de duizenden ganzen die boven het Tiendgors vlogen. Een prachtig gezicht.
+                </paragraph>
                 <img src="/media/news/2014/tiengemeten/DSCN0042.jpeg" alt="Tiengemeten foto 1" title="Tiengemeten foto 1"/>
                 <img src="/media/news/2014/tiengemeten/IMGP0567.JPG" alt="Tiengemeten foto 2" title="Tiengemeten foto 2"/>
                <paragraph>
                     Aangekomen bij de jachthaven de Put is de westelijke punt van Tiengemeten al in zicht. We voeren nog een stukje door richting het Spui om vervolgens in gesloten formatie de vaargeul te kruizen en de punt van Tiengemeten op ruime afstand te ronden. Onder de windturbines en de kust van Goeree-Overflakkee aangekomen had Willy voor ons mooi strandje uitgezocht nabij jachthaven Atlantica. Pauze, tijd om de benen te strekken en een heerlijk boterhammetje te nuttigen.
-                </paragraph>                    
-                <paragraph>      
-                    Na de pauze had Willy nog een traktatie voor de groep in petto, het haventje van Stad aan het Haringvliet. Het haventje ligt beschut tussen twee lange strekdammen en een afsluitbaar havenhoofd. Eenmaal in de haven valt direct het zeilschip de Argus op. De familie Rib beheert deze prachtige klipper die in 1891 in Amsterdam is gebouwd. Altijd weer imposant om vanuit je kajak langs zo’n mooie Klipper te varen en omhoog te kijken.               
-                </paragraph> 
-                <img src="/media/news/2014/tiengemeten/IMGP0572.JPG" alt="Tiengemeten foto 3" title="Tiengemeten foto 3"/>
-                <img src="/media/news/2014/tiengemeten/IMGP0576.JPG" alt="Tiengemeten foto 4" title="Tiengemeten foto 4"/>                
-               <paragraph>
-                    Maar door moet het; de haven uit, de vaargeul over en onder de kust van Tiengemeten door naar de oostelijke punt. Bij de oostelijke punt aangekomen worden we begroet door een familie Schotse hooglanders.  De wind is inmiddels gaan liggen, het zonnetje schijnt volop en het is heerlijk om even te dobberen, naar de hooglanders en de eenden op het water te kijken. Al dobberend komt de vraag naar boven of we door naar de Haringvlietbrug varen of gaan we nog pauze houden op Tiengemeten? 
-                </paragraph>                    
+                </paragraph>
                 <paragraph>
-                    Voor Tiengemeten wordt gekozen, dus leggen we aan in de Kleine haven. Omdat hier geen strandje is, worden de kajaks op de steiger gelegd. De herberg naast het haventje is helaas gereserveerd voor een gezelschap. We vleien ons neer op de dijk. Daar zit het ook goed en zien we bovendien de eerste vlinders van het jaar. Na deze laatste pauze gaat het in één ruk door richting de al zakkende zon. Terug in de haven van Nieuwendijk grijnst de mee kantelende steiger mij aan. “Jou ga ik krijgen” lijkt hij te zeggen… maar helaas voor de steiger lukt het mij om zonder capriolen uit de kajak te stappen.                  
-                </paragraph>  
+                    Na de pauze had Willy nog een traktatie voor de groep in petto, het haventje van Stad aan het Haringvliet. Het haventje ligt beschut tussen twee lange strekdammen en een afsluitbaar havenhoofd. Eenmaal in de haven valt direct het zeilschip de Argus op. De familie Rib beheert deze prachtige klipper die in 1891 in Amsterdam is gebouwd. Altijd weer imposant om vanuit je kajak langs zo’n mooie Klipper te varen en omhoog te kijken.
+                </paragraph>
+                <img src="/media/news/2014/tiengemeten/IMGP0572.JPG" alt="Tiengemeten foto 3" title="Tiengemeten foto 3"/>
+                <img src="/media/news/2014/tiengemeten/IMGP0576.JPG" alt="Tiengemeten foto 4" title="Tiengemeten foto 4"/>
+               <paragraph>
+                    Maar door moet het; de haven uit, de vaargeul over en onder de kust van Tiengemeten door naar de oostelijke punt. Bij de oostelijke punt aangekomen worden we begroet door een familie Schotse hooglanders.  De wind is inmiddels gaan liggen, het zonnetje schijnt volop en het is heerlijk om even te dobberen, naar de hooglanders en de eenden op het water te kijken. Al dobberend komt de vraag naar boven of we door naar de Haringvlietbrug varen of gaan we nog pauze houden op Tiengemeten?
+                </paragraph>
+                <paragraph>
+                    Voor Tiengemeten wordt gekozen, dus leggen we aan in de Kleine haven. Omdat hier geen strandje is, worden de kajaks op de steiger gelegd. De herberg naast het haventje is helaas gereserveerd voor een gezelschap. We vleien ons neer op de dijk. Daar zit het ook goed en zien we bovendien de eerste vlinders van het jaar. Na deze laatste pauze gaat het in één ruk door richting de al zakkende zon. Terug in de haven van Nieuwendijk grijnst de mee kantelende steiger mij aan. “Jou ga ik krijgen” lijkt hij te zeggen… maar helaas voor de steiger lukt het mij om zonder capriolen uit de kajak te stappen.
+                </paragraph>
                 <paragraph>
                     Willy, dank voor het organiseren en leiden van deze prachtige tocht!
-                </paragraph> 
+                </paragraph>
                 <paragraph>
                     Alfons
-                </paragraph>                    
-            </section>    
-        </article>        
+                </paragraph>
+            </section>
+        </article>
         <article>
             <datetime>2014-06-04T23:59:00</datetime>
             <title>
                 Een waterige Biesboschtocht
             </title>
             <abstract>
-                Lichtgrijs, donkergrijs, groengrijs. Een zwart-wit foto?? Nee de Biesbosch in de regen. Geen blauw te bekennen en het regende en regende en regende harder de hele 23 km lange tocht. En op sommige plekken ging de wind ook flink tekeer. En wij - flinke binken - bleven, goed ingepakt, stug doorvaren. 
+                Lichtgrijs, donkergrijs, groengrijs. Een zwart-wit foto?? Nee de Biesbosch in de regen. Geen blauw te bekennen en het regende en regende en regende harder de hele 23 km lange tocht. En op sommige plekken ging de wind ook flink tekeer. En wij - flinke binken - bleven, goed ingepakt, stug doorvaren.
             </abstract>
-            <section>               
+            <section>
                 <paragraph>
                     Erik had op zaterdag 10 mei een toertocht georganiseerd in de Biesbosch en wij gingen mee.
-                </paragraph>                    
-                <paragraph>                    
+                </paragraph>
+                <paragraph>
                     We vertrokken in de regen en stapten in de boot in de regen. Het milde mei-regentje werd afgewisseld met forse stortbuien. Onze voeten waren al nat, door het sjouwen met de boten door het natte gras.
-                </paragraph>    
+                </paragraph>
                 <img src="/media/news/2014/biesbosch/DSCN0639.jpeg" alt="Biesboschtocht foto 1" title="Biesboschtocht foto 1"/>
-                <img src="/media/news/2014/biesbosch/DSCN0652.jpeg" alt="Biesboschtocht foto 2" title="Biesboschtocht foto 2"/>              
+                <img src="/media/news/2014/biesbosch/DSCN0652.jpeg" alt="Biesboschtocht foto 2" title="Biesboschtocht foto 2"/>
                <paragraph>
                     Toch was het een heerlijke tocht. De Biesbosch is altijd prachtig, ook in de regen. We zagen paaiende vissen aan de kant in het ondiepe water (Alie), beverburchten (Alfons), grauwe, jagende wolkenmassa’s (ik) en we zagen allemaal het klotsende water onder de boot en het regenwater boven de boot. Het was kortom een waterige toertocht.
-                </paragraph>                    
-                <paragraph>                    
+                </paragraph>
+                <paragraph>
                     We zijn zelfs naar het strand geweest om te pauzeren. Vraag: hoe klim je op een strandje met droge voeten uit je kano? Nou, je laat je door een stoere medekanoër met kano en al op het strand trekken en er later weer vanaf duwen.
-                </paragraph> 
+                </paragraph>
                 <img src="/media/news/2014/biesbosch/DSCN0675.jpeg" alt="Biesboschtocht foto 3" title="Biesboschtocht foto 3"/>
-                <img src="/media/news/2014/biesbosch/DSCN0708.jpeg" alt="Biesboschtocht foto 4" title="Biesboschtocht foto 4"/>             
+                <img src="/media/news/2014/biesbosch/DSCN0708.jpeg" alt="Biesboschtocht foto 4" title="Biesboschtocht foto 4"/>
                <paragraph>
                     We hebben genoten van de natuur. En ook van het drankje en de bitterballen na afloop.
-                </paragraph>                    
-                <paragraph>                    
-                    Dankjewel Erik voor de organisatie. Zo’n tocht is voor herhaling vatbaar.
-                </paragraph>  
+                </paragraph>
                 <paragraph>
-                    Joke de Jongh                    
-                </paragraph>                                                             
-            </section>    
-        </article>          
+                    Dankjewel Erik voor de organisatie. Zo’n tocht is voor herhaling vatbaar.
+                </paragraph>
+                <paragraph>
+                    Joke de Jongh
+                </paragraph>
+            </section>
+        </article>
         <article>
             <datetime>2014-05-18T23:59:00</datetime>
             <title>
@@ -733,30 +807,30 @@
             <abstract>
                 Het komende Windhappersweekend wordt gehouden in Moergestel Noord Brabant. De camping ligt aan de rand van de Oisterwijkse bossen met aansluitend het natuurgebied "Kampina" een natuurgebied van 25 vierkante kilometer bos, heide en vennen. De Reusel kan vanuit Moergestel in twee richtingen bevaren worden, zowel voor kajak- als canadeesvaarders. Bij slecht of koud weer kunnen wij gebruik maken van een recreatiezaal, ’t Stalletje genaamd. Zefs een overdekt terras ontbreekt niet. Het kan dus Reu(s)ze(l) gezellig worden.
             </abstract>
-            <section>  
+            <section>
                 <title>Deelnamekosten</title>
                 <paragraph>
                     Kamperen van vrijdag t/m zondag ca. € 12,50 per persoon (kampeermiddel maakt niet uit).
-                </paragraph>       
+                </paragraph>
                 <paragraph>
                    Bezoekerstarief voor wie niet kampeert € 1,50 per persoon.
                 </paragraph>
                 <paragraph>
                     Gebruik van douche kost 50 eurocent (6 minuten).
-                </paragraph>                
-            </section> 
+                </paragraph>
+            </section>
             <section>
                 <title>Vaarmogelijkheden</title>
                 <paragraph>
-                    Circa 800 meter van de camping stroomt de Reusel, die vanaf de stuw (met parkeerruimte en instapsteigers) naar twee kanten toe te bevaren is.                    
+                    Circa 800 meter van de camping stroomt de Reusel, die vanaf de stuw (met parkeerruimte en instapsteigers) naar twee kanten toe te bevaren is.
                 </paragraph>
                 <paragraph>
                     Noordwaarts stroomt de Reusel door bosrijke omgeving aan de westzijde van Oisterwijkse vennen naar Oisterwijk en mondt daar in de Essche stroom, die verder langs het gehucht Esch loopt en bij Vught in de Dommel mondt. Zo ver zullen wij dit weekend niet komen. In dit noordelijke traject heeft de rivier enkele stuwen met overdraagplaatsen, goed voor enkele pauzes.
                 </paragraph>
                 <paragraph>
-                    Zuidwaarts stroomt de Reusel ten oosten langs Moergestel en splitst zich na 4 km in twee takken, waartussen een natuurgebied "de Hilver" met veel meanders in aangelegd is. Beide takken eindigen bij een overdraagplaats naar het Wilhelminakanaal.                    
+                    Zuidwaarts stroomt de Reusel ten oosten langs Moergestel en splitst zich na 4 km in twee takken, waartussen een natuurgebied "de Hilver" met veel meanders in aangelegd is. Beide takken eindigen bij een overdraagplaats naar het Wilhelminakanaal.
                 </paragraph>
-            </section>   
+            </section>
             <section>
                 <title>Adresgegevens camping</title>
                 <paragraph>
@@ -777,23 +851,23 @@
                 <paragraph>
                     Arie Ouwehand, Tel: 070-3978387, <a href="mailto:aouwehand@ziggo.nl" target="_blank" title="Arie Ouwehand">aouwehand@ziggo.nl</a>
                 </paragraph>
-                <paragraph> 
-                    Zie ook dit <a href="/media/news/Windhappersweekendv1 2014.doc" target="_blank" title="Windhappersweekendv1 2014">MS Word document met foto's</a>                    
+                <paragraph>
+                    Zie ook dit <a href="/media/news/Windhappersweekendv1 2014.doc" target="_blank" title="Windhappersweekendv1 2014">MS Word document met foto's</a>
                 </paragraph>
             </section>
-        </article>        
+        </article>
         <article>
             <datetime>2014-10-08T23:59:00</datetime>
             <title>
                 Goed nieuws. De C-10 gaat weer varen!
             </title>
             <abstract>
-                Je weet wel, dat is die héééle lange open kano waar je met 10 personen tegelijk in kan varen. 
+                Je weet wel, dat is die héééle lange open kano waar je met 10 personen tegelijk in kan varen.
             </abstract>
-            <section>  
+            <section>
                 <paragraph>
-                    Wil je meevaren geef je dan op bij de coördinator Loes Ram.  
-                </paragraph>       
+                    Wil je meevaren geef je dan op bij de coördinator Loes Ram.
+                </paragraph>
                 <paragraph>
                     De C-10 vaart 1x per maand op de volgende woensdagavonden, start om 19.00 uur.
                 </paragraph>
@@ -801,38 +875,38 @@
                     <thead>
                         <tr>
                             <th>Datum(s)</th>
-                        </tr>                        
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>2014-04-16</td>
-                        </tr>           
+                        </tr>
                         <tr>
                             <td>2014-05-14</td>
-                        </tr> 
+                        </tr>
                         <tr>
                             <td>2014-06-18</td>
-                        </tr> 
+                        </tr>
                         <tr>
                             <td>2014-07-09</td>
                         </tr>
                         <tr>
                             <td>2014-09-09</td>
-                        </tr> 
+                        </tr>
                         <tr>
                             <td>2014-10-08</td>
-                        </tr>                         
+                        </tr>
                     </tbody>
                     <tfoot>
-                        <tr> 
+                        <tr>
                             <td colspan="1">
                                 <!-- Empty foot. -->
                             </td>
                         </tr>
-                  </tfoot>                      
+                  </tfoot>
                 </table>
-            </section>    
-        </article>  
+            </section>
+        </article>
         <article>
             <datetime>2014-04-13T23:59:00</datetime>
             <title>
@@ -841,35 +915,35 @@
             <abstract>
                 Hou je van water? Op zondagmiddag 13 april a.s. kun je lekker komen varen en spetteren (of rustig kijken) bij kanovereniging De Windhappers. Aan het eind van de Jaap Edenweg (voorbij het sportcentrum de Uithof) in Den Haag. Op de open dag van de club maak je kennis met alle soorten van kanovaren.
             </abstract>
-            <section>  
-                <title>Lekker bezig op het water op 13 april 2014</title>             
+            <section>
+                <title>Lekker bezig op het water op 13 april 2014</title>
                 <paragraph>
                     Onder toezicht mag je zelf allerlei boten uitproberen Er zijn demonstraties van allerlei soorten van kanovaren en eskimoteren (dat is met boot en al omslaan en weer rechtop komen).
-                </paragraph>                    
-                <paragraph>                    
+                </paragraph>
+                <paragraph>
                     Kanovereniging “De windhappers” is een van de grotere en actieve kanoclubs van Nederland. De club heeft naast toervaarders ook een enthousiaste groep kano-poloërs die meedoet aan de landelijke competitie.
-                </paragraph>   
-                <paragraph>                    
-                    Het hele jaar worden op woensdag, vrijdag en zondag tochten gemaakt door het Westland en Midden Delfland.                
-                </paragraph>  
+                </paragraph>
+                <paragraph>
+                    Het hele jaar worden op woensdag, vrijdag en zondag tochten gemaakt door het Westland en Midden Delfland.
+                </paragraph>
                 <img src="/media/news/Opendag_Windhappers_2014_poster.jpg" alt="Opendag_Windhappers_2014_poster" title="Opendag_Windhappers_2014_poster"/>
-                <img src="/media/news/Opendag_Windhappers_2014_image1.jpg" alt="Opendag_Windhappers_2014_image1" title="Opendag_Windhappers_2014_image1"/>                         
-                <paragraph>                    
-                    Regelmatig worden er toertochten en kano kampeerweekenden georganiseerd in Nieuwkoop, Loosdrecht en de Kaag. Onze zeekanoërs varen op de Grevelingen, Oosterschelde, Noordzee en de Wadden.                
-                </paragraph>  
-                <paragraph>                    
-                    In de winter worden in een zwembad eskimoteerlessen gegeven, om te leren omslaan en weer boven te komen.                
-                </paragraph>   
+                <img src="/media/news/Opendag_Windhappers_2014_image1.jpg" alt="Opendag_Windhappers_2014_image1" title="Opendag_Windhappers_2014_image1"/>
+                <paragraph>
+                    Regelmatig worden er toertochten en kano kampeerweekenden georganiseerd in Nieuwkoop, Loosdrecht en de Kaag. Onze zeekanoërs varen op de Grevelingen, Oosterschelde, Noordzee en de Wadden.
+                </paragraph>
+                <paragraph>
+                    In de winter worden in een zwembad eskimoteerlessen gegeven, om te leren omslaan en weer boven te komen.
+                </paragraph>
                 <paragraph>
                     <em>
-                        Als je lid wordt, krijg je een gratis introductiecursus in kajak- en/of Canadeesvaren. Na een afsluitende proefvaart mag je onbeperkt gebruik maken van verenigingsboten.                    
+                        Als je lid wordt, krijg je een gratis introductiecursus in kajak- en/of Canadeesvaren. Na een afsluitende proefvaart mag je onbeperkt gebruik maken van verenigingsboten.
                     </em>
-                </paragraph>        
+                </paragraph>
                 <paragraph>
-                    Interesse? Kom langs op de OPEN DAG op zondagmiddag 13 april a.s. Je bent welkom vanaf 13.00 uur tot 17.00 uur. Of loop eens binnen op woensdagavond, de vaste clubavond. Je vindt ons haventje en ons gezellige clubgebouw aan het einde van de parkeerplaatsen van Sportcentrum “De Uithof” aan de Jaap Edenweg in Den Haag. Helemaal doorrijden of lopen en nog een keer naar rechts. Meer informatie vind je op onze website: <a href="/" target="_blank" title="Home">windhappers.nl</a>.                
-                </paragraph>                                                                                                                   
-            </section>    
-        </article>     
+                    Interesse? Kom langs op de OPEN DAG op zondagmiddag 13 april a.s. Je bent welkom vanaf 13.00 uur tot 17.00 uur. Of loop eens binnen op woensdagavond, de vaste clubavond. Je vindt ons haventje en ons gezellige clubgebouw aan het einde van de parkeerplaatsen van Sportcentrum “De Uithof” aan de Jaap Edenweg in Den Haag. Helemaal doorrijden of lopen en nog een keer naar rechts. Meer informatie vind je op onze website: <a href="/" target="_blank" title="Home">windhappers.nl</a>.
+                </paragraph>
+            </section>
+        </article>
         <article>
             <datetime>2014-04-13T23:59:00</datetime>
             <title>
@@ -878,51 +952,51 @@
             <abstract>
                 Hoera, het is lente. De bomen lopen uit, de vogels zingen en De Windhappers worden ook actief, zie onderstaande tabel. Voor verdere bijzonderheden raadpleeg de kalender.
             </abstract>
-            <section>         
+            <section>
                 <table>
                     <thead>
                         <tr>
                             <th>Datum(s)</th>
-                            <th>Dag(en)</th>                            
+                            <th>Dag(en)</th>
                             <th>Activiteit</th>
-                        </tr>                        
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>2014-03-23</td>
-                            <td>Zondag</td>                            
+                            <td>Zondag</td>
                             <td>Eerste toertocht van het seizoen. Naar de Nieuwkoopse Plassen. Tijd en plaats: zie de kalender. Voor overige data zie overzicht 2014.</td>
-                        </tr>                          
+                        </tr>
                         <tr class="alt">
-                            <td>2014-03-26</td>                        
+                            <td>2014-03-26</td>
                             <td>Woensdag</td>
                             <td>Algemene Ledenvergadering. Komt allen. Er zijn vacatures in het bestuur. Bestuurlijke ervaring staat goed op je CV.</td>
                         </tr>
                         <tr>
                             <td>2014-03-29</td>
-                            <td>Zaterdag</td>                            
+                            <td>Zaterdag</td>
                             <td>Schoonmaak botenloods. Vele handen maken licht werk. Gratis broodjes en koffie.</td>
                         </tr>
                         <tr class="alt">
-                            <td>2014-04-02</td>                        
+                            <td>2014-04-02</td>
                             <td>Woensdag</td>
                             <td>Opening Vaarseizoen. Met korte toertocht.</td>
                         </tr>
                         <tr>
-                            <td>2014-04-13</td>                        
+                            <td>2014-04-13</td>
                             <td>Zondag</td>
                             <td>Open dag. Aanvangstijd 13:00 uur. Zegt het voort. Voor meer informatie zie de flyer.</td>
-                        </tr>                        
+                        </tr>
                     </tbody>
                     <tfoot>
-                        <tr> 
+                        <tr>
                             <td colspan="4">
                                 <!-- Empty foot. -->
                             </td>
                         </tr>
-                  </tfoot>                     
+                  </tfoot>
                 </table>
-            </section>    
+            </section>
         </article>
         <article>
             <datetime>2014-10-12T23:59:00</datetime>
@@ -932,23 +1006,23 @@
             <abstract>
 
             </abstract>
-            <section>         
+            <section>
                 <table>
                     <thead>
                         <tr>
                             <th>Datum(s)</th>
-                            <th>Dag(en)</th>                            
+                            <th>Dag(en)</th>
                             <th>Activiteit</th>
                             <th>Organisator(en)</th>
-                        </tr>                        
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>2014-03-23</td>
-                            <td>Zondag</td>                            
+                            <td>Zondag</td>
                             <td>Nieuwkoop</td>
                             <td>Jan Weerdenburg</td>
-                        </tr>                          
+                        </tr>
                         <tr class="alt">
                             <td>2014-04-04 t/m 2014-04-06</td>
                             <td>Vrijdag t/m Zondag</td>
@@ -999,33 +1073,33 @@
                         </tr>
                     </tbody>
                     <tfoot>
-                        <tr> 
+                        <tr>
                             <td colspan="4">
                                 <!-- Empty foot. -->
                             </td>
                         </tr>
-                  </tfoot>                      
+                  </tfoot>
                 </table>
-            </section>    
-        </article>      
+            </section>
+        </article>
         <article>
             <datetime>2013-11-06T23:59:00</datetime>
             <title>
                 Wethouder op kennismakingsbezoek bij De Windhappers
             </title>
             <abstract>
-                Arne Weverling Wethouder Kust, Toerisme en recreatie van gemeente Westland komt samen met Annelies Peyrer (Adviseur Groen, Water en Ecologie) en Mirjan Zonneveld op woensdag 6 november om 20:00 uur voor een kennismakingsbezoek bij De Windhappers. 
+                Arne Weverling Wethouder Kust, Toerisme en recreatie van gemeente Westland komt samen met Annelies Peyrer (Adviseur Groen, Water en Ecologie) en Mirjan Zonneveld op woensdag 6 november om 20:00 uur voor een kennismakingsbezoek bij De Windhappers.
             </abstract>
-            <section>               
+            <section>
                 <paragraph>
                     Tijdens deze informele bijeenkomst kunnen De Windhappers zich als kanovereniging presenteren aan de gemeente Westland en van gedachten wisselen met de wethouder over de recreatievoorzieningen en kanoroutes in het Westland.
-                </paragraph>                    
-                <paragraph>                    
-                    In het voorjaar van 2012 zijn De Windhappers via Annelies Peyrer in contact gekomen met wethouder Weverling en dankzij zijn financiële steun kunnen we de boekenkastplanksteigers bouwen. Door intensieve samenwerking met Annelies Peyrer hebben De Windhappers de kanoroutes kunnen uitbreiden en worden er door de vrijwilligers van De windhappers diverse boekenkastplanksteigers geplaatst en door de gemeente Westland in hun systeem vastgelegd. Het belooft een leuke ongedwongen informele avond te worden.                
-                </paragraph>                    
-                <img src="/media/news/Wethouder Arne Weverling.jpg" alt="Wethouder Arne Weverling" title="Wethouder Arne Weverling"/>                 
-            </section>    
-        </article>            
+                </paragraph>
+                <paragraph>
+                    In het voorjaar van 2012 zijn De Windhappers via Annelies Peyrer in contact gekomen met wethouder Weverling en dankzij zijn financiële steun kunnen we de boekenkastplanksteigers bouwen. Door intensieve samenwerking met Annelies Peyrer hebben De Windhappers de kanoroutes kunnen uitbreiden en worden er door de vrijwilligers van De windhappers diverse boekenkastplanksteigers geplaatst en door de gemeente Westland in hun systeem vastgelegd. Het belooft een leuke ongedwongen informele avond te worden.
+                </paragraph>
+                <img src="/media/news/Wethouder Arne Weverling.jpg" alt="Wethouder Arne Weverling" title="Wethouder Arne Weverling"/>
+            </section>
+        </article>
         <article>
             <datetime>2013-11-06T11:22:00</datetime>
             <title>
@@ -1037,8 +1111,8 @@
             <section>
                 <title>Download het volledige bericht:</title>
             </section>
-            <a href="/media/news/Vooraankondiging cursus eskimoteren 2014.pdf" target="_blank" title="Cursus Eskimoteren">Vooraankondiging cursus eskimoteren 2014.pdf</a>                                                                 
-        </article>     
+            <a href="/media/news/Vooraankondiging cursus eskimoteren 2014.pdf" target="_blank" title="Cursus Eskimoteren">Vooraankondiging cursus eskimoteren 2014.pdf</a>
+        </article>
         <article>
             <datetime>2013-11-06T11:23:00</datetime>
             <title>
@@ -1050,8 +1124,8 @@
             <section>
                 <title>Download het volledige bericht:</title>
             </section>
-            <a href="/media/news/Vooraankondiging najaarsweekend wildwatervaren Belgie.pdf" target="_blank" title="Cursus Eskimoteren">Vooraankondiging najaarsweekend wildwatervaren Belgie.pdf.pdf</a>                                                                 
-        </article>    
+            <a href="/media/news/Vooraankondiging najaarsweekend wildwatervaren Belgie.pdf" target="_blank" title="Cursus Eskimoteren">Vooraankondiging najaarsweekend wildwatervaren Belgie.pdf.pdf</a>
+        </article>
         <article>
             <datetime>2013-09-29T11:22:00</datetime>
             <title>
@@ -1061,12 +1135,12 @@
                 Het TROS programma Zappsport heeft een uitzending gewijd aan de sport kanopolo. In deze uitzending battelen jongens en meiden van basisschool Verburch-hof tegen elkaar op het kanopoloveld van De Windhappers.
             </abstract>
             <section>
-                <title>Bekijk de aflevering:</title>            
-            </section>     
+                <title>Bekijk de aflevering:</title>
+            </section>
             <a href="?action=gallery&amp;type=video&amp;gallery=De Windhappers op TV" target="_self" title="Zappsport - Kanopolo">
-                <img src="/media/videos/De%20Windhappers%20op%20TV/.thumbnails/Uitzending_van_21_september_2013_ochtend_-_Programma_-_ZappS.jpg" alt="Zappsport - Kanopolo" title="Zappsport - Kanopolo"/>                 
-            </a>                   
-        </article>         
+                <img src="/media/videos/De%20Windhappers%20op%20TV/.thumbnails/Uitzending_van_21_september_2013_ochtend_-_Programma_-_ZappS.jpg" alt="Zappsport - Kanopolo" title="Zappsport - Kanopolo"/>
+            </a>
+        </article>
         <article>
             <datetime>2013-09-27T11:22:00</datetime>
             <title>
@@ -1078,8 +1152,8 @@
             <section>
                 <title>Download het volledige verslag:</title>
             </section>
-            <a href="/media/news/norway.pdf" target="_blank" title="Norway">norway.pdf</a>                                                                 
-        </article>      
+            <a href="/media/news/norway.pdf" target="_blank" title="Norway">norway.pdf</a>
+        </article>
         <article>
             <datetime>2013-09-28T22:00:00</datetime>
             <title>
@@ -1089,26 +1163,26 @@
                 Voor iedereen die niet naar Canada wil, maar wel wil kennismaken met Canadezen.
             </abstract>
             <section>
-                <paragraph>            
+                <paragraph>
                     Koen Tiel wil nieuwe en minder nieuwe leden de edele kunst van het Canadeesvaren laten ervaren. Met iedereen die al jaren of nog maar net het kajakvaren beheerst maar ook nieuwsgierig is hoe je kunt varen met een eenbladige peddel gaat Koen het water op. Hij laat zien en laat jezelf ervaren hoe je, zelfs als je steeds aan dezelfde kant peddelt, toch alle kanten op kunt gaan die jij wilt (nou ja, misschien niet meteen).
-                </paragraph>    
-                <paragraph>  
+                </paragraph>
+                <paragraph>
                     Volgend seizoen wil hij een echte cursus gaan geven, nu een goede gelegenheid om te zien of je misschien aan die cursus mee zou willen doen.
-                </paragraph>                                                      
+                </paragraph>
             </section>
             <section>
                 <title>Wanneer</title>
-                <paragraph>            
+                <paragraph>
                     Zaterdag 28 september om 13.00 uur.
-                </paragraph>                                                                          
+                </paragraph>
             </section>
             <section>
                 <title>Opgeven</title>
-                <paragraph>            
+                <paragraph>
                     Omdat er voor 6-8 mensen plek is, graag van te voren even opgeven bij Koen Tiel:   <a href="mailto:koentiel@kpnmail.nl" target="_blank" title="Contact">koentiel@kpnmail.nl</a>. Vol is vol, we kunnen wel 10 mensen in een Canadees stoppen, voor deze kennismaking is dat niet handig.
-                </paragraph>                                                                                
+                </paragraph>
             </section>
-        </article>     
+        </article>
         <article>
             <datetime>2013-08-31T12:00:00</datetime>
             <title>
@@ -1126,14 +1200,14 @@
                 </title>
                 <paragraph>
                     Zaterdag 31-AUG-2013, Inschrijving tot 9:00 uur!
-                </paragraph>                    
-                <paragraph>                    
+                </paragraph>
+                <paragraph>
                     Startschot 9:30 uur te Paviljoen 't Middelpunt, Dorpsstraat 57 te Schipluiden. Finish midden in Maasland.
-                </paragraph>                    
-                <paragraph>                                        
+                </paragraph>
+                <paragraph>
                     Prijsuitreiking en koffie op de muziekvlonder van het Nazomerfeest-Maasland.
                 </paragraph>
-                <img src="/media/news/14bkt2013.png" alt="14 Bruggen Kanotocht" title="14 Bruggen Kanotocht"/>                 
+                <img src="/media/news/14bkt2013.png" alt="14 Bruggen Kanotocht" title="14 Bruggen Kanotocht"/>
             </section>
             <section>
                 <title>
@@ -1146,38 +1220,38 @@
                     Telefonisch: 06-30731248 of 015-3809932.
                 </paragraph>
                 <paragraph>
-                    Internet: <a href="http://www.paviljoenschipluiden.nl/contact" target="_blank" title="Contact">http://www.paviljoenschipluiden.nl/contact</a>, via het contactformulier dat daar staat.              
+                    Internet: <a href="http://www.paviljoenschipluiden.nl/contact" target="_blank" title="Contact">http://www.paviljoenschipluiden.nl/contact</a>, via het contactformulier dat daar staat.
                 </paragraph>
                 <paragraph>
                     E-mail: <a href="mailto:info@paviljoenschipluiden.nl" target="_blank" title="Contact">info@paviljoenschipluiden.nl</a>.
                 </paragraph>
                 <paragraph>
                     Eigen kano EURO 5,- of huurkano EURO 7.50,-
-                </paragraph>                                
+                </paragraph>
             </section>
             <section>
                 <title>
                     Info
                 </title>
-                <paragraph>                
+                <paragraph>
                 Meer info: Leo Tetteroo
-                </paragraph>                
+                </paragraph>
                 <paragraph>
                     Mobiel: 06-53670298
                 </paragraph>
                 <paragraph>
                     E-mail: l.tetteroo@online.nl
                 </paragraph>
-            </section>            
+            </section>
             <section>
                 <title>
                     Affiche
                 </title>
                 <paragraph>
-                    <a href="/media/news/Affiche-14BKT-2013_v1.02.pdf" target="_blank" title="Contact">Affiche-14BKT-2013_v1.02.pdf</a>                
+                    <a href="/media/news/Affiche-14BKT-2013_v1.02.pdf" target="_blank" title="Contact">Affiche-14BKT-2013_v1.02.pdf</a>
                 </paragraph>
             </section>
-        </article>    
+        </article>
         <article>
             <datetime>2013-08-08T12:00:00</datetime>
             <title>
@@ -1187,14 +1261,14 @@
                 Deze zomer wordt Midden-Delfland nog leuker. Het Recreatieschap Midden-Delfland realiseert op vlieten en vaarten een kanoroute met aanlegvoorzieningen en steigers.
             </abstract>
             <section>
-                <paragraph>            
+                <paragraph>
                     Het project is één van de vijf projecten uit de Recreatieve Routestructuur. Dit plan biedt nieuwe recreatieve verbindingen met als doel de beleving van het landschap te vergroten, de toegankelijkheid vanaf de stad te verbeteren en barrières te verminderen door voor elke doelgroep in mooie routes te voorzien. Recreatieve Routestructuur is een kwalitatieve compensatie voor de aanleg van de rijksweg A4 Delft-Schiedam (IODS).
-                </paragraph>    
-                <paragraph>  
-                    Zie voor meer informatie: <a href="http://www.recreatiezuidholland.nl" target="_blank" title="Recreatie Zuid-Holland">www.recreatiezuidholland.nl</a>.                    
-                </paragraph>                                                      
+                </paragraph>
+                <paragraph>
+                    Zie voor meer informatie: <a href="http://www.recreatiezuidholland.nl" target="_blank" title="Recreatie Zuid-Holland">www.recreatiezuidholland.nl</a>.
+                </paragraph>
             </section>
-        </article>       
+        </article>
         <article>
             <datetime>2013-08-30T12:00:00</datetime>
             <title>
@@ -1204,9 +1278,9 @@
                 Kanovereniging De Windhappers, gelegen aan de rand van Den Haag en het Westland, organiseert voor kanovaarders uit Nederland en over de landsgrenzen vanaf vrijdag 30 augustus t/m zondagmiddag 1 september 2013 een kanotoerweekend in het Westland en Delfland.
             </abstract>
             <section>
-                <paragraph>            
+                <paragraph>
                     De mogelijkheid bestaat om vanaf vrijdag 13.00 uur t/m zondagmiddag bij De Windhappers te kamperen.
-                </paragraph>            
+                </paragraph>
             </section>
             <section>
                 <title>
@@ -1220,13 +1294,13 @@
                 </paragraph>
                 <paragraph>
                     Zondag: om 10 uur varen we naar een druiventuin in het Westland. Na afloop van deze tocht eindigt dit leuke weekend bij De Windhappers.
-                </paragraph>                                       
+                </paragraph>
             </section>
             <section>
                 <title>
                     Deelnamekosten
                 </title>
-                <paragraph>                
+                <paragraph>
                     Op het er naastgelegen grasveld van ons clubgebouw De Windhappers is een kampeergelegenheid. De kampeerkosten bedragen inclusief een heerlijk ontbijt € 7,50 per persoon per nacht.
                 </paragraph>
             </section>
@@ -1234,33 +1308,33 @@
                 <title>
                     Bezoek druiventuin
                 </title>
-                <paragraph>                
+                <paragraph>
                     Toegangsprijs is voor eigen rekening.
                 </paragraph>
-            </section>     
+            </section>
             <section>
                 <title>
                     Informatie en aanmelden
                 </title>
-                <paragraph>                
+                <paragraph>
                     Heb je zin in dit gezellig kampeerweekend of een dag meevaren? Dan kan voor verdere informatie en het opgeven contact opgenomen worden met: Jan Weerdenburg (<a href="mailto:janweer@12move.nl">janweer@12move.nl</a>, 070-3971066 en 06-30344963).
                 </paragraph>
-            </section>                     
+            </section>
             <section>
                 <title>
                     Adres De Windhappers
                 </title>
-                <paragraph>                
+                <paragraph>
                     Nieuweweg 75, 2544NG Den Haag.
                 </paragraph>
-                <paragraph>                
-                    Aanrijroute: vanaf de A4 afslag 12 Den Haag- Zuid; richting Kijkduin blijven rijden. Bij het passeren van het gemeentebord Den Haag rechtdoor op de Lozerlaan blijven rijden. Na 2 km links de afslag De Uithof nemen (borden schaatscentrum). De Jaap Edenweg uitrijden, rechts aanhouden en bij het achterste deel van de parkeerplaats is op korte afstand het clubgebouw van De Windhappers. 
-                </paragraph>   
-                <paragraph>   
+                <paragraph>
+                    Aanrijroute: vanaf de A4 afslag 12 Den Haag- Zuid; richting Kijkduin blijven rijden. Bij het passeren van het gemeentebord Den Haag rechtdoor op de Lozerlaan blijven rijden. Na 2 km links de afslag De Uithof nemen (borden schaatscentrum). De Jaap Edenweg uitrijden, rechts aanhouden en bij het achterste deel van de parkeerplaats is op korte afstand het clubgebouw van De Windhappers.
+                </paragraph>
+                <paragraph>
                     Voor instellen van de navigatie: Jaap Edenweg, 2544 NL Den Haag.
-                </paragraph>                                             
-            </section>  
-        </article>       
+                </paragraph>
+            </section>
+        </article>
         <article>
             <datetime>2013-06-24T12:00:00</datetime>
             <title>
@@ -1271,16 +1345,16 @@
             </abstract>
             <section>
                 <paragraph>
-                    In de week van 24 juni wordt gestart met het maken van een tijdelijke brug voor het auto- en fietsverkeer. Voor de auto gaat het om verkeer vanuit het Westland richting Den Haag. Het verkeer richting Westland wordt omgeleid. Half juli is deze tijdelijke brug klaar. 
+                    In de week van 24 juni wordt gestart met het maken van een tijdelijke brug voor het auto- en fietsverkeer. Voor de auto gaat het om verkeer vanuit het Westland richting Den Haag. Het verkeer richting Westland wordt omgeleid. Half juli is deze tijdelijke brug klaar.
                 </paragraph>
-                <paragraph>                   
-                    In principe zal de scheepvaart hier weinig hinder van ondervinden. Vanaf 12 Augustus wordt het gestart met de sloop van de huidige brug en de bouw van de tijdelijke brug. 
+                <paragraph>
+                    In principe zal de scheepvaart hier weinig hinder van ondervinden. Vanaf 12 Augustus wordt het gestart met de sloop van de huidige brug en de bouw van de tijdelijke brug.
                 </paragraph>
-                <paragraph>                  
+                <paragraph>
                     De werkzaamheden aan de brug duren tot het einde van het jaar. In de periode van sloop en bouw zullen er momenten zijn van ernstige hinder m.b.t. de doorvaart onder de brug. Hierover volgt nadere berichtgeving.
                 </paragraph>
             </section>
-        </article>       
+        </article>
         <article>
             <datetime>2013-05-02T12:00:00</datetime>
             <title>
@@ -1302,30 +1376,30 @@
                 <paragraph>
                     Vertrektijd: 2013-06-02 om 10.30 uur
                 </paragraph>
-                <paragraph>                    
+                <paragraph>
                     Lengte korte tocht: 15 km
                 </paragraph>
-                <paragraph>                    
+                <paragraph>
                     Lengte lange tocht: 25 km
                 </paragraph>
-                <img src="/media/news/2013-06-02_haagse_stadsparkentocht.png" alt="Haagse Stadsparkentocht" title="Haagse Stadsparkentocht"/>                                          
+                <img src="/media/news/2013-06-02_haagse_stadsparkentocht.png" alt="Haagse Stadsparkentocht" title="Haagse Stadsparkentocht"/>
             </section>
             <section>
                 <title>
                     Organisatie en inschrijvingen
                 </title>
-                <paragraph>                
+                <paragraph>
                     Jacques van der Toorn
                 </paragraph>
-                <paragraph>                    
+                <paragraph>
                     Telefoon: 070-36 84 654 / 06-43 48 47 89
                 </paragraph>
-                <paragraph>                    
+                <paragraph>
                     E-mail: <a href="mailto:jjmvdtoorn@gmail.com">jjmvdtoorn@gmail.com</a>
                 </paragraph>
             </section>
-            <a href="/media/news/Haagse stadsparkentocht op 2 juni 2013 voor de website.pdf" target="_blank" title="Haagse stadsparkentocht">Haagse stadsparkentocht op 2 juni 2013.pdf</a>            
-        </article>   
+            <a href="/media/news/Haagse stadsparkentocht op 2 juni 2013 voor de website.pdf" target="_blank" title="Haagse stadsparkentocht">Haagse stadsparkentocht op 2 juni 2013.pdf</a>
+        </article>
         <article>
             <datetime>2013-09-07T13:00:00</datetime>
             <title>
@@ -1344,20 +1418,20 @@
                 <paragraph>
                     Heeft u interesse om dit jaar (weer) als begeleiding mee te varen op 7 september, meld u dan aan door een mail te sturen naar:
                 </paragraph>
-                <paragraph>                    
+                <paragraph>
                     <a href="mailto:haringvlietoversteek@destelle.nl">haringvlietoversteek@destelle.nl</a>
                 </paragraph>
-                <paragraph>                    
+                <paragraph>
                     Vermeld u hierin a.u.b. naam, telefoonnummer, email adres. Mocht u nog vragen hebben stuur dan ook gerust een mail naar bovenstaande adres.
                 </paragraph>
-                <paragraph>                    
+                <paragraph>
                     Met vriendelijke groet,
-                </paragraph>        
-                <paragraph>                    
+                </paragraph>
+                <paragraph>
                     Josette de Bock, organisatie Haringvlietoversteek 2013 (06-46605806)
-                </paragraph>                          
+                </paragraph>
             </section>
-        </article>             
+        </article>
         <article>
             <datetime>2013-05-23T10:22:00</datetime>
             <title>
@@ -1367,7 +1441,7 @@
                 Guus Kanters heeft de club een grote televisie kado gedaan. Deze staat nu te pronken in de kantine.
                 Guus bedankt!
             </abstract>
-        </article>     
+        </article>
         <article>
             <datetime>2013-05-23T11:22:00</datetime>
             <title>
@@ -1376,8 +1450,8 @@
             <abstract>
                 Anderhalf jaar was nodig om een ingrijpende renovatie van de C10 te realiseren. Voor mij was het een duik in het diepe, maar je begrijpt dat het gelukt is. Deze Canadese Kano, van wedstrijdklasse, is uniek. (Mogelijk zelfs het laatste vaarbare exemplaar in Nederland.) We moesten die bijzondere C10, koste wat kost, weer in originele staat zien te krijgen.
             </abstract>
-            <a href="/media/news/C10.pdf" target="_blank" title="C10">C10.pdf</a>                                                                 
-        </article>         
+            <a href="/media/news/C10.pdf" target="_blank" title="C10">C10.pdf</a>
+        </article>
         <article>
             <datetime>2013-05-02T10:22:00</datetime>
             <title>
@@ -1387,7 +1461,7 @@
                 In deze afevering een bijdrage over het recreatieve Westland met o.a. een stukje over K.V. De Windhappers.
             </abstract>
             <a href="?action=gallery&amp;type=video&amp;gallery=2013-05-01+Westland+Report" target="_self" title="West Report">Westland Report over o.a. De Windhappers</a>
-        </article>                    
+        </article>
         <article>
             <datetime>2013-04-21T21:00:00</datetime>
             <title>
@@ -1401,24 +1475,24 @@
                     Lekker bezig op het water op 21 april
                 </title>
                 <paragraph>
-                    Er komt een rolbaan waarmee je met bootje en al het water in plonst. Je mag allerlei soorten boten uitproberen en krijgt een beetje les. Er zijn demonstraties van kanopolo en eskimoteren. Dit jaar komt een speciale gast, Vincent Melotte, het Stand-up paddling (suppen) demonstreren.            
+                    Er komt een rolbaan waarmee je met bootje en al het water in plonst. Je mag allerlei soorten boten uitproberen en krijgt een beetje les. Er zijn demonstraties van kanopolo en eskimoteren. Dit jaar komt een speciale gast, Vincent Melotte, het Stand-up paddling (suppen) demonstreren.
                 </paragraph>
                 <paragraph>
-                    Kanovereniging “De windhappers” is een van de grotere en actieve clubs van Nederland. Het hele jaar worden op woensdag, vrijdag en zondag gevaren in het Westland en Midden Delfland voor zowegevorderden en minder gevorderden.    
-                </paragraph>        
-                <paragraph>
-                     Er worden toertochten en kano kampeerweekenden georganiseerd in Nieuwkoop, Loosdrecht en de Kaag. Onze zeekanoërs varen op de Grevelingen, Oosterschelde, Noordzee en de Wadden. Een paar keer per jaar gaan we wild water varen in het buitenland. Regelmatig zijn er Windhappers bezig in de branding bij Scheveningen.            
+                    Kanovereniging “De windhappers” is een van de grotere en actieve clubs van Nederland. Het hele jaar worden op woensdag, vrijdag en zondag gevaren in het Westland en Midden Delfland voor zowegevorderden en minder gevorderden.
                 </paragraph>
                 <paragraph>
-                    De club heeft een enthousiaste groep kano-poloërs die meedoet aan de landelijke competitie.            
+                     Er worden toertochten en kano kampeerweekenden georganiseerd in Nieuwkoop, Loosdrecht en de Kaag. Onze zeekanoërs varen op de Grevelingen, Oosterschelde, Noordzee en de Wadden. Een paar keer per jaar gaan we wild water varen in het buitenland. Regelmatig zijn er Windhappers bezig in de branding bij Scheveningen.
                 </paragraph>
                 <paragraph>
-                    Als je lid wordt, krijg je een gratis introductiecursus in kajak- en/of Canadeesvaren. Daarna mag je gebruik maken van verenigingsboten. In de winter worden in een zwembad eskimoteerlessen gegeven, om te leren omslaan en weer boven te komen.            
-                </paragraph>    
-                <paragraph>     
-                    Interesse? Kom langs op de OPEN DAG op zondagmiddag 21 april a.s. Je bent welkom vanaf 13.00 uur tot 17.00 uur. Of loop eens binnen op woensdagavond, de vaste clubavond. Je vindt ons haventje en ons gezellige clubgebouw aan het teinde van de parkeerplaatsen van Sportcentrum “De Uithof” aan de Jaap Edenweg in Den Haag. Helemaal doorrijden of lopen en nog een keer naar rechts. Meer informatie vind je op de website www.windhappers.nl.                                       
-                </paragraph>  
-                <img src="/content/images/news/flyer_opendag_2013.jpg" alt="Flyer Opendag" title="Flyer Opendag"/>                          
+                    De club heeft een enthousiaste groep kano-poloërs die meedoet aan de landelijke competitie.
+                </paragraph>
+                <paragraph>
+                    Als je lid wordt, krijg je een gratis introductiecursus in kajak- en/of Canadeesvaren. Daarna mag je gebruik maken van verenigingsboten. In de winter worden in een zwembad eskimoteerlessen gegeven, om te leren omslaan en weer boven te komen.
+                </paragraph>
+                <paragraph>
+                    Interesse? Kom langs op de OPEN DAG op zondagmiddag 21 april a.s. Je bent welkom vanaf 13.00 uur tot 17.00 uur. Of loop eens binnen op woensdagavond, de vaste clubavond. Je vindt ons haventje en ons gezellige clubgebouw aan het teinde van de parkeerplaatsen van Sportcentrum “De Uithof” aan de Jaap Edenweg in Den Haag. Helemaal doorrijden of lopen en nog een keer naar rechts. Meer informatie vind je op de website www.windhappers.nl.
+                </paragraph>
+                <img src="/content/images/news/flyer_opendag_2013.jpg" alt="Flyer Opendag" title="Flyer Opendag"/>
             </section>
         </article>
         <article>
@@ -1431,10 +1505,10 @@
             </abstract>
             <section>
             <paragraph>
-                Op zaterdag 23 maart is de eerste toertocht van dit jaar naar Nieuwkoop. Erik Rumpff zal als tochtleider optreden. We verzamelen om 8.30 bij het clubgebouw en bekijken dan hoe we ons verdelen over de auto’s en of de trailer nodig is. Graag voor 22 maart doorgeven bij <a href="mailto:erik.rumpff@12move.nl">erik.rumpff@12move.nl</a> of je meegaat. Houdt er rekening mee dat het water nog koud kan zijn. Neem dus een zwemvest, eten, warme kleding en warme drank mee. Verder komt alles wel weer windhappergoed. Op 14 april is de volgende toertocht op vlak water. Deze gaat naar de Biesbosch.                
+                Op zaterdag 23 maart is de eerste toertocht van dit jaar naar Nieuwkoop. Erik Rumpff zal als tochtleider optreden. We verzamelen om 8.30 bij het clubgebouw en bekijken dan hoe we ons verdelen over de auto’s en of de trailer nodig is. Graag voor 22 maart doorgeven bij <a href="mailto:erik.rumpff@12move.nl">erik.rumpff@12move.nl</a> of je meegaat. Houdt er rekening mee dat het water nog koud kan zijn. Neem dus een zwemvest, eten, warme kleding en warme drank mee. Verder komt alles wel weer windhappergoed. Op 14 april is de volgende toertocht op vlak water. Deze gaat naar de Biesbosch.
             </paragraph>
             </section>
-        </article>   
+        </article>
         <article>
             <datetime>2013-03-09T10:30:00</datetime>
             <title>
@@ -1445,11 +1519,11 @@
             </abstract>
             <section>
                 <paragraph>
-                    De afgelopen drie jaar is de Windhapper steeds 4 keer per jaar uitgebracht. Deze frequentie bleek nerzijds te klein om goed te communiceren met de leden en anderzijds vrij hoog voor de werkdruk an de redactie. Voor het eerste is als oplossing de “Nieuwsflits” gekomen. In feite zijn dit mailtjes anuit het bestuur aan alle leden. Dit laatste blijkt goed te werken; bijna iedereen blijkt de mailtjes te ezen. De frequentie van de mailtjes neemt de laatste tijd toe.                  
+                    De afgelopen drie jaar is de Windhapper steeds 4 keer per jaar uitgebracht. Deze frequentie bleek nerzijds te klein om goed te communiceren met de leden en anderzijds vrij hoog voor de werkdruk an de redactie. Voor het eerste is als oplossing de “Nieuwsflits” gekomen. In feite zijn dit mailtjes anuit het bestuur aan alle leden. Dit laatste blijkt goed te werken; bijna iedereen blijkt de mailtjes te ezen. De frequentie van de mailtjes neemt de laatste tijd toe.
                 </paragraph>
                 <paragraph>
-                    Voor wat betreft de gedrukte Windhapper valt op dat steeds nagenoeg de hele oplage in de hal van et gebouw blijft liggen. Ook de digitale versie wordt volgens peilingen op woensdagavond nauwelijks elezen. Slechts weinig leden zijn enthousiast in het aanleveren van kopij. Het maken van een indhapper (lay-out, stukken schrijven, kopij verzamelen) kost ongeveer 40 uur.                 
-                </paragraph>        
+                    Voor wat betreft de gedrukte Windhapper valt op dat steeds nagenoeg de hele oplage in de hal van et gebouw blijft liggen. Ook de digitale versie wordt volgens peilingen op woensdagavond nauwelijks elezen. Slechts weinig leden zijn enthousiast in het aanleveren van kopij. Het maken van een indhapper (lay-out, stukken schrijven, kopij verzamelen) kost ongeveer 40 uur.
+                </paragraph>
                 <paragraph>
                     Ik wil als redacteur van De Windhapper daarom aan de ALV het voorstel doen om te stoppen met het itbrengen van de Windhapper in zijn huidige vorm. De communicatie met de leden zal via de site en d hoc mailberichten verlopen. Als er belangrijke items aan de site worden toegevoegd, zal via de mail en attenderingsbericht (Nieuwsflits) worden gestuurd. De coördinatie van deze communicatie zal bij et bestuurslid PR liggen, ondersteund door de PR commissie en uiteraard in overleg met het bestuur.
                 </paragraph>
@@ -1458,23 +1532,23 @@
                 </paragraph>
                 <paragraph>
                     Indien de ALV instemt met dit voorstel dient artikel 8 van het Huishoudelijk Reglement te worden aangepast. Onderstaand een voorstel voor de tekst.
-                </paragraph>    
-            </section>             
+                </paragraph>
+            </section>
             <section>
-                <title> 
-                    Artikel 8.               
+                <title>
+                    Artikel 8.
                 </title>
                 <paragraph>
-                    De vereniging communiceert met haar leden middels de website van de vereniging en met digitale e-mailberichten. Als redactie is een bestuurlid aangewezen die in samenspraak met het bestuur en een PR ommissie de communicatie coördineert. eder lid heeft de vrijheid teksten aangaande kanosport en/of recreatie voor verspreiding onder de leden aan e bieden aan de redactie met het verzoek om deze teksten af te laten drukken in het clubblad.             
-                </paragraph>                
+                    De vereniging communiceert met haar leden middels de website van de vereniging en met digitale e-mailberichten. Als redactie is een bestuurlid aangewezen die in samenspraak met het bestuur en een PR ommissie de communicatie coördineert. eder lid heeft de vrijheid teksten aangaande kanosport en/of recreatie voor verspreiding onder de leden aan e bieden aan de redactie met het verzoek om deze teksten af te laten drukken in het clubblad.
+                </paragraph>
                 <paragraph>
-                    De verantwoording voor de publicatie ligt bij de redactie, die het recht heeft bepaalde ter plaatsing angeboden artikelen (met uitzondering van officiële publicaties van het bestuur) met opgaaf van redenen niet e plaatsen.                
-                </paragraph>  
+                    De verantwoording voor de publicatie ligt bij de redactie, die het recht heeft bepaalde ter plaatsing angeboden artikelen (met uitzondering van officiële publicaties van het bestuur) met opgaaf van redenen niet e plaatsen.
+                </paragraph>
             </section>
             <footer>
                 Erik Rumpff
-            </footer>                
-        </article>        
+            </footer>
+        </article>
         <article>
             <datetime>2013-03-09T10:15:00</datetime>
             <title>
@@ -1484,7 +1558,7 @@
                 De leden van het regioteam West-Holland hebben er ook in 2012 weer veel aan gedaan om het vaarwater in de regio bevaarbaar en aantrekkelijk te houden en maken. Er is veel overlegd met onder andere gemeenten, de provincie en het waterschap.
             </abstract>
             <a href="/media/news/West Holland Jaaroverzicht 2012.pdf" target="_blank" title="West Holland Jaaroverzicht 2012">West Holland Jaaroverzicht 2012.pdf</a>
-        </article>                      
+        </article>
         <article>
             <datetime>2013-03-09T10:00:00</datetime>
             <title>
@@ -1493,28 +1567,28 @@
             <abstract>
                 De schoonmaak van het botenhuis is, in tegenstelling tot wat in Windhapper 402 stond, op 16 maart om 10 uur en wordt georganiseerd door Anne Zwaan. Anne kan uiteraard alle hulp gebruiken. Voor meer informatie zie de bijlage en je kunt je ook per e-mail aanmelden bij <a href="mailto:z.wanne@live.nl">z.wanne@live.nl</a>.
             </abstract>
-        </article>     
+        </article>
         <article>
             <datetime>2013-03-22T11:00:00</datetime>
             <title>
                 De eerste serie kanosteigers geplaatst in Den Haag
             </title>
             <abstract>
-                Vorig jaar heeft De Windhappers via de gemeente Westland aan de gemeente Den Haag de mogelijke locaties voor de kanosteigers in de kanoroute door Den Haag doorgegeven en nu kregen we onverwachts het bericht dat de eerste serie steigers zijn geplaatst. 
+                Vorig jaar heeft De Windhappers via de gemeente Westland aan de gemeente Den Haag de mogelijke locaties voor de kanosteigers in de kanoroute door Den Haag doorgegeven en nu kregen we onverwachts het bericht dat de eerste serie steigers zijn geplaatst.
             </abstract>
             <section>
             <paragraph>
-                Met de boekenkastplanksteigers van de gemeente Westland zijn De Windhappers ook bezig met het opstarten. De eerste serie losse onderdelen van de steigers liggen sinds vorige week bij De Windhappers opgeslagen. De planning is dat De windhappers begin april zullen starten met het plaatsen van de boekenkastplanksteigers. 
+                Met de boekenkastplanksteigers van de gemeente Westland zijn De Windhappers ook bezig met het opstarten. De eerste serie losse onderdelen van de steigers liggen sinds vorige week bij De Windhappers opgeslagen. De planning is dat De windhappers begin april zullen starten met het plaatsen van de boekenkastplanksteigers.
             </paragraph>
-            <img src="/content/images/news/chinees.jpg" alt="Chinees" title="Chinees"/> 
-            <img src="/content/images/news/Erasmusweg.jpg" alt="Erasmusweg" title="Erasmusweg"/> 
-            <img src="/content/images/news/Houtwijklaan.jpg" alt="Houtwijklaan" title="Houtwijklaan"/> 
-            <img src="/content/images/news/Loosduinseweg.jpg" alt="Loosduinseweg" title="Loosduinseweg"/> 
-            <img src="/content/images/news/Loosduinseweg1.jpg" alt="Loosduinseweg1" title="Loosduinseweg1"/> 
-            <img src="/content/images/news/Theetuin.jpg" alt="Theetuin" title="Theetuin"/> 
-            <img src="/content/images/news/Tuincentrum.jpg" alt="Tuincentrum" title="Tuincentrum"/> 
-            <img src="/content/images/news/Tuincentrum2.jpg" alt="Tuincentrum2" title="Tuincentrum2"/> 
+            <img src="/content/images/news/chinees.jpg" alt="Chinees" title="Chinees"/>
+            <img src="/content/images/news/Erasmusweg.jpg" alt="Erasmusweg" title="Erasmusweg"/>
+            <img src="/content/images/news/Houtwijklaan.jpg" alt="Houtwijklaan" title="Houtwijklaan"/>
+            <img src="/content/images/news/Loosduinseweg.jpg" alt="Loosduinseweg" title="Loosduinseweg"/>
+            <img src="/content/images/news/Loosduinseweg1.jpg" alt="Loosduinseweg1" title="Loosduinseweg1"/>
+            <img src="/content/images/news/Theetuin.jpg" alt="Theetuin" title="Theetuin"/>
+            <img src="/content/images/news/Tuincentrum.jpg" alt="Tuincentrum" title="Tuincentrum"/>
+            <img src="/content/images/news/Tuincentrum2.jpg" alt="Tuincentrum2" title="Tuincentrum2"/>
             </section>
-        </article>                              
+        </article>
     </news>
 </dewindhappers>
