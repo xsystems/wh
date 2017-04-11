@@ -63,14 +63,14 @@ body
     max-width:100%;
     min-height:800px;
     margin-left:auto;
-    margin-right:auto; 
+    margin-right:auto;
 }
 
 .main
 {
 /*    text-align:justify;*/
-    font-size:1em;   
-}    
+    font-size:1em;
+}
 
 .main h1
 {
@@ -106,8 +106,8 @@ body
 ul, ol
 {
     list-style-position:inside;
-    margin-bottom:1em;  
-} 
+    margin-bottom:1em;
+}
 
 /*--------------------------------------*/
 /* Content Style                        */
@@ -116,13 +116,13 @@ ul, ol
 {
     color:black;
     background-color:rgb(136,195,103);
-    background-color:rgba(136,195,103,0.90);    
+    background-color:rgba(136,195,103,0.90);
     width:90%;
     overflow:hidden;
     padding-left:5%;
     padding-right:5%;
     padding-top:2%;
-    padding-bottom:2%;    
+    padding-bottom:2%;
 }
 
 .article_home_intro
@@ -142,14 +142,14 @@ ul, ol
     display:inline-block;
     width:48%;
     height:150px;
-    border-radius:5px;  
+    border-radius:5px;
     overflow:hidden;
 }
 
 .section_home_images_alt a
 {
     width:48%;
-    height:240px;    
+    height:240px;
 }
 
 .section_home_images img
@@ -166,45 +166,43 @@ ul, ol
 #sidebar
 {
     float:right;
-    background-color:rgb(255,255,51); 
-    background-color:rgba(255,255,51,0); 
+    background-color:rgb(255,255,51);
+    background-color:rgba(255,255,51,0);
     width:33%;
-    height:100%;    
-    padding-bottom:2%;  
+    height:100%;
+    padding-bottom:2%;
 }
 
 #sidebar>div
 {
-    padding-top:3%;              
+    padding-top:3%;
 }
 
 #sidebar>div>h2
 {
-    background-color:rgb(255,255,51);      
-    padding-left:5%;   
-    padding-right:5%;     
-    margin:0;                
+    background-color:rgb(255,255,51);
+    padding-left:5%;
+    padding-right:5%;
+    margin:0;
 }
 
 #newsAbstracts article
 {
-    overflow:hidden;       
-    border-radius:20px;
-    margin-top:2%;
-    margin-bottom:2%;    
-    padding:5%;      
+    overflow:hidden;
+    margin-bottom:2%;
+    padding:5%;
     background-color:rgb(136,195,103);
-    background-color:rgba(136,195,103,0.90);              
+    background-color:rgba(136,195,103,0.90);
 }
 
 #newsAbstracts h1
-{ 
+{
     font-size:1.5em;
-    text-align:left;    
+    text-align:left;
 }
 
 #newsAbstracts em
-{ 
+{
     display:inline-block;
     margin-bottom:0.2em;
 }
@@ -218,17 +216,16 @@ ul, ol
 }
 
 #newsAbstracts img
-{ 
+{
     width:100%;
-    border-radius:20px; 
 }
 
 #sponsors_list a
 {
     display:inline-block;
     width:100%;
-    overflow:hidden; 
-    margin-bottom:1em; 
+    overflow:hidden;
+    margin-bottom:1em;
     text-decoration:none;
 }
 
@@ -249,7 +246,7 @@ ul, ol
 }
 
 #news em
-{ 
+{
     display:inline-block;
 }
 
@@ -268,17 +265,15 @@ ul, ol
 {
     display:inline-block;
     vertical-align:top;
-    overflow:hidden;       
-    border-radius:20px;
+    overflow:hidden;
     width:90%;
-    margin-top:2%;
-    margin-bottom:2%;    
-    padding-left:5%;   
-    padding-right:5%;  
-    padding-top:5%;   
-    padding-bottom:5%;     
+    margin-bottom:2%;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:5%;
+    padding-bottom:5%;
     background-color:rgb(136,195,103);
-    background-color:rgba(136,195,103,0.90);              
+    background-color:rgba(136,195,103,0.90);
 }
 
 #news a
@@ -289,19 +284,18 @@ ul, ol
 #news img
 {
     width:48%;
-    border-radius:20px; 
 }
 
 #discipline
 {
     background-color:rgb(136,195,103);
-    background-color:rgba(136,195,103,0.90);    
+    background-color:rgba(136,195,103,0.90);
     width:90%;
     overflow:hidden;
     padding-left:5%;
     padding-right:5%;
     padding-top:2%;
-    padding-bottom:2%; 
+    padding-bottom:2%;
 }
 
 #discipline a
@@ -312,20 +306,20 @@ ul, ol
 #discipline img
 {
     width:49%;
-    height:240px;    
+    height:240px;
     padding-bottom: 1%;
-    border-radius:5px; 
+    border-radius:5px;
 }
 
 #register_form
 {
     margin-bottom:1em;
-    border-radius:5px; 
-    background-color:rgb(255,255,51); 
-    padding-top:2%;   
-    padding-bottom:2%;      
-    padding-left:5%;   
-    padding-right:5%;       
+    border-radius:5px;
+    background-color:rgb(255,255,51);
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:5%;
+    padding-right:5%;
 }
 
 #register_form label
@@ -367,12 +361,12 @@ ul, ol
 #contact_form
 {
     margin-bottom:1em;
-    border-radius:5px; 
-    background-color:rgb(255,255,51); 
-    padding-top:2%;   
-    padding-bottom:2%;      
-    padding-left:5%;   
-    padding-right:5%;     
+    border-radius:5px;
+    background-color:rgb(255,255,51);
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:5%;
+    padding-right:5%;
 }
 
 #contact_form label
@@ -467,7 +461,7 @@ ul, ol
 #vertel section
 {
     background-color:rgb(136,195,103);
-    background-color:rgba(136,195,103,0.90);    
+    background-color:rgba(136,195,103,0.90);
     overflow:hidden;
     border-radius:20px;
     margin-top:1em;
@@ -476,14 +470,14 @@ ul, ol
 }
 
 #banner
-{  
+{
     width:100%;
     height:160px;
     margin-top:0.2em;
     overflow:hidden;
-    font-size:12pt; 
-    background-repeat:no-repeat; 
-    background-size:cover;    
+    font-size:12pt;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 .banner_logo
@@ -499,25 +493,25 @@ ul, ol
 }
 
 #banner>p
-{    
+{
     margin:0;
     padding-top: 1%;
     padding-right: 1%;
     float:right;
     font-family:Verdana;
-    font-size:2em; 
-    font-weight:bold;    
+    font-size:2em;
+    font-weight:bold;
     transform-origin:left top;
-    transform:rotate(12deg);  
-    
+    transform:rotate(12deg);
+
     -ms-transform-origin:left top;
     -webkit-transform-origin:left top;
     -o-transform-origin:left top;
-    -moz-transform-origin:left top;            
+    -moz-transform-origin:left top;
     -ms-transform: rotate(14deg); /* IE 9 */
     -webkit-transform: rotate(14deg); /* Safari and Chrome */
     -o-transform: rotate(14deg); /* Opera */
-    -moz-transform: rotate(14deg); /* Firefox */     
+    -moz-transform: rotate(14deg); /* Firefox */
 }
 
 .media_items
@@ -537,14 +531,14 @@ ul, ol
 
 .media_item_language img
 {
-    height:100%;   
-    width:1.5em;     
+    height:100%;
+    width:1.5em;
 }
 
 .media_item_social
 {
     float:right;
-    height:100%;    
+    height:100%;
 }
 
 .media_item_social img
@@ -558,7 +552,7 @@ ul, ol
     display:inline-block;
     color:black;
     background-color:rgb(255,255,51);
-    background-color:rgba(255,255,51,0.90); 
+    background-color:rgba(255,255,51,0.90);
     overflow:hidden;
     width:94%;
     margin-bottom:0.5em;
@@ -609,7 +603,7 @@ ul, ol
     font-weight: bold;
     width:100%;
     background-color:rgb(136,195,103);
-    background-color:rgba(136,195,103,0.90);    
+    background-color:rgba(136,195,103,0.90);
 }
 
 #gallery_form option
@@ -680,7 +674,7 @@ ul, ol
 .buienradar
 {
     position:absolute;
-    z-index:-1;     
+    z-index:-1;
     width:100%;
     height:1200px;
 }
@@ -731,23 +725,23 @@ ul, ol
 }
 
 .article_canoetours h1
-{        
+{
     border-top-left-radius:5px;
     border-top-right-radius:5px;
     border-bottom-left-radius:5px;
-    border-bottom-right-radius:5px;         
+    border-bottom-right-radius:5px;
     margin-top:0.5em;
     margin-bottom:0.5em;
     text-align:center;
-    background-color:rgb(136,195,103); 
-    background-color:rgba(136,195,103,0.90);   
+    background-color:rgb(136,195,103);
+    background-color:rgba(136,195,103,0.90);
 }
 
 .section_canoetour
 {
     display:inline-table;
     width:48%;
-    background-color:rgb(255,255,51); 
+    background-color:rgb(255,255,51);
     background-color:rgba(255,255,51,0.90);
     border-radius:5px;
     margin-bottom:0.5em;
@@ -764,12 +758,12 @@ ul, ol
 .section_canoetour img
 {
     width:100%;
-    padding:0; 
+    padding:0;
     margin:0;
 }
 
 .section_canoetour_footer {
-    min-height: 1.5em;   
+    min-height: 1.5em;
 }
 
 .sponsor
@@ -779,7 +773,7 @@ ul, ol
     margin-left:auto;
     margin-right:auto;
     margin-top:2%;
-    margin-bottom:2%;    
+    margin-bottom:2%;
 }
 
 .sponsor img
@@ -951,16 +945,16 @@ ul, ol
 /* Alter individual menu's */
 #menu
 {
-    background-color:rgb(255,255,51); 
-    background-color:rgba(255,255,51,1); 
+    background-color:rgb(255,255,51);
+    background-color:rgba(255,255,51,1);
     width:100%;
-    font-size:12pt; 
+    font-size:12pt;
 }
 
 #menu li:hover a
 {
-    background-color:rgb(255,255,51); 
-    background-color:rgba(255,255,51,1); 
+    background-color:rgb(255,255,51);
+    background-color:rgba(255,255,51,1);
 }
 
 #menu li:hover ul li a:hover
